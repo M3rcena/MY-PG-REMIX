@@ -6,8 +6,6 @@ import {
   Scripts,
 } from "@remix-run/react";
 
-import { LinksFunction } from "@remix-run/node";
-
 import appStylesHref from "./app.css";
 
 export let links = () => {

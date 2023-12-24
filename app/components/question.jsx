@@ -1,7 +1,5 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
-
 import questionStylesHref from './question.css'
 
 export let links = () => {
@@ -16,14 +14,3 @@ export default function Question({ Question, Answer }) {
     </div>
   )
 }
-
-// Question.defaultProps = {
-//   Question: 'What types of cars do you sell?',
-//   Answer:
-//     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.',
-// }
-
-// Question.propTypes = {
-//   Question: PropTypes.string,
-//   Answer: PropTypes.string,
-// }

@@ -1,16 +1,16 @@
 import React from 'react'
 
-import { Links } from '@remix-run/react'
-
 import { Helmet } from 'react-helmet'
-import { json } from '@remix-run/node'
 
-import FeatureCard from '../components/feature-card'
-import Question from '../components/question'
+import FeatureCard, { links as featureCardLinks } from '../components/feature-card'
+import Question, {links as questionLinks} from '../components/question'
 import homeStylesHref from "../styles/home.css"
 
 export const links = () => {
-  return [{ rel: 'stylesheet', href: homeStylesHref }]
+  return [
+    ...featureCardLinks(),
+    ...questionLinks(),
+    { rel: 'stylesheet', href: homeStylesHref }]
 }
 
 export default function Home() {

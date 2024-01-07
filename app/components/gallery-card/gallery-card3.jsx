@@ -6,7 +6,7 @@ export let links = () => {
   return [{ rel: 'stylesheet', href: GalleryCard3Style }]
 }
 
-export default function GalleryCard3({ image_alt, rootClassName, image_src }) {
+export function GalleryCard3({ image_alt, rootClassName, image_src }) {
   return (
     <div className={`gallery-card3-gallery-card ${rootClassName} `}>
       <img

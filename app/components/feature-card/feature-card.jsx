@@ -6,7 +6,7 @@ export let links = () => {
   return [{ rel: 'stylesheet', href: featureCardStyles }]
 }
 
-export default function FeatureCard({ Heading, SubHeading }) {
+export function FeatureCard({ Heading, SubHeading }) {
   return (
     <div className="feature-card-feature-card">
       <svg viewBox="0 0 1024 1024" className="feature-card-icon">

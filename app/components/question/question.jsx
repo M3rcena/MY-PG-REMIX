@@ -6,7 +6,7 @@ export let links = () => {
   return [{ rel: 'stylesheet', href: questionStylesHref }]
 }
 
-export default function Question({ Question, Answer }) {
+export function Question({ Question, Answer }) {
   return (
     <div className="question-container">
       <span className="question-text heading4">{Question}</span>

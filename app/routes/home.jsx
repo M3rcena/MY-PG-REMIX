@@ -2,15 +2,16 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import FeatureCard, { links as featureCardLinks } from '../components/feature-card'
-import Question, {links as questionLinks} from '../components/question'
+import { FeatureCard, links as featureCardLinks } from '../components/feature-card/feature-card'
+import { Question, links as questionLinks } from '../components/question/question'
 import homeStylesHref from "../styles/home.css"
 
 export const links = () => {
   return [
     ...featureCardLinks(),
     ...questionLinks(),
-    { rel: 'stylesheet', href: homeStylesHref }]
+    { rel: 'stylesheet', href: homeStylesHref },
+  ]
 }
 
 export default function Home() {
@@ -45,7 +46,7 @@ export default function Home() {
           <div data-thq="thq-mobile-menu" className="home-mobile-menu">
             <div className="home-nav">
               <div className="home-top">
-                <span className="home-logo1">MAPSTER</span>
+                <span className="home-logo1">MY PG</span>
                 <div data-thq="thq-close-menu" className="home-close-menu">
                   <svg viewBox="0 0 1024 1024" className="home-icon02">
                     <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>

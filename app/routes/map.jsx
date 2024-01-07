@@ -8,7 +8,6 @@ import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
 import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
 
 export async function loader() {
     const locations = [
@@ -26,6 +25,12 @@ export async function loader() {
         }
     ];
     return json({ 'MAPBOX_TOKEN': process.env.MAPBOX_TOKEN, 'locations': locations });
+};
+
+export const links = () => {
+    return [
+        { rel: "stylesheet", href: "https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" },
+    ];
 };
 
 export default function loadMap() {

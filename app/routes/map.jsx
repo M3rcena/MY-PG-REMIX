@@ -43,7 +43,6 @@ export default function loadMap() {
     const [currentLocationIndex, setCurrentLocationIndex] = useState(0);
 
     function showLocation (map, currentLocationIndex) {
-        console.log('showing location ' + currentLocationIndex);
         const location = coords[currentLocationIndex]
         map.flyTo({
             center: location.coordinates,
@@ -53,26 +52,18 @@ export default function loadMap() {
     };
     
     function showNextLocation (map, currentLocationIndex) {
-        // currentLocationIndex++;
         if (currentLocationIndex >= coords.length - 1) {
-            // currentLocationIndex = 0
-            console.log('setting index to 0');
             setCurrentLocationIndex(0);
         } else {
-            console.log('setting index to ' + (currentLocationIndex + 1));
             setCurrentLocationIndex(currentLocationIndex + 1);
             showLocation(map, currentLocationIndex);
         }
     };
     
     function showPreviousLocation (map, currentLocationIndex) {
-        // currentLocationIndex--;
         if (currentLocationIndex <= 0) {
-            // currentLocationIndex = coords.length -1;
-            console.log('setting index to ' + (coords.length - 1));
             setCurrentLocationIndex(coords.length - 1);
         } else {
-            console.log('setting index to ' + (currentLocationIndex - 1));
             setCurrentLocationIndex(currentLocationIndex - 1);
             showLocation(map, currentLocationIndex)
         }
@@ -109,38 +100,6 @@ export default function loadMap() {
         //     position: 'top-left',
         //     element: previousButton
         // }));
-
-        setTimeout(() => {
-            console.log('timeout fired');
-            setCurrentLocationIndex((prevIndex) => {
-                const newIndex = prevIndex >= coords.length - 1 ? 0 : prevIndex + 1;
-                showLocation(map, newIndex);
-                return newIndex;
-            });
-        }, 3000);
-
-        setTimeout(() => {
-            console.log("current location index: " + currentLocationIndex);
-        }, 5000);
-
-        map.on('load', () => {
-            console.log('map loaded');
-            const marker = new mapboxgl.Marker()
-                .setLngLat([coords[0].coordinates[0], coords[0].coordinates[1]])
-                .addTo(map);
-            console.log(marker);
-        });
-
-        // map.on('style.load', () => {
-        //     console.log('style loaded');
-        // });
-
-        // map.on('click', 'countries', (e) => {
-        //     new mapboxgl.Popup()
-        //     .setLngLat(e.lngLat)
-        //     .setHTML(`Country name: ${e.features[0].properties.name}`)
-        //     .addTo(map);
-        // });
 
         return() => map.remove()
     }, []);

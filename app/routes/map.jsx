@@ -10,6 +10,7 @@ import { useLoaderData } from "@remix-run/react";
 import SimpleClickControl from "../components/map/click/SimpleClickControl";
 
 import mapboxgl from "mapbox-gl";
+import controlStyles from "../components/map/click/styles.css";
 
 export async function loader() {
     const locations = [
@@ -32,6 +33,7 @@ export async function loader() {
 export const links = () => {
     return [
         { rel: "stylesheet", href: "https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" },
+        { rel: "stylesheet", href: controlStyles },
     ];
 };
 
@@ -103,13 +105,13 @@ export default function loadMap() {
           
         const nextButtonOptions = {
             divClassName: 'mapboxgl-ctrl mapboxgl-ctrl-group',
-            name: 'Next Location',
+            className: 'mapboxgl-ctrl-icon mapboxgl-ctrl-nextloc',
             callback: () => showNextLocation(map),
         };
 
         const precButtonOptions = {
             divClassName: 'mapboxgl-ctrl mapboxgl-ctrl-group',
-            name: 'Previous Location',
+            className: 'mapboxgl-ctrl-icon mapboxgl-ctrl-prevloc',
             callback: () => showPreviousLocation(map),
         };
         

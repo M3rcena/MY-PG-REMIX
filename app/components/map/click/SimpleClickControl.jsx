@@ -16,10 +16,10 @@ class SimpleClickControl {
     this._button = document.createElement("button");
     this._button.className = className || "mapboxgl-ctrl-icon";
     this._button.type = "button";
-    const span = document.createElement("span");
-    span.className = "mapboxgl-ctrl-icon";
-    name && (span.textContent = name);
-    this._button.appendChild(span);
+    this._span = document.createElement("span");
+    this._span.className = "mapboxgl-ctrl-icon";
+    name && (this._span.textContent = name);
+    this._button.appendChild(this._span);
     this._container.appendChild(this._button);
 
     this._callback = callback;

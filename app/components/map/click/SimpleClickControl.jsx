@@ -9,7 +9,7 @@ class SimpleClickControl {
       );
     }
 
-    const { divClassName = "mapboxgl-ctrl mapboxgl-ctrl-group", className, name, callback } = options;
+    const { divClassName = "mapboxgl-ctrl mapboxgl-ctrl-group", className, name, callback, scale = 1 } = options;
 
     this._container = document.createElement("div");
     this._container.className = divClassName;
@@ -21,6 +21,9 @@ class SimpleClickControl {
     name && (this._span.textContent = name);
     this._button.appendChild(this._span);
     this._container.appendChild(this._button);
+
+    this._button.style.width = (27 * scale) + "px";
+    this._button.style.height = (27 * scale) + "px";
 
     this._callback = callback;
   }

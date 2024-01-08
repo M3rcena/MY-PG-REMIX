@@ -107,12 +107,14 @@ export default function loadMap() {
             divClassName: 'mapboxgl-ctrl mapboxgl-ctrl-group',
             className: 'mapboxgl-ctrl-icon mapboxgl-ctrl-nextloc',
             callback: () => showNextLocation(map),
+            scale: 1.5,
         };
 
         const precButtonOptions = {
             divClassName: 'mapboxgl-ctrl mapboxgl-ctrl-group',
             className: 'mapboxgl-ctrl-icon mapboxgl-ctrl-prevloc',
             callback: () => showPreviousLocation(map),
+            scale: 1.5,
         };
         
         const nextButton = new SimpleClickControl(nextButtonOptions);

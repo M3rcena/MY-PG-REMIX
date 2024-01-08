@@ -294,8 +294,9 @@
 }
 .home-hero-button1:hover {
   color: var(--dl-color-gray-white);
-  border-color: rgba(41, 20, 119, 0.9);
-  background-color: rgba(41, 20, 119, 0.9);
+  border-color: rgba(54, 21, 173, 0.9);
+  background-color: rgba(54, 21, 173, 0.9);
+  cursor: pointer;
 }
 .home-hero-button2 {
   color: var(--dl-color-gray-white);
@@ -310,6 +311,7 @@
 }
 .home-hero-button2:hover {
   border-color: var(--dl-color-gray-white);
+  cursor: pointer;
 }
 .home-details {
   flex: 0 0 auto;
@@ -607,6 +609,7 @@
 .home-button:hover {
   border-color: rgba(41, 20, 119, 0.9);
   background-color: rgba(217, 217, 217, 0.1);
+  cursor: pointer;
 }
 .home-pricing-card1 {
   gap: var(--dl-space-space-twounits);
@@ -758,6 +761,7 @@
 .home-button1:hover {
   border-color: rgba(41, 20, 119, 0.9);
   background-color: rgba(41, 20, 119, 0.9);
+  cursor: pointer;
 }
 .home-pricing-card2 {
   gap: var(--dl-space-space-twounits);
@@ -897,6 +901,7 @@
 .home-button2:hover {
   border-color: rgba(41, 20, 119, 0.9);
   background-color: rgba(41, 20, 119, 0.9);
+  cursor: pointer;
 }
 .home-gallery {
   flex: 0 0 auto;
@@ -953,8 +958,9 @@
   background-color: var(--dl-color-primary1-blue100);
 }
 .home-banner-button:hover {
-  border-color: rgba(41, 20, 119, 0.9);
-  background-color: rgba(41, 20, 119, 0.9);
+  border-color: rgba(54, 21, 173, 0.9);
+  background-color: rgba(54, 21, 173, 0.9);
+  cursor: pointer;
 }
 .home-faq {
   flex: 0 0 auto;

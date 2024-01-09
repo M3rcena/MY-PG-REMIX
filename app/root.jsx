@@ -16,7 +16,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <title>EPAL ALIMOU</title>
+        <title>MyPG | My Playground</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
         <meta property="twitter:card" content="summary_large_image" />

@@ -20,7 +20,7 @@ export default function Home() {
     <>
     <div className="home-container">
       <Helmet>
-        <title>EPAL ALIMOU</title>
+        <title>MyPG | My Playground</title>
         <meta property="og:title" content="EPAL ALIMOU" />
       </Helmet>
       <div className="home-header">

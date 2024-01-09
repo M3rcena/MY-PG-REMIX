@@ -16,4 +16,11 @@ app.listen(3000, '0.0.0.0', () => {
     broadcastDevReady(build);
   }
   console.log("App listening on http://0.0.0.0:3000");
+
+  console.table({
+    'Node Version: ': `${process.version}`,
+    '': '',
+    'Platform: ': `${process.platform} ${process.arch}`,
+    'RAM: ': `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB / ${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)} MB`
+  })
 });

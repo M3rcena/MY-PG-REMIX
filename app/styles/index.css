@@ -366,6 +366,13 @@
   margin-left: var(--dl-space-space-fourunits);
   border-radius: var(--dl-radius-radius-round);
 }
+.home-details-image2 {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: var(--dl-space-space-fourunits);
+  border-radius: var(--dl-radius-radius-round);
+}
 .home-features {
   flex: 0 0 auto;
   width: 100%;
@@ -1260,6 +1267,10 @@
     padding-right: var(--dl-space-space-unit);
   }
   .home-details-image {
+    margin-top: var(--dl-space-space-threeunits);
+    margin-left: 0px;
+  }
+  .home-details-image2 {
     margin-top: var(--dl-space-space-threeunits);
     margin-left: 0px;
   }

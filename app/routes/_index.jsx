@@ -13,7 +13,8 @@ export const links = () => {
     ...questionLinks(),
     { rel: 'stylesheet', href: indexStylesHref },
   ]
-}
+};
+
 export default function Home() {
   let navigate = useNavigate()
   return (

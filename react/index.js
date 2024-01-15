@@ -3,15 +3,15 @@ import { createRoot} from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "App";
 
-import { VisionUIControllerProvider } from "context";
+import { MyPGControllerProvider } from "context";
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 
 root.render(<BrowserRouter>
-  <VisionUIControllerProvider>
+  <MyPGControllerProvider>
     <App />
-  </VisionUIControllerProvider>
+  </MyPGControllerProvider>
 </BrowserRouter>)
 

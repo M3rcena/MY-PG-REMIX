@@ -20,10 +20,10 @@ import createCache from "@emotion/cache";
 
 import routes from "routes";
 
-import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
+import { useMyPGController, setMiniSidenav, setOpenConfigurator } from "context";
 
 export default function App() {
-  const [controller, dispatch] = useVisionUIController();
+  const [controller, dispatch] = useMyPGController();
   const { miniSidenav, direction, layout, openConfigurator, sidenavColor } = controller;
   const [onMouseEnter, setOnMouseEnter] = useState(false);
   const [rtlCache, setRtlCache] = useState(null);

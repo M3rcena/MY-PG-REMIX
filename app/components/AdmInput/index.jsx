@@ -7,11 +7,11 @@ import AdmInputWithIconRoot from "../AdmInput/AdmInputWithIconRoot";
 import AdmInputIconBoxRoot from "../AdmInput/AdmInputIconBoxRoot";
 import AdmInputIconRoot from "../AdmInput/AdmInputIconRoot";
 
-import { useVisionUIController } from "context";
+import { useMyPGController } from "context";
 
 const AdmInput = forwardRef(({ size, icon, error, success, disabled, ...rest }, ref) => {
   let template;
-  const [controller] = useVisionUIController();
+  const [controller] = useMyPGController();
   const { direction } = controller;
   const iconDirection = icon.direction;
 

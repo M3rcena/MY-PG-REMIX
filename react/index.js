@@ -3,7 +3,7 @@ import { createRoot} from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "App";
 
-import { MyPGControllerProvider } from "context";
+import { MyPGControllerProvider } from "remix/context";
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);

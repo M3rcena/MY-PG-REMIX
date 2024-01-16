@@ -1,5 +1,5 @@
-import borders from "remix/assets/admin-theme/base/borders";
-import colors from "remix/assets/admin-theme/base/colors";
+import borders from " assets/admin-theme/base/borders";
+import colors from " assets/admin-theme/base/colors";
 
 const { dark } = colors;
 const { borderWidth, borderColor } = borders;

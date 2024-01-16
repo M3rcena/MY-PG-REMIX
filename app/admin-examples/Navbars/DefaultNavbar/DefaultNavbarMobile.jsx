@@ -5,11 +5,11 @@ import PropTypes from "prop-types";
 import Menu from "@mui/material/Menu";
 // import Grid from "@mui/material/Grid";
 
-import AdmBox from "remix/components/AdmBox";
+import AdmBox from " components/AdmBox";
 
-import DefaultNavbarLink from "remix/admin-examples/Navbars/DefaultNavbar/DefaultNavbarLink";
-import palette from "remix/assets/admin-theme/base/colors";
-import tripleLinearGradient from "remix/assets/admin-theme/functions/tripleLinearGradient";
+import DefaultNavbarLink from " admin-examples/Navbars/DefaultNavbar/DefaultNavbarLink";
+import palette from " assets/admin-theme/base/colors";
+import tripleLinearGradient from " assets/admin-theme/functions/tripleLinearGradient";
 
 function DefaultNavbarMobile({ open, close }) {
   const { width } = open && open.getBoundingClientRect();

@@ -1,5 +1,5 @@
-import colors from "remix/assets/admin-theme/base/colors";
-import bgAdmin from "remix/assets/admin-images/body-background.png";
+import colors from " assets/admin-theme/base/colors";
+import bgAdmin from " assets/admin-images/body-background.png";
 
 const { info, dark } = colors;
 export default {

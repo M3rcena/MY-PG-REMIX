@@ -1,9 +1,9 @@
-import colors from "remix/assets/admin-theme/base/colors";
-import borders from "remix/assets/admin-theme/base/borders";
-import boxShadows from "remix/assets/admin-theme/base/boxShadows";
+import colors from " assets/admin-theme/base/colors";
+import borders from " assets/admin-theme/base/borders";
+import boxShadows from " assets/admin-theme/base/boxShadows";
 
-import linearGradient from "remix/assets/admin-theme/functions/linearGradient";
-import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
+import linearGradient from " assets/admin-theme/functions/linearGradient";
+import pxToRem from " assets/admin-theme/functions/pxToRem";
 
 const { light, white, sliderColors, black, gradients } = colors;
 const { borderRadius, borderWidth } = borders;

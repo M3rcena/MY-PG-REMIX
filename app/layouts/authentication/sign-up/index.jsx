@@ -2,27 +2,27 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import Icon from "@mui/material/Icon";
-import IconButton from "@mui/material/IconButton";
+import Icon from "@mui/material/node/Icon/index.js";
+import IconButton from "@mui/material/node/Icon/index.jsButton";
 import Stack from "@mui/material/Stack";
 
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmInput from "remix/components/AdmInput";
-import AdmButton from "remix/components/AdmButton";
-import AdmSwitch from "remix/components/AdmSwitch";
-import GradientBorder from "remix/admin-examples/GradientBorder";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmInput from " components/AdmInput";
+import AdmButton from " components/AdmButton";
+import AdmSwitch from " components/AdmSwitch";
+import GradientBorder from " admin-examples/GradientBorder";
 
-import radialGradient from "remix/assets/admin-theme/functions/radialGradient";
-import rgba from "remix/assets/admin-theme/functions/rgba";
-import palette from "remix/assets/admin-theme/base/colors";
-import borders from "remix/assets/admin-theme/base/borders";
+import radialGradient from " assets/admin-theme/functions/radialGradient";
+import rgba from " assets/admin-theme/functions/rgba";
+import palette from " assets/admin-theme/base/colors";
+import borders from " assets/admin-theme/base/borders";
 
-import CoverLayout from "remix/components/CoverLayout";
+import CoverLayout from " components/CoverLayout";
 
-import bgSignIn from "remix/assets/admin-images/signUpImage.png";
+import bgSignIn from " assets/admin-images/signUpImage.png";
 
 function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);

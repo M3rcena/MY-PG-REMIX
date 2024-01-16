@@ -1,5 +1,5 @@
-import InputBase from "@mui/material/InputBase";
-import { styled } from "@mui/material/styles";
+import InputBase from "@mui/material/node/InputBase/index.js";
+import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(InputBase)(({ theme, ownerState }) => {
   const { palette, boxShadows, functions, typography, borders } = theme;

@@ -8,18 +8,18 @@ import PropTypes from "prop-types";
 
 // @mui material components
 import Container from "@mui/material/Container";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmButton from "remix/components/AdmButton";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmButton from " components/AdmButton";
 
-import DefaultNavbarLink from "remix/admin-examples/Navbars/DefaultNavbar/DefaultNavbarLink";
-import DefaultNavbarMobile from "remix/admin-examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
+import DefaultNavbarLink from " admin-examples/Navbars/DefaultNavbar/DefaultNavbarLink";
+import DefaultNavbarMobile from " admin-examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
-import breakpoints from "remix/assets/admin-theme/base/breakpoints";
-import colors from "remix/assets/admin-theme/base/colors";
-import borders from "remix/assets/admin-theme/base/borders";
+import breakpoints from " assets/admin-theme/base/breakpoints";
+import colors from " assets/admin-theme/base/colors";
+import borders from " assets/admin-theme/base/borders";
 
 function DefaultNavbar({ transparent, light, action }) {
   const { borderCol } = colors;

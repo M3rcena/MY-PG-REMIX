@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 import { Breadcrumbs as MuiBreadcrumbs } from "@mui/material";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
+import AdmBox from "~/components/AdmBox";
+import AdmTypography from "~/components/AdmTypography";
 
 function Breadcrumbs({ icon, title, route, light }) {
   const routes = route.slice(0, -1);

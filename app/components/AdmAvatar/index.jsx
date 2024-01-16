@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmAvatarRoot from "remix/components/AdmAvatar/AdmAvatarRoot";
+import AdmAvatarRoot from " components/AdmAvatar/AdmAvatarRoot";
 
 const AdmAvatar = forwardRef(({ bgColor, size, shadow, ...rest }, ref) => (
   <AdmAvatarRoot ref={ref} ownerState={{ shadow, bgColor, size }} {...rest} />

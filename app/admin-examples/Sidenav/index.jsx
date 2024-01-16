@@ -10,22 +10,22 @@ import PropTypes from "prop-types";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmButton from "remix/components/AdmButton";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmButton from " components/AdmButton";
 
-import SidenavCollapse from "remix/admin-examples/Sidenav/SidenavCollapse";
-import SidenavCard from "remix/admin-examples/Sidenav/SidenavCard";
+import SidenavCollapse from " admin-examples/Sidenav/SidenavCollapse";
+import SidenavCard from " admin-examples/Sidenav/SidenavCard";
 
 // Custom styles for the Sidenav
-import SidenavRoot from "remix/admin-examples/Sidenav/SidenavRoot";
-import sidenavLogoLabel from "remix/admin-examples/Sidenav/styles/sidenav";
+import SidenavRoot from " admin-examples/Sidenav/SidenavRoot";
+import sidenavLogoLabel from " admin-examples/Sidenav/styles/sidenav";
 
 import { useMyPGController, setMiniSidenav, setTransparentSidenav } from "context";
 
-import SimmmpleLogo from "remix/admin-examples/Icons/SimmmpleLogo";
+import SimmmpleLogo from " admin-examples/Icons/SimmmpleLogo";
 
 // function Sidenav({ color, brand, brandName, routes, ...rest }) {
 function Sidenav({ color, brandName, routes, ...rest }) {

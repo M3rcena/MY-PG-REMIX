@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmButton from "remix/components/AdmButton";
-import linearGradient from "remix/assets/admin-theme/functions/linearGradient";
-import colors from "remix/assets/admin-theme/base/colors";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmButton from " components/AdmButton";
+import linearGradient from " assets/admin-theme/functions/linearGradient";
+import colors from " assets/admin-theme/base/colors";
 
 function Bill({ name, company, email, vat, noGutter }) {
   const { gradients } = colors;

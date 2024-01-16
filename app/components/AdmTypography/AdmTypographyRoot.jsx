@@ -1,5 +1,5 @@
-import Typography from "@mui/material/Typography";
-import { styled } from "@mui/material/styles";
+import Typography from "@mui/material/node/Typography/index.js";
+import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(Typography)(({ theme, ownerState }) => {
   const { palette, typography, functions } = theme;

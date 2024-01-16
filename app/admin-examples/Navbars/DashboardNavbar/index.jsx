@@ -9,16 +9,16 @@ import PropTypes from "prop-types";
 // @material-ui core components
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
+import IconButton from "@mui/material/node/Icon/index.jsButton";
 import Menu from "@mui/material/Menu";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmInput from "remix/components/AdmInput";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmInput from " components/AdmInput";
 
-import Breadcrumbs from "remix/admin-examples/Breadcrumbs";
-import NotificationItem from "remix/admin-examples/Items/NotificationItem";
+import Breadcrumbs from " admin-examples/Breadcrumbs";
+import NotificationItem from " admin-examples/Items/NotificationItem";
 
 // Custom styles for DashboardNavbar
 import {

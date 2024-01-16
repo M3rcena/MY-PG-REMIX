@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 
-import AdmBox from "remix/components/AdmBox";
+import AdmBox from " components/AdmBox";
 
 import MasterCard from "examples/Cards/MasterCard";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";

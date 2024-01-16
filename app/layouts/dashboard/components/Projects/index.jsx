@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 import Card from "@mui/material/Card";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { BsCheckCircleFill } from "react-icons/bs";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
 
-import Table from "remix/admin-examples/Tables/Table";
+import Table from " admin-examples/Tables/Table";
 
 import data from "./data";
 

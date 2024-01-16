@@ -1,12 +1,12 @@
 import Card from "@mui/material/Card";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
 
-import DashboardLayout from "remix/admin-examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "remix/admin-examples/Navbars/DashboardNavbar";
-import Footer from "remix/admin-examples/Footer";
-import Table from "remix/admin-examples/Tables/Table";
+import DashboardLayout from " admin-examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from " admin-examples/Navbars/DashboardNavbar";
+import Footer from " admin-examples/Footer";
+import Table from " admin-examples/Tables/Table";
 
 import authorsTableData from "./data/authorsTableData";
 import projectsTableData from "./data/projectsTableData";

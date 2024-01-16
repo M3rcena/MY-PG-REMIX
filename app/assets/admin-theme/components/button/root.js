@@ -1,7 +1,7 @@
-import typography from "remix/assets/admin-theme/base/typography";
-import borders from "remix/assets/admin-theme/base/borders";
+import typography from " assets/admin-theme/base/typography";
+import borders from " assets/admin-theme/base/borders";
 
-import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
+import pxToRem from " assets/admin-theme/functions/pxToRem";
 
 const { fontWeightBold, size } = typography;
 const { borderRadius } = borders;

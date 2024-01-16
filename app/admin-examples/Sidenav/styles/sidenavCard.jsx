@@ -1,5 +1,5 @@
 // Images
-import backgroundImage from "remix/assets/admin-images/sidenav/sidenav-card-background.png";
+import backgroundImage from " assets/admin-images/sidenav/sidenav-card-background.png";
 
 function card(theme, ownerState) {
   const { borders, functions, transitions, breakpoints } = theme;

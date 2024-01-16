@@ -2,9 +2,9 @@ import { useState, useEffect, useMemo } from "react";
 
 import { Route, Switch, Redirect, useLocation } from "react-router-dom";
 
-import { ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/node/styles/index.js";
 import CssBaseline from "@mui/material/CssBaseline";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
 import AdmBox from "components/AdmBox";
 
@@ -18,9 +18,9 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 
-import routes from "routes";
+import routes from " routes";
 
-import { useMyPGController, setMiniSidenav, setOpenConfigurator } from "context";
+import { useMyPGController, setMiniSidenav, setOpenConfigurator } from " context";
 
 export default function App() {
   const [controller, dispatch] = useMyPGController();

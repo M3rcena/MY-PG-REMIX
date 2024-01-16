@@ -1,7 +1,7 @@
-import colors from "remix/assets/admin-theme/base/colors";
+import colors from " assets/admin-theme/base/colors";
 import "./typography.css";
 
-import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
+import pxToRem from " assets/admin-theme/functions/pxToRem";
 
 const { dark } = colors;
 

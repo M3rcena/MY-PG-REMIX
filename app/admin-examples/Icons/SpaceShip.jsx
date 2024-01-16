@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import colors from "remix/assets/admin-theme/base/colors";
+import colors from " assets/admin-theme/base/colors";
 
 function SpaceShip({ color, size }) {
   return (

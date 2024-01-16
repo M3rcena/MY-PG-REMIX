@@ -6,9 +6,9 @@ import Collapse from "@mui/material/Collapse";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
+import AdmBox from " components/AdmBox";
 
 // Custom styles for the SidenavCollapse
 import {
@@ -16,7 +16,7 @@ import {
   collapseIconBox,
   collapseIcon,
   collapseText,
-} from "remix/admin-examples/Sidenav/styles/sidenavCollapse";
+} from " admin-examples/Sidenav/styles/sidenavCollapse";
 
 import { useMyPGController } from "context";
 

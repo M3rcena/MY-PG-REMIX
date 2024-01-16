@@ -1,4 +1,4 @@
-import colors from "remix/assets/admin-theme/base/colors";
+import colors from " assets/admin-theme/base/colors";
 
 const { transparent } = colors;
 

@@ -1,15 +1,15 @@
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 import Tooltip from "@mui/material/Tooltip";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmButton from "remix/components/AdmButton";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmButton from " components/AdmButton";
 
-import borders from "remix/assets/admin-theme/base/borders";
+import borders from " assets/admin-theme/base/borders";
 
-import colors from "remix/assets/admin-theme/base/colors";
+import colors from " assets/admin-theme/base/colors";
 
 import Mastercard from "examples/Icons/Mastercard";
 import Visa from "examples/Icons/Visa";

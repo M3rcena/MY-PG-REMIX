@@ -2,9 +2,9 @@ import { useState } from "react";
 
 import Card from "@mui/material/Card";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmSwitch from "remix/components/AdmSwitch";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmSwitch from " components/AdmSwitch";
 
 function PlatformSettings() {
   const [followsMe, setFollowsMe] = useState(true);

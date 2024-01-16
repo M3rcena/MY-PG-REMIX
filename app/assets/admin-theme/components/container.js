@@ -1,6 +1,6 @@
-import breakpoints from "remix/assets/admin-theme/base/breakpoints";
+import breakpoints from " assets/admin-theme/base/breakpoints";
 
-import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
+import pxToRem from " assets/admin-theme/functions/pxToRem";
 
 const {
   values: { sm, md, lg, xl, xxl },

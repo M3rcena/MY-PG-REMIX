@@ -2,9 +2,9 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmTypography from "remix/components/AdmTypography";
+import AdmTypography from " components/AdmTypography";
 
-import AdmProgressRoot from "remix/components/AdmProgress/AdmProgressRoot";
+import AdmProgressRoot from " components/AdmProgress/AdmProgressRoot";
 
 const AdmProgress = forwardRef(({ variant, color, value, label, ...rest }, ref) => (
   <>

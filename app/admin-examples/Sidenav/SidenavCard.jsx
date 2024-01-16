@@ -1,15 +1,15 @@
 // @mui material components
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 import Link from "@mui/material/Link";
 
-import AdmButton from "remix/components/AdmButton";
-import AdmBox from "remix/omponents/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
+import AdmButton from " components/AdmButton";
+import AdmBox from " omponents/AdmBox";
+import AdmTypography from " components/AdmTypography";
 
 // Custom styles for the SidenavCard
-import { card, cardContent, cardIconBox, cardIcon } from "remix/admin-examples/Sidenav/styles/sidenavCard";
+import { card, cardContent, cardIconBox, cardIcon } from " admin-examples/Sidenav/styles/sidenavCard";
 
 import { useMyPGController } from "context";
 

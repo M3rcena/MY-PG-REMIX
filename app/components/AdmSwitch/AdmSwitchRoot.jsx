@@ -1,5 +1,5 @@
 import Switch from "@mui/material/Switch";
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(Switch)(({ theme, ownerState }) => {
   const { palette } = theme;

@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import FeatureCard from '../components/feature-card'
-import Question from '../components/question'
+import FeatureCard from ' components/feature-card'
+import Question from ' components/question'
 import './home.css'
 
 const Home = (props) => {

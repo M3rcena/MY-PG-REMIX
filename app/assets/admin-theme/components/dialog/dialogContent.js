@@ -1,8 +1,8 @@
-import typography from "remix/assets/admin-theme/base/typography";
-import borders from "remix/assets/admin-theme/base/borders";
-import colors from "remix/assets/admin-theme/base/colors";
+import typography from " assets/admin-theme/base/typography";
+import borders from " assets/admin-theme/base/borders";
+import colors from " assets/admin-theme/base/colors";
 
-import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
+import pxToRem from " assets/admin-theme/functions/pxToRem";
 
 const { size } = typography;
 const { text } = colors;

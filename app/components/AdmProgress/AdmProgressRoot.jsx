@@ -1,4 +1,4 @@
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material/node/styles/index.js";
 import LinearProgress from "@mui/material/LinearProgress";
 
 export default styled(LinearProgress)(({ theme, ownerState }) => {

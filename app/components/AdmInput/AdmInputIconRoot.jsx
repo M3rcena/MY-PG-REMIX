@@ -1,5 +1,5 @@
-import Icon from "@mui/material/Icon";
-import { styled } from "@mui/material/styles";
+import Icon from "@mui/material/node/Icon/index.js";
+import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(Icon)(({ theme, ownerState }) => {
   const { typography } = theme;

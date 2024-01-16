@@ -3,17 +3,17 @@ import React from 'react';
 import { Card, Stack, Grid } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 
-import AdmBox from 'remix/components/AdmBox';
-import AdmTypography from 'remix/components/AdmTypography';
+import AdmBox from ' components/AdmBox';
+import AdmTypography from ' components/AdmTypography';
 
-import GreenLightning from 'remix/assets/admin-images/shapes/green-lightning.svg';
-import WhiteLightning from 'remix/assets/admin-images/shapes/white-lightning.svg';
-import carProfile from 'remix/assets/admin-images/shapes/car-profile.svg';
+import GreenLightning from ' assets/admin-images/shapes/green-lightning.svg';
+import WhiteLightning from ' assets/admin-images/shapes/white-lightning.svg';
+import carProfile from ' assets/admin-images/shapes/car-profile.svg';
 
-import linearGradient from 'remix/assets/admin-theme/functions/linearGradient';
-import colors from 'remix/assets/admin-theme/base/colors';
+import linearGradient from ' assets/admin-theme/functions/linearGradient';
+import colors from ' assets/admin-theme/base/colors';
 
-import LineChart from 'remix/admin-examples/Charts/LineCharts/LineChart';
+import LineChart from ' admin-examples/Charts/LineCharts/LineChart';
 
 import { lineChartDataProfile1, lineChartDataProfile2 } from 'variables/charts';
 import { lineChartOptionsProfile2, lineChartOptionsProfile1 } from 'variables/charts';

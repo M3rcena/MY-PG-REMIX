@@ -2,20 +2,20 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmInput from "remix/components/AdmInput";
-import AdmButton from "remix/components/AdmButton";
-import AdmSwitch from "remix/components/AdmSwitch";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmInput from " components/AdmInput";
+import AdmButton from " components/AdmButton";
+import AdmSwitch from " components/AdmSwitch";
 import GradientBorder from "examples/GradientBorder";
 
-import radialGradient from "remix//assets/admin-theme/functions/radialGradient";
-import palette from "remix//assets/admin-theme/base/colors";
-import borders from "remix//assets/admin-theme/base/borders";
+import radialGradient from " /assets/admin-theme/functions/radialGradient";
+import palette from " /assets/admin-theme/base/colors";
+import borders from " /assets/admin-theme/base/borders";
 
-import CoverLayout from "remix/components/CoverLayout";
+import CoverLayout from " components/CoverLayout";
 
-import bgSignIn from "remix/assets/admin-images/signInImage.png";
+import bgSignIn from " assets/admin-images/signInImage.png";
 
 function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);

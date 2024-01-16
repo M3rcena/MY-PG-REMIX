@@ -1,5 +1,5 @@
 import Avatar from "@mui/material/Avatar";
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(Avatar)(({ theme, ownerState }) => {
   const { palette, functions, typography, boxShadows } = theme;

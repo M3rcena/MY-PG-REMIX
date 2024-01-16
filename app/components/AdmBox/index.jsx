@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmBoxRoot from "remix/components/AdmBox/AdmBoxRoot";
+import AdmBoxRoot from " components/AdmBox/AdmBoxRoot";
 
 const AdmBox = forwardRef(
   ({ variant, bgColor, color, opacity, borderRadius, shadow, ...rest }, ref) => (

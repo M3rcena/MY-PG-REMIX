@@ -5,13 +5,13 @@ import PropTypes from "prop-types";
 
 // @mui material components
 import MenuItem from "@mui/material/MenuItem";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
 
 // custom styles for the NotificationItem
-import { menuItem, menuImage } from "remix/examples/Items/NotificationItem/styles";
+import { menuItem, menuImage } from " examples/Items/NotificationItem/styles";
 
 const NotificationItem = forwardRef(({ color, image, title, date, ...rest }, ref) => (
   <MenuItem {...rest} ref={ref} sx={(theme) => menuItem(theme)}>

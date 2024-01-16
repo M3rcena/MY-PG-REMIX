@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import colors from "remix/assets/admin-theme/base/colors";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import colors from " assets/admin-theme/base/colors";
 
 function MiniStatisticsCard({ bgColor, title, count, percentage, icon, direction }) {
   const { info } = colors;

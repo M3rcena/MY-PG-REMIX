@@ -1,4 +1,4 @@
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled("span")(({ theme }) => {
   const { palette, typography, functions, transitions } = theme;

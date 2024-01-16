@@ -1,5 +1,5 @@
 import Drawer from "@mui/material/Drawer";
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(Drawer)(({ theme, ownerState }) => {
   const { boxShadows, functions, transitions, palette } = theme;

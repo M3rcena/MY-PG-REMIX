@@ -2,17 +2,17 @@
 import PropTypes from "prop-types";
 
 // @mui material components
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmBadge from "remix/components/AdmBadge";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmBadge from " components/AdmBadge";
 
 // Timeline context
-import { useTimeline } from "remix/admin-examples/Timeline/context";
+import { useTimeline } from " admin-examples/Timeline/context";
 
 // Custom styles for the TimelineItem
-import { timelineItem } from "remix/admin-examples/Timeline/TimelineItem/styles";
+import { timelineItem } from " admin-examples/Timeline/TimelineItem/styles";
 
 function TimelineItem({ color, icon, title, dateTime, description, badges, lastItem }) {
   const isDark = useTimeline();

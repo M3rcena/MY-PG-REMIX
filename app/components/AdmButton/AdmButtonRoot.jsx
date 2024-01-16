@@ -1,6 +1,6 @@
-import Button from "@mui/material/Button";
-import { styled } from "@mui/material/styles";
-import linearGradient from "remix/components/admin-theme/functions/linearGradient";
+import Button from "@mui/material/node/Button/index.js";
+import { styled } from "@mui/material/node/styles/index.js";
+import linearGradient from " components/admin-theme/functions/linearGradient";
 
 export default styled(Button)(({ theme, ownerState }) => {
   const { palette, functions, borders } = theme;

@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 
 import Grid from "@mui/material/Grid";
 
-import AdmBox from "remix/components/components/AdmBox";
-import AdmTypography from "remix/components/components/AdmTypography";
+import AdmBox from " components/components/AdmBox";
+import AdmTypography from " components/components/AdmTypography";
 
-import PageLayout from "remix/admin-examples/LayoutContainers/PageLayout";
+import PageLayout from " admin-examples/LayoutContainers/PageLayout";
 
-import Footer from "remix/layouts/authentication/components/Footer";
+import Footer from " layouts/authentication/components/Footer";
 
 function BasicLayout({ title, description, image, children }) {
   return (

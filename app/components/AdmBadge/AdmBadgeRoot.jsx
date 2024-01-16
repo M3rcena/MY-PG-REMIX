@@ -1,5 +1,5 @@
 import Badge from "@mui/material/Badge";
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(Badge)(({ theme, ownerState }) => {
   const { palette, typography, borders, functions } = theme;

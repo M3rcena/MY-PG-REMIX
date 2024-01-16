@@ -7,10 +7,10 @@ import { json } from "@remix-run/node";
 
 import { useLoaderData } from "@remix-run/react";
 
-import SimpleClickControl from "../components/map/click/SimpleClickControl";
+import SimpleClickControl from " components/map/click/SimpleClickControl";
 
 import mapboxgl from "mapbox-gl";
-import controlStyles from "../components/map/click/styles.css";
+import controlStyles from " components/map/click/styles.css";
 
 export async function loader() {
     const locations = [

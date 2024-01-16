@@ -3,22 +3,22 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
-import team1 from "remix/assets/admin-images/avatar1.png";
-import team2 from "remix/assets/admin-images/avatar2.png";
-import team3 from "remix/assets/admin-images/avatar3.png";
-import team4 from "remix/assets/admin-images/avatar4.png";
+import team1 from " assets/admin-images/avatar1.png";
+import team2 from " assets/admin-images/avatar2.png";
+import team3 from " assets/admin-images/avatar3.png";
+import team4 from " assets/admin-images/avatar4.png";
 
-import profile1 from "remix/assets/admin-images/profile-1.png";
-import profile2 from "remix/assets/admin-images/profile-2.png";
-import profile3 from "remix/assets/admin-images/profile-3.png";
+import profile1 from " assets/admin-images/profile-1.png";
+import profile2 from " assets/admin-images/profile-2.png";
+import profile3 from " assets/admin-images/profile-3.png";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import ProfileInfoCard from "remix/admin-examples/Cards/InfoCards/ProfileInfoCard";
-import DefaultProjectCard from "remix/admin-examples/Cards/ProjectCards/DefaultProjectCard";
-import Footer from "remix/admin-examples/Footer";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import ProfileInfoCard from " admin-examples/Cards/InfoCards/ProfileInfoCard";
+import DefaultProjectCard from " admin-examples/Cards/ProjectCards/DefaultProjectCard";
+import Footer from " admin-examples/Footer";
 
-import DashboardLayout from "remix/admin-examples/LayoutContainers/DashboardLayout";
+import DashboardLayout from " admin-examples/LayoutContainers/DashboardLayout";
 
 import Header from "./components/Header";
 import PlatformSettings from "./components/PlatformSettings";

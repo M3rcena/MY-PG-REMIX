@@ -4,11 +4,11 @@ import { FaEllipsisH } from 'react-icons/fa';
 import { Card, Stack } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 
-import AdmBox from 'remix/components/AdmBox';
-import AdmTypography from 'remix/components/AdmTypography';
+import AdmBox from ' components/AdmBox';
+import AdmTypography from ' components/AdmTypography';
 
-import colors from 'remix/assets/admin-theme/base/colors';
-import linearGradient from 'remix/assets/admin-theme/functions/linearGradient';
+import colors from ' assets/admin-theme/base/colors';
+import linearGradient from ' assets/admin-theme/functions/linearGradient';
 
 function ReferralTracking() {
 	const { info, gradients } = colors;

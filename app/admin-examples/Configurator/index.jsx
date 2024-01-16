@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react";
 
 import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
+import IconButton from "@mui/material/node/Icon/index.jsButton";
 import Link from "@mui/material/Link";
-import Icon from "@mui/material/Icon";
+import Icon from "@mui/material/node/Icon/index.js";
 
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-import AdmBox from "remix/components/AdmBox";
-import AdmTypography from "remix/components/AdmTypography";
-import AdmButton from "remix/components/AdmButton";
-import AdmSwitch from "remix/components/AdmSwitch";
+import AdmBox from " components/AdmBox";
+import AdmTypography from " components/AdmTypography";
+import AdmButton from " components/AdmButton";
+import AdmSwitch from " components/AdmSwitch";
 
-import ConfiguratorRoot from "remix/admin-examples/Configurator/ConfiguratorRoot";
+import ConfiguratorRoot from " admin-examples/Configurator/ConfiguratorRoot";
 
 import {
   useMyPGController,

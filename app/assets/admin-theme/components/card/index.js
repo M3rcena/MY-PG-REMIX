@@ -1,9 +1,9 @@
-import colors from "../admin-theme/base/colors";
-import linearGradient from "../admin-theme/functions/linearGradient";
-import borders from "../admin-theme/base/borders";
-import boxShadows from "../admin-theme/base/boxShadows";
+import colors from "remix/assets/admin-theme/base/colors";
+import linearGradient from "remix/assets/admin-theme/functions/linearGradient";
+import borders from "remix/assets/admin-theme/base/borders";
+import boxShadows from "remix/assets/admin-theme/base/boxShadows";
 
-import rgba from "../admin-theme/functions/rgba";
+import rgba from "remix/assets/admin-theme/functions/rgba";
 
 const { black, gradients } = colors;
 const { card } = gradients;

@@ -2,8 +2,8 @@
   The boxShadow() function helps you to create a box shadow for an element
  */
 
-import rgba from "../admin-theme/functions/rgba";
-import pxToRem from "../admin-theme/functions/pxToRem";
+import rgba from "remix/assets/admin-theme/functions/rgba";
+import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
 
 function boxShadow(offset = [], radius = [], color, opacity, inset = "") {
   const [x, y] = offset;

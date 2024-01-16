@@ -1,22 +1,22 @@
 import Icon from "@mui/material/Icon";
 
-import AdmBox from "../../../../components/AdmBox";
-import AdmTypography from "../../../../components/AdmTypography";
-import AdmProgress from "../../../../components/AdmProgress";
+import AdmBox from "remix/components/AdmBox";
+import AdmTypography from "remix/components/AdmTypography";
+import AdmProgress from "remix/components/AdmProgress";
 
-import AdobeXD from "examples/Icons/AdobeXD";
-import Atlassian from "examples/Icons/Atlassian";
-import Slack from "examples/Icons/Slack";
-import Spotify from "examples/Icons/Spotify";
-import Jira from "examples/Icons/Jira";
-import Invision from "examples/Icons/Invision";
+import AdobeXD from "remix/admin-examples/Icons/AdobeXD";
+import Atlassian from "remix/admin-examples/Icons/Atlassian";
+import Slack from "remix/admin-examples/Icons/Slack";
+import Spotify from "remix/admin-examples/Icons/Spotify";
+import Jira from "remix/admin-examples/Icons/Jira";
+import Invision from "remix/admin-examples/Icons/Invision";
 
-import logoSpotify from "../../../../assets/admin-images/small-logos/logo-spotify.svg";
-import logoInvesion from "../../../../assets/admin-images/small-logos/logo-invision.svg";
-import logoJira from "../../../../assets/admin-images/small-logos/logo-jira.svg";
-import logoSlack from "../../../../assets/admin-images/small-logos/logo-slack.svg";
-import logoWebDev from "../../../../assets/admin-images/small-logos/logo-webdev.svg";
-import logoXD from "../../../../assets/admin-images/small-logos/logo-xd.svg";
+import logoSpotify from "remix/assets/admin-images/small-logos/logo-spotify.svg";
+import logoInvesion from "remix/assets/admin-images/small-logos/logo-invision.svg";
+import logoJira from "remix/assets/admin-images/small-logos/logo-jira.svg";
+import logoSlack from "remix/assets/admin-images/small-logos/logo-slack.svg";
+import logoWebDev from "remix/assets/admin-images/small-logos/logo-webdev.svg";
+import logoXD from "remix/assets/admin-images/small-logos/logo-xd.svg";
 
 function Completion({ value, color }) {
   return (

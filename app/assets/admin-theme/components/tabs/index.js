@@ -1,7 +1,7 @@
-import colors from "../admin-theme/base/colors";
-import borders from "../admin-theme/base/borders";
+import colors from "remix/assets/admin-theme/base/colors";
+import borders from "remix/assets/admin-theme/base/borders";
 
-import pxToRem from "../admin-theme/functions/pxToRem";
+import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
 
 const { grey, info } = colors;
 const { borderRadius } = borders;

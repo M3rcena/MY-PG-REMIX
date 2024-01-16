@@ -1,11 +1,11 @@
 import Card from "@mui/material/Card";
 
-import AdmBox from "../../../../components/AdmBox";
-import AdmTypography from "../../../../components/AdmTypography";
-import AdmButton from "../../../../components/AdmButton";
+import AdmBox from "remix/components/AdmBox";
+import AdmTypography from "remix/components/AdmTypography";
+import AdmButton from "remix/components/AdmButton";
 
 // Billing page components
-import Invoice from "../Invoice";
+import Invoice from "remix/layouts/billing/components/Invoice";
 
 function Invoices() {
   return (

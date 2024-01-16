@@ -1,5 +1,5 @@
-import colors from "../admin-theme/base/colors";
-import typography from "../admin-theme/base/typography";
+import colors from "remix/assets/admin-theme/base/colors";
+import typography from "remix/assets/admin-theme/base/typography";
 
 const { grey, text, info } = colors;
 const { size } = typography;

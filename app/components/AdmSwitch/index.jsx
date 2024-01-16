@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmSwitchRoot from "../AdmSwitch/AdmSwitchRoot";
+import AdmSwitchRoot from "remix/components/AdmSwitch/AdmSwitchRoot";
 
 const AdmSwitch = forwardRef(({ color, size, ...rest }, ref) => (
   <AdmSwitchRoot {...rest} ref={ref} color="white" size={size} ownerState={{ color, size }} />

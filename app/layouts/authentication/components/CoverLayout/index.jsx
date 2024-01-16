@@ -1,15 +1,15 @@
 import PropTypes from "prop-types";
 
-import AdmBox from "../../../../components/AdmBox";
-import AdmTypography from "../../../../components/AdmTypography";
+import AdmBox from "remix/components/AdmBox";
+import AdmTypography from "remix/components/AdmTypography";
 
-import PageLayout from "examples/LayoutContainers/PageLayout";
+import PageLayout from "remix/admin-examples/LayoutContainers/PageLayout";
 
-import Footer from "../Footer";
+import Footer from "remix/layouts/authentication/components/Footer";
 
-import colors from "../../../../assets/admin-theme/base/colors";
+import colors from "remix/assets/admin-theme/base/colors";
 
-import tripleLinearGradient from "../../../../assets/admin-theme/functions/tripleLinearGradient";
+import tripleLinearGradient from "remix/assets/admin-theme/functions/tripleLinearGradient";
 
 function CoverLayout({
   color,

@@ -2,9 +2,9 @@ import { forwardRef, createContext, useContext } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmBox from "../AdmBox";
+import AdmBox from "remix/components/AdmBox";
 
-import AdmPaginationItemRoot from "../AdmPagination/AdmPaginationItemRoot";
+import AdmPaginationItemRoot from "remix/components/AdmPagination/AdmPaginationItemRoot";
 
 const Context = createContext();
 

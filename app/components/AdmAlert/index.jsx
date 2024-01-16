@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 
 import Fade from "@mui/material/Fade";
 
-import AdmBox from "../AdmBox";
+import AdmBox from "remix/components/AdmBox";
 
-import AdmAlertRoot from "components/AdmAlert/AdmAlertRoot";
-import AdmAlertCloseIcon from "components/AdmAlert/AdmAlertCloseIcon";
+import AdmAlertRoot from "remix/components/AdmAlert/AdmAlertRoot";
+import AdmAlertCloseIcon from "remix/components/AdmAlert/AdmAlertCloseIcon";
 
 function AdmAlert({ color, dismissible, children, ...rest }) {
   const [alertStatus, setAlertStatus] = useState("mount");

@@ -2,10 +2,10 @@ import React from "react";
 
 import { Card, Icon } from "@mui/material";
 
-import welcome from "../../../../assets/admin-images/welcome-profile.png";
+import welcome from "remix/assets/admin-images/welcome-profile.png";
 
-import AdmTypography from "../../../..components/AdmTypography/index";
-import AdmBox from "../../../..components/AdmBox/index";
+import AdmTypography from "remix/components/AdmTypography/index";
+import AdmBox from "remix/components/AdmBox/index";
 
 const Welcome = () => {
   return (

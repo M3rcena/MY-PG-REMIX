@@ -1,5 +1,5 @@
-import borders from "../admin-theme/base/borders";
-import boxShadows from "../admin-theme/base/boxShadows";
+import borders from "remix/assets/admin-theme/base/borders";
+import boxShadows from "remix/assets/admin-theme/base/boxShadows";
 
 const { borderRadius } = borders;
 const { xxl } = boxShadows;

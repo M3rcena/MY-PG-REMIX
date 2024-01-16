@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmButtonRoot from "../AdmButton/AdmButtonRoot";
+import AdmButtonRoot from "remix/components/AdmButton/AdmButtonRoot";
 
 const AdmButton = forwardRef(
   ({ color, variant, size, circular, iconOnly, children, ...rest }, ref) => (

@@ -1,6 +1,6 @@
-import typography from "../admin-theme/base/typography";
+import typography from "remix/assets/admin-theme/base/typography";
 
-import pxToRem from "../admin-theme/functions/pxToRem";
+import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
 
 const { size } = typography;
 

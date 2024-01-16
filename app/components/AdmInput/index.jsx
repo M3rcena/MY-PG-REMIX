@@ -2,10 +2,10 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmInputRoot from "../AdmInput/AdmInputRoot";
-import AdmInputWithIconRoot from "../AdmInput/AdmInputWithIconRoot";
-import AdmInputIconBoxRoot from "../AdmInput/AdmInputIconBoxRoot";
-import AdmInputIconRoot from "../AdmInput/AdmInputIconRoot";
+import AdmInputRoot from "remix/components/AdmInput/AdmInputRoot";
+import AdmInputWithIconRoot from "remix/components/AdmInput/AdmInputWithIconRoot";
+import AdmInputIconBoxRoot from "remix/components/AdmInput/AdmInputIconBoxRoot";
+import AdmInputIconRoot from "remix/components/AdmInput/AdmInputIconRoot";
 
 import { useMyPGController } from "context";
 

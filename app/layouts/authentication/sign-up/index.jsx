@@ -8,21 +8,21 @@ import Stack from "@mui/material/Stack";
 
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 
-import AdmBox from "../../../../components/AdmBox";
-import AdmTypography from "../../../../components/AdmTypography";
-import AdmInput from "../../../../components/AdmInput";
-import AdmButton from "../../../../components/AdmButton";
-import AdmSwitch from "../../../../components/AdmSwitch";
-import GradientBorder from "examples/GradientBorder";
+import AdmBox from "remix/components/AdmBox";
+import AdmTypography from "remix/components/AdmTypography";
+import AdmInput from "remix/components/AdmInput";
+import AdmButton from "remix/components/AdmButton";
+import AdmSwitch from "remix/components/AdmSwitch";
+import GradientBorder from "remix/admin-examples/GradientBorder";
 
-import radialGradient from "../../../../assets/admin-theme/functions/radialGradient";
-import rgba from "../../../../assets/admin-theme/functions/rgba";
-import palette from "../../../../assets/admin-theme/base/colors";
-import borders from "../../../../assets/admin-theme/base/borders";
+import radialGradient from "remix/assets/admin-theme/functions/radialGradient";
+import rgba from "remix/assets/admin-theme/functions/rgba";
+import palette from "remix/assets/admin-theme/base/colors";
+import borders from "remix/assets/admin-theme/base/borders";
 
-import CoverLayout from "../components/CoverLayout";
+import CoverLayout from "remix/components/CoverLayout";
 
-import bgSignIn from "../../../../assets/admin-images/signUpImage.png";
+import bgSignIn from "remix/assets/admin-images/signUpImage.png";
 
 function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);

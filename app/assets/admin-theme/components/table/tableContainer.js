@@ -1,6 +1,6 @@
-import colors from "../admin-theme/base/colors";
-import boxShadows from "../admin-theme/base/boxShadows";
-import borders from "../admin-theme/base/borders";
+import colors from "remix/assets/admin-theme/base/colors";
+import boxShadows from "remix/assets/admin-theme/base/boxShadows";
+import borders from "remix/assets/admin-theme/base/borders";
 
 const { transparent } = colors;
 const { xxl } = boxShadows;

@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 
 import Tooltip from "@mui/material/Tooltip";
 
-import AdmBox from "../../../../components/AdmBox";
-import AdmTypography from "../../../../components/AdmTypography";
-import AdmButton from "../../../../components/AdmButton";
-import AdmAvatar from "../../../../components/AdmAvatar";
+import AdmBox from "remix/components/AdmBox";
+import AdmTypography from "remix/components/AdmTypography";
+import AdmButton from "remix/components/AdmButton";
+import AdmAvatar from "remix/components/AdmAvatar";
 
 function DefaultProjectCard({ image, label, title, description, action, authors }) {
   const renderAuthors = authors.map(({ image: media, name }) => (

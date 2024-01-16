@@ -2,7 +2,7 @@
 
 import { styled } from "@mui/material/styles";
 
-import AdmButton from "../AdmButton";
+import AdmButton from "remix/components/AdmButton";
 
 export default styled(AdmButton)(({ theme, ownerState }) => {
   const { borders, functions, typography, palette } = theme;

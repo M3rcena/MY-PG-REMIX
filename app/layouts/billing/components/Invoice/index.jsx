@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-import AdmBox from "../../../../components/AdmBox";
-import AdmTypography from "../../../../components/AdmTypography";
+import AdmBox from "remix/components/AdmBox";
+import AdmTypography from "remix/components/AdmTypography";
 import { IoDocumentText } from "react-icons/io5";
 
 function Invoice({ date, id, price }) {

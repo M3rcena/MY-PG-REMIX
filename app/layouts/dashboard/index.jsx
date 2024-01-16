@@ -2,18 +2,18 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import { Card, LinearProgress, Stack } from "@mui/material";
 
-import AdmBox from "../../../../components/AdmBox";
-import AdmTypography from "../../../../components/AdmTypography";
-import AdmProgress from "../../../../components/AdmProgress";
+import AdmBox from "remix/components/AdmBox";
+import AdmTypography from "remix/components/AdmTypography";
+import AdmProgress from "remix/components/AdmProgress";
 
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
+import DashboardLayout from "remix/admin-examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "remix/admin-examples/Navbars/DashboardNavbar";
+import Footer from "remix/admin-examples/Footer";
 import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
-import linearGradient from "../../../../assets/admin-theme/functions/linearGradient";
+import linearGradient from "remix/assets/admin-theme/functions/linearGradient";
 
-import typography from "../../../../assets/admin-theme/base/typography";
-import colors from "../../../../assets/admin-theme/base/colors";
+import typography from "remix/assets/admin-theme/base/typography";
+import colors from "remix/assets/admin-theme/base/colors";
 
 import WelcomeMark from "./components/WelcomeMark";
 import Projects from "./components/Projects";

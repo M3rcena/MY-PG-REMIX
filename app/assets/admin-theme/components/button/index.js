@@ -1,7 +1,7 @@
-import root from "../admin-theme/components/button/root";
-import contained from "../admin-theme/components/button/contained";
-import outlined from "../admin-theme/components/button/outlined";
-import text from "../admin-theme/components/button/text";
+import root from "remix/assets/admin-theme/components/button/root";
+import contained from "remix/assets/admin-theme/components/button/contained";
+import outlined from "remix/assets/admin-theme/components/button/outlined";
+import text from "remix/assets/admin-theme/components/button/text";
 
 export default {
   defaultProps: {

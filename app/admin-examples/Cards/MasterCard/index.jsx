@@ -1,8 +1,8 @@
 import Card from "@mui/material/Card";
 import billingCard from "assets/images/billing-background-card.png";
 
-import AdmBox from "../../../components/AdmBox";
-import AdmTypography from "../../../components/AdmTypography";
+import AdmBox from "remix/components/AdmBox";
+import AdmTypography from "remix/components/AdmTypography";
 import PropTypes from "prop-types";
 import { RiMastercardFill } from "react-icons/ri";
 

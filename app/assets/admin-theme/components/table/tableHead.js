@@ -1,6 +1,6 @@
-import borders from "../admin-theme/base/borders";
+import borders from "remix/assets/admin-theme/base/borders";
 
-import pxToRem from "../admin-theme/functions/pxToRem";
+import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
 
 const { borderRadius } = borders;
 

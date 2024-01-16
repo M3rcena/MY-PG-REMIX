@@ -1,8 +1,8 @@
-import colors from "../admin-theme/base/colors";
-import borders from "../admin-theme/base/borders";
+import colors from "remix/assets/admin-theme/base/colors";
+import borders from "remix/assets/admin-theme/base/borders";
 
-import rgba from "../admin-theme/functions/rgba";
-import pxToRem from "../admin-theme/functions/pxToRem";
+import rgba from "remix/assets/admin-theme/functions/rgba";
+import pxToRem from "remix/assets/admin-theme/functions/pxToRem";
 
 const { white } = colors;
 const { borderRadius } = borders;

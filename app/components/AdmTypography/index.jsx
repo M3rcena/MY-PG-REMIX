@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmTypographyRoot from "../AdmTypography/AdmTypographyRoot";
+import AdmTypographyRoot from "remix/components/AdmTypography/AdmTypographyRoot";
 
 const AdmTypography = forwardRef(
   (

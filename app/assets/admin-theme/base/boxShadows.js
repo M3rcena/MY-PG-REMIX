@@ -1,6 +1,6 @@
-import colors from "../admin-theme/base/colors";
+import colors from "remix/assets/admin-theme/base/colors";
 
-import boxShadow from "../admin-theme/functions/boxShadow";
+import boxShadow from "remix/assets/admin-theme/functions/boxShadow";
 
 const { black, white, info, inputColors, tabs } = colors;
 

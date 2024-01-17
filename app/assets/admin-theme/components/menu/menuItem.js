@@ -1,8 +1,8 @@
-import colors from " assets/admin-theme/base/colors";
-import borders from " assets/admin-theme/base/borders";
-import typography from " assets/admin-theme/base/typography";
+import colors from "~/assets/admin-theme/base/colors";
+import borders from "~/assets/admin-theme/base/borders";
+import typography from "~/assets/admin-theme/base/typography";
 
-import pxToRem from " assets/admin-theme/functions/pxToRem";
+import pxToRem from "~/assets/admin-theme/functions/pxToRem";
 
 const { light, text, dark } = colors;
 const { borderRadius } = borders;

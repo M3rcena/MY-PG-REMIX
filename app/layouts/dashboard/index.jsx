@@ -2,18 +2,18 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/node/Icon/index.js";
 import { Card, LinearProgress, Stack } from "@mui/material";
 
-import AdmBox from " components/AdmBox";
-import AdmTypography from " components/AdmTypography";
-import AdmProgress from " components/AdmProgress";
+import AdmBox from "~/components/AdmBox";
+import AdmTypography from "~/components/AdmTypography";
+import AdmProgress from "~/components/AdmProgress";
 
-import DashboardLayout from " admin-examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from " admin-examples/Navbars/DashboardNavbar";
-import Footer from " admin-examples/Footer";
-import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
-import linearGradient from " assets/admin-theme/functions/linearGradient";
+import DashboardLayout from "~/admin-examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "~/admin-examples/Navbars/DashboardNavbar";
+import Footer from "~/admin-examples/Footer";
+import MiniStatisticsCard from "~/admin-examples/Cards/StatisticsCards/MiniStatisticsCard";
+import linearGradient from "~/assets/admin-theme/functions/linearGradient";
 
-import typography from " assets/admin-theme/base/typography";
-import colors from " assets/admin-theme/base/colors";
+import typography from "~/assets/admin-theme/base/typography";
+import colors from "~/assets/admin-theme/base/colors";
 
 import WelcomeMark from "./components/WelcomeMark";
 import Projects from "./components/Projects";
@@ -28,8 +28,8 @@ import { IoWallet } from "react-icons/io5";
 import { IoDocumentText } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 
-import LineChart from "examples/Charts/LineCharts/LineChart";
-import BarChart from "examples/Charts/BarCharts/BarChart";
+import LineChart from "~/admin-examples/Charts/LineCharts/LineChart";
+import BarChart from "~/admin-examples/Charts/BarCharts/BarChart";
 import { lineChartDataDashboard } from "./dashboard/data/lineChartData";
 import { lineChartOptionsDashboard } from "./dashboard/data/lineChartOptions";
 import { barChartDataDashboard } from "./dashboard/data/barChartData";

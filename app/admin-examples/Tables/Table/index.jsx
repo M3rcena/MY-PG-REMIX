@@ -12,13 +12,13 @@ import TableBody from "@mui/material/TableBody";
 import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 
-import AdmBox from " components/AdmBox";
-import AdmAvatar from " components/AdmAvatar";
-import AdmTypography from " components/AdmTypography";
+import AdmBox from "~/components/AdmBox";
+import AdmAvatar from "~/components/AdmAvatar";
+import AdmTypography from "~/components/AdmTypography";
 
-import colors from " assets/admin-theme/base/colors";
-import typography from " assets/admin-theme/base/typography";
-import borders from " assets/admin-theme/base/borders";
+import colors from "~/assets/admin-theme/base/colors";
+import typography from "~/assets/admin-theme/base/typography";
+import borders from "~/assets/admin-theme/base/borders";
 
 function Table({ columns, rows }) {
   const { grey } = colors;

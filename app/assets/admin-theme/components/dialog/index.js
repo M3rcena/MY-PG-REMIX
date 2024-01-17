@@ -1,5 +1,5 @@
-import borders from " assets/admin-theme/base/borders";
-import boxShadows from " assets/admin-theme/base/boxShadows";
+import borders from "~/assets/admin-theme/base/borders";
+import boxShadows from "~/assets/admin-theme/base/boxShadows";
 
 const { borderRadius } = borders;
 const { xxl } = boxShadows;

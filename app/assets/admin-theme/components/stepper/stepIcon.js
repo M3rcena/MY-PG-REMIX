@@ -1,8 +1,8 @@
-import colors from " assets/admin-theme/base/colors";
-import borders from " assets/admin-theme/base/borders";
+import colors from "~/assets/admin-theme/base/colors";
+import borders from "~/assets/admin-theme/base/borders";
 
-import pxToRem from " assets/admin-theme/functions/pxToRem";
-import boxShadow from " assets/admin-theme/functions/boxShadow";
+import pxToRem from "~/assets/admin-theme/functions/pxToRem";
+import boxShadow from "~/assets/admin-theme/functions/boxShadow";
 
 const { dark, white } = colors;
 const { borderWidth, borderColor } = borders;

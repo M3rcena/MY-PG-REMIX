@@ -1,20 +1,20 @@
 import Tooltip from "@mui/material/Tooltip";
 
-import AdmBox from " components/AdmBox";
-import AdmTypography from " components/AdmTypography";
-import AdmAvatar from " components/AdmAvatar";
-import AdmProgress from " components/AdmProgress";
+import AdmBox from "~/components/AdmBox";
+import AdmTypography from "~/components/AdmTypography";
+import AdmAvatar from "~/components/AdmAvatar";
+import AdmProgress from "~/components/AdmProgress";
 
-import AdobeXD from " admin-examples/Icons/AdobeXD";
-import Atlassian from " admin-examples/Icons/Atlassian";
-import Slack from " admin-examples/Icons/Slack";
-import Spotify from " admin-examples/Icons/Spotify";
-import Jira from " admin-examples/Icons/Jira";
-import Invision from "examples/Icons/Invision";
-import avatar1 from " assets/admin-images/avatar1.png";
-import avatar2 from " assets/admin-images/avatar2.png";
-import avatar3 from " assets/admin-images/avatar3.png";
-import avatar4 from " assets/admin-images/avatar4.png";
+import AdobeXD from "~/admin-examples/Icons/AdobeXD";
+import Atlassian from "~/admin-examples/Icons/Atlassian";
+import Slack from "~/admin-examples/Icons/Slack";
+import Spotify from "~/admin-examples/Icons/Spotify";
+import Jira from "~/admin-examples/Icons/Jira";
+import Invision from "~/admin-examples/Icons/Invision";
+import avatar1 from "~/assets/admin-images/avatar1.png";
+import avatar2 from "~/assets/admin-images/avatar2.png";
+import avatar3 from "~/assets/admin-images/avatar3.png";
+import avatar4 from "~/assets/admin-images/avatar4.png";
 
 export default function data() {
   const avatars = (members) =>

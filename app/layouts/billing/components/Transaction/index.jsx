@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from " components/AdmBox";
-import AdmTypography from " components/AdmTypography";
-import AdmButton from " components/AdmButton";
+import AdmBox from "~/components/AdmBox";
+import AdmTypography from "~/components/AdmTypography";
+import AdmButton from "~/components/AdmButton";
 
 function Transaction({ color, icon, name, description, value }) {
   return (

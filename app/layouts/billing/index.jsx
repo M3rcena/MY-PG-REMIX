@@ -1,11 +1,11 @@
 import Grid from "@mui/material/Grid";
 
-import AdmBox from " components/AdmBox";
+import AdmBox from "~/components/AdmBox";
 
-import MasterCard from "examples/Cards/MasterCard";
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
+import MasterCard from "~/admin-examples/Cards/MasterCard";
+import DashboardLayout from "~/admin-examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "~/admin-examples/Navbars/DashboardNavbar";
+import Footer from "~/admin-examples/Footer";
 
 import PaymentMethod from "./components/PaymentMethod";
 import Invoices from "./components/Invoices";

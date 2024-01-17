@@ -2,7 +2,7 @@
 
 import { styled } from "@mui/material/node/styles/index.js";
 
-import AdmButton from " components/AdmButton";
+import AdmButton from "~/components/AdmButton";
 
 export default styled(AdmButton)(({ theme, ownerState }) => {
   const { borders, functions, typography, palette } = theme;

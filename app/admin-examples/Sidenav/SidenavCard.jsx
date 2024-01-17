@@ -4,14 +4,14 @@ import CardContent from "@mui/material/CardContent";
 import Icon from "@mui/material/node/Icon/index.js";
 import Link from "@mui/material/Link";
 
-import AdmButton from " components/AdmButton";
-import AdmBox from " omponents/AdmBox";
-import AdmTypography from " components/AdmTypography";
+import AdmButton from "~/components/AdmButton";
+import AdmBox from "~/components/AdmBox";
+import AdmTypography from "~/components/AdmTypography";
 
 // Custom styles for the SidenavCard
-import { card, cardContent, cardIconBox, cardIcon } from " admin-examples/Sidenav/styles/sidenavCard";
+import { card, cardContent, cardIconBox, cardIcon } from "~/admin-examples/Sidenav/styles/sidenavCard";
 
-import { useMyPGController } from "context";
+import { useMyPGController } from "~/context";
 
 function SidenavCard({ color, ...rest }) {
   const [controller] = useMyPGController();

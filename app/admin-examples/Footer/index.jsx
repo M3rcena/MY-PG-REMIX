@@ -1,5 +1,5 @@
-import AdmBox from " components/AdmBox";
-import AdmTypography from " components/AdmTypography";
+import AdmBox from "~/components/AdmBox";
+import AdmTypography from "~/components/AdmTypography";
 
 function Footer() {
   return (

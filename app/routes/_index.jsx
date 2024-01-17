@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import { FeatureCard, links as featureCardLinks } from ' components/feature-card/feature-card'
-import { Question, links as questionLinks } from ' components/question/question'
-import indexStylesHref from " styles/index.css"
+import { FeatureCard, links as featureCardLinks } from '~/components/feature-card/feature-card'
+import { Question, links as questionLinks } from '~/components/question/question'
+import indexStylesHref from "~/styles/index.css"
 import { Link, useNavigate } from '@remix-run/react'
 
 export const links = () => {

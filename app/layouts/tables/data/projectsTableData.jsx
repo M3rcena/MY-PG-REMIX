@@ -1,22 +1,22 @@
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from " components/AdmBox";
-import AdmTypography from " components/AdmTypography";
-import AdmProgress from " components/AdmProgress";
+import AdmBox from "~/components/AdmBox";
+import AdmTypography from "~/components/AdmTypography";
+import AdmProgress from "~/components/AdmProgress";
 
-import AdobeXD from " admin-examples/Icons/AdobeXD";
-import Atlassian from " admin-examples/Icons/Atlassian";
-import Slack from " admin-examples/Icons/Slack";
-import Spotify from " admin-examples/Icons/Spotify";
-import Jira from " admin-examples/Icons/Jira";
-import Invision from " admin-examples/Icons/Invision";
+import AdobeXD from "~/admin-examples/Icons/AdobeXD";
+import Atlassian from "~/admin-examples/Icons/Atlassian";
+import Slack from "~/admin-examples/Icons/Slack";
+import Spotify from "~/admin-examples/Icons/Spotify";
+import Jira from "~/admin-examples/Icons/Jira";
+import Invision from "~/admin-examples/Icons/Invision";
 
-import logoSpotify from " assets/admin-images/small-logos/logo-spotify.svg";
-import logoInvesion from " assets/admin-images/small-logos/logo-invision.svg";
-import logoJira from " assets/admin-images/small-logos/logo-jira.svg";
-import logoSlack from " assets/admin-images/small-logos/logo-slack.svg";
-import logoWebDev from " assets/admin-images/small-logos/logo-webdev.svg";
-import logoXD from " assets/admin-images/small-logos/logo-xd.svg";
+import logoSpotify from "~/assets/admin-images/small-logos/logo-spotify.svg";
+import logoInvesion from "~/assets/admin-images/small-logos/logo-invision.svg";
+import logoJira from "~/assets/admin-images/small-logos/logo-jira.svg";
+import logoSlack from "~/assets/admin-images/small-logos/logo-slack.svg";
+import logoWebDev from "~/assets/admin-images/small-logos/logo-webdev.svg";
+import logoXD from "~/assets/admin-images/small-logos/logo-xd.svg";
 
 function Completion({ value, color }) {
   return (

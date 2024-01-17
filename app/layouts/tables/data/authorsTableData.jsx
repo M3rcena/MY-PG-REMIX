@@ -1,14 +1,14 @@
-import AdmBox from " components/AdmBox";
-import AdmTypography from " components/AdmTypography";
-import AdmAvatar from " components/AdmAvatar";
-import AdmBadge from " components/AdmBadge";
+import AdmBox from "~/components/AdmBox";
+import AdmTypography from "~/components/AdmTypography";
+import AdmAvatar from "~/components/AdmAvatar";
+import AdmBadge from "~/components/AdmBadge";
 
-import avatar1 from " assets/admin-images/avatar1.png";
-import avatar2 from " assets/admin-images/avatar2.png";
-import avatar3 from " assets/admin-images/avatar3.png";
-import avatar4 from " assets/admin-images/avatar4.png";
-import avatar5 from " assets/admin-images/avatar5.png";
-import avatar6 from " assets/admin-images/avatar6.png";
+import avatar1 from "~/assets/admin-images/avatar1.png";
+import avatar2 from "~/assets/admin-images/avatar2.png";
+import avatar3 from "~/assets/admin-images/avatar3.png";
+import avatar4 from "~/assets/admin-images/avatar4.png";
+import avatar5 from "~/assets/admin-images/avatar5.png";
+import avatar6 from "~/assets/admin-images/avatar6.png";
 
 function Author({ image, name, email }) {
   return (

@@ -1,10 +1,10 @@
 import Grid from "@mui/material/node/Grid/index.js";
 
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook.js";
+import TwitterIcon from "@mui/icons-material/Twitter.js";
+import InstagramIcon from "@mui/icons-material/Instagram.js";
+import PinterestIcon from "@mui/icons-material/Pinterest.js";
+import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
 
 import AdmBox from "~/components/AdmBox";
 import AdmTypography from "~/components/AdmTypography";

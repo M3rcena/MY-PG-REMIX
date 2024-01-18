@@ -5,8 +5,8 @@ import IconButton from "@mui/material/node/Icon/index.jsButton";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/node/Icon/index.js";
 
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter.js";
+import FacebookIcon from "@mui/icons-material/Facebook.js";
 
 import AdmBox from "~/components/AdmBox";
 import AdmTypography from "~/components/AdmTypography";

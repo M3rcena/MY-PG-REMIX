@@ -7,6 +7,7 @@ import {
 } from "@remix-run/react";
 
 import appStylesHref from "./app.css";
+import React from "react";
 
 export let links = () => {
   return [{ rel: "stylesheet", href: appStylesHref }];

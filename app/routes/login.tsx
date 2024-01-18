@@ -16,6 +16,7 @@ import borders from "~/assets/admin-theme/base/borders";
 import CoverLayout from "~/layouts/authentication/components/CoverLayout";
 
 import bgSignIn from "~/assets/admin-images/signInImage.png";
+import React from "react";
 
 function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);

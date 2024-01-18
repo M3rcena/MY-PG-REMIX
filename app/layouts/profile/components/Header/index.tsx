@@ -1,6 +1,6 @@
 import AppBar from "@mui/material/AppBar";
 import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/node/Grid/index.js";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 

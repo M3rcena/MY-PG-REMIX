@@ -1,4 +1,4 @@
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/node/Grid/index.js";
 import Icon from "@mui/material/node/Icon/index.js";
 import { Card, LinearProgress, Stack } from "@mui/material";
 

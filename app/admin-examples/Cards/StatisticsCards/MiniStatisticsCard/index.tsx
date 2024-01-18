@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/node/Grid/index.js";
 import Icon from "@mui/material/node/Icon/index.js";
 
 import AdmBox from "~/components/AdmBox";

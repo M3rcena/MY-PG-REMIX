@@ -1,5 +1,5 @@
 import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/node/Grid/index.js";
 import Icon from "@mui/material/node/Icon/index.js";
 import Tooltip from "@mui/material/Tooltip";
 

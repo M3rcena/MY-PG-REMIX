@@ -2,7 +2,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/node/Grid/index.js";
 import team1 from "~/assets/admin-images/avatar1.png";
 import team2 from "~/assets/admin-images/avatar2.png";
 import team3 from "~/assets/admin-images/avatar3.png";

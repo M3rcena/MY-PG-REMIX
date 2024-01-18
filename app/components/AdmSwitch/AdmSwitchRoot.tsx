@@ -1,4 +1,4 @@
-import Switch from "@mui/material/Switch";
+import Switch from "@mui/material/node/Switch/index.js";
 import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(Switch)(({ theme, ownerState }) => {

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/node/Grid/index.js";
 
 import AdmBox from "~/components/AdmBox";
 import AdmTypography from "~/components/AdmTypography";

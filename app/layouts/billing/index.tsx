@@ -1,4 +1,4 @@
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/node/Grid/index.js";
 
 import AdmBox from "~/components/AdmBox";
 

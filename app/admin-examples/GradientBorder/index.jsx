@@ -1,4 +1,4 @@
-import AdmBox from "~/components/AdmBox";
+import AdmBox from "#app/components/AdmBox";
 
 function GradientBorder(props) {
   const { backgroundImage, children, borderRadius, width, minWidth, ...rest } = props;

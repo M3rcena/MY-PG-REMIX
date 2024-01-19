@@ -1,8 +1,8 @@
-import colors from "~/assets/admin-theme/base/colors";
-import typography from "~/assets/admin-theme/base/typography";
-import boxShadows from "~/assets/admin-theme/base/boxShadows";
+import colors from "#app/assets/admin-theme/base/colors";
+import typography from "#app/assets/admin-theme/base/typography";
+import boxShadows from "#app/assets/admin-theme/base/boxShadows";
 
-import pxToRem from "~/assets/admin-theme/functions/pxToRem";
+import pxToRem from "#app/assets/admin-theme/functions/pxToRem";
 
 const { transparent, light, info, secondary } = colors;
 const { size } = typography;

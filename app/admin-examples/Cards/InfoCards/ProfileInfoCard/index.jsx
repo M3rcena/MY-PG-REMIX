@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import Divider from "@mui/material/Divider";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
-import colors from "~/assets/admin-theme/base/colors";
-import typography from "~/assets/admin-theme/base/typography";
+import colors from "#app/assets/admin-theme/base/colors";
+import typography from "#app/assets/admin-theme/base/typography";
 
 function ProfileInfoCard({ title, description, info, social }) {
   const labels = [];

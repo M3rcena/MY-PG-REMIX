@@ -2,20 +2,20 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
-import AdmInput from "~/components/AdmInput";
-import AdmButton from "~/components/AdmButton";
-import AdmSwitch from "~/components/AdmSwitch";
-import GradientBorder from "~/examples/GradientBorder";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
+import AdmInput from "#app/components/AdmInput";
+import AdmButton from "#app/components/AdmButton";
+import AdmSwitch from "#app/components/AdmSwitch";
+import GradientBorder from "#app/examples/GradientBorder";
 
-import radialGradient from "~/assets/admin-theme/functions/radialGradient";
-import palette from "~/assets/admin-theme/base/colors";
-import borders from "~/assets/admin-theme/base/borders";
+import radialGradient from "#app/assets/admin-theme/functions/radialGradient";
+import palette from "#app/assets/admin-theme/base/colors";
+import borders from "#app/assets/admin-theme/base/borders";
 
-import CoverLayout from "~/components/CoverLayout";
+import CoverLayout from "#app/components/CoverLayout";
 
-import bgSignIn from "~/assets/admin-images/signInImage.png";
+import bgSignIn from "#app/assets/admin-images/signInImage.png";
 
 function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);

@@ -12,20 +12,20 @@ import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
-import AdmButton from "~/components/AdmButton";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
+import AdmButton from "#app/components/AdmButton";
 
-import SidenavCollapse from "~/admin-examples/Sidenav/SidenavCollapse";
-import SidenavCard from "~/admin-examples/Sidenav/SidenavCard";
+import SidenavCollapse from "#app/admin-examples/Sidenav/SidenavCollapse";
+import SidenavCard from "#app/admin-examples/Sidenav/SidenavCard";
 
 // Custom styles for the Sidenav
-import SidenavRoot from "~/admin-examples/Sidenav/SidenavRoot";
-import sidenavLogoLabel from "~/admin-examples/Sidenav/styles/sidenav";
+import SidenavRoot from "#app/admin-examples/Sidenav/SidenavRoot";
+import sidenavLogoLabel from "#app/admin-examples/Sidenav/styles/sidenav";
 
-import { useMyPGController, setMiniSidenav, setTransparentSidenav } from "~/context";
+import { useMyPGController, setMiniSidenav, setTransparentSidenav } from "#app/context";
 
-import SimmmpleLogo from "~/admin-examples/Icons/SimmmpleLogo";
+import SimmmpleLogo from "#app/admin-examples/Icons/SimmmpleLogo";
 
 // function Sidenav({ color, brand, brandName, routes, ...rest }) {
 function Sidenav({ color, brandName, routes, ...rest }) {

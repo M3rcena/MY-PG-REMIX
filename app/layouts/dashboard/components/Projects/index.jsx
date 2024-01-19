@@ -6,10 +6,10 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { BsCheckCircleFill } from "react-icons/bs";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
-import Table from "~/admin-examples/Tables/Table";
+import Table from "#app/admin-examples/Tables/Table";
 
 import data from "./data";
 

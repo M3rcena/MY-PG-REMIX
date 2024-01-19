@@ -1,9 +1,9 @@
 import Card from "@mui/material/Card";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
-import Bill from "~/layouts/billing/components/Bill";
+import Bill from "#app/layouts/billing/components/Bill";
 
 function BillingInformation() {
   return (

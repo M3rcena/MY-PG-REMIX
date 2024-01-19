@@ -1,10 +1,10 @@
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
-import Transaction from "~/layouts/billing/components/Transaction";
+import Transaction from "#app/layouts/billing/components/Transaction";
 
 function Transactions() {
   return (

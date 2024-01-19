@@ -1,4 +1,4 @@
-import borders from "~/assets/admin-theme/base/borders";
+import borders from "#app/assets/admin-theme/base/borders";
 
 const { borderRadius } = borders;
 

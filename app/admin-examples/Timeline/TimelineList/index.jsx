@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 // @mui material components
 import Card from "@mui/material/Card";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
 // Timeline context
-import { TimelineProvider } from "~/admin-examples/Timeline/context";
+import { TimelineProvider } from "#app/admin-examples/Timeline/context";
 
 function TimelineList({ title, dark, children }) {
   return (

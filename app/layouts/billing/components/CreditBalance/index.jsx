@@ -2,13 +2,13 @@ import React from "react";
 
 import { Card, Stack } from "@mui/material";
 
-import balance from "~/assets/admin-images/billing-background-balance.png";
-import Graph from "~/assets/admin-images/shapes/graph-billing.svg";
+import balance from "#app/assets/admin-images/billing-background-balance.png";
+import Graph from "#app/assets/admin-images/shapes/graph-billing.svg";
 
-import palette from "~/assets/admin-theme/base/colors";
+import palette from "#app/assets/admin-theme/base/colors";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
 import { FaEllipsisH } from "react-icons/fa";
 import { MdOutlineDomain } from "react-icons/md";

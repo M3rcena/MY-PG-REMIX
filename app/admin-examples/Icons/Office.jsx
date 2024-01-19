@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import colors from "~/assets/theme/base/colors";
+import colors from "#app/assets/theme/base/colors";
 
 function Office({ color, size }) {
   return (

@@ -1,11 +1,11 @@
 import Card from "@mui/material/Card";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
-import AdmButton from "~/components/AdmButton";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
+import AdmButton from "#app/components/AdmButton";
 
 // Billing page components
-import Invoice from "~/layouts/billing/components/Invoice";
+import Invoice from "#app/layouts/billing/components/Invoice";
 
 function Invoices() {
   return (

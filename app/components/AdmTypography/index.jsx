@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmTypographyRoot from "~/components/AdmTypography/AdmTypographyRoot";
+import AdmTypographyRoot from "#app/components/AdmTypography/AdmTypographyRoot";
 
 const AdmTypography = forwardRef(
   (

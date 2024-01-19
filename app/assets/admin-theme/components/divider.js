@@ -1,7 +1,7 @@
-import colors from "~/assets/admin-theme/base/colors";
+import colors from "#app/assets/admin-theme/base/colors";
 
-import rgba from "~/assets/admin-theme/functions/rgba";
-import pxToRem from "~/assets/admin-theme/functions/pxToRem";
+import rgba from "#app/assets/admin-theme/functions/rgba";
+import pxToRem from "#app/assets/admin-theme/functions/pxToRem";
 
 const { dark, transparent, white, info } = colors;
 

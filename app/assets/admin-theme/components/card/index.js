@@ -1,9 +1,9 @@
-import colors from "~/assets/admin-theme/base/colors";
-import linearGradient from "~/assets/admin-theme/functions/linearGradient";
-import borders from "~/assets/admin-theme/base/borders";
-import boxShadows from "~/assets/admin-theme/base/boxShadows";
+import colors from "#app/assets/admin-theme/base/colors";
+import linearGradient from "#app/assets/admin-theme/functions/linearGradient";
+import borders from "#app/assets/admin-theme/base/borders";
+import boxShadows from "#app/assets/admin-theme/base/boxShadows";
 
-import rgba from "~/assets/admin-theme/functions/rgba";
+import rgba from "#app/assets/admin-theme/functions/rgba";
 
 const { black, gradients } = colors;
 const { card } = gradients;

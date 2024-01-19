@@ -1,12 +1,12 @@
 import Card from "@mui/material/Card";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
-import DashboardLayout from "~/admin-examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "~/admin-examples/Navbars/DashboardNavbar";
-import Footer from "~/admin-examples/Footer";
-import Table from "~/admin-examples/Tables/Table";
+import DashboardLayout from "#app/admin-examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "#app/admin-examples/Navbars/DashboardNavbar";
+import Footer from "#app/admin-examples/Footer";
+import Table from "#app/admin-examples/Tables/Table";
 
 import authorsTableData from "./data/authorsTableData";
 import projectsTableData from "./data/projectsTableData";

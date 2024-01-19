@@ -2,10 +2,10 @@ import React from "react";
 
 import { Card, Icon } from "@mui/material";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
-import gif from "~/assets/admin-images/cardimgfree.png";
+import gif from "#app/assets/admin-images/cardimgfree.png";
 
 const WelcomeMark = () => {
   return (

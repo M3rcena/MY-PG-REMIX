@@ -10,16 +10,16 @@ import PropTypes from "prop-types";
 import Container from "@mui/material/Container";
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
-import AdmButton from "~/components/AdmButton";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
+import AdmButton from "#app/components/AdmButton";
 
-import DefaultNavbarLink from "~/admin-examples/Navbars/DefaultNavbar/DefaultNavbarLink";
-import DefaultNavbarMobile from "~/admin-examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
+import DefaultNavbarLink from "#app/admin-examples/Navbars/DefaultNavbar/DefaultNavbarLink";
+import DefaultNavbarMobile from "#app/admin-examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
-import breakpoints from "~/assets/admin-theme/base/breakpoints";
-import colors from "~/assets/admin-theme/base/colors";
-import borders from "~/assets/admin-theme/base/borders";
+import breakpoints from "#app/assets/admin-theme/base/breakpoints";
+import colors from "#app/assets/admin-theme/base/colors";
+import borders from "#app/assets/admin-theme/base/borders";
 
 function DefaultNavbar({ transparent, light, action }) {
   const { borderCol } = colors;

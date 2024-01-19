@@ -2,12 +2,12 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmInputRoot from "~/components/AdmInput/AdmInputRoot";
-import AdmInputWithIconRoot from "~/components/AdmInput/AdmInputWithIconRoot";
-import AdmInputIconBoxRoot from "~/components/AdmInput/AdmInputIconBoxRoot";
-import AdmInputIconRoot from "~/components/AdmInput/AdmInputIconRoot";
+import AdmInputRoot from "#app/components/AdmInput/AdmInputRoot";
+import AdmInputWithIconRoot from "#app/components/AdmInput/AdmInputWithIconRoot";
+import AdmInputIconBoxRoot from "#app/components/AdmInput/AdmInputIconBoxRoot";
+import AdmInputIconRoot from "#app/components/AdmInput/AdmInputIconRoot";
 
-import { useMyPGController } from "~/context";
+import { useMyPGController } from "#app/context";
 
 const AdmInput = forwardRef(({ size, icon, error, success, disabled, ...rest }, ref) => {
   let template;

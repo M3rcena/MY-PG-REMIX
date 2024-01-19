@@ -3,16 +3,16 @@ import Grid from "@mui/material/node/Grid/index.js";
 import Icon from "@mui/material/node/Icon/index.js";
 import Tooltip from "@mui/material/Tooltip";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
-import AdmButton from "~/components/AdmButton";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
+import AdmButton from "#app/components/AdmButton";
 
-import borders from "~/assets/admin-theme/base/borders";
+import borders from "#app/assets/admin-theme/base/borders";
 
-import colors from "~/assets/admin-theme/base/colors";
+import colors from "#app/assets/admin-theme/base/colors";
 
-import Mastercard from "~/admin-examples/Icons/Mastercard";
-import Visa from "~/admin-examples/Icons/Visa";
+import Mastercard from "#app/admin-examples/Icons/Mastercard";
+import Visa from "#app/admin-examples/Icons/Visa";
 
 function PaymentMethod() {
   const { grey } = colors;

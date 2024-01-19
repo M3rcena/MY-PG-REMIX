@@ -1,15 +1,15 @@
 import PropTypes from "prop-types";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
-import PageLayout from "~/admin-examples/LayoutContainers/PageLayout";
+import PageLayout from "#app/admin-examples/LayoutContainers/PageLayout";
 
-import Footer from "~/layouts/authentication/components/Footer";
+import Footer from "#app/layouts/authentication/components/Footer";
 
-import colors from "~/assets/admin-theme/base/colors";
+import colors from "#app/assets/admin-theme/base/colors";
 
-import tripleLinearGradient from "~/assets/admin-theme/functions/tripleLinearGradient";
+import tripleLinearGradient from "#app/assets/admin-theme/functions/tripleLinearGradient";
 
 function CoverLayout({
   color,

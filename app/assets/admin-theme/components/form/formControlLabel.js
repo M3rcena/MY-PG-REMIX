@@ -1,7 +1,7 @@
-import colors from "~/assets/admin-theme/base/colors";
-import typography from "~/assets/admin-theme/base/typography";
+import colors from "#app/assets/admin-theme/base/colors";
+import typography from "#app/assets/admin-theme/base/typography";
 
-import pxToRem from "~/assets/admin-theme/functions/pxToRem";
+import pxToRem from "#app/assets/admin-theme/functions/pxToRem";
 
 const { dark } = colors;
 const { size, fontWeightBold } = typography;

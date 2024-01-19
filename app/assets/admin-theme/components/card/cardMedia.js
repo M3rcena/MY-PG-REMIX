@@ -1,6 +1,6 @@
-import borders from "~/assets/admin-theme/base/borders";
+import borders from "#app/assets/admin-theme/base/borders";
 
-import pxToRem from "~/assets/admin-theme/functions/pxToRem";
+import pxToRem from "#app/assets/admin-theme/functions/pxToRem";
 
 const { borderRadius } = borders;
 

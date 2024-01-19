@@ -1,5 +1,5 @@
-import colors from "~/assets/admin-theme/base/colors";
-import bgAdmin from "~/assets/admin-images/body-background.png";
+import colors from "#app/assets/admin-theme/base/colors";
+import bgAdmin from "#app/assets/admin-images/body-background.png";
 
 const { info, dark } = colors;
 export default {

@@ -1,4 +1,4 @@
-import pxToRem from "~/assets/admin-theme/functions/pxToRem";
+import pxToRem from "#app/assets/admin-theme/functions/pxToRem";
 
 export default {
   styleOverrides: {

@@ -1,11 +1,11 @@
 import Grid from "@mui/material/node/Grid/index.js";
 
-import AdmBox from "~/components/AdmBox";
+import AdmBox from "#app/components/AdmBox";
 
-import MasterCard from "~/admin-examples/Cards/MasterCard";
-import DashboardLayout from "~/admin-examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "~/admin-examples/Navbars/DashboardNavbar";
-import Footer from "~/admin-examples/Footer";
+import MasterCard from "#app/admin-examples/Cards/MasterCard";
+import DashboardLayout from "#app/admin-examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "#app/admin-examples/Navbars/DashboardNavbar";
+import Footer from "#app/admin-examples/Footer";
 
 import PaymentMethod from "./components/PaymentMethod";
 import Invoices from "./components/Invoices";

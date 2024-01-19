@@ -1,7 +1,7 @@
 import Divider from "@mui/material/Divider";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
 function Separator() {
   return (

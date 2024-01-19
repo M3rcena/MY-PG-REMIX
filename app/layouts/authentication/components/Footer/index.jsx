@@ -6,8 +6,8 @@ import InstagramIcon from "@mui/icons-material/Instagram.js";
 import PinterestIcon from "@mui/icons-material/Pinterest.js";
 import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
 
 function Footer() {
   return (

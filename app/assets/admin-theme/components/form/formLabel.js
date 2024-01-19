@@ -1,4 +1,4 @@
-import colors from "~/assets/admin-theme/base/colors";
+import colors from "#app/assets/admin-theme/base/colors";
 
 const { dark } = colors;
 

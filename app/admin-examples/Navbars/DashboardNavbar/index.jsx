@@ -13,12 +13,12 @@ import IconButton from "@mui/material/node/Icon/index.jsButton";
 import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "~/components/AdmBox";
-import AdmTypography from "~/components/AdmTypography";
-import AdmInput from "~/components/AdmInput";
+import AdmBox from "#app/components/AdmBox";
+import AdmTypography from "#app/components/AdmTypography";
+import AdmInput from "#app/components/AdmInput";
 
-import Breadcrumbs from "~/admin-examples/Breadcrumbs";
-import NotificationItem from "~/admin-examples/Items/NotificationItem";
+import Breadcrumbs from "#app/admin-examples/Breadcrumbs";
+import NotificationItem from "#app/admin-examples/Items/NotificationItem";
 
 // Custom styles for DashboardNavbar
 import {

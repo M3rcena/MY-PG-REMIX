@@ -1,5 +1,5 @@
-import AdmButton from "~/components/AdmButton";
-import AdmBox from "~/components/AdmBox";
+import AdmButton from "#app/components/AdmButton";
+import AdmBox from "#app/components/AdmBox";
 
 function Socials() {
   return (

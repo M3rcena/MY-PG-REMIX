@@ -6,10 +6,10 @@ import Fade from "@mui/material/Fade";
 
 import AdmBox from "#app/components/AdmBox";
 
-import AdmAlertRoot from "#app/components/AdmAlert/AdmAlertRoot";
-import AdmAlertCloseIcon from "#app/components/AdmAlert/AdmAlertCloseIcon";
+import AdmAlertRoot from "#j/components/AdmAlert/AdmAlertRoot";
+import AdmAlertCloseIcon from "#j/components/AdmAlert/AdmAlertCloseIcon";
 
-function AdmAlert({ color, dismissible, children, ...rest }) {
+export function AdmAlert({ color, dismissible, children, ...rest }) {
   const [alertStatus, setAlertStatus] = useState("mount");
 
   const handleAlertStatus = () => setAlertStatus("fadeOut");
@@ -60,5 +60,3 @@ AdmAlert.propTypes = {
   dismissible: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
-
-export default AdmAlert;

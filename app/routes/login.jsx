@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link } from "@remix-run/react";
 
 import AdmBox from "#app/components/AdmBox";
 import AdmTypography from "#app/components/AdmTypography";
@@ -29,7 +29,7 @@ function SignIn() {
       color="white"
       description="Enter your email and password to sign in"
       premotto="INSPIRED BY THE FUTURE:"
-      motto="THE VISION UI DASHBOARD"
+      motto="MY PG DASHBOARD"
       image={bgSignIn}
     >
       <AdmBox component="form" role="form">

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import AdmTypography from "#app/components/AdmTypography";
 
-import AdmProgressRoot from "#app/components/AdmProgress/AdmProgressRoot";
+import AdmProgressRoot from "#j/components/AdmProgress/AdmProgressRoot";
 
 const AdmProgress = forwardRef(({ variant, color, value, label, ...rest }, ref) => (
   <>

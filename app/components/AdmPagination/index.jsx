@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import AdmBox from "#app/components/AdmBox";
 
-import AdmPaginationItemRoot from "#app/components/AdmPagination/AdmPaginationItemRoot";
+import AdmPaginationItemRoot from "#j/components/AdmPagination/AdmPaginationItemRoot";
 
 const Context = createContext();
 

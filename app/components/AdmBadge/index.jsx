@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 
 import PropTypes from "prop-types";
 
-import AdmBadgeRoot from "#app/components/AdmBadge/AdmBadgeRoot";
+import AdmBadgeRoot from "#j/components/AdmBadge/AdmBadgeRoot";
 
 const AdmBadge = forwardRef(
   ({ color, variant, size, circular, indicator, border, container, children, ...rest }, ref) => (

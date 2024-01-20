@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link } from "@remix-run/react";
 
 import AdmBox from "#app/components/AdmBox";
 import AdmTypography from "#app/components/AdmTypography";

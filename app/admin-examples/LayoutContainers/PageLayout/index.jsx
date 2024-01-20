@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { useLocation } from "react-router-dom";
+import { useLocation } from "@remix-run/react";
 
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";

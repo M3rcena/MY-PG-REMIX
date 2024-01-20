@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link } from "@remix-run/react";
 
 import Icon from "@mui/material/node/Icon/index.js";
 import IconButton from "@mui/material/node/Icon/index.jsButton";

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-// react-router-dom components
-import { useLocation, NavLink } from "react-router-dom";
+// @remix-run/react components
+import { useLocation, NavLink } from "@remix-run/react";
 
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";

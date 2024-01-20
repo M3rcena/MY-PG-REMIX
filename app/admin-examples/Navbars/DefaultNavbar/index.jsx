@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // react-router components
-import { Link } from "react-router-dom";
+import { Link } from "@remix-run/react";
 
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";

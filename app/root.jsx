@@ -7,10 +7,11 @@ import {
 } from "@remix-run/react";
 
 import appStylesHref from "./app.css";
+import app2StylesHref from "#app/assets/css/style";
 import React from "react";
 
 export let links = () => {
-  return [{ rel: "stylesheet", href: appStylesHref }];
+  return [{ rel: "stylesheet", href: appStylesHref }, { rel: "stylesheet", href: app2StylesHref}];
 }
 
 export default function App() {
@@ -39,10 +40,6 @@ export default function App() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
           data-tag="font"
-        />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
         />
         <Meta />
         <Links />

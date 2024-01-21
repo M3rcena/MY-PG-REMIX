@@ -46,9 +46,5 @@
   "devDependencies": {
     "@remix-run/dev": "^2.4.1",
     "@types/react-helmet": "^6.1.11"
-  },
-  "imports": {
-    "#*": "./*",
-    "#j/*": "./app/*.jsx"
   }
 }

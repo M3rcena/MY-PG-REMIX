@@ -4,11 +4,11 @@ import { IoHappy } from 'react-icons/io5';
 import { Card } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 
-import AdmBox from '#app/components/AdmBox';
-import AdmTypography from '#app/components/AdmTypography';
+import AdmBox from '../../../../components/AdmBox';
+import AdmTypography from '../../../../components/AdmTypography';
 
-import colors from '#app/assets/admin-theme/base/colors';
-import linearGradient from '#app/assets/admin-theme/functions/linearGradient';
+import colors from '../../../../assets/admin-theme/base/colors';
+import linearGradient from '../../../../assets/admin-theme/functions/linearGradient';
 
 const SatisfactionRate = () => {
 	const { info, gradients } = colors;

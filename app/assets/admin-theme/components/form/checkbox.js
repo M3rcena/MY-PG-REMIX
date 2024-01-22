@@ -1,8 +1,8 @@
-import borders from "#app/assets/admin-theme/base/borders";
-import colors from "#app/assets/admin-theme/base/colors";
+import borders from "../../../../assets/admin-theme/base/borders";
+import colors from "../../../../assets/admin-theme/base/colors";
 
-import pxToRem from "#app/assets/admin-theme/functions/pxToRem";
-import linearGradient from "#app/assets/admin-theme/functions/linearGradient";
+import pxToRem from "../../../../assets/admin-theme/functions/pxToRem";
+import linearGradient from "../../../../assets/admin-theme/functions/linearGradient";
 
 const { borderWidth, borderColor } = borders;
 const { transparent, gradients, info } = colors;

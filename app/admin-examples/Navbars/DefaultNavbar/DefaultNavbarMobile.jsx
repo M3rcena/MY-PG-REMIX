@@ -5,11 +5,11 @@ import PropTypes from "prop-types";
 import Menu from "@mui/material/Menu";
 // import Grid from "@mui/material/node/Grid/index.js";
 
-import AdmBox from "#app/components/AdmBox";
+import AdmBox from "../../../components/AdmBox";
 
-import DefaultNavbarLink from "#app/admin-examples/Navbars/DefaultNavbar/DefaultNavbarLink";
-import palette from "#app/assets/admin-theme/base/colors";
-import tripleLinearGradient from "#app/assets/admin-theme/functions/tripleLinearGradient";
+import DefaultNavbarLink from "../../../admin-examples/Navbars/DefaultNavbar/DefaultNavbarLink";
+import palette from "../../../assets/admin-theme/base/colors";
+import tripleLinearGradient from "../../../assets/admin-theme/functions/tripleLinearGradient";
 
 function DefaultNavbarMobile({ open, close }) {
   const { width } = open && open.getBoundingClientRect();

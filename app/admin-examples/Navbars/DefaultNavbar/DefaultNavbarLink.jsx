@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
+import AdmBox from "../../../components/AdmBox";
+import AdmTypography from "../../../components/AdmTypography";
 
 function DefaultNavbarLink({ icon, name, route }) {
   return (

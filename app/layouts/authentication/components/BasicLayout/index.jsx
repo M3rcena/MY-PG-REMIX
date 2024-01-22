@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 
 import Grid from "@mui/material/node/Grid/index.js";
 
-import AdmBox from "#app/components/components/AdmBox";
-import AdmTypography from "#app/components/components/AdmTypography";
+import AdmBox from "../../../../components/components/AdmBox";
+import AdmTypography from "../../../../components/components/AdmTypography";
 
-import PageLayout from "#app/admin-examples/LayoutContainers/PageLayout";
+import PageLayout from "../../../../admin-examples/LayoutContainers/PageLayout";
 
-import Footer from "#app/layouts/authentication/components/Footer";
+import Footer from "../../../../layouts/authentication/components/Footer";
 
 function BasicLayout({ title, description, image, children }) {
   return (

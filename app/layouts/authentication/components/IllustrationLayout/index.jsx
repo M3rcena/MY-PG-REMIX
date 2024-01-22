@@ -2,14 +2,14 @@ import PropTypes from "prop-types";
 
 import Grid from "@mui/material/node/Grid/index.js";
 
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
+import AdmBox from "../../../../components/AdmBox";
+import AdmTypography from "../../../../components/AdmTypography";
 
-import PageLayout from "#app/admin-examples/LayoutContainers/PageLayout";
+import PageLayout from "../../../../admin-examples/LayoutContainers/PageLayout";
 
 import pageRoutes from "page.routes";
 
-import pattern from "#app/assets/admin-images/shapes/pattern-lines.svg";
+import pattern from "../../../../assets/admin-images/shapes/pattern-lines.svg";
 
 function IllustrationLayout({ color, header, title, description, illustration, children }) {
   return (

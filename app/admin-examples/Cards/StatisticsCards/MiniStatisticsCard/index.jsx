@@ -4,9 +4,9 @@ import Card from "@mui/material/Card";
 import Grid from "@mui/material/node/Grid/index.js";
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
-import colors from "#app/assets/admin-theme/base/colors";
+import AdmBox from "../../../../components/AdmBox";
+import AdmTypography from "../../../../components/AdmTypography";
+import colors from "../../../../assets/admin-theme/base/colors";
 
 function MiniStatisticsCard({ bgColor, title, count, percentage, icon, direction }) {
   const { info } = colors;

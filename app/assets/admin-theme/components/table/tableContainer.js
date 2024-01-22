@@ -1,6 +1,6 @@
-import colors from "#app/assets/admin-theme/base/colors";
-import boxShadows from "#app/assets/admin-theme/base/boxShadows";
-import borders from "#app/assets/admin-theme/base/borders";
+import colors from "../../../../assets/admin-theme/base/colors";
+import boxShadows from "../../../../assets/admin-theme/base/boxShadows";
+import borders from "../../../../assets/admin-theme/base/borders";
 
 const { transparent } = colors;
 const { xxl } = boxShadows;

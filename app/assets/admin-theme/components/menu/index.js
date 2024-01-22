@@ -1,10 +1,10 @@
-import boxShadows from "#app/assets/admin-theme/base/boxShadows";
-import typography from "#app/assets/admin-theme/base/typography";
-import colors from "#app/assets/admin-theme/base/colors";
-import borders from "#app/assets/admin-theme/base/borders";
-import linearGradient from "#app/assets/admin-theme/functions/linearGradient";
+import boxShadows from "../../../../assets/admin-theme/base/boxShadows";
+import typography from "../../../../assets/admin-theme/base/typography";
+import colors from "../../../../assets/admin-theme/base/colors";
+import borders from "../../../../assets/admin-theme/base/borders";
+import linearGradient from "../../../../assets/admin-theme/functions/linearGradient";
 
-import pxToRem from "#app/assets/admin-theme/functions/pxToRem";
+import pxToRem from "../../../../assets/admin-theme/functions/pxToRem";
 
 const { borderWidth } = borders;
 const { lg } = boxShadows;

@@ -3,17 +3,17 @@ import React from 'react';
 import { Card, Stack, Grid } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 
-import AdmBox from '#app/components/AdmBox';
-import AdmTypography from '#app/components/AdmTypography';
+import AdmBox from '../../../../components/AdmBox';
+import AdmTypography from '../../../../components/AdmTypography';
 
-import GreenLightning from '#app/assets/admin-images/shapes/green-lightning.svg';
-import WhiteLightning from '#app/assets/admin-images/shapes/white-lightning.svg';
-import carProfile from '#app/assets/admin-images/shapes/car-profile.svg';
+import GreenLightning from '../../../../assets/admin-images/shapes/green-lightning.svg';
+import WhiteLightning from '../../../../assets/admin-images/shapes/white-lightning.svg';
+import carProfile from '../../../../assets/admin-images/shapes/car-profile.svg';
 
-import linearGradient from '#app/assets/admin-theme/functions/linearGradient';
-import colors from '#app/assets/admin-theme/base/colors';
+import linearGradient from '../../../../assets/admin-theme/functions/linearGradient';
+import colors from '../../../../assets/admin-theme/base/colors';
 
-import LineChart from '#app/admin-examples/Charts/LineCharts/LineChart';
+import LineChart from '../../../../admin-examples/Charts/LineCharts/LineChart';
 
 import { lineChartDataProfile1, lineChartDataProfile2 } from 'variables/charts';
 import { lineChartOptionsProfile2, lineChartOptionsProfile1 } from 'variables/charts';

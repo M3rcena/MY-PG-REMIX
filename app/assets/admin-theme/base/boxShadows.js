@@ -1,6 +1,6 @@
-import colors from "#app/assets/admin-theme/base/colors";
+import colors from "../../../assets/admin-theme/base/colors";
 
-import boxShadow from "#app/assets/admin-theme/functions/boxShadow";
+import boxShadow from "../../../assets/admin-theme/functions/boxShadow";
 
 const { black, white, info, inputColors, tabs } = colors;
 

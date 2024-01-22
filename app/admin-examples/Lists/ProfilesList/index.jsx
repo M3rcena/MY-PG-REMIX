@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 
 import Card from "@mui/material/Card";
 
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
-import AdmAvatar from "#app/components/AdmAvatar";
-import AdmButton from "#app/components/AdmButton";
+import AdmBox from "../../../components/AdmBox";
+import AdmTypography from "../../../components/AdmTypography";
+import AdmAvatar from "../../../components/AdmAvatar";
+import AdmButton from "../../../components/AdmButton";
 
 function ProfilesList({ title, profiles }) {
   const renderProfiles = profiles.map(({ image, name, description, action }) => (

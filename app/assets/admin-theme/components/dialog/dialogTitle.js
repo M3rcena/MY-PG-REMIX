@@ -1,6 +1,6 @@
-import typography from "#app/assets/admin-theme/base/typography";
+import typography from "../../../../assets/admin-theme/base/typography";
 
-import pxToRem from "#app/assets/admin-theme/functions/pxToRem";
+import pxToRem from "../../../../assets/admin-theme/functions/pxToRem";
 
 const { size } = typography;
 

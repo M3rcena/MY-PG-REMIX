@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types";
 
-import colors from "#app/assets/admin-theme/base/colors";
+import colors from "../../assets/admin-theme/base/colors";
 
 function Credit({ color, size }) {
   return (

@@ -6,9 +6,9 @@ import { useLocation } from "@remix-run/react";
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
-import AdmBox from "#app/components/AdmBox";
+import AdmBox from "../../../components/AdmBox";
 
-import { useMyPGController, setLayout } from "#app/context";
+import { useMyPGController, setLayout } from "../../../context";
 
 function DashboardLayout({ children }) {
   const [controller, dispatch] = useMyPGController();

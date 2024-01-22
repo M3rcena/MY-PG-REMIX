@@ -2,7 +2,7 @@
   The gradientChartLine() function helps you to create a gradient color for the chart line
  */
 
-import rgba from "#app/assets/admin-theme/functions/rgba";
+import rgba from "../../../assets/admin-theme/functions/rgba";
 
 function gradientChartLine(chart, color, opacity = 0.2) {
   const ctx = chart.getContext("2d");

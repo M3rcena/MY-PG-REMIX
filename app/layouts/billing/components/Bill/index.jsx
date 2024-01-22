@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
-import AdmButton from "#app/components/AdmButton";
-import linearGradient from "#app/assets/admin-theme/functions/linearGradient";
-import colors from "#app/assets/admin-theme/base/colors";
+import AdmBox from "../../../../components/AdmBox";
+import AdmTypography from "../../../../components/AdmTypography";
+import AdmButton from "../../../../components/AdmButton";
+import linearGradient from "../../../../assets/admin-theme/functions/linearGradient";
+import colors from "../../../../assets/admin-theme/base/colors";
 
 function Bill({ name, company, email, vat, noGutter }) {
   const { gradients } = colors;

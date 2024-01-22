@@ -1,7 +1,7 @@
 import Card from "@mui/material/Card";
 
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
+import AdmBox from "../../../../components/AdmBox";
+import AdmTypography from "../../../../components/AdmTypography";
 
 import { BsCheckCircleFill } from "react-icons/bs";
 import { FaBell } from "react-icons/fa";
@@ -10,10 +10,10 @@ import { FaShoppingCart } from "react-icons/fa";
 import { BsCreditCardFill } from "react-icons/bs";
 import { SiDropbox } from "react-icons/si";
 
-import TimelineItem from "#app/admin-examples/Timeline/TimelineItem";
-import AdobeXD from "#app/admin-examples/Icons/AdobeXD";
+import TimelineItem from "../../../../admin-examples/Timeline/TimelineItem";
+import AdobeXD from "../../../../admin-examples/Icons/AdobeXD";
 
-import palette from "#app/assets/admin-theme/base/colors";
+import palette from "../../../../assets/admin-theme/base/colors";
 
 function OrdersOverview() {
   return (

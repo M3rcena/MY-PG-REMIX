@@ -8,12 +8,12 @@ import Icon from "@mui/material/node/Icon/index.js";
 import TwitterIcon from "@mui/icons-material/Twitter.js";
 import FacebookIcon from "@mui/icons-material/Facebook.js";
 
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
-import AdmButton from "#app/components/AdmButton";
-import AdmSwitch from "#app/components/AdmSwitch";
+import AdmBox from "../../components/AdmBox";
+import AdmTypography from "../../components/AdmTypography";
+import AdmButton from "../../components/AdmButton";
+import AdmSwitch from "../../components/AdmSwitch";
 
-import ConfiguratorRoot from "#app/admin-examples/Configurator/ConfiguratorRoot";
+import ConfiguratorRoot from "../../admin-examples/Configurator/ConfiguratorRoot";
 
 import {
   useMyPGController,

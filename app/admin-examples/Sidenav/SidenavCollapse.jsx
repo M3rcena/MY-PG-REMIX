@@ -8,7 +8,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "#app/components/AdmBox";
+import AdmBox from "../../components/AdmBox";
 
 // Custom styles for the SidenavCollapse
 import {
@@ -16,9 +16,9 @@ import {
   collapseIconBox,
   collapseIcon,
   collapseText,
-} from "#app/admin-examples/Sidenav/styles/sidenavCollapse";
+} from "../../admin-examples/Sidenav/styles/sidenavCollapse";
 
-import { useMyPGController } from "context";
+import { useMyPGController } from "../../context";
 
 function SidenavCollapse({ color, icon, name, children, active, noCollapse, open, ...rest }) {
   const [controller] = useMyPGController();

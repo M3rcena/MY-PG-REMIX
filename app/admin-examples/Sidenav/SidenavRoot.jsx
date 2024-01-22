@@ -1,7 +1,7 @@
 // @mui material components
 import Drawer from "@mui/material/Drawer";
 import { styled } from "@mui/material/node/styles/index.js";
-import linearGradient from "#app/assets/admin-theme/functions/linearGradient";
+import linearGradient from "../../assets/admin-theme/functions/linearGradient";
 
 export default styled(Drawer)(({ theme, ownerState }) => {
   const { palette, boxShadows, transitions, breakpoints, functions } = theme;

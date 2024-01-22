@@ -7,11 +7,11 @@ import PropTypes from "prop-types";
 import MenuItem from "@mui/material/MenuItem";
 import Icon from "@mui/material/node/Icon/index.js";
 
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
+import AdmBox from "../../../components/AdmBox";
+import AdmTypography from "../../../components/AdmTypography";
 
 // custom styles for the NotificationItem
-import { menuItem, menuImage } from "#app/admin-examples/Items/NotificationItem/styles";
+import { menuItem, menuImage } from "../../../admin-examples/Items/NotificationItem/styles";
 
 const NotificationItem = forwardRef(({ color, image, title, date, ...rest }, ref) => (
   <MenuItem {...rest} ref={ref} sx={(theme) => menuItem(theme)}>

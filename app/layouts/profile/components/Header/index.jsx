@@ -4,18 +4,18 @@ import Grid from "@mui/material/node/Grid/index.js";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 
-import burceMars from "#app/assets/admin-images/avatar-simmmple.png";
+import burceMars from "../../../../assets/admin-images/avatar-simmmple.png";
 
-import breakpoints from "#app/assets/admin-theme/base/breakpoints";
-import AdmAvatar from "#app/components/AdmAvatar";
-import AdmBox from "#app/components/AdmBox";
-import AdmTypography from "#app/components/AdmTypography";
+import breakpoints from "../../../../assets/admin-theme/base/breakpoints";
+import AdmAvatar from "../../../../components/AdmAvatar";
+import AdmBox from "../../../../components/AdmBox";
+import AdmTypography from "../../../../components/AdmTypography";
 
 import { IoCube } from "react-icons/io5";
 import { IoDocument } from "react-icons/io5";
 import { IoBuild } from "react-icons/io5";
 
-import DashboardNavbar from "#app/admin-examples/Navbars/DashboardNavbar";
+import DashboardNavbar from "../../../../admin-examples/Navbars/DashboardNavbar";
 import { useEffect, useState } from "react";
 
 function Header() {

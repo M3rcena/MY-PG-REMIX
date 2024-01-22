@@ -1,7 +1,7 @@
-import root from "#app/assets/admin-theme/components/button/root";
-import contained from "#app/assets/admin-theme/components/button/contained";
-import outlined from "#app/assets/admin-theme/components/button/outlined";
-import text from "#app/assets/admin-theme/components/button/text";
+import root from "../../../../assets/admin-theme/components/button/root";
+import contained from "../../../../assets/admin-theme/components/button/contained";
+import outlined from "../../../../assets/admin-theme/components/button/outlined";
+import text from "../../../../assets/admin-theme/components/button/text";
 
 export default {
   defaultProps: {

@@ -2,12 +2,12 @@ import Box from "@mui/material/node/Box/index.js";
 import { styled } from "@mui/material/node/styles/index.js";
 
 export default styled(Box)(({ theme, ownerState }) => {
-  const { palette, functions, borders, boxShadows } = theme;
+  const { palette, functions, borders = {}, boxShadows } = theme;
   const { variant, bgColor, color, opacity, borderRadius, shadow } = ownerState;
-
+  
   const { gradients, grey, white } = palette;
-  const { linearGradient } = functions;
-  const { borderRadius: radius } = borders;
+  const linearGradientFunction = functions && functions.linearGradient;
+  const { borderRadius: radius } = borders;  
 
   const greyColors = {
     "grey-100": grey[100],
@@ -63,7 +63,7 @@ export default styled(Box)(({ theme, ownerState }) => {
 
   if (variant === "gradient") {
     backgroundValue = validGradients.find((el) => el === bgColor)
-      ? linearGradient(gradients[bgColor].main, gradients[bgColor].state)
+      ? linearGradientFunction(gradients[bgColor].main, gradients[bgColor].state)
       : white.main;
   } else if (validColors.find((el) => el === bgColor)) {
     backgroundValue = palette[bgColor] ? palette[bgColor].main : greyColors[bgColor];

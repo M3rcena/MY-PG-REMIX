@@ -29,15 +29,15 @@ export default function Home() {
           <span className="home-logo">MY PG</span>
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
             <nav className="home-links">
-              <span><Link to="/">Home</Link></span>
+              <span><Link to="/">Αρχική</Link></span>
               <span className="home-nav2"><Link to="/about">About</Link></span>
-              <span className="home-nav3"><Link to="/features">Features</Link></span>
-              <span className="home-nav4"><Link to="/parties">Parties</Link></span>
-              <span className="home-nav5"><Link to="/discounts">Discounts</Link></span>
+              <span className="home-nav3"><Link to="/features">Σχετικά</Link></span>
+              <span className="home-nav4"><Link to="/parties">Πάρτυ</Link></span>
+              <span className="home-nav5"><Link to="/discounts">Προσφορές</Link></span>
             </nav>
             <div className="home-buttons">
-              <button className="home-login button"><Link to="/login">Login</Link></button>
-              <button className="home-register button"><Link to="/register">Register</Link></button>
+              <button className="home-login button"><Link to="/login">Σύνδεση</Link></button>
+              <button className="home-register button"><Link to="/register">Εγγραφή</Link></button>
             </div>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
@@ -56,15 +56,15 @@ export default function Home() {
                 </div>
               </div>
               <nav className="home-links1">
-                <span className="home-nav11"><Link to="/">Home</Link></span>
-                <span className="home-nav21"><Link to="/about">About</Link></span>
+                <span className="home-nav11"><Link to="/">Αρχική</Link></span>
+                <span className="home-nav21"><Link to="/about">Σχετικά</Link></span>
                 <span className="home-nav31"><Link to="/features">Features</Link></span>
-                <span className="home-nav41"><Link to="/parties">Parties</Link></span>
-                <span className="home-nav51"><Link to="/discount">Discounts</Link></span>
+                <span className="home-nav41"><Link to="/parties">Πάρτυ</Link></span>
+                <span className="home-nav51"><Link to="/discount">Προσφορές</Link></span>
               </nav>
               <div className="home-buttons1">
-                <button className="home-login1 button"><Link to="/login">Login</Link></button>
-                <button className="home-register1 button"><Link to="/register">Register</Link></button>
+                <button className="home-login1 button"><Link to="/login">Σύνδεση</Link></button>
+                <button className="home-register1 button"><Link to="/register">Εγγραφή</Link></button>
               </div>
             </div>
             <div>
@@ -105,7 +105,7 @@ export default function Home() {
               <br></br>
             </span>
             <h2 className="home-details-heading heading2">
-              Welcome to our Professional Website
+              MyPG | My Playground
             </h2>
             <span className="home-details-sub-heading">
               Our website provides detailed information about parks, stores, and

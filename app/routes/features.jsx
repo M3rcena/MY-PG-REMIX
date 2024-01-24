@@ -4,11 +4,14 @@ import { Helmet } from 'react-helmet';
 import featureStylesHref from '../assets/features/css/index.css';
 import indexStylesHref from "../styles/index.css"
 import { Link, useNavigate } from '@remix-run/react';
+import animationStyleHref from '../assets/features/wp-content/plugins/elementor/assets/lib/animations/animations.min.css'
+
 
 export const links = () => {
   return [
     { rel: 'stylesheet', href: featureStylesHref },
     { rel: 'stylesheet', href: indexStylesHref },
+    { rel: 'stylesheet', href: animationStyleHref, id: 'e-animations-css' },
   ]
 };
 

@@ -30,8 +30,8 @@ export default function Home() {
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
             <nav className="home-links">
               <span><Link to="/">Αρχική</Link></span>
-              <span className="home-nav2"><Link to="/about">About</Link></span>
-              <span className="home-nav3"><Link to="/features">Σχετικά</Link></span>
+              <span className="home-nav2"><Link to="/about">Σχετικά</Link></span>
+              <span className="home-nav3"><Link to="/features">Features</Link></span>
               <span className="home-nav4"><Link to="/parties">Πάρτυ</Link></span>
               <span className="home-nav5"><Link to="/discounts">Προσφορές</Link></span>
             </nav>
@@ -91,8 +91,8 @@ export default function Home() {
               Explore your city with our interactive map
             </span>
             <div className="home-btn-group">
-              <button className="home-hero-button1 button" onClick={() => navigate("/map")}>Get Started</button>
-              <button className="home-hero-button2 button" onClick={() => navigate("/about")}>Learn More →</button>
+              <button className="home-hero-button1 button" onClick={() => navigate("/map")}>Χάρτης</button>
+              <button className="home-hero-button2 button" onClick={() => navigate("/about")}>Μάθε περισσότερα →</button>
             </div>
           </div>
         </div>
@@ -101,17 +101,14 @@ export default function Home() {
         <div className="home-details1">
           <div className="home-container02">
             <span className="home-text sectionTitle">
-              <span>Details</span>
+              <span>Λεπτομεριες</span>
               <br></br>
             </span>
             <h2 className="home-details-heading heading2">
               MyPG | My Playground
             </h2>
             <span className="home-details-sub-heading">
-              Our website provides detailed information about parks, stores, and
-              more. Register now to enjoy exclusive discounts and other perks.
-              With our party system, you can easily organize parties at parks
-              and other locations. Join us today!
+            Ο ιστότοπός μας παρέχει λεπτομερείς πληροφορίες για πάρκα, καταστήματα και πολλά άλλα. Εγγραφείτε τώρα για να απολαύσετε αποκλειστικές εκπτώσεις και άλλα προνόμια. Με το σύστημα πάρτι μας, μπορείτε εύκολα να οργανώσετε πάρτι σε πάρκα και άλλες τοποθεσίες. Ελάτε μαζί μας σήμερα!
             </span>
           </div>
           <img
@@ -126,29 +123,28 @@ export default function Home() {
           <div className="home-features1">
             <div className="home-container03">
               <span className="home-text03 sectionTitle">
-                <span>features</span>
+                <span>χαρακτηριστικα</span>
                 <br></br>
               </span>
               <h2 className="home-features-heading heading2">
-                Explore the Exciting Features
+                Εξερευνήστε τα συναρπαστικά χαρακτηριστικά
               </h2>
               <span className="home-features-sub-heading">
-                Discover how our professional website can enhance your park
-                experiences and make party planning a breeze.
+              Ανακαλύψτε πώς ο επαγγελματικός μας ιστότοπος μπορεί να βελτιώσει τις εμπειρίες σας και να κάνει τον προγραμματισμό πάρτι παιχνιδάκι.
               </span>
             </div>
             <div className="home-container04">
               <FeatureCard
-                Heading="Interactive Map"
-                SubHeading="Easily locate parks, stores, and other points of interest with our interactive map feature."
+                Heading="Διαδραστικός Χάρτης"
+                SubHeading="Εντοπίστε εύκολα πάρκα, καταστήματα και άλλα σημεία ενδιαφέροντος με τη λειτουργία διαδραστικού χάρτη μας."
               ></FeatureCard>
               <FeatureCard
-                Heading="Member Discounts"
-                SubHeading="Enjoy exclusive discounts and special offers from our partner establishments when you register as a member."
+                Heading="Εκπτώσεις Μελών"
+                SubHeading="Απολαύστε αποκλειστικές εκπτώσεις και ειδικές προσφορές από τα συνεργαζόμενα καταστήματα όταν εγγραφείτε ως μέλος."
               ></FeatureCard>
               <FeatureCard
-                Heading="Party Organization"
-                SubHeading="Effortlessly plan and organize parties at parks and other venues with our convenient party system."
+                Heading="Οργάνωση Πάρτυ"
+                SubHeading="Σχεδιάστε και οργανώστε άπιαστα πάρτυ σε πάρκα και άλλους χώρους με το βολικό μας σύστημα πάρτυ."
               ></FeatureCard>
               <FeatureCard
                 Heading="Lorem ipsum"
@@ -162,25 +158,25 @@ export default function Home() {
         <div className="home-pricing1">
           <div className="home-container05">
             <span className="home-text06 sectionTitle">
-              <span>Pricing</span>
+              <span>Τιμολογηση</span>
               <br></br>
             </span>
-            <h2 className="home-pricing-heading heading2">Choose Your Plan</h2>
+            <h2 className="home-pricing-heading heading2">Επιλέξτε το πλάνο σας</h2>
             <span className="home-pricing-sub-heading">
-              Select the perfect plan for your needs
+            Επιλέξτε το τέλειο πλάνο για τις ανάγκες σας
             </span>
           </div>
           <div className="home-container06">
             <div className="home-pricing-card">
               <div className="home-container07">
-                <span className="home-text09 heading3">Free</span>
+                <span className="home-text09 heading3">Δωρεαν</span>
                 <span className="home-free-plan-description">
-                  Access basic features of the website for free
+                Αποκτήστε δωρεάν πρόσβαση στις βασικές λειτουργίες του ιστότοπου
                 </span>
               </div>
               <div className="home-container08">
                 <span className="home-text10">
-                  <span>$</span>
+                  <span>€</span>
                   <span></span>
                 </span>
                 <span className="home-free-plan-price">0</span>
@@ -189,80 +185,71 @@ export default function Home() {
                 <div className="home-container10">
                   <span className="home-text13">✔</span>
                   <span className="home-free-plan-features">
-                    View information about parks, stores, and other locations
+                  Προβολή πληροφοριών σχετικά με πάρκα, καταστήματα και άλλες τοποθεσίες
                   </span>
                 </div>
                 <div className="home-container11">
                   <span className="home-text14">✔</span>
                   <span className="home-free-plan-features1">
-                    Receive discounts and special offers when registered
+                  Λάβετε εκπτώσεις και ειδικές προσφορές όταν εγγραφείτε
                   </span>
                 </div>
                 <div className="home-container12">
                   <span className="home-text15">✔</span>
                   <span className="home-free-plan-features2">
-                    Organize parties at parks and other venues
+                  Οργανώστε πάρτι σε πάρκα και άλλους χώρους
                   </span>
                 </div>
                 <div className="home-container13">
                   <span className="home-text16">✔</span>
                   <span className="home-free-plan-features3">
-                    Limited access to party system
+                  Περιορισμένη πρόσβαση στο κομματικό σύστημα
                   </span>
                 </div>
               </div>
-              <button className="home-button button" onClick={() => navigate('/login')}>Continue with Free</button>
+              <button className="home-button button" onClick={() => navigate('/login')}>Συνεχίστε Δωρεάν</button>
             </div>
             <div className="home-pricing-card1">
               <div className="home-container14">
-                <span className="home-text17 heading3">BASIC</span>
+                <span className="home-text17 heading3">ΒΑΣΙΚΟ</span>
                 <span className="home-basic-plan-description">
-                  Unlock additional features and benefits with the basic plan
+                Ξεκλειδώστε πρόσθετες δυνατότητες και προνόμια με το βασικό πλάνο
                 </span>
               </div>
               <div className="home-container15">
                 <span className="home-text18">
-                  <span>$</span>
+                  <span>€</span>
                   <span></span>
                 </span>
                 <span className="home-basic-plan-pricing">7</span>
-                <span className="home-text21">/ month</span>
+                <span className="home-text21">/ μήνα</span>
               </div>
               <div className="home-container16">
                 <div className="home-container17">
                   <span className="home-text22">✔</span>
-                  <span className="home-text23">All features of FREE plan</span>
-                </div>
-                <div className="home-container18">
-                  <span className="home-text24">✔</span>
-                  <span className="home-basic-plan-features">
-                    All features of the Free Plan
-                  </span>
+                  <span className="home-text23">Όλα τα χαρακτηριστικά του ΔΩΡΕΑΝ πλάνου</span>
                 </div>
                 <div className="home-container19">
                   <span className="home-text25">✔</span>
                   <span className="home-basic-plan-features1">
-                    Access to premium information about parks, stores, and other
-                    locations
+                    Πρόσβαση σε premium πληροφορίες σχετικά με πάρκα, καταστήματα και τοποθεσίες
                   </span>
                 </div>
                 <div className="home-container20">
                   <span className="home-text26">✔</span>
                   <span className="home-basic-plan-features2">
-                    Enhanced discounts and exclusive offers for registered
-                    members
+                  Ενισχυμένες εκπτώσεις και αποκλειστικές προσφορές για μέλη
                   </span>
                 </div>
                 <div className="home-container21">
                   <span className="home-text27">✔</span>
                   <span className="home-basic-plan-features3">
-                    Full access to party system with advanced party organization
-                    tools
+                  Πλήρης πρόσβαση στο σύστημα πάρτι με προηγμένα εργαλεία πάρτι
                   </span>
                 </div>
               </div>
               <button className="home-button1 button" onClick={() => navigate("/account/basic")}>
-                Try the Basic plan
+              Δοκιμάστε το Βασικό πλάνο
               </button>
             </div>
             <div className="home-pricing-card2">
@@ -272,44 +259,38 @@ export default function Home() {
                   <br></br>
                 </span>
                 <span className="home-pro-plan-description">
-                  Get the ultimate experience with the pro plan
+                Αποκτήστε την απόλυτη εμπειρία με το επαγγελματικό σχέδιο
                 </span>
               </div>
               <div className="home-container23">
                 <span className="home-text31">
-                  <span>$</span>
+                  <span>€</span>
                   <span></span>
                 </span>
                 <span className="home-pro-plan-pricing">20</span>
-                <span className="home-text34">/ month</span>
+                <span className="home-text34">/ μήνα</span>
               </div>
               <div className="home-container24">
                 <div className="home-container25">
                   <span className="home-text35">✔</span>
                   <span className="home-text36">
-                    All features of BASIC plan
-                  </span>
-                </div>
-                <div className="home-container26">
-                  <span className="home-text37">✔</span>
-                  <span className="home-pro-plan-features">
-                    All features of the Basic Plan
+                  Όλα τα χαρακτηριστικά του πλάνου BASIC
                   </span>
                 </div>
                 <div className="home-container27">
                   <span className="home-text38">✔</span>
                   <span className="home-pro-plan-features1">
-                    Priority access to new park and store information
+                  Πρόσβαση κατά προτεραιότητα σε νέες πληροφορίες πάρκων και καταστημάτων
                   </span>
                 </div>
                 <div className="home-container28">
                   <span className="home-text39">✔</span>
                   <span className="home-pro-plan-features2">
-                    VIP discounts and exclusive perks for registered members
+                  Εκπτώσεις VIP και αποκλειστικά προνόμια για εγγεγραμμένα μέλη
                   </span>
                 </div>
               </div>
-              <button className="home-button2 button" onClick={() => navigate("/account/pro")}>Try the PRO plan</button>
+              <button className="home-button2 button" onClick={() => navigate("/account/pro")}>Δοκιμάστε το PRO πλάνο</button>
             </div>
           </div>
         </div>
@@ -318,12 +299,12 @@ export default function Home() {
       <div className="home-banner">
         <div className="home-banner1">
           <h1 className="home-banner-heading heading2">
-            Unlock Discounts and Party Opportunities
+          Ξεκλειδώστε εκπτώσεις και ευκαιρίες για πάρτυ
           </h1>
           <span className="home-banner-sub-heading">
-            Get access to special offers and easily organize parties at parks
+          Αποκτήστε πρόσβαση σε ειδικές προσφορές και οργανώστε εύκολα πάρτυ σε πάρκα
           </span>
-          <button className="home-banner-button button" onClick={() => navigate("/account/offers")}>Learn more</button>
+          <button className="home-banner-button button" onClick={() => navigate("/account/offers")}>Μάθε περισσότερα</button>
         </div>
       </div>
       <div className="home-faq">
@@ -334,10 +315,10 @@ export default function Home() {
                 <span>FAQ</span>
                 <br></br>
               </span>
-              <h2 className="home-text43 heading2">Common questions</h2>
+              <h2 className="home-text43 heading2">Συνήθεις ερωτήσεις</h2>
               <span className="home-text44">
                 <span>
-                  Here are some of the most common questions that we get.
+                Εδώ είναι μερικές από τις πιο συνηθισμένες ερωτήσεις που λαμβάνουμε.
                 </span>
                 <br></br>
                 <span>
@@ -412,24 +393,24 @@ export default function Home() {
             </div>
             <div className="home-container30">
               <Question
-                Answer="The purpose of this website is to provide information about parks, stores, and other locations, as well as offer discounts and benefits to registered members."
-                Question="What is the purpose of this website?"
+                Answer="Ο σκοπός αυτού του ιστότοπου είναι να παρέχει πληροφορίες σχετικά με πάρκα, καταστήματα και άλλες τοποθεσίες, καθώς και να προσφέρει εκπτώσεις και προνόμια στα εγγεγραμμένα μέλη."
+                Question="Ποιος είναι ο σκοπός αυτής της ιστοσελίδας;"
               ></Question>
               <Question
-                Answer="The map will display information about parks, stores, and other points of interest. Users can easily find details such as location, opening hours, and user reviews."
-                Question="What kind of information will be available on the map?"
+                Answer="Ο χάρτης θα εμφανίζει πληροφορίες για πάρκα, καταστήματα και άλλα σημεία ενδιαφέροντος. Οι χρήστες μπορούν εύκολα να βρουν λεπτομέρειες όπως τοποθεσία, ώρες λειτουργίας και κριτικές χρηστών."
+                Question="Τι είδους πληροφορίες θα είναι διαθέσιμες στον χάρτη;"
               ></Question>
               <Question
-                Answer="To register as a member, simply click on the 'Register' button on the website and fill out the required information. Once registered, you will be able to access discounts and other benefits."
-                Question="How can I register as a member?"
+                Answer="Για να εγγραφείτε ως μέλος, απλώς κάντε κλικ στο κουμπί «Εγγραφή» στον ιστότοπο και συμπληρώστε τα απαιτούμενα στοιχεία. Μόλις εγγραφείτε, θα έχετε πρόσβαση σε εκπτώσεις και άλλα προνόμια."
+                Question="Πώς μπορώ να εγγραφώ ως μέλος;"
               ></Question>
               <Question
-                Answer="Members will have access to exclusive discounts at participating stores and venues. Additionally, they can enjoy special offers for organizing parties at parks and other locations."
-                Question="What discounts and benefits are available for members?"
+                Answer="Τα μέλη θα έχουν πρόσβαση σε αποκλειστικές εκπτώσεις σε καταστήματα και χώρους που συμμετέχουν. Επιπλέον, μπορούν να απολαύσουν ειδικές προσφορές για τη διοργάνωση πάρτυ σε πάρκα και άλλες τοποθεσίες."
+                Question="Ποιες εκπτώσεις και προνόμια είναι διαθέσιμα για τα μέλη;"
               ></Question>
               <Question
-                Answer="Our website provides a party system that allows you to easily organize parties at parks and other locations. Simply select the desired location, choose a date and time, and invite your friends. You can also customize party details such as themes and activities."
-                Question="How can I organize a party at a park or other location?"
+                Answer="Ο ιστότοπός μας παρέχει ένα σύστημα πάρτι που σας επιτρέπει να οργανώνετε εύκολα πάρτι σε πάρκα και άλλες τοποθεσίες. Απλώς επιλέξτε την επιθυμητή τοποθεσία, επιλέξτε ημερομηνία και ώρα και προσκαλέστε τους φίλους σας. Μπορείτε επίσης να προσαρμόσετε τις λεπτομέρειες του πάρτι, όπως θέματα και δραστηριότητες."
+                Question="Πώς μπορώ να οργανώσω ένα πάρτυ σε πάρκο ή άλλη τοποθεσία;"
               ></Question>
             </div>
           </div>
@@ -440,17 +421,17 @@ export default function Home() {
           <div className="home-container31">
             <span className="home-logo2"><Link to="/">MY PG</Link></span>
             <nav className="home-nav1 home-nav1">
-              <span className="home-nav12"><Link to="/">Home</Link></span>
-              <span className="home-nav22"><Link to="/about">About</Link></span>
+              <span className="home-nav12"><Link to="/">Αρχική</Link></span>
+              <span className="home-nav22"><Link to="/about">Σχετικά</Link></span>
               <span className="home-nav32"><Link to="/features">Features</Link></span>
-              <span className="home-nav42"><Link to="/parties">Parties</Link></span>
-              <span className="home-nav52"><Link to="/discounts">Discounts</Link></span>
+              <span className="home-nav42"><Link to="/parties">Πάρτυ</Link></span>
+              <span className="home-nav52"><Link to="/discounts">Προσφορές</Link></span>
             </nav>
           </div>
           <div className="home-separator"></div>
           <div className="home-container32">
             <span className="home-text61">
-              © 2023 MYPG, All Rights Reserved.
+              © 2024 MYPG, All Rights Reserved.
             </span>
             <div className="home-icon-group1">
               <svg viewBox="0 0 950.8571428571428 1024" className="home-icon10">

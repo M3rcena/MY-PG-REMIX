@@ -1,0 +1,30 @@
+{
+    "Alimos": {
+
+    },
+    "Agios Dimitrios": {
+
+    },
+    "Ilioupoli": {
+        "Pantazi": {
+            "name": "Παιδική χαρά Πανταζή",
+            "accessibility": "Πρόσβαση σε Αμέα",
+            "items": {
+                "Kounies": true,
+                "Tsoulithres": true
+            },
+            "reviews": {
+                "rating": 0,
+                "comments": []
+            },
+            "lat": "37.9395563",
+            "lng": "23.7487968"
+        }
+    },
+    "Argyroupoli": {
+
+    },
+    "Elliniko": {
+
+    }
+}

@@ -4,14 +4,51 @@ import { Helmet } from 'react-helmet';
 import featureStylesHref from '../assets/features/css/index.css';
 import indexStylesHref from "../styles/index.css"
 import { Link, useNavigate } from '@remix-run/react';
-import animationStyleHref from '../assets/features/wp-content/plugins/elementor/assets/lib/animations/animations.min.css'
-
+import animationStyleHref from '../assets/features/wp-content/plugins/elementor/assets/lib/animations/animations.min.css';
+// import elementorFrontendHref from '../assets/features/wp-content/plugins/elementor/assets/css/frontend-lite.min.css';
+// import eaelGeneralHref from '../assets/features/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css';
+// import eael1261Href from '../assets/features/wp-content/uploads/essential-addons-elementor/eael-1261.css';
+// import eael1264Href from '../assets/features/wp-content/uploads/essential-addons-elementor/eael-1264.css';
+// import easyjobsowlHref from '../assets/features/wp-content/plugins/easyjobs/public/assets/vendor/owl.carousel.min.css';
+// import easyjobsHref from '../assets/features/wp-content/plugins/easyjobs/public/assets/dist/css/easyjobs-public.min.css';
+// import flexiaHref from '../assets/features/wp-content/themes/flexia/framework/assets/site/css/flexia.min.css';
+// import eael1272Href from '../assets/features/wp-content/uploads/essential-addons-elementor/eael-1272.css';
+// import elementorIconsHref from '../assets/features/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css';
+// import swiperHref from '../assets/features/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.css';
+// import elementorPost7Href from '../assets/features/wp-content/plugins/elementor/assets/css/post-7.css';
+// import elementorProHref from '../assets/features/wp-content/plugins/elementor-pro/assets/css/frontend.min.css';
+// import elementorGlobalHref from '../assets/features/wp-content/plugins/elementor/assets/css/global.css';
+// import fluentFormElementorWidgetHref from '../assets/features/wp-content/plugins/fluentform/css/elementor-widget.css';
+// import elementorPost1272Href from '../assets/features/wp-content/plugins/elementor/assets/css/post-1272.css';
+// import elementorPost1261Href from '../assets/features/wp-content/plugins/elementor/assets/css/post-1261.css';
+// import elementorPost1264Href from '../assets/features/wp-content/plugins/elementor/assets/css/post-1264.css';
+// import elementorIconsShared0Href from '../assets/features/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css';
+// import elementorIconsFaSolidHref from '../assets/features/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css';
 
 export const links = () => {
   return [
     { rel: 'stylesheet', href: featureStylesHref },
     { rel: 'stylesheet', href: indexStylesHref },
-    { rel: 'stylesheet', href: animationStyleHref, id: 'e-animations-css' },
+    { rel: 'stylesheet', href: animationStyleHref },
+    // { rel: 'stylesheet', href: elementorFrontendHref },
+    // { rel: 'stylesheet', href: eaelGeneralHref },
+    // { rel: 'stylesheet', href: eael1261Href },
+    // { rel: 'stylesheet', href: eael1264Href },
+    // { rel: 'stylesheet', href: easyjobsowlHref },
+    // { rel: 'stylesheet', href: easyjobsHref },
+    // { rel: 'stylesheet', href: flexiaHref },
+    // { rel: 'stylesheet', href: eael1272Href },
+    // { rel: 'stylesheet', href: elementorIconsHref },
+    // { rel: 'stylesheet', href: swiperHref },
+    // { rel: 'stylesheet', href: elementorPost7Href },
+    // { rel: 'stylesheet', href: elementorProHref },
+    // { rel: 'stylesheet', href: elementorGlobalHref },
+    // { rel: 'stylesheet', href: fluentFormElementorWidgetHref },
+    // { rel: 'stylesheet', href: elementorPost1272Href },
+    // { rel: 'stylesheet', href: elementorPost1261Href },
+    // { rel: 'stylesheet', href: elementorPost1264Href },
+    // { rel: 'stylesheet', href: elementorIconsShared0Href },
+    // { rel: 'stylesheet', href: elementorIconsFaSolidHref },
   ]
 };
 

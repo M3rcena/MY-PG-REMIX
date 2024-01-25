@@ -1,9 +1,5 @@
-export async function loader({
-    params,
-  }) {
-    return fake.db.getConcerts({
-      date: params.date,
-      city: params.city,
-    });
-  }
+export function loader({params}) {
+  const city = test;
+  const park = 1;
+};
   

@@ -8,15 +8,23 @@
     "Ilioupoli": {
         "Pantazi": {
             "name": "Παιδική χαρά Πανταζή",
-            "accessibility": "Πρόσβαση σε Αμέα",
+            "accessibility": true,
             "items": {
                 "Kounies": true,
-                "Tsoulithres": true
+                "Tsoulithres": true,
+                "Trapezia": 0,
+                "Pagkakia": 0,
+                "Skiash": 0
             },
             "reviews": {
                 "rating": 0,
                 "comments": []
             },
+            "age": {
+                "min": 3,
+                "max": 13
+            },
+            "certifications": 0,
             "lat": "37.9395563",
             "lng": "23.7487968"
         }

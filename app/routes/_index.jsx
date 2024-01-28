@@ -6,7 +6,7 @@ import { FeatureCard, links as featureCardLinks } from '../components/feature-ca
 import { Question, links as questionLinks } from '../components/question/question.jsx'
 import indexStylesHref from "../styles/index.css"
 import { Link, useNavigate } from '@remix-run/react'
-import SpellScroll from '../assets/svg/spell-scroll-svgrepo-com.jsx'
+// import SpellScroll from '../assets/svg/spell-scroll-svgrepo-com.jsx'
 
 export const links = () => {
   return [
@@ -37,7 +37,7 @@ export default function Home() {
               <span className="home-nav5"><Link to="/discounts">Προσφορές</Link></span>
             </nav>
             <div className="home-buttons">
-              <button className="home-login button"><Link to="/login"><SpellScroll />Σύνδεση</Link></button>
+              <button className="home-login button"><Link to="/login">Σύνδεση</Link></button>
               <button className="home-register button"><Link to="/register">Εγγραφή</Link></button>
             </div>
           </div>

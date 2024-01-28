@@ -37,10 +37,6 @@ export default function initi18n() {
                 tags: ["{{", "}}"],
                 disable: false,
             },
-            parser: {
-                stringify: (data) => JSON.stringify(data, stringifyCallback),
-                parse: (data) => JSON.stringify(data, parseCallback)
-            },
         });
     } else {
         console.error("Languages is not properly defined. Check your import statement.");

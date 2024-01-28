@@ -153,41 +153,41 @@ export default function Features() {
           </header>
         </div>
         <div className="page-template page-template-elementor_header_footer page page-id-1272 page-child parent-pageid-1076 flexia-2.3.1 elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-1272">
-          <div id="page" class="site">
-            <div data-elementor-type="wp-page" data-elementor-id="1272" class="elementor elementor-1272"
+          <div id="page" className="site">
+            <div data-elementor-type="wp-page" data-elementor-id="1272" className="elementor elementor-1272"
               data-elementor-post-type="page">
               <section data-particle_enable="false" data-particle-mobile-disabled="false"
-                class="elementor-section elementor-top-section elementor-element elementor-element-5b2274e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                className="elementor-section elementor-top-section elementor-element elementor-element-5b2274e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                 data-id="5b2274e" data-element_type="section"
                 data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-                <div class="elementor-container elementor-column-gap-no">
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-13de07b"
+                <div className="elementor-container elementor-column-gap-no">
+                  <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-13de07b"
                     data-id="13de07b" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                      <div class="elementor-element elementor-element-4c766e5 elementor-widget__width-auto elementor-absolute elementor-invisible elementor-widget elementor-widget-image"
+                    <div className="elementor-widget-wrap elementor-element-populated">
+                      <div className="elementor-element elementor-element-4c766e5 elementor-widget__width-auto elementor-absolute elementor-invisible elementor-widget elementor-widget-image"
                         data-id="4c766e5" data-element_type="widget"
                         data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.3,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_position&quot;:&quot;absolute&quot;}"
                         data-widget_type="image.default">
-                        <div class="elementor-widget-container">
+                        <div className="elementor-widget-container">
                           <img decoding="async" width="100" height="100" src="./assets/img/shape-4.png"
-                            class="attachment-full size-full wp-image-1090 wp-stateless-item" alt=""
+                            className="attachment-full size-full wp-image-1090 wp-stateless-item" alt=""
                             data-image-size="full" />
                         </div>
                       </div>
-                      <div class="elementor-element elementor-element-6c5cb98 elementor-widget__width-auto elementor-absolute elementor-invisible elementor-widget elementor-widget-image"
+                      <div className="elementor-element elementor-element-6c5cb98 elementor-widget__width-auto elementor-absolute elementor-invisible elementor-widget elementor-widget-image"
                         data-id="6c5cb98" data-element_type="widget"
                         data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_direction&quot;:&quot;negative&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.3,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_position&quot;:&quot;absolute&quot;}"
                         data-widget_type="image.default">
-                        <div class="elementor-widget-container">
+                        <div className="elementor-widget-container">
                           <img decoding="async" width="100" height="100" src="./assets/img/shape-1.png"
-                            class="attachment-full size-full wp-image-1093 wp-stateless-item" alt=""
+                            className="attachment-full size-full wp-image-1093 wp-stateless-item" alt=""
                             data-image-size="full" />
                         </div>
                       </div>
-                      <div class="elementor-element elementor-element-bc0f8ac elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-heading"
+                      <div className="elementor-element elementor-element-bc0f8ac elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-heading"
                         data-id="bc0f8ac" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                          <h2 class="elementor-heading-title elementor-size-default">The Only App You’ll Need
+                        <div className="elementor-widget-container">
+                          <h2 className="elementor-heading-title elementor-size-default">The Only App You’ll Need
                             To Power Up Your Life</h2>
                         </div>
                       </div>
@@ -196,29 +196,29 @@ export default function Features() {
                 </div>
               </section>
               <section data-particle_enable="false" data-particle-mobile-disabled="false"
-                class="elementor-section elementor-top-section elementor-element elementor-element-00de996 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                className="elementor-section elementor-top-section elementor-element elementor-element-00de996 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                 data-id="00de996" data-element_type="section"
                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="elementor-container elementor-column-gap-no">
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ab1ce05"
+                <div className="elementor-container elementor-column-gap-no">
+                  <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ab1ce05"
                     data-id="ab1ce05" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                    <div className="elementor-widget-wrap elementor-element-populated">
                       <section data-particle_enable="false" data-particle-mobile-disabled="false"
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-cd3176a elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        className="elementor-section elementor-inner-section elementor-element elementor-element-cd3176a elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                         data-id="cd3176a" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7466577"
+                        <div className="elementor-container elementor-column-gap-no">
+                          <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7466577"
                             data-id="7466577" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-3bc7c7b eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-3bc7c7b eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
                                 data-id="3bc7c7b" data-element_type="widget"
                                 data-widget_type="eael-info-box.default">
-                                <div class="elementor-widget-container">
-                                  <div class="eael-infobox">
-                                    <div class="infobox-icon eael-icon-only">
+                                <div className="elementor-widget-container">
+                                  <div className="eael-infobox">
+                                    <div className="infobox-icon eael-icon-only">
 
 
-                                      <div class="infobox-icon-wrap">
+                                      <div className="infobox-icon-wrap">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="48"
                                           height="48" viewBox="0 0 48 48" fill="none">
                                           <path
@@ -238,8 +238,8 @@ export default function Features() {
 
 
                                     </div>
-                                    <div class="infobox-content eael-icon-only">
-                                      <h4 class="title">User Friendly</h4>
+                                    <div className="infobox-content eael-icon-only">
+                                      <h4 className="title">User Friendly</h4>
                                       <p>AppMart brings you smooth, easy-to-use interfaces that
                                         can be operated with just a few taps.</p>
                                     </div>
@@ -249,18 +249,18 @@ export default function Features() {
                               </div>
                             </div>
                           </div>
-                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5b1de50"
+                          <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5b1de50"
                             data-id="5b1de50" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-2df2a7b eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-2df2a7b eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
                                 data-id="2df2a7b" data-element_type="widget"
                                 data-widget_type="eael-info-box.default">
-                                <div class="elementor-widget-container">
-                                  <div class="eael-infobox">
-                                    <div class="infobox-icon eael-icon-only">
+                                <div className="elementor-widget-container">
+                                  <div className="eael-infobox">
+                                    <div className="infobox-icon eael-icon-only">
 
 
-                                      <div class="infobox-icon-wrap">
+                                      <div className="infobox-icon-wrap">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="53"
                                           height="53" viewBox="0 0 53 53" fill="none">
                                           <path
@@ -283,8 +283,8 @@ export default function Features() {
 
 
                                     </div>
-                                    <div class="infobox-content eael-icon-only">
-                                      <h4 class="title">Super Fast </h4>
+                                    <div className="infobox-content eael-icon-only">
+                                      <h4 className="title">Super Fast </h4>
                                       <p>This super fast app will help you work efficiently. All
                                         the features load with zero connection issues.</p>
                                     </div>
@@ -294,18 +294,18 @@ export default function Features() {
                               </div>
                             </div>
                           </div>
-                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a9d4962"
+                          <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a9d4962"
                             data-id="a9d4962" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-73f4e73 eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-73f4e73 eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
                                 data-id="73f4e73" data-element_type="widget"
                                 data-widget_type="eael-info-box.default">
-                                <div class="elementor-widget-container">
-                                  <div class="eael-infobox">
-                                    <div class="infobox-icon eael-icon-only">
+                                <div className="elementor-widget-container">
+                                  <div className="eael-infobox">
+                                    <div className="infobox-icon eael-icon-only">
 
 
-                                      <div class="infobox-icon-wrap">
+                                      <div className="infobox-icon-wrap">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="50"
                                           height="50" viewBox="0 0 50 50" fill="none">
                                           <path
@@ -316,8 +316,8 @@ export default function Features() {
 
 
                                     </div>
-                                    <div class="infobox-content eael-icon-only">
-                                      <h4 class="title">Insightful Analytics</h4>
+                                    <div className="infobox-content eael-icon-only">
+                                      <h4 className="title">Insightful Analytics</h4>
                                       <p>It also offers you insightful, accurate analytics that
                                         will help you track your daily expenses.</p>
                                     </div>
@@ -330,21 +330,21 @@ export default function Features() {
                         </div>
                       </section>
                       <section data-particle_enable="false" data-particle-mobile-disabled="false"
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-a7aa7a1 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        className="elementor-section elementor-inner-section elementor-element elementor-element-a7aa7a1 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                         data-id="a7aa7a1" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d655d1e"
+                        <div className="elementor-container elementor-column-gap-no">
+                          <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d655d1e"
                             data-id="d655d1e" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-ca92f97 eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-ca92f97 eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
                                 data-id="ca92f97" data-element_type="widget"
                                 data-widget_type="eael-info-box.default">
-                                <div class="elementor-widget-container">
-                                  <div class="eael-infobox">
-                                    <div class="infobox-icon eael-icon-only">
+                                <div className="elementor-widget-container">
+                                  <div className="eael-infobox">
+                                    <div className="infobox-icon eael-icon-only">
 
 
-                                      <div class="infobox-icon-wrap">
+                                      <div className="infobox-icon-wrap">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="39"
                                           height="50" viewBox="0 0 39 50" fill="none">
                                           <path
@@ -358,8 +358,8 @@ export default function Features() {
 
 
                                     </div>
-                                    <div class="infobox-content eael-icon-only">
-                                      <h4 class="title">Highly Rated </h4>
+                                    <div className="infobox-content eael-icon-only">
+                                      <h4 className="title">Highly Rated </h4>
                                       <p>AppMart is loved by hundreds of loyal and happy users who
                                         swear the app made their lives easier.</p>
                                     </div>
@@ -369,18 +369,18 @@ export default function Features() {
                               </div>
                             </div>
                           </div>
-                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d9fcc78"
+                          <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d9fcc78"
                             data-id="d9fcc78" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-e9aa7bf eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-e9aa7bf eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
                                 data-id="e9aa7bf" data-element_type="widget"
                                 data-widget_type="eael-info-box.default">
-                                <div class="elementor-widget-container">
-                                  <div class="eael-infobox">
-                                    <div class="infobox-icon eael-icon-only">
+                                <div className="elementor-widget-container">
+                                  <div className="eael-infobox">
+                                    <div className="infobox-icon eael-icon-only">
 
 
-                                      <div class="infobox-icon-wrap">
+                                      <div className="infobox-icon-wrap">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="58"
                                           height="50" viewBox="0 0 58 50" fill="none">
                                           <path
@@ -400,8 +400,8 @@ export default function Features() {
 
 
                                     </div>
-                                    <div class="infobox-content eael-icon-only">
-                                      <h4 class="title">User Forum Forum</h4>
+                                    <div className="infobox-content eael-icon-only">
+                                      <h4 className="title">User Forum Forum</h4>
                                       <p>It has a massive and friendly user forum - you can
                                         connect to other app users and get any help you need.
                                       </p>
@@ -412,18 +412,18 @@ export default function Features() {
                               </div>
                             </div>
                           </div>
-                          <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8417dd6"
+                          <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8417dd6"
                             data-id="8417dd6" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-15a1c6f eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-15a1c6f eael-infobox-content-align-left eael-infobox-icon-bg-shape-none eael-infobox-icon-hover-bg-shape-none elementor-widget elementor-widget-eael-info-box"
                                 data-id="15a1c6f" data-element_type="widget"
                                 data-widget_type="eael-info-box.default">
-                                <div class="elementor-widget-container">
-                                  <div class="eael-infobox">
-                                    <div class="infobox-icon eael-icon-only">
+                                <div className="elementor-widget-container">
+                                  <div className="eael-infobox">
+                                    <div className="infobox-icon eael-icon-only">
 
 
-                                      <div class="infobox-icon-wrap">
+                                      <div className="infobox-icon-wrap">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="51"
                                           height="51" viewBox="0 0 51 51" fill="none">
                                           <path
@@ -440,8 +440,8 @@ export default function Features() {
 
 
                                     </div>
-                                    <div class="infobox-content eael-icon-only">
-                                      <h4 class="title">24/7 Support</h4>
+                                    <div className="infobox-content eael-icon-only">
+                                      <h4 className="title">24/7 Support</h4>
                                       <p>Got any queries? Quickly get in touch. Our dedicated
                                         support team is always available at your service.</p>
                                     </div>
@@ -458,59 +458,59 @@ export default function Features() {
                 </div>
               </section>
               <section data-particle_enable="false" data-particle-mobile-disabled="false"
-                class="elementor-section elementor-top-section elementor-element elementor-element-07ffedc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                className="elementor-section elementor-top-section elementor-element elementor-element-07ffedc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                 data-id="07ffedc" data-element_type="section"
                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="elementor-container elementor-column-gap-no">
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6d9b99d"
+                <div className="elementor-container elementor-column-gap-no">
+                  <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6d9b99d"
                     data-id="6d9b99d" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                    <div className="elementor-widget-wrap elementor-element-populated">
                       <section data-particle_enable="false" data-particle-mobile-disabled="false"
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-374590b elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        className="elementor-section elementor-inner-section elementor-element elementor-element-374590b elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                         data-id="374590b" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                          <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c2af553 elementor-invisible"
+                        <div className="elementor-container elementor-column-gap-no">
+                          <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c2af553 elementor-invisible"
                             data-id="c2af553" data-element_type="column"
                             data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-b57c268 elementor-widget elementor-widget-image"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-b57c268 elementor-widget elementor-widget-image"
                                 data-id="b57c268" data-element_type="widget"
                                 data-widget_type="image.default">
-                                <div class="elementor-widget-container">
+                                <div className="elementor-widget-container">
                                   <img loading="lazy" decoding="async" width="660" height="823"
                                     src="https://static.live.templately.com/demo/2021/08/power_-image.png"
-                                    class="attachment-full size-full wp-image-1144 wp-stateless-item"
+                                    className="attachment-full size-full wp-image-1144 wp-stateless-item"
                                     alt="" sizes="(max-width: 660px) 100vw, 660px"
                                     data-image-size="full" />
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fb6c791 elementor-invisible"
+                          <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fb6c791 elementor-invisible"
                             data-id="fb6c791" data-element_type="column"
                             data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-0f47f48 elementor-widget elementor-widget-heading"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-0f47f48 elementor-widget elementor-widget-heading"
                                 data-id="0f47f48" data-element_type="widget"
                                 data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                  <h2 class="elementor-heading-title elementor-size-default">Fast &
+                                <div className="elementor-widget-container">
+                                  <h2 className="elementor-heading-title elementor-size-default">Fast &
                                     Effective</h2>
                                 </div>
                               </div>
-                              <div class="elementor-element elementor-element-65bc572 elementor-widget elementor-widget-heading"
+                              <div className="elementor-element elementor-element-65bc572 elementor-widget elementor-widget-heading"
                                 data-id="65bc572" data-element_type="widget"
                                 data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                  <h2 class="elementor-heading-title elementor-size-default">Powerful
+                                <div className="elementor-widget-container">
+                                  <h2 className="elementor-heading-title elementor-size-default">Powerful
                                     Digitalization With Every Tap
                                   </h2>
                                 </div>
                               </div>
-                              <div class="elementor-element elementor-element-9fb901e elementor-widget elementor-widget-text-editor"
+                              <div className="elementor-element elementor-element-9fb901e elementor-widget elementor-widget-text-editor"
                                 data-id="9fb901e" data-element_type="widget"
                                 data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
+                                <div className="elementor-widget-container">
                                   <style>
                                     {elementorStyles}
                                   </style> Get instant helpful resources about anything on the go,
@@ -520,21 +520,21 @@ export default function Features() {
                                   aute irure.
                                 </div>
                               </div>
-                              <div class="elementor-element elementor-element-4844076 elementor-widget elementor-widget-text-editor"
+                              <div className="elementor-element elementor-element-4844076 elementor-widget elementor-widget-text-editor"
                                 data-id="4844076" data-element_type="widget"
                                 data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
+                                <div className="elementor-widget-container">
                                   Join AppMart &#038; get all needs digitalized in one app. </div>
                               </div>
-                              <div class="elementor-element elementor-element-97048e8 elementor-align-left elementor-widget elementor-widget-button"
+                              <div className="elementor-element elementor-element-97048e8 elementor-align-left elementor-widget elementor-widget-button"
                                 data-id="97048e8" data-element_type="widget"
                                 data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                  <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-sm"
+                                <div className="elementor-widget-container">
+                                  <div className="elementor-button-wrapper">
+                                    <a className="elementor-button elementor-button-link elementor-size-sm"
                                       href="https://demo.templately.com/appmart/sign-up/">
-                                      <span class="elementor-button-content-wrapper">
-                                        <span class="elementor-button-text">Get Started</span>
+                                      <span className="elementor-button-content-wrapper">
+                                        <span className="elementor-button-text">Get Started</span>
                                       </span>
                                     </a>
                                   </div>
@@ -545,33 +545,33 @@ export default function Features() {
                         </div>
                       </section>
                       <section data-particle_enable="false" data-particle-mobile-disabled="false"
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-aacfe0e elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        className="elementor-section elementor-inner-section elementor-element elementor-element-aacfe0e elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                         data-id="aacfe0e" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                          <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6902c0a elementor-invisible"
+                        <div className="elementor-container elementor-column-gap-no">
+                          <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6902c0a elementor-invisible"
                             data-id="6902c0a" data-element_type="column"
                             data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-9816c0b elementor-widget elementor-widget-heading"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-9816c0b elementor-widget elementor-widget-heading"
                                 data-id="9816c0b" data-element_type="widget"
                                 data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                  <h2 class="elementor-heading-title elementor-size-default">Easy To
+                                <div className="elementor-widget-container">
+                                  <h2 className="elementor-heading-title elementor-size-default">Easy To
                                     Track</h2>
                                 </div>
                               </div>
-                              <div class="elementor-element elementor-element-62073d2 elementor-widget elementor-widget-heading"
+                              <div className="elementor-element elementor-element-62073d2 elementor-widget elementor-widget-heading"
                                 data-id="62073d2" data-element_type="widget"
                                 data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                  <h2 class="elementor-heading-title elementor-size-default">AppMart
+                                <div className="elementor-widget-container">
+                                  <h2 className="elementor-heading-title elementor-size-default">AppMart
                                     Analytics For All Expenses</h2>
                                 </div>
                               </div>
-                              <div class="elementor-element elementor-element-1c6b83c elementor-widget elementor-widget-text-editor"
+                              <div className="elementor-element elementor-element-1c6b83c elementor-widget elementor-widget-text-editor"
                                 data-id="1c6b83c" data-element_type="widget"
                                 data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
+                                <div className="elementor-widget-container">
                                   Keep a close track of all your regular expenses with insightful
                                   analytics by AppMart.
                                   Get graphical representations of your daily spendings, view trendy
@@ -579,21 +579,21 @@ export default function Features() {
                                   from a single place.
                                   AppMart is here to help with all your financial needs. </div>
                               </div>
-                              <div class="elementor-element elementor-element-b2f8019 elementor-widget elementor-widget-text-editor"
+                              <div className="elementor-element elementor-element-b2f8019 elementor-widget elementor-widget-text-editor"
                                 data-id="b2f8019" data-element_type="widget"
                                 data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
+                                <div className="elementor-widget-container">
                                   AppMart is here to help with all your financial needs. </div>
                               </div>
-                              <div class="elementor-element elementor-element-b9b49a2 elementor-align-left elementor-widget elementor-widget-button"
+                              <div className="elementor-element elementor-element-b9b49a2 elementor-align-left elementor-widget elementor-widget-button"
                                 data-id="b9b49a2" data-element_type="widget"
                                 data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                  <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-sm"
+                                <div className="elementor-widget-container">
+                                  <div className="elementor-button-wrapper">
+                                    <a className="elementor-button elementor-button-link elementor-size-sm"
                                       href="https://demo.templately.com/appmart/sign-up/">
-                                      <span class="elementor-button-content-wrapper">
-                                        <span class="elementor-button-text">Get Started</span>
+                                      <span className="elementor-button-content-wrapper">
+                                        <span className="elementor-button-text">Get Started</span>
                                       </span>
                                     </a>
                                   </div>
@@ -601,17 +601,17 @@ export default function Features() {
                               </div>
                             </div>
                           </div>
-                          <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f08d0df elementor-invisible"
+                          <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f08d0df elementor-invisible"
                             data-id="f08d0df" data-element_type="column"
                             data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                              <div class="elementor-element elementor-element-6732105 elementor-widget elementor-widget-image"
+                            <div className="elementor-widget-wrap elementor-element-populated">
+                              <div className="elementor-element elementor-element-6732105 elementor-widget elementor-widget-image"
                                 data-id="6732105" data-element_type="widget"
                                 data-widget_type="image.default">
-                                <div class="elementor-widget-container">
+                                <div className="elementor-widget-container">
                                   <img loading="lazy" decoding="async" width="618" height="819"
                                     src="https://static.live.templately.com/demo/2021/08/app-mart.png"
-                                    class="attachment-full size-full wp-image-1145 wp-stateless-item"
+                                    className="attachment-full size-full wp-image-1145 wp-stateless-item"
                                     alt="" sizes="(max-width: 618px) 100vw, 618px"
                                     data-image-size="full" />
                                 </div>

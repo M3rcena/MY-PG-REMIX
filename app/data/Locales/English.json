@@ -1,6 +1,7 @@
 {
     "info": {
         "name": "MyPG | My Playground",
+        "logo": "MY PG",
         "nav": {
             "home": "Home",
             "about": "About",
@@ -8,6 +9,39 @@
             "discount": "Discount",
             "login": "Login",
             "register": "Register"
+        }
+    },
+    "index": {
+        "title": "Discover the Best Parks and Stores",
+        "subtitle": "Explore your city with our interactive map",
+        "map": "Map",
+        "more": "Learn More →",
+        "details": "Details",
+        "description": "Our website provides detailed information about parks, shops and more. Register now to enjoy exclusive discounts and other benefits. With our party system, you can easily organize parties in parks and other locations. Join us today!",
+        "features": {
+            "title": "Explore the exciting features",
+            "description": "Discover how our professional website can enhance your experiences and make party planning a breeze.",
+            "1": {
+                "title": "Interactive Map",
+                "description": "Our interactive map allows you to easily find parks, shops and other locations. You can also use it to plan your route and find the best way to get to your destination."
+            },
+            "2": {
+                "title": "Member Discounts",
+                "description": "Enjoy exclusive discounts and special offers from partner stores when you become a member."
+            },
+            "3": {
+                "title": "Party System",
+                "description": "Plan and organize elusive parties in parks and other venues with our convenient party system."
+            },
+            "4": {
+                "title": "Example",
+                "description": "Example description"
+            }
+        },
+        "pricing": {
+            "title": "Pricing",
+            "description": "Choose your plan",
+            "subdescription": "Choose the perfect plan for your needs"
         }
     }
 }

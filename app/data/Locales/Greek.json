@@ -1,0 +1,13 @@
+{
+    "info": {
+        "name": "MyPG | My Playground",
+        "nav": {
+            "home": "Αρχική",
+            "about": "Σχετικά",
+            "parties": "Πάρτυ",
+            "discount": "Προσφορές",
+            "login": "Σύνδεση",
+            "register": "Εγγραφή"
+        }
+    }
+}

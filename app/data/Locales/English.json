@@ -1,0 +1,13 @@
+{
+    "info": {
+        "name": "MyPG | My Playground",
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "parties": "Parties",
+            "discount": "Discount",
+            "login": "Login",
+            "register": "Register"
+        }
+    }
+}

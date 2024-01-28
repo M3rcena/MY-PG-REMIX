@@ -1,6 +1,7 @@
 import { createRequestHandler } from "@remix-run/express";
 import { broadcastDevReady } from "@remix-run/node";
 import express from "express";
+import initi18n from "./app/structures/i18n.mjs";
 
 // notice that the result of `remix build` is "just a module"
 import * as build from "./build/index.js";
@@ -17,10 +18,5 @@ app.listen(3000, '0.0.0.0', () => {
   }
   console.log("App listening on http://0.0.0.0:3000");
 
-  console.table({
-    'Node Version: ': `${process.version}`,
-    '': '',
-    'Platform: ': `${process.platform} ${process.arch}`,
-    'RAM: ': `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB / ${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)} MB`
-  })
+  initi18n();
 });

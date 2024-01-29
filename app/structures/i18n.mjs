@@ -1,9 +1,9 @@
 import i18n from "i18n";
 
 const Languages = {
-    Greek: "Greek",
-    English: "English",
-    French: "French",
+    Greek: "gr",
+    English: "en",
+    French: "fr",
     German: "German",
     Italian: "Italian",
     Spanish: "Spanish"

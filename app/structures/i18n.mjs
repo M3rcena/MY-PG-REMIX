@@ -1,7 +1,7 @@
 import i18n from "i18n";
 
 const Languages = {
-    Greek: "gr",
+    gr: "gr",
     English: "en",
     French: "fr",
     German: "German",
@@ -15,7 +15,7 @@ export default function initi18n() {
     if (Languages && typeof Languages === 'object') {
         i18n.configure({
             locales: Object.values(Languages),
-            defaultLocale: "Greek",
+            defaultLocale: "gr",
             autoReload: true,
             updateFiles: false,
             syncFiles: false,

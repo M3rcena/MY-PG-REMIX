@@ -2,4 +2,5 @@
 export default {
   appDirectory: "app",
   ignoredRouteFiles: ["**/.*"],
+  browserNodeBuiltinsPolyfill: { modules: { path: true, url: true, fs: true } }
 };

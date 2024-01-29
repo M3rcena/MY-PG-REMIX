@@ -6,6 +6,7 @@ import { FeatureCard, links as featureCardLinks } from '../components/feature-ca
 import { Question, links as questionLinks } from '../components/question/question.jsx'
 import indexStylesHref from "../styles/index.css"
 import { Link, useNavigate } from '@remix-run/react'
+import { translate } from '../structures/i18n.mjs'
 // import SpellScroll from '../assets/svg/spell-scroll-svgrepo-com.jsx'
 
 export const links = () => {
@@ -22,7 +23,7 @@ export default function Home() {
     <>
       <div className="home-container">
         <Helmet>
-          <title>MyPG | My Playground</title>
+          <title>{ translate('info.name') }</title>
           <meta property="og:title" content="EPAL ALIMOU" />
         </Helmet>
         <div className="home-header">

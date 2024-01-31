@@ -9,6 +9,9 @@ import {
 import appStylesHref from "./app.css";
 import app2StylesHref from "./assets/css/style.css";
 import React from "react";
+import initi18n from "./structures/i18n.mjs";
+import { translate } from "./structures/i18n.mjs";
+initi18n();
 
 export let links = () => {
   return [{ rel: "stylesheet", href: appStylesHref }, { rel: "stylesheet", href: app2StylesHref }];
@@ -18,7 +21,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <title>MyPG | My Playground</title>
+        <title>{ translate('gr', 'info.name') }</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
         <meta property="twitter:card" content="summary_large_image" />

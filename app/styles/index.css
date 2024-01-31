@@ -1,7 +1,7 @@
 .home-container {
   width: 100%;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
@@ -1421,4 +1421,28 @@
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
+}
+
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+.slider {
+  background-color: #eff0f2ff;
+  padding: 8em 2em;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+
+.slider-img {
+  width: 100px;
+  height: 100px;
+  animation: scroll 60s linear infinite;
 }

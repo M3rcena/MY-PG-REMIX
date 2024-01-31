@@ -7,20 +7,16 @@ import { Question, links as questionLinks } from '../components/question/questio
 import indexStylesHref from "../styles/index.css";
 import { Link, useNavigate } from '@remix-run/react';
 import { translate } from '../structures/i18n.mjs';
-// import SpellScroll from '../assets/svg/spell-scroll-svgrepo-com.jsx'
 
-// Import Logo Carousel
-import Slider from 'react-slick';
-import slickStylesHref from "slick-carousel/slick/slick.css";
-import slickThemeHref from "slick-carousel/slick/slick-theme.css";
+import Alimos from '../assets/img/companies/Alimos.png';
+import Ilioupoli from '../assets/img/companies/Ilioupoli.png';
+import Elliniko from '../assets/img/companies/elliniko.png';
 
 export const links = () => {
   return [
     ...featureCardLinks(),
     ...questionLinks(),
     { rel: 'stylesheet', href: indexStylesHref },
-    { rel: 'stylesheet', href: slickStylesHref },
-    { rel: 'stylesheet', href: slickThemeHref },
   ]
 };
 
@@ -157,18 +153,22 @@ export default function Home() {
                 <FeatureCard
                   Heading={translate('gr', 'index.features.1.title')}
                   SubHeading={translate('gr', 'index.features.1.description')}
+                  Color="feature-card-feature-card"
                 ></FeatureCard>
                 <FeatureCard
                   Heading={translate('gr', 'index.features.2.title')}
                   SubHeading={translate('gr', 'index.features.2.description')}
+                  Color="feature-card-feature-card2"
                 ></FeatureCard>
                 <FeatureCard
                   Heading={translate('gr', 'index.features.3.title')}
                   SubHeading={translate('gr', 'index.features.3.description')}
+                  Color="feature-card-feature-card3"
                 ></FeatureCard>
                 <FeatureCard
                   Heading="Lorem ipsum"
                   SubHeading="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem lorem, malesuada in metus vitae, scelerisque accumsan ipsum."
+                  Color="feature-card-feature-card4"
                 ></FeatureCard>
               </div>
             </div>
@@ -319,29 +319,62 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="home-gallery"></div>
-        <div className="home-banner">
-          <div className="home-banner1">
-            <Slider {...sliderSettings}>
-              <div>
-                <h3>1</h3>
-              </div>
-              <div>
-                <h3>2</h3>
-              </div>
-              <div>
-                <h3>3</h3>
-              </div>
-              <div>
-                <h3>4</h3>
-              </div>
-              <div>
-                <h3>5</h3>
-              </div>
-              <div>
-                <h3>6</h3>
-              </div>
-            </Slider>
+        <div className="slider">
+          <div className="slide-track">
+            <div className="slide">
+              <img className="slider-img" src={ Alimos } alt="image" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Ilioupoli } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Elliniko } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Alimos } alt="image" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Ilioupoli } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Elliniko } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Alimos } alt="image" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Ilioupoli } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Elliniko } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Alimos } alt="image" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Ilioupoli } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Elliniko } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Alimos } alt="image" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Ilioupoli } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Elliniko } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Alimos } alt="image" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Ilioupoli } alt="" />
+            </div>
+            <div className="slide">
+              <img className="slider-img" src={ Elliniko } alt="" />
+            </div>
           </div>
         </div>
         <div className="home-faq">

@@ -2,17 +2,15 @@ import i18n from "i18n";
 
 const Languages = {
     gr: "gr",
-    English: "en",
-    French: "fr",
-    German: "German",
-    Italian: "Italian",
-    Spanish: "Spanish"
+    en: "en",
+    fr: "fr",
+    de: "de",
+    it: "it",
+    es: "es"
 };
 
 
 export default function initi18n() {
-    // Check if Languages is an object and not undefined or null
-    if (Languages && typeof Languages === 'object') {
         i18n.configure({
             locales: Object.values(Languages),
             defaultLocale: "gr",
@@ -38,15 +36,15 @@ export default function initi18n() {
                 disable: false,
             },
         });
-    } else {
-        console.error("Languages is not properly defined. Check your import statement.");
-    }
+        console.log("i18n configured");
 }
 
 export { i18n };
 
 export function inlineLocale(locale, text, ...params) {
+    console.log("i18n setLocale:", locale);
     i18n.setLocale(locale);
+    console.log("i18n setLocale completed");
     return i18n.__(text, ...params);
 }
 
@@ -55,6 +53,8 @@ export function inlineLocale(locale, text, ...params) {
  * @param {object} [params] - Optional parameters for text interpolation.
  * @returns {string} - The translated text.
  */
-export function translate(textKey, params) {
-    return inlineLocale(textKey, params ? { ...params } : undefined);
+export function translate(locale, textKey, params) {
+    console.log("translate textKey:", textKey);
+    console.log("translate params:", params);
+    return inlineLocale(locale, textKey, params ? { ...params } : undefined);
 }

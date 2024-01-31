@@ -16,8 +16,5 @@ app.listen(3000, '0.0.0.0', () => {
   if (process.env.NODE_ENV === "development") {
     broadcastDevReady(build);
   }
-  console.log("App listening on http://0.0.0.0:3000");
-
   initi18n();
-  console.log("i18n initialized | DEBUG");
 });

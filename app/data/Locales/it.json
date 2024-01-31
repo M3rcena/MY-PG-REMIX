@@ -1,0 +1,143 @@
+{
+    "symbols": {
+        "€": "€",
+        "!": "!",
+        "@": "@",
+        "#": "#",
+        "$": "$",
+        "%": "%",
+        "^": "^",
+        "&": "&",
+        "*": "*",
+        "(": "(",
+        ")": ")",
+        "_": "_",
+        "-": "-",
+        "+": "+",
+        "=": "=",
+        "{": "{",
+        "}": "}",
+        "[": "[",
+        "]": "]",
+        "|": "|",
+        "?": "?",
+        ".": ".",
+        ",": ",",
+        "<": "<",
+        ">": ">",
+        "/": "/",
+        "~": "~",
+        "`": "`"
+    },
+    "numbers": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9"
+    },
+    "words": {
+        "month": "month"
+    },
+    "info": {
+        "name": "MyPG | My Playground",
+        "logo": "MY PG",
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "parties": "Parties",
+            "discount": "Discount",
+            "login": "Login",
+            "register": "Register"
+        },
+        "copyright": "© 2024 MYPG, All Rights Reserved."
+    },
+    "index": {
+        "title": "Discover the Best Parks and Stores",
+        "subtitle": "Explore your city with our interactive map",
+        "map": "Map",
+        "more": "Learn More →",
+        "details": "Details",
+        "description": "Our website provides detailed information about parks, shops and more. Register now to enjoy exclusive discounts and other benefits. With our party system, you can easily organize parties in parks and other locations. Join us today!",
+        "features": {
+            "title": "Explore the exciting features",
+            "description": "Discover how our professional website can enhance your experiences and make party planning a breeze.",
+            "1": {
+                "title": "Interactive Map",
+                "description": "Our interactive map allows you to easily find parks, shops and other locations. You can also use it to plan your route and find the best way to get to your destination."
+            },
+            "2": {
+                "title": "Member Discounts",
+                "description": "Enjoy exclusive discounts and special offers from partner stores when you become a member."
+            },
+            "3": {
+                "title": "Party System",
+                "description": "Plan and organize elusive parties in parks and other venues with our convenient party system."
+            },
+            "4": {
+                "title": "Example",
+                "description": "Example description"
+            }
+        },
+        "pricing": {
+            "title": "Pricing",
+            "description": "Choose your plan",
+            "subdescription": "Choose the perfect plan for your needs",
+            "free": {
+                "title": "Free",
+                "description": "Get free access to the main features of the site",
+                "1": "View information about parks, shops and other locations",
+                "2": "Get discounts and special offers when you sign up",
+                "3": "Organize parties in parks and other places",
+                "4": "Limited access to the party system",
+                "button": "Continue Free"
+            },
+            "basic": {
+                "title": "BASIC",
+                "description": "Unlock additional features and benefits with the basic plan",
+                "1": "All the features of the FREE plan",
+                "2": "Access premium information about parks, shops and locations",
+                "3": "Enhanced discounts and exclusive offers for members",
+                "4": "Full access to the party system with advanced party tools",
+                "button": "Try Basic plan"
+            },
+            "pro": {
+                "title": "PRO",
+                "description": "Get the ultimate experience with the professional design",
+                "1": "All the features of the BASIC plan",
+                "2": "Priority access to new park and store information",
+                "3": "VIP discounts and exclusive benefits for registered members",
+                "button": "Try PRO plan"
+            }
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "description": "Here are some of the most common questions we receive.",
+            "q1": {
+                "answer": "The purpose of this website is to provide information about parks, shops and other locations, and to offer discounts and benefits to registered members.",
+                "question": "What is the purpose of this website?"
+            },
+            "q2": {
+                "answer": "The map will show information about parks, shops and other points of interest. Users can easily find details such as location, hours of operation and user reviews.",
+                "question": "What kind of information will be available on the map?"
+            },
+            "q3": {
+                "answer": "To register as a member, simply click the 'Register' button on the website and fill in the required details. Once you sign up, you'll have access to discounts and other benefits.",
+                "question": "How do I register as a member?"
+            },
+            "q4": {
+                "answer": "Members will have access to exclusive discounts at participating stores and venues. In addition, they can enjoy special offers for organizing parties in parks and other locations.",
+                "question": "What discounts and benefits are available to members?"
+            },
+            "q5": {
+                "answer": "Our site provides a party system that allows you to easily organize parties in parks and other locations. Just select the desired location, choose a date and time and invite your friends. You can also customize party details such as themes and activities.",
+                "question": "How do I organize a party in a park or other location?"
+            }
+        }
+    }
+}

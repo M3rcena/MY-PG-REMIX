@@ -36,15 +36,12 @@ export default function initi18n() {
                 disable: false,
             },
         });
-        console.log("i18n configured");
 }
 
 export { i18n };
 
 export function inlineLocale(locale, text, ...params) {
-    console.log("i18n setLocale:", locale);
     i18n.setLocale(locale);
-    console.log("i18n setLocale completed");
     return i18n.__(text, ...params);
 }
 
@@ -54,7 +51,5 @@ export function inlineLocale(locale, text, ...params) {
  * @returns {string} - The translated text.
  */
 export function translate(locale, textKey, params) {
-    console.log("translate textKey:", textKey);
-    console.log("translate params:", params);
     return inlineLocale(locale, textKey, params ? { ...params } : undefined);
 }

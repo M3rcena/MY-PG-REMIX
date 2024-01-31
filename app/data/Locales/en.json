@@ -65,7 +65,8 @@
         "details": "Details",
         "description": "Our website provides detailed information about parks, shops and more. Register now to enjoy exclusive discounts and other benefits. With our party system, you can easily organize parties in parks and other locations. Join us today!",
         "features": {
-            "title": "Explore the exciting features",
+            "title": "features",
+            "subtitle": "Explore the exciting features",
             "description": "Discover how our professional website can enhance your experiences and make party planning a breeze.",
             "1": {
                 "title": "Interactive Map",

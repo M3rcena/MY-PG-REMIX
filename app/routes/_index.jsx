@@ -23,23 +23,23 @@ export default function Home() {
     <>
       <div className="home-container">
         <Helmet>
-          <title>{ translate('gr', 'info.name') }</title>
+          <title>{translate('gr', 'info.name')}</title>
           <meta property="og:title" content="EPAL ALIMOU" />
         </Helmet>
         <div className="home-header">
           <header data-thq="thq-navbar" className="home-navbar-interactive">
-            <span className="home-logo">MY PG</span>
+            <span className="home-logo">{translate('gr', 'info.logo')}</span>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
-                <span><Link to="/">Αρχική</Link></span>
-                <span className="home-nav2"><Link to="/about">Σχετικά</Link></span>
+                <span><Link to="/">{translate('gr', 'info.nav.home')}</Link></span>
+                <span className="home-nav2"><Link to="/about">{translate('gr', 'info.nav.about')}</Link></span>
                 <span className="home-nav3"><Link to="/features">Features</Link></span>
-                <span className="home-nav4"><Link to="/parties">Πάρτυ</Link></span>
-                <span className="home-nav5"><Link to="/discounts">Προσφορές</Link></span>
+                <span className="home-nav4"><Link to="/parties">{translate('gr', 'info.nav.parties')}</Link></span>
+                <span className="home-nav5"><Link to="/discounts">{translate('gr', 'info.nav.discount')}</Link></span>
               </nav>
               <div className="home-buttons">
-                <button className="home-login button"><Link to="/login">Σύνδεση</Link></button>
-                <button className="home-register button"><Link to="/register">Εγγραφή</Link></button>
+                <button className="home-login button"><Link to="/login">{translate('gr', 'info.nav.login')}</Link></button>
+                <button className="home-register button"><Link to="/register">{translate('gr', 'info.nav.register')}</Link></button>
               </div>
             </div>
             <div data-thq="thq-burger-menu" className="home-burger-menu">
@@ -50,7 +50,7 @@ export default function Home() {
             <div data-thq="thq-mobile-menu" className="home-mobile-menu">
               <div className="home-nav">
                 <div className="home-top">
-                  <span className="home-logo1"><Link to="/">MY PG</Link></span>
+                  <span className="home-logo1"><Link to="/">{translate('gr', 'info.logo')}</Link></span>
                   <div data-thq="thq-close-menu" className="home-close-menu">
                     <svg viewBox="0 0 1024 1024" className="home-icon02">
                       <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -58,15 +58,15 @@ export default function Home() {
                   </div>
                 </div>
                 <nav className="home-links1">
-                  <span className="home-nav11"><Link to="/">Αρχική</Link></span>
-                  <span className="home-nav21"><Link to="/about">Σχετικά</Link></span>
+                  <span className="home-nav11"><Link to="/">{translate('gr', 'info.nav.home')}</Link></span>
+                  <span className="home-nav21"><Link to="/about">{translate('gr', 'info.nav.about')}</Link></span>
                   <span className="home-nav31"><Link to="/features">Features</Link></span>
-                  <span className="home-nav41"><Link to="/parties">Πάρτυ</Link></span>
-                  <span className="home-nav51"><Link to="/discount">Προσφορές</Link></span>
+                  <span className="home-nav41"><Link to="/parties">{translate('gr', 'info.nav.parties')}</Link></span>
+                  <span className="home-nav51"><Link to="/discount">{translate('gr', 'info.nav.discount')}</Link></span>
                 </nav>
                 <div className="home-buttons1">
-                  <button className="home-login1 button"><Link to="/login">Σύνδεση</Link></button>
-                  <button className="home-register1 button"><Link to="/register">Εγγραφή</Link></button>
+                  <button className="home-login1 button"><Link to="/login">{translate('gr', 'info.nav.login')}</Link></button>
+                  <button className="home-register1 button"><Link to="/register">{translate('gr', 'info.nav.register')}</Link></button>
                 </div>
               </div>
               <div>
@@ -87,14 +87,14 @@ export default function Home() {
           <div className="home-hero1">
             <div className="home-container01">
               <h1 className="home-hero-heading heading1">
-                Discover the Best Parks and Stores
+                {translate('gr', 'index.title')}
               </h1>
               <span className="home-hero-sub-heading">
-                Explore your city with our interactive map
+                {translate('gr', 'index.subtitle')}
               </span>
               <div className="home-btn-group">
-                <button className="home-hero-button1 button" onClick={() => navigate("/map")}>Χάρτης</button>
-                <button className="home-hero-button2 button" onClick={() => navigate("/about")}>Μάθε περισσότερα →</button>
+                <button className="home-hero-button1 button" onClick={() => navigate("/map")}>{translate('gr', 'index.map')}</button>
+                <button className="home-hero-button2 button" onClick={() => navigate("/about")}>{translate('gr', 'index.more')}</button>
               </div>
             </div>
           </div>
@@ -103,14 +103,14 @@ export default function Home() {
           <div className="home-details1">
             <div className="home-container02">
               <span className="home-text sectionTitle">
-                <span>Λεπτομεριες</span>
+                <span>{translate('gr', 'index.details')}</span>
                 <br></br>
               </span>
               <h2 className="home-details-heading heading2">
-                MyPG | My Playground
+                {translate('gr', 'info.name')}
               </h2>
               <span className="home-details-sub-heading">
-                Ο ιστότοπός μας παρέχει λεπτομερείς πληροφορίες για πάρκα, καταστήματα και πολλά άλλα. Εγγραφείτε τώρα για να απολαύσετε αποκλειστικές εκπτώσεις και άλλα προνόμια. Με το σύστημα πάρτι μας, μπορείτε εύκολα να οργανώσετε πάρτι σε πάρκα και άλλες τοποθεσίες. Ελάτε μαζί μας σήμερα!
+                {translate('gr', 'index.description')}
               </span>
             </div>
             <img
@@ -125,27 +125,28 @@ export default function Home() {
             <div className="home-features1">
               <div className="home-container03">
                 <span className="home-text03 sectionTitle">
-                  <span>χαρακτηριστικα</span>
+                  <span>{translate('gr', 'index.features.title')}</span>
                   <br></br>
                 </span>
                 <h2 className="home-features-heading heading2">
-                  Εξερευνήστε τα συναρπαστικά χαρακτηριστικά
+                  {translate('gr', 'index.features.subtitle')}
                 </h2>
                 <span className="home-features-sub-heading">
-                  Discover how our professional website can enhance your experiences and make party planning a breeze.              </span>
+                  {translate('gr', 'index.features.description')}
+                </span>
               </div>
               <div className="home-container04">
                 <FeatureCard
-                  Heading="Διαδραστικός Χάρτης"
-                  SubHeading="Εντοπίστε εύκολα πάρκα, καταστήματα και άλλα σημεία ενδιαφέροντος με τη λειτουργία διαδραστικού χάρτη μας."
+                  Heading={translate('gr', 'index.features.1.title')}
+                  SubHeading={translate('gr', 'index.features.1.description')}
                 ></FeatureCard>
                 <FeatureCard
-                  Heading="Εκπτώσεις Μελών"
-                  SubHeading="Απολαύστε αποκλειστικές εκπτώσεις και ειδικές προσφορές από τα συνεργαζόμενα καταστήματα όταν εγγραφείτε ως μέλος."
+                  Heading={translate('gr', 'index.features.2.title')}
+                  SubHeading={translate('gr', 'index.features.2.description')}
                 ></FeatureCard>
                 <FeatureCard
-                  Heading="Οργάνωση Πάρτυ"
-                  SubHeading="Σχεδιάστε και οργανώστε άπιαστα πάρτυ σε πάρκα και άλλους χώρους με το βολικό μας σύστημα πάρτυ."
+                  Heading={translate('gr', 'index.features.3.title')}
+                  SubHeading={translate('gr', 'index.features.3.description')}
                 ></FeatureCard>
                 <FeatureCard
                   Heading="Lorem ipsum"
@@ -159,20 +160,20 @@ export default function Home() {
           <div className="home-pricing1">
             <div className="home-container05">
               <span className="home-text06 sectionTitle">
-                <span>Τιμολογηση</span>
+                <span>{translate('gr', 'index.pricing.title')}</span>
                 <br></br>
               </span>
-              <h2 className="home-pricing-heading heading2">Επιλέξτε το πλάνο σας</h2>
+              <h2 className="home-pricing-heading heading2">{translate('gr', 'index.pricing.description')}</h2>
               <span className="home-pricing-sub-heading">
-                Επιλέξτε το τέλειο πλάνο για τις ανάγκες σας
+                {translate('gr', 'index.pricing.subdescription')}
               </span>
             </div>
             <div className="home-container06">
               <div className="home-pricing-card">
                 <div className="home-container07">
-                  <span className="home-text09 heading3">Δωρεαν</span>
+                  <span className="home-text09 heading3">{translate('gr', 'index.pricing.free.title')}</span>
                   <span className="home-free-plan-description">
-                    Αποκτήστε δωρεάν πρόσβαση στις βασικές λειτουργίες του ιστότοπου
+                    {translate('gr', 'index.pricing.free.description')}
                   </span>
                 </div>
                 <div className="home-container08">
@@ -180,41 +181,41 @@ export default function Home() {
                     <span>€</span>
                     <span></span>
                   </span>
-                  <span className="home-free-plan-price">0</span>
+                  <span className="home-free-plan-price">{translate('gr', 'numbers.0')}</span>
                 </div>
                 <div className="home-container09">
                   <div className="home-container10">
                     <span className="home-text13">✔</span>
                     <span className="home-free-plan-features">
-                      Προβολή πληροφοριών σχετικά με πάρκα, καταστήματα και άλλες τοποθεσίες
+                      {translate('gr', 'index.pricing.free.1')}
                     </span>
                   </div>
                   <div className="home-container11">
                     <span className="home-text14">✔</span>
                     <span className="home-free-plan-features1">
-                      Λάβετε εκπτώσεις και ειδικές προσφορές όταν εγγραφείτε
+                      {translate('gr', 'index.pricing.free.2')}
                     </span>
                   </div>
                   <div className="home-container12">
                     <span className="home-text15">✔</span>
                     <span className="home-free-plan-features2">
-                      Οργανώστε πάρτι σε πάρκα και άλλους χώρους
+                      {translate('gr', 'index.pricing.free.3')}
                     </span>
                   </div>
                   <div className="home-container13">
                     <span className="home-text16">✔</span>
                     <span className="home-free-plan-features3">
-                      Περιορισμένη πρόσβαση στο κομματικό σύστημα
+                      {translate('gr', 'index.pricing.free.4')}
                     </span>
                   </div>
                 </div>
-                <button className="home-button button" onClick={() => navigate('/login')}>Συνεχίστε Δωρεάν</button>
+                <button className="home-button button" onClick={() => navigate('/login')}>{translate('gr', 'index.pricing.free.button')}</button>
               </div>
               <div className="home-pricing-card1">
                 <div className="home-container14">
-                  <span className="home-text17 heading3">ΒΑΣΙΚΟ</span>
+                  <span className="home-text17 heading3">{translate('gr', 'index.pricing.basic.title')}</span>
                   <span className="home-basic-plan-description">
-                    Ξεκλειδώστε πρόσθετες δυνατότητες και προνόμια με το βασικό πλάνο
+                    {translate('gr', 'index.pricing.basic.description')}
                   </span>
                 </div>
                 <div className="home-container15">
@@ -222,45 +223,49 @@ export default function Home() {
                     <span>€</span>
                     <span></span>
                   </span>
-                  <span className="home-basic-plan-pricing">7</span>
-                  <span className="home-text21">/ μήνα</span>
+                  <span className="home-basic-plan-pricing">{translate('gr', 'numbers.7')}</span>
+                  <span className="home-text21">/ {translate('gr', 'words.month')}</span>
                 </div>
                 <div className="home-container16">
                   <div className="home-container17">
                     <span className="home-text22">✔</span>
-                    <span className="home-text23">Όλα τα χαρακτηριστικά του ΔΩΡΕΑΝ πλάνου</span>
+                    <span className="home-text23">
+                      {translate('gr', 'index.pricing.basic.1')}
+                    </span>
                   </div>
                   <div className="home-container19">
                     <span className="home-text25">✔</span>
                     <span className="home-basic-plan-features1">
-                      Πρόσβαση σε premium πληροφορίες σχετικά με πάρκα, καταστήματα και τοποθεσίες
+                      {translate('gr', 'index.pricing.basic.2')}
                     </span>
                   </div>
                   <div className="home-container20">
                     <span className="home-text26">✔</span>
                     <span className="home-basic-plan-features2">
-                      Ενισχυμένες εκπτώσεις και αποκλειστικές προσφορές για μέλη
+                      {translate('gr', 'index.pricing.basic.3')}
                     </span>
                   </div>
                   <div className="home-container21">
                     <span className="home-text27">✔</span>
                     <span className="home-basic-plan-features3">
-                      Πλήρης πρόσβαση στο σύστημα πάρτι με προηγμένα εργαλεία πάρτι
+                      {translate('gr', 'index.pricing.basic.4')}
                     </span>
                   </div>
                 </div>
                 <button className="home-button1 button" onClick={() => navigate("/account/basic")}>
-                  Δοκιμάστε το Βασικό πλάνο
+                  {translate('gr', 'index.pricing.basic.button')}
                 </button>
               </div>
               <div className="home-pricing-card2">
                 <div className="home-container22">
                   <span className="home-text28 heading3">
-                    <span>PRO</span>
+                    <span>
+                      {translate('gr', 'index.pricing.pro.title')}
+                    </span>
                     <br></br>
                   </span>
                   <span className="home-pro-plan-description">
-                    Αποκτήστε την απόλυτη εμπειρία με το επαγγελματικό σχέδιο
+                    {translate('gr', 'index.pricing.pro.description')}
                   </span>
                 </div>
                 <div className="home-container23">
@@ -268,30 +273,30 @@ export default function Home() {
                     <span>€</span>
                     <span></span>
                   </span>
-                  <span className="home-pro-plan-pricing">20</span>
-                  <span className="home-text34">/ μήνα</span>
+                  <span className="home-pro-plan-pricing">{translate('gr', 'numbers.2')}{translate('gr', 'numbers.0')}</span>
+                  <span className="home-text34">/ {translate('gr', 'words.month')}</span>
                 </div>
                 <div className="home-container24">
                   <div className="home-container25">
                     <span className="home-text35">✔</span>
                     <span className="home-text36">
-                      Όλα τα χαρακτηριστικά του πλάνου BASIC
+                      {translate('gr', 'index.pricing.pro.1')}
                     </span>
                   </div>
                   <div className="home-container27">
                     <span className="home-text38">✔</span>
                     <span className="home-pro-plan-features1">
-                      Πρόσβαση κατά προτεραιότητα σε νέες πληροφορίες πάρκων και καταστημάτων
+                      {translate('gr', 'index.pricing.pro.2')}
                     </span>
                   </div>
                   <div className="home-container28">
                     <span className="home-text39">✔</span>
                     <span className="home-pro-plan-features2">
-                      Εκπτώσεις VIP και αποκλειστικά προνόμια για εγγεγραμμένα μέλη
+                      {translate('gr', 'index.pricing.pro.3')}
                     </span>
                   </div>
                 </div>
-                <button className="home-button2 button" onClick={() => navigate("/account/pro")}>Δοκιμάστε το PRO πλάνο</button>
+                <button className="home-button2 button" onClick={() => navigate("/account/pro")}>{translate('gr', 'index.pricing.pro.button')}</button>
               </div>
             </div>
           </div>

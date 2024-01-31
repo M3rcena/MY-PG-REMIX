@@ -1,24 +1,42 @@
-import React from 'react'
+import React from 'react';
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 
-import { FeatureCard, links as featureCardLinks } from '../components/feature-card/feature-card.jsx'
-import { Question, links as questionLinks } from '../components/question/question.jsx'
-import indexStylesHref from "../styles/index.css"
-import { Link, useNavigate } from '@remix-run/react'
+import { FeatureCard, links as featureCardLinks } from '../components/feature-card/feature-card.jsx';
+import { Question, links as questionLinks } from '../components/question/question.jsx';
+import indexStylesHref from "../styles/index.css";
+import { Link, useNavigate } from '@remix-run/react';
 import { translate } from '../structures/i18n.mjs';
 // import SpellScroll from '../assets/svg/spell-scroll-svgrepo-com.jsx'
+
+// Import Logo Carousel
+import Slider from 'react-slick';
+import slickStylesHref from "slick-carousel/slick/slick.css";
+import slickThemeHref from "slick-carousel/slick/slick-theme.css";
 
 export const links = () => {
   return [
     ...featureCardLinks(),
     ...questionLinks(),
     { rel: 'stylesheet', href: indexStylesHref },
+    { rel: 'stylesheet', href: slickStylesHref },
+    { rel: 'stylesheet', href: slickThemeHref },
   ]
 };
 
 export default function Home() {
   let navigate = useNavigate()
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
+  };
   return (
     <>
       <div className="home-container">
@@ -304,13 +322,26 @@ export default function Home() {
         <div className="home-gallery"></div>
         <div className="home-banner">
           <div className="home-banner1">
-            <h1 className="home-banner-heading heading2">
-              Ξεκλειδώστε εκπτώσεις και ευκαιρίες για πάρτυ
-            </h1>
-            <span className="home-banner-sub-heading">
-              Αποκτήστε πρόσβαση σε ειδικές προσφορές και οργανώστε εύκολα πάρτυ σε πάρκα
-            </span>
-            <button className="home-banner-button button" onClick={() => navigate("/account/offers")}>Μάθε περισσότερα</button>
+            <Slider {...sliderSettings}>
+              <div>
+                <h3>1</h3>
+              </div>
+              <div>
+                <h3>2</h3>
+              </div>
+              <div>
+                <h3>3</h3>
+              </div>
+              <div>
+                <h3>4</h3>
+              </div>
+              <div>
+                <h3>5</h3>
+              </div>
+              <div>
+                <h3>6</h3>
+              </div>
+            </Slider>
           </div>
         </div>
         <div className="home-faq">

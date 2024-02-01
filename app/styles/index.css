@@ -1424,25 +1424,31 @@
 }
 
 
-.slide-track {
+.slider {
   width: 100%;
+  background-color: #eff0f2ff;
+  padding: 2em;
+}
+
+.slide-track {
   display: flex;
   gap: 3em;
   overflow: hidden;
 }
 
-.slider {
-  background-color: #eff0f2ff;
-  padding: 8em 2em;
+.slide {
+  width: 100px;
+  height: 100px;
+  flex: 0 0 auto;
+  animation: scroll 60s linear infinite;
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
 }
 
 @keyframes scroll {
   0% {transform: translateX(0);}
-  100% {transform: translatex(-1000%)}
-}
-
-.slider-img {
-  width: 100px;
-  height: 100px;
-  animation: scroll 60s linear infinite;
+  100% {transform: translateX(-800%)} /* change this percentage, such that it resets at the right time */
 }

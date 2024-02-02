@@ -382,13 +382,13 @@ export default function Home() {
             <div className="home-faq1">
               <div className="home-container29">
                 <span className="home-text40 sectionTitle">
-                  <span>FAQ</span>
+                  <span>{translate('gr', 'index.faq.category')}</span>
                   <br></br>
                 </span>
-                <h2 className="home-text43 heading2">Συνήθεις ερωτήσεις</h2>
+                <h2 className="home-text43 heading2">{translate('gr', 'index.faq.title')}</h2>
                 <span className="home-text44">
                   <span>
-                    Εδώ είναι μερικές από τις πιο συνηθισμένες ερωτήσεις που λαμβάνουμε.
+                    {translate('gr', 'index.faq.description')}
                   </span>
                   <br></br>
                   <span>
@@ -463,24 +463,24 @@ export default function Home() {
               </div>
               <div className="home-container30">
                 <Question
-                  Answer="Ο σκοπός αυτού του ιστότοπου είναι να παρέχει πληροφορίες σχετικά με πάρκα, καταστήματα και άλλες τοποθεσίες, καθώς και να προσφέρει εκπτώσεις και προνόμια στα εγγεγραμμένα μέλη."
-                  Question="Ποιος είναι ο σκοπός αυτής της ιστοσελίδας;"
+                  Answer={translate('gr', 'index.faq.q1.answer')}
+                  Question={translate('gr', 'index.faq.q1.question')}
                 ></Question>
                 <Question
-                  Answer="Ο χάρτης θα εμφανίζει πληροφορίες για πάρκα, καταστήματα και άλλα σημεία ενδιαφέροντος. Οι χρήστες μπορούν εύκολα να βρουν λεπτομέρειες όπως τοποθεσία, ώρες λειτουργίας και κριτικές χρηστών."
-                  Question="Τι είδους πληροφορίες θα είναι διαθέσιμες στον χάρτη;"
+                  Answer={translate('gr', 'index.faq.q2.answer')}
+                  Question={translate('gr', 'index.faq.q2.question')}
                 ></Question>
                 <Question
-                  Answer="Για να εγγραφείτε ως μέλος, απλώς κάντε κλικ στο κουμπί «Εγγραφή» στον ιστότοπο και συμπληρώστε τα απαιτούμενα στοιχεία. Μόλις εγγραφείτε, θα έχετε πρόσβαση σε εκπτώσεις και άλλα προνόμια."
-                  Question="Πώς μπορώ να εγγραφώ ως μέλος;"
+                  Answer={translate('gr', 'index.faq.q3.answer')}
+                  Question={translate('gr', 'index.faq.q3.question')}
                 ></Question>
                 <Question
-                  Answer="Τα μέλη θα έχουν πρόσβαση σε αποκλειστικές εκπτώσεις σε καταστήματα και χώρους που συμμετέχουν. Επιπλέον, μπορούν να απολαύσουν ειδικές προσφορές για τη διοργάνωση πάρτυ σε πάρκα και άλλες τοποθεσίες."
-                  Question="Ποιες εκπτώσεις και προνόμια είναι διαθέσιμα για τα μέλη;"
+                  Answer={translate('gr', 'index.faq.q4.answer')}
+                  Question={translate('gr', 'index.faq.q4.question')}
                 ></Question>
                 <Question
-                  Answer="Ο ιστότοπός μας παρέχει ένα σύστημα πάρτι που σας επιτρέπει να οργανώνετε εύκολα πάρτι σε πάρκα και άλλες τοποθεσίες. Απλώς επιλέξτε την επιθυμητή τοποθεσία, επιλέξτε ημερομηνία και ώρα και προσκαλέστε τους φίλους σας. Μπορείτε επίσης να προσαρμόσετε τις λεπτομέρειες του πάρτι, όπως θέματα και δραστηριότητες."
-                  Question="Πώς μπορώ να οργανώσω ένα πάρτυ σε πάρκο ή άλλη τοποθεσία;"
+                  Answer={translate('gr', 'index.faq.q5.answer')}
+                  Question={translate('gr', 'index.faq.q5.question')}
                 ></Question>
               </div>
             </div>
@@ -489,19 +489,18 @@ export default function Home() {
         <div className="home-footer">
           <footer className="home-footer1">
             <div className="home-container31">
-              <span className="home-logo2"><Link to="/">MY PG</Link></span>
+              <span className="home-logo2"><Link to="/">{translate('gr', 'info.logo')}</Link></span>
               <nav className="home-nav1 home-nav1">
-                <span className="home-nav12"><Link to="/">Αρχική</Link></span>
-                <span className="home-nav22"><Link to="/about">Σχετικά</Link></span>
-                <span className="home-nav32"><Link to="/features">Features</Link></span>
-                <span className="home-nav42"><Link to="/parties">Πάρτυ</Link></span>
-                <span className="home-nav52"><Link to="/discounts">Προσφορές</Link></span>
+                <span className="home-nav12"><Link to="/privacy">{translate('gr', 'info.nav.privacy')}</Link></span>
+                <span className="home-nav22"><Link to="/terms">{translate('gr', 'info.nav.terms')}</Link></span>
+                <span className="home-nav32"><Link to="/cookies">{translate('gr', 'info.nav.cookies')}</Link></span>
+                <span className="home-nav42"><Link to="/contact">{translate('gr', 'info.nav.contact')}</Link></span>
               </nav>
             </div>
             <div className="home-separator"></div>
             <div className="home-container32">
               <span className="home-text61">
-                © 2024 MYPG, All Rights Reserved.
+                {translate('gr', 'info.copyright')}
               </span>
               <div className="home-icon-group1">
                 <svg viewBox="0 0 950.8571428571428 1024" className="home-icon10">

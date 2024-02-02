@@ -499,7 +499,7 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
-  background-color: var(--dl-color-primary1-blue60);
+  background-color: #07d2c3;
 }
 .home-container07 {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -602,20 +602,20 @@
   line-height: 1.6;
 }
 .home-button {
-  color: var(--dl-color-gray-black);
+  color: var(--dl-color-gray-white);
   width: 100%;
   margin-top: auto;
   transition: 0.3s;
   font-weight: 700;
   padding-top: 1rem;
-  border-color: var(--dl-color-primary1-blue100);
+  border-color: #AC198A;
   border-radius: 45px;
   padding-bottom: 1rem;
-  background-color: transparent;
+  background-color: #AC198A;
 }
 .home-button:hover {
-  border-color: rgba(41, 20, 119, 0.9);
-  background-color: rgba(217, 217, 217, 0.1);
+  border-color: #BE1597;
+  background-color: #BE1597;
   cursor: pointer;
 }
 .home-pricing-card1 {
@@ -628,7 +628,7 @@
   align-items: flex-start;
   border-radius: var(--dl-radius-radius-radius8);
   flex-direction: column;
-  background-color: var(--dl-color-primary1-blue60);
+  background-color: #9e7be3;
 }
 .home-container14 {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -784,7 +784,7 @@
   padding-right: var(--dl-space-space-twounits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-twounits);
-  background-color: var(--dl-color-primary1-blue60);
+  background-color: #ff9a34;
 }
 .home-container22 {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -899,15 +899,15 @@
   transition: 0.3s;
   font-weight: 700;
   padding-top: 1rem;
-  border-color: #3d6e70ff;
+  border-color: #355E3B;
   border-width: 0px;
   border-radius: 45px;
   padding-bottom: 1rem;
-  background-color: var(--dl-color-primary1-blue100);
+  background-color: #355E3B;
 }
 .home-button2:hover {
-  border-color: rgba(41, 20, 119, 0.9);
-  background-color: rgba(41, 20, 119, 0.9);
+  border-color: #8A9A5B;
+  background-color: #8A9A5B;
   cursor: pointer;
 }
 .home-gallery {

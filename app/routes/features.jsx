@@ -3,9 +3,11 @@ import { useNavigate } from '@remix-run/react';
 import { Helmet } from 'react-helmet';
 import { translate } from '~/structures/i18n.mjs';
 
+import indexStylesHref from '../assets/features/css/index.css'
+
 export const links = () => {
   return[
-
+    { rel: 'stylesheet', href: indexStylesHref },
   ];
 };
 
@@ -36,7 +38,7 @@ export default function Features() {
                                 data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.3,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_position&quot;:&quot;absolute&quot;}"
                                 data-widget_type="image.default">
                                 <div className="elementor-widget-container">
-                                    <img decoding="async" width="100" height="100" src="./assets/img/shape-4.png"
+                                    <img decoding="async" width="100" height="100" src="../assets/features/img/shape-4.png"
                                         className="attachment-full size-full wp-image-1090 wp-stateless-item" alt=""
                                         data-image-size="full" />
                                 </div>
@@ -46,7 +48,7 @@ export default function Features() {
                                 data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_direction&quot;:&quot;negative&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.3,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_position&quot;:&quot;absolute&quot;}"
                                 data-widget_type="image.default">
                                 <div className="elementor-widget-container">
-                                    <img decoding="async" width="100" height="100" src="./assets/img/shape-1.png"
+                                    <img decoding="async" width="100" height="100" src="../assets/features/img/shape-1.png"
                                         className="attachment-full size-full wp-image-1093 wp-stateless-item" alt=""
                                         data-image-size="full" />
                                 </div>
@@ -378,39 +380,7 @@ export default function Features() {
                                                 data-id="9fb901e" data-element_type="widget"
                                                 data-widget_type="text-editor.default">
                                                 <div className="elementor-widget-container">
-                                                    <style>
-                                                        /*! elementor - v3.18.0 - 20-12-2023 */
-                                                        .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-                                                            background-color: #69727d;
-                                                            color: #fff
-                                                        }
-
-                                                        .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
-                                                            color: #69727d;
-                                                            border: 3px solid;
-                                                            background-color: transparent
-                                                        }
-
-                                                        .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
-                                                            margin-top: 8px
-                                                        }
-
-                                                        .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-                                                            width: 1em;
-                                                            height: 1em
-                                                        }
-
-                                                        .elementor-widget-text-editor .elementor-drop-cap {
-                                                            float: left;
-                                                            text-align: center;
-                                                            line-height: 1;
-                                                            font-size: 50px
-                                                        }
-
-                                                        .elementor-widget-text-editor .elementor-drop-cap-letter {
-                                                            display: inline-block
-                                                        }
-                                                    </style> Get instant helpful resources about anything on the go,
+                                                     Get instant helpful resources about anything on the go,
                                                     easily implement secure money transfer solutions, boost your daily
                                                     efficiency, connect to other app users and create your own AppMart
                                                     network, and much more with just a few taps. commodo consequat. Duis
@@ -522,6 +492,7 @@ export default function Features() {
                 </div>
             </section>
         </div>
+      </div>
       </div>
     </>
   );

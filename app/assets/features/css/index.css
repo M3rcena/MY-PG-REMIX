@@ -1258,18 +1258,13 @@ body.blog .flexia-wrapper>.content-area article .entry-content .more-link:hover 
 }
 
 @media screen and (max-width: 1024px) {
-    .eael-hamburger--tablet {
-
-        .eael-simple-menu-horizontal,
-        .eael-simple-menu-vertical {
-            display: none;
-        }
+    .eael-hamburger--tablet .eael-simple-menu-horizontal,
+    .eael-hamburger--tablet .eael-simple-menu-vertical {
+        display: none;
     }
 
-    .eael-hamburger--tablet {
-        .eael-simple-menu-container .eael-simple-menu-toggle {
-            display: block;
-        }
+    .eael-hamburger--tablet .eael-simple-menu-container .eael-simple-menu-toggle {
+        display: block;
     }
 }
 

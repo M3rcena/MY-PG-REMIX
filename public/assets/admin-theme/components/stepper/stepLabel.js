@@ -1,0 +1,28 @@
+import typography from "../../../../assets/admin-theme/base/typography";
+import colors from "../../../../assets/admin-theme/base/colors";
+
+import pxToRem from "../../../../assets/admin-theme/functions/pxToRem";
+
+const { size, fontWeightRegular } = typography;
+const { grey, dark, text } = colors;
+
+export default {
+  styleOverrides: {
+    label: {
+      marginTop: `${pxToRem(8)} !important`,
+      fontWeight: fontWeightRegular,
+      fontSize: size.md,
+      color: grey[300],
+
+      "&.Mui-active": {
+        fontWeight: `${fontWeightRegular} !important`,
+        color: `${dark.main} !important`,
+      },
+
+      "&.Mui-completed": {
+        fontWeight: `${fontWeightRegular} !important`,
+        color: `${text.main} !important`,
+      },
+    },
+  },
+};

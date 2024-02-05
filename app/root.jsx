@@ -77,7 +77,7 @@ export default function App() {
           id="eael-general-js"></script>
         <script type="text/javascript" src="./assets/features/wp-content/uploads/essential-addons-elementor/eael-1261.js"
           id="eael-1261-js"></script>
-        <script type="text/javascript" src="./asssets/features/wp-content/uploads/essential-addons-elementor/eael-1264.js"
+        <script type="text/javascript" src="./assets/features/wp-content/uploads/essential-addons-elementor/eael-1264.js"
           id="eael-1264-js"></script>
         <script type="text/javascript"
           src="./assets/features/wp-content/plugins/easyjobs/public/assets/vendor/owl.carousel.min.js"

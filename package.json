@@ -54,6 +54,9 @@
     "web-vitals": "^3.5.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
     "@remix-run/dev": "^2.4.1",
     "@types/react-helmet": "^6.1.11"
   }

@@ -7,7 +7,7 @@ import tripleLinearGradient from "../../../assets/admin-theme/functions/tripleLi
 import colors from "../../../assets/admin-theme/base/colors";
 
 function PageLayout({ children }) {
-  const [, dispatch] = useMyPGController();
+  const [ dispatch] = useMyPGController();
   const { pathname } = useLocation();
 
   useEffect(() => {

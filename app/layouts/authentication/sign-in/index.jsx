@@ -20,7 +20,7 @@ import bgSignIn from "../../../assets/admin-images/signInImage.png";
 export function SignIn() {
   const [rememberMe, setRememberMe] = useState(true);
 
-  const handleSetRememberMe = () => setRememberMe(!rememberMe);
+  const handleSetRememberMe = () => setRememberMe(rememberMe =>!rememberMe);
 
   return (
     <CoverLayout
@@ -29,7 +29,7 @@ export function SignIn() {
       description="Enter your email and password to sign in"
       premotto="INSPIRED BY THE FUTURE:"
       motto="THE VISION UI DASHBOARD"
-      image={bgSignIn}
+      // image={bgSignIn}
     >
       <AdmBox component="form" role="form">
         <AdmBox mb={2}>

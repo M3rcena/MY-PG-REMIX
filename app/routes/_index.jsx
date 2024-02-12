@@ -30,16 +30,6 @@ export const links = () => {
 export default function Home() {
   let navigate = useNavigate();
 
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-  };
   return (
     <>
       <div className="home-container">

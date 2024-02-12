@@ -21,7 +21,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <title>{ translate('gr', 'info.name') }</title>
+        <title>{translate('gr', 'info.name')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -47,9 +47,9 @@ export default function App() {
 
         <link rel="preload" as="style"
           href="https://fonts.googleapis.com/css?family=Open%20Sans%3ARegular%20400%26amp%3Bamp%3BOpen%20Sans%7CPoppins%7CNunito%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" />
-        
+
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3ARegular%20400%26amp%3Bamp%3BOpen%20Sans%7CPoppins%7CNunito%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" media="print" onLoad="this.media='all'" />
-         
+
         <link href='https://fonts.gstatic.com' crossOrigin="true" rel='preconnect' />
         <Meta />
         <Links />
@@ -58,6 +58,16 @@ export default function App() {
         <div id="app">
           <Outlet />
         </div>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1MWV8T99P"></script>
+        {/* <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-S1MWV8T99P');
+  </script>*/}
+
 
         <link rel='stylesheet' id='e-animations-css'
           href='./assets/features/wp-content/plugins/elementor/assets/lib/animations/animations.min.css' type='text/css'

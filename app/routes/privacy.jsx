@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 
 import indexStylesHref from "../styles/index.css";
 import privacyStylesHref from "../styles/privacy.css";
-import extraPrivacyStylesHref from "../styles/privacy-extra.css";
 
 import { Link, useNavigate } from "@remix-run/react";
 import { translate } from "~/structures/i18n.mjs";
@@ -13,7 +12,6 @@ export const links = () => {
   return [
     { rel: "stylesheet", href: indexStylesHref },
     { rel: "stylesheet", href: privacyStylesHref },
-    { rel: "stylesheet", href: extraPrivacyStylesHref },
   ];
 };
 

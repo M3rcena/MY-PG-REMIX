@@ -154,6 +154,8 @@ export default function App() {
           src="./assets/features/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.jsx"
           id="pro-elements-handlers-js"></script>
 
+
+        <script src="https://kit.fontawesome.com/a1a8c654c5.js" crossOrigin="anonymous"></script>
         <Scripts />
         <Links />
         <LiveReload />

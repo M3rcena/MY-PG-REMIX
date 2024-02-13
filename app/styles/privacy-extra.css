@@ -1,0 +1,63 @@
+.title-span {
+    font-size: 26px;
+    text-align: center;
+}
+
+.span-2 {
+    color: rgb(127, 127, 127);
+}
+
+.span-3 {
+    font-size: 15px;
+}
+
+.span-4 {
+    color: rgb(89, 89, 89);
+    font-size: 15px;
+}
+
+.span-5 {
+    color: rgb(89, 89, 89);
+}
+
+.span-6{
+    color: rgb(0, 58, 250);
+}
+
+.span-7 {
+    color: rgb(0, 58, 250);
+    font-size: 15px;
+}
+
+.span-8 {
+    color: rgb(0, 0, 0);
+}
+
+.span-9 {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.span-10 {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.div-1 {
+    line-height: 1.5;
+}
+
+.div-2 {
+    color: #595959;
+    font-size: 14px;
+    font-family: Arial;
+    padding-top: 16px;
+}
+
+.ul-1 {
+    margin-left: 40px;
+}
+
+.a-1 {
+    color: rgb(48, 48, 241) !important;
+}

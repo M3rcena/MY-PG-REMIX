@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 
 import indexStylesHref from "../styles/index.css";
 import privacyStylesHref from "../styles/privacy.css";
+import extraPrivacyStylesHref from "../styles/privacy-extra.css";
 
 import { Link, useNavigate } from "@remix-run/react";
 import { translate } from "~/structures/i18n.mjs";
@@ -11,7 +12,8 @@ import { translate } from "~/structures/i18n.mjs";
 export const links = () => {
   return [
     { rel: "stylesheet", href: indexStylesHref },
-    { rel: "stylesheet", href: privacyStylesHref }
+    { rel: "stylesheet", href: privacyStylesHref },
+    { rel: "stylesheet", href: extraPrivacyStylesHref },
   ];
 };
 
@@ -124,26 +126,26 @@ export default function Privacy() {
             </div>
           </header>
         </div>
-        <div data-custom-class="body">
+        <center><div data-custom-class="body">
           <div>
             <strong>
-              <span style="font-size: 26px;">
+              <span className="title-span">
                 <span data-custom-class="title">
-                  <bdt class="block-component"></bdt>
-                  <bdt class="question">PRIVACY POLICY</bdt>
-                  <bdt class="statement-end-if-in-editor"></bdt>
+                  <bdt className="block-component"></bdt>
+                  <bdt className="question">PRIVACY POLICY</bdt>
+                  <bdt className="statement-end-if-in-editor"></bdt>
                 </span>
               </span>
             </strong>
           </div>
           <div><br /></div>
           <div>
-            <span style="color: rgb(127, 127, 127);">
+            <span className="span-2">
               <strong>
-                <span style="font-size: 15px;">
+                <span className="span-3">
                   <span data-custom-class="subtitle">
                     Last updated
-                    <bdt class="question">January 01, 2024</bdt>
+                    <bdt className="question">January 01, 2024</bdt>
                   </span>
                 </span>
               </strong>
@@ -152,39 +154,39 @@ export default function Privacy() {
           <div><br /></div>
           <div><br /></div>
           <div><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="color: rgb(127, 127, 127);">
-              <span style="color: rgb(89, 89, 89); font-size: 15px;">
+          <div className="div-1">
+            <span className="span-2">
+              <span className="span-4">
                 <span data-custom-class="body_text">
                   This privacy notice for
-                  <bdt class="question">
+                  <bdt className="question">
                     MyPG Inc.
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                   </bdt>
                   (
-                  <bdt class="block-component"></bdt>
+                  <bdt className="block-component"></bdt>
                   "<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"
-                  <bdt class="statement-end-if-in-editor"></bdt>
+                  <bdt className="statement-end-if-in-editor"></bdt>
                 </span>
                 <span data-custom-class="body_text">
                   ), describes how and why we might collect, store, use, and/or share (
-                  <bdt class="block-component"></bdt>
+                  <bdt className="block-component"></bdt>
                   "<strong>process</strong>"
-                  <bdt class="statement-end-if-in-editor"></bdt>
+                  <bdt className="statement-end-if-in-editor"></bdt>
                   ) your information when you use our services (
-                  <bdt class="block-component"></bdt>
+                  <bdt className="block-component"></bdt>
                   "<strong>Services</strong>"
-                  <bdt class="statement-end-if-in-editor"></bdt>
+                  <bdt className="statement-end-if-in-editor"></bdt>
                   ), such as when you:
                 </span>
               </span>
             </span>
-            <span style="font-size: 15px;">
-              <span style="color: rgb(127, 127, 127);">
+            <span className="span-3">
+              <span className="span-2">
                 <span data-custom-class="body_text">
-                  <span style="color: rgb(89, 89, 89);">
+                  <span className="span-5">
                     <span data-custom-class="body_text">
-                      <bdt class="block-component"></bdt>
+                      <bdt className="block-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -192,22 +194,22 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
                     Visit our website
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                     at
-                    <span style="color: rgb(0, 58, 250);">
-                      <bdt class="question"><a href="https://mypg.gr/" target="_blank" data-custom-class="link">https://mypg.gr/</a></bdt>
+                    <span className="span-6">
+                      <bdt className="question"><a href="https://mypg.gr/" target="_blank" data-custom-class="link">https://mypg.gr/</a></bdt>
                     </span>
-                    <span style="font-size: 15px;">
-                      <span style="color: rgb(89, 89, 89);">
+                    <span className="span-3">
+                      <span className="span-5">
                         <span data-custom-class="body_text">
-                          <span style="font-size: 15px;">
-                            <span style="color: rgb(89, 89, 89);">
-                              <bdt class="statement-end-if-in-editor">, or any website of ours that links to this privacy notice</bdt>
+                          <span className="span-3">
+                            <span className="span-5">
+                              <bdt className="statement-end-if-in-editor">, or any website of ours that links to this privacy notice</bdt>
                             </span>
                           </span>
                         </span>
@@ -219,14 +221,14 @@ export default function Privacy() {
             </li>
           </ul>
           <div>
-            <bdt class="block-component">
-              <span style="font-size: 15px;">
-                <span style="font-size: 15px;">
-                  <span style="color: rgb(127, 127, 127);">
+            <bdt className="block-component">
+              <span className="span-3">
+                <span className="span-3">
+                  <span className="span-2">
                     <span data-custom-class="body_text">
-                      <span style="color: rgb(89, 89, 89);">
+                      <span className="span-5">
                         <span data-custom-class="body_text">
-                          <bdt class="block-component"></bdt>
+                          <bdt className="block-component"></bdt>
                         </span>
                       </span>
                     </span>
@@ -236,26 +238,26 @@ export default function Privacy() {
             </bdt>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
                     Download and use
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                     our mobile application
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                     (
-                    <bdt class="question">
+                    <bdt className="question">
                       My PG | Playground4U)
-                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                      <span className="span-4">
+                        <span className="span-4">
                           <span data-custom-class="body_text">
-                            <span style="font-size: 15px;">
-                              <span style="color: rgb(89, 89, 89);">
+                            <span className="span-3">
+                              <span className="span-5">
                                 <span data-custom-class="body_text">
-                                  <span style="font-size: 15px;">
-                                    <span style="color: rgb(89, 89, 89);">
-                                      <bdt class="statement-end-if-in-editor">,</bdt>
+                                  <span className="span-3">
+                                    <span className="span-5">
+                                      <bdt className="statement-end-if-in-editor">,</bdt>
                                     </span>
                                   </span>
                                 </span>
@@ -267,13 +269,13 @@ export default function Privacy() {
                     </bdt>
                   </span>
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
-                      <span style="color: rgb(89, 89, 89);">
+                    <span className="span-3">
+                      <span className="span-5">
                         <span data-custom-class="body_text">
-                          <span style="font-size: 15px;">
-                            <span style="color: rgb(89, 89, 89);">
-                              <bdt class="statement-end-if-in-editor">
-                                <bdt class="block-component"> or any other application of ours that links to this privacy notice</bdt>
+                          <span className="span-3">
+                            <span className="span-5">
+                              <bdt className="statement-end-if-in-editor">
+                                <bdt className="block-component"> or any other application of ours that links to this privacy notice</bdt>
                               </bdt>
                             </span>
                           </span>
@@ -285,13 +287,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
-              <span style="color: rgb(127, 127, 127);">
+          <div className="div-1">
+            <span className="span-3">
+              <span className="span-2">
                 <span data-custom-class="body_text">
-                  <span style="color: rgb(89, 89, 89);">
+                  <span className="span-5">
                     <span data-custom-class="body_text">
-                      <bdt class="block-component"></bdt>
+                      <bdt className="block-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -299,17 +301,17 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
                     Engage with us in other related ways, including any sales, marketing, or events
-                    <span style="font-size: 15px;">
-                      <span style="color: rgb(89, 89, 89);">
+                    <span className="span-3">
+                      <span className="span-5">
                         <span data-custom-class="body_text">
-                          <span style="font-size: 15px;">
-                            <span style="color: rgb(89, 89, 89);">
-                              <bdt class="statement-end-if-in-editor"></bdt>
+                          <span className="span-3">
+                            <span className="span-5">
+                              <bdt className="statement-end-if-in-editor"></bdt>
                             </span>
                           </span>
                         </span>
@@ -320,163 +322,163 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
-              <span style="color: rgb(127, 127, 127);">
+          <div className="div-1">
+            <span className="span-3">
+              <span className="span-2">
                 <span data-custom-class="body_text">
                   <strong>Questions or concerns?&nbsp;</strong>Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services.
-                  <bdt class="block-component"></bdt>
+                  <bdt className="block-component"></bdt>
                   If you still have any questions or concerns, please contact us at
-                  <bdt class="question">privacy@mypg.gr</bdt>
+                  <bdt className="question">privacy@mypg.gr</bdt>
                   .
                 </span>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><strong><span style="font-size: 15px;"><span data-custom-class="heading_1">SUMMARY OF KEY POINTS</span></span></strong></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong><em>This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our&nbsp;</em></strong></span></span><a data-custom-class="link" href="#toc"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text"><strong><em>table of contents</em></strong></span></span></a><span style="font-size: 15px;"><span data-custom-class="body_text"><strong><em>&nbsp;below to find the section you are looking for.</em></strong></span></span></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>What personal information do we process?</strong> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use. Learn more about&nbsp;</span></span><a data-custom-class="link" href="#personalinfo"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">personal information you disclose to us</span></span></a><span data-custom-class="body_text">.</span></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div className="div-1"><br /></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1"><strong><span className="span-3"><span data-custom-class="heading_1">SUMMARY OF KEY POINTS</span></span></strong></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1"><span className="span-3"><span data-custom-class="body_text"><strong><em>This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our&nbsp;</em></strong></span></span><a data-custom-class="link" href="#toc"><span className="span-7"><span data-custom-class="body_text"><strong><em>table of contents</em></strong></span></span></a><span className="span-3"><span data-custom-class="body_text"><strong><em>&nbsp;below to find the section you are looking for.</em></strong></span></span></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1"><span className="span-3"><span data-custom-class="body_text"><strong>What personal information do we process?</strong> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use. Learn more about&nbsp;</span></span><a data-custom-class="link" href="#personalinfo"><span className="span-7"><span data-custom-class="body_text">personal information you disclose to us</span></span></a><span data-custom-class="body_text">.</span></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1">
+            <span className="span-3">
               <span data-custom-class="body_text">
                 <strong>Do we process any sensitive personal information?</strong>
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
                 We may process sensitive personal information when necessary with your consent or as otherwise permitted by applicable law. Learn more about&nbsp;
               </span>
             </span>
-            <a data-custom-class="link" href="#sensitiveinfo"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">sensitive information we process</span></span></a><span data-custom-class="body_text">.</span>
-            <span style="font-size: 15px;">
+            <a data-custom-class="link" href="#sensitiveinfo"><span className="span-7"><span data-custom-class="body_text">sensitive information we process</span></span></a><span data-custom-class="body_text">.</span>
+            <span className="span-3">
               <span data-custom-class="body_text">
-                <bdt class="statement-end-if-in-editor"></bdt>
+                <bdt className="statement-end-if-in-editor"></bdt>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div className="div-1"><br /></div>
+          <div className="div-1">
+            <span className="span-3">
               <span data-custom-class="body_text">
                 <strong>Do we receive any information from third parties?</strong>
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
                 We may receive information from public databases, marketing partners, social media platforms, and other outside sources. Learn more about&nbsp;
               </span>
             </span>
-            <a data-custom-class="link" href="#othersources"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">information collected from other sources</span></span></a><span data-custom-class="body_text">.</span>
-            <span style="font-size: 15px;">
+            <a data-custom-class="link" href="#othersources"><span className="span-7"><span data-custom-class="body_text">information collected from other sources</span></span></a><span data-custom-class="body_text">.</span>
+            <span className="span-3">
               <span data-custom-class="body_text">
-                <bdt class="statement-end-if-in-editor"></bdt>
+                <bdt className="statement-end-if-in-editor"></bdt>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>How do we process your information?</strong> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Learn more about&nbsp;</span></span><a data-custom-class="link" href="#infouse"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">how we process your information</span></span></a><span data-custom-class="body_text">.</span></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div className="div-1"><br /></div>
+          <div className="div-1"><span className="span-3"><span data-custom-class="body_text"><strong>How do we process your information?</strong> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Learn more about&nbsp;</span></span><a data-custom-class="link" href="#infouse"><span className="span-7"><span data-custom-class="body_text">how we process your information</span></span></a><span data-custom-class="body_text">.</span></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1">
+            <span className="span-3">
               <span data-custom-class="body_text">
                 <strong>
                   In what situations and with which
-                  <bdt class="block-component"></bdt>
+                  <bdt className="block-component"></bdt>
                   types of
-                  <bdt class="statement-end-if-in-editor"></bdt>
+                  <bdt className="statement-end-if-in-editor"></bdt>
                   parties do we share personal information?
                 </strong>
                 We may share information in specific situations and with specific
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
                 categories of
-                <bdt class="statement-end-if-in-editor"></bdt>
+                <bdt className="statement-end-if-in-editor"></bdt>
                 third parties. Learn more about&nbsp;
               </span>
             </span>
-            <a data-custom-class="link" href="#whoshare"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">when and with whom we share your personal information</span></span></a>
-            <span style="font-size: 15px;">
+            <a data-custom-class="link" href="#whoshare"><span className="span-7"><span data-custom-class="body_text">when and with whom we share your personal information</span></span></a>
+            <span className="span-3">
               <span data-custom-class="body_text">
                 .
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div className="div-1"><br /></div>
+          <div className="div-1">
+            <span className="span-3">
               <span data-custom-class="body_text">
                 <strong>How do we keep your information safe?</strong> We have
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
                 organizational
-                <bdt class="statement-end-if-in-editor"></bdt>
+                <bdt className="statement-end-if-in-editor"></bdt>
                 and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
                 unauthorized
-                <bdt class="statement-end-if-in-editor"></bdt>
+                <bdt className="statement-end-if-in-editor"></bdt>
                 third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Learn more about&nbsp;
               </span>
             </span>
-            <a data-custom-class="link" href="#infosafe"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">how we keep your information safe</span></span></a><span data-custom-class="body_text">.</span>
-            <span style="font-size: 15px;">
+            <a data-custom-class="link" href="#infosafe"><span className="span-7"><span data-custom-class="body_text">how we keep your information safe</span></span></a><span data-custom-class="body_text">.</span>
+            <span className="span-3">
               <span data-custom-class="body_text">
-                <bdt class="statement-end-if-in-editor"></bdt>
+                <bdt className="statement-end-if-in-editor"></bdt>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>What are your rights?</strong> Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about&nbsp;</span></span><a data-custom-class="link" href="#privacyrights"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">your privacy rights</span></span></a><span data-custom-class="body_text">.</span></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div className="div-1"><br /></div>
+          <div className="div-1"><span className="span-3"><span data-custom-class="body_text"><strong>What are your rights?</strong> Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about&nbsp;</span></span><a data-custom-class="link" href="#privacyrights"><span className="span-7"><span data-custom-class="body_text">your privacy rights</span></span></a><span data-custom-class="body_text">.</span></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1">
+            <span className="span-3">
               <span data-custom-class="body_text">
                 <strong>How do you exercise your rights?</strong> The easiest way to exercise your rights is by
-                <bdt class="block-component">submitting a&nbsp;</bdt>
+                <bdt className="block-component">submitting a&nbsp;</bdt>
               </span>
             </span>
-            <a data-custom-class="link" href="https://app.termly.io/notify/ff078788-d149-44a3-8051-8169eb7d7605" rel="noopener noreferrer" target="_blank"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">data subject access request</span></span></a>
-            <span style="font-size: 15px;">
+            <a data-custom-class="link" href="https://app.termly.io/notify/ff078788-d149-44a3-8051-8169eb7d7605" rel="noopener noreferrer" target="_blank"><span className="span-7"><span data-custom-class="body_text">data subject access request</span></span></a>
+            <span className="span-3">
               <span data-custom-class="body_text">
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
                 , or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text">Want to learn more about what we do with any information we collect?&nbsp;</span></span><a data-custom-class="link" href="#toc"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">Review the privacy notice in full</span></span></a><span style="font-size: 15px;"><span data-custom-class="body_text">.</span></span></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div id="toc" style="line-height: 1.5;"><span style="font-size: 15px;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">TABLE OF CONTENTS</span></strong></span></span></span></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><span style="font-size: 15px;"><a data-custom-class="link" href="#infocollect"><span style="color: rgb(0, 58, 250);">1. WHAT INFORMATION DO WE COLLECT?</span></a></span></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div className="div-1"><br /></div>
+          <div className="div-1"><span className="span-3"><span data-custom-class="body_text">Want to learn more about what we do with any information we collect?&nbsp;</span></span><a data-custom-class="link" href="#toc"><span className="span-7"><span data-custom-class="body_text">Review the privacy notice in full</span></span></a><span className="span-3"><span data-custom-class="body_text">.</span></span></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1"><br /></div>
+          <div id="toc" className="div-1"><span className="span-3"><span className="span-2"><span className="span-8"><strong><span data-custom-class="heading_1">TABLE OF CONTENTS</span></strong></span></span></span></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1"><span className="span-3"><a data-custom-class="link" href="#infocollect"><span className="span-6">1. WHAT INFORMATION DO WE COLLECT?</span></a></span></div>
+          <div className="div-1">
+            <span className="span-3">
               <a data-custom-class="link" href="#infouse">
-                <span style="color: rgb(0, 58, 250);">
+                <span className="span-6">
                   2. HOW DO WE PROCESS YOUR INFORMATION?
-                  <bdt class="block-component"></bdt>
+                  <bdt className="block-component"></bdt>
                 </span>
               </a>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div className="div-1">
+            <span className="span-3">
               <a data-custom-class="link" href="#legalbases">
-                <span style="color: rgb(0, 58, 250);">
-                  3. <span style="font-size: 15px;"><span style="color: rgb(0, 58, 250);">WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</span></span>
-                  <bdt class="statement-end-if-in-editor"></bdt>
+                <span className="span-6">
+                  3. <span className="span-3"><span className="span-6">WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</span></span>
+                  <bdt className="statement-end-if-in-editor"></bdt>
                 </span>
               </a>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
-              <span style="color: rgb(0, 58, 250);"><a data-custom-class="link" href="#whoshare">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></span>
+          <div className="div-1">
+            <span className="span-3">
+              <span className="span-6"><a data-custom-class="link" href="#whoshare">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></span>
               <span data-custom-class="body_text">
-                <bdt class="block-component"></bdt>
-                <span style="color: rgb(127, 127, 127);">
-                  <span style="color: rgb(89, 89, 89);">
+                <bdt className="block-component"></bdt>
+                <span className="span-2">
+                  <span className="span-5">
                     <span data-custom-class="body_text">
-                      <span style="color: rgb(89, 89, 89);">
-                        <bdt class="block-component"></bdt>
+                      <span className="span-5">
+                        <bdt className="block-component"></bdt>
                       </span>
                     </span>
                   </span>
@@ -484,39 +486,39 @@ export default function Privacy() {
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
-              <a data-custom-class="link" href="#cookies"><span style="color: rgb(0, 58, 250);">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</span></a>
-              <span style="color: rgb(127, 127, 127);">
-                <span style="color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-3">
+              <a data-custom-class="link" href="#cookies"><span className="span-6">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</span></a>
+              <span className="span-2">
+                <span className="span-5">
                   <span data-custom-class="body_text">
-                    <span style="color: rgb(89, 89, 89);">
-                      <bdt class="statement-end-if-in-editor"></bdt>
+                    <span className="span-5">
+                      <bdt className="statement-end-if-in-editor"></bdt>
                     </span>
                   </span>
                   <span data-custom-class="body_text">
-                    <span style="color: rgb(89, 89, 89);">
-                      <span style="color: rgb(89, 89, 89);">
-                        <span style="color: rgb(89, 89, 89);">
-                          <bdt class="block-component"></bdt>
+                    <span className="span-5">
+                      <span className="span-5">
+                        <span className="span-5">
+                          <bdt className="block-component"></bdt>
                         </span>
                       </span>
-                      <bdt class="block-component"></bdt>
+                      <bdt className="block-component"></bdt>
                     </span>
                   </span>
                 </span>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
-              <a data-custom-class="link" href="#inforetain"><span style="color: rgb(0, 58, 250);">6. HOW LONG DO WE KEEP YOUR INFORMATION?</span></a>
-              <span style="color: rgb(127, 127, 127);">
-                <span style="color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-3">
+              <a data-custom-class="link" href="#inforetain"><span className="span-6">6. HOW LONG DO WE KEEP YOUR INFORMATION?</span></a>
+              <span className="span-2">
+                <span className="span-5">
                   <span data-custom-class="body_text">
-                    <span style="color: rgb(89, 89, 89);">
-                      <span style="color: rgb(89, 89, 89);">
-                        <bdt class="block-component"></bdt>
+                    <span className="span-5">
+                      <span className="span-5">
+                        <bdt className="block-component"></bdt>
                       </span>
                     </span>
                   </span>
@@ -524,78 +526,78 @@ export default function Privacy() {
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
-              <a data-custom-class="link" href="#infosafe"><span style="color: rgb(0, 58, 250);">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</span></a>
-              <span style="color: rgb(127, 127, 127);">
-                <span style="color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-3">
+              <a data-custom-class="link" href="#infosafe"><span className="span-6">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</span></a>
+              <span className="span-2">
+                <span className="span-5">
                   <span data-custom-class="body_text">
-                    <span style="color: rgb(89, 89, 89);">
-                      <bdt class="statement-end-if-in-editor"></bdt>
-                      <bdt class="block-component"></bdt>
+                    <span className="span-5">
+                      <bdt className="statement-end-if-in-editor"></bdt>
+                      <bdt className="block-component"></bdt>
                     </span>
                   </span>
                 </span>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><span style="font-size: 15px;"><span style="color: rgb(0, 58, 250);"><a data-custom-class="link" href="#privacyrights">8. WHAT ARE YOUR PRIVACY RIGHTS?</a></span></span></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div className="div-1"><span className="span-3"><span className="span-6"><a data-custom-class="link" href="#privacyrights">8. WHAT ARE YOUR PRIVACY RIGHTS?</a></span></span></div>
+          <div className="div-1">
+            <span className="span-3">
               <a data-custom-class="link" href="#DNT">
-                <span style="color: rgb(0, 58, 250);">
+                <span className="span-6">
                   9. CONTROLS FOR DO-NOT-TRACK FEATURES
-                  <bdt class="block-component"></bdt>
+                  <bdt className="block-component"></bdt>
                 </span>
-                <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
               </a>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <a data-custom-class="link" href="#otherlaws"><span style="color: rgb(0, 58, 250); font-size: 15px;">10. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?</span></a>
-            <span style="font-size: 15px;">
-              <bdt class="statement-end-if-in-editor"><span data-custom-class="body_text"></span></bdt>
+          <div className="div-1">
+            <a data-custom-class="link" href="#otherlaws"><span className="span-7">10. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?</span></a>
+            <span className="span-3">
+              <bdt className="statement-end-if-in-editor"><span data-custom-class="body_text"></span></bdt>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
-            <bdt class="block-component"></bdt>
-            <bdt class="block-component"></bdt>
-            <bdt class="block-component"></bdt>
-            <bdt class="block-component"></bdt>
-            <bdt class="block-component"></bdt>
-            <bdt class="block-component"></bdt>
-            <bdt class="block-component"></bdt>
-            <bdt class="block-component"></bdt>
-            <bdt class="block-component"></bdt>
+          <div className="div-1">
+            <bdt className="block-component"><span className="span-3"></span></bdt>
+            <bdt className="block-component"></bdt>
+            <bdt className="block-component"></bdt>
+            <bdt className="block-component"></bdt>
+            <bdt className="block-component"></bdt>
+            <bdt className="block-component"></bdt>
+            <bdt className="block-component"></bdt>
+            <bdt className="block-component"></bdt>
+            <bdt className="block-component"></bdt>
+            <bdt className="block-component"></bdt>
           </div>
-          <div style="line-height: 1.5;"><span style="font-size: 15px;"><a data-custom-class="link" href="#policyupdates"><span style="color: rgb(0, 58, 250);">11. DO WE MAKE UPDATES TO THIS NOTICE?</span></a></span></div>
-          <div style="line-height: 1.5;"><a data-custom-class="link" href="#contact"><span style="color: rgb(0, 58, 250); font-size: 15px;">12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></a></div>
-          <div style="line-height: 1.5;"><a data-custom-class="link" href="#request"><span style="color: rgb(0, 58, 250);">13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></a></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div id="infocollect" style="line-height: 1.5;"><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0); font-size: 15px;"><span style="font-size: 15px; color: rgb(0, 0, 0);"><span style="font-size: 15px; color: rgb(0, 0, 0);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">1. WHAT INFORMATION DO WE COLLECT?</span></strong></span></span></span></span></span></div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div id="personalinfo" style="line-height: 1.5;"><span data-custom-class="heading_2" style="color: rgb(0, 0, 0);"><span style="font-size: 15px;"><strong>Personal information you disclose to us</strong></span></span></div>
+          <div className="div-1"><span className="span-3"><a data-custom-class="link" href="#policyupdates"><span className="span-6">11. DO WE MAKE UPDATES TO THIS NOTICE?</span></a></span></div>
+          <div className="div-1"><a data-custom-class="link" href="#contact"><span className="span-7">12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></a></div>
+          <div className="div-1"><a data-custom-class="link" href="#request"><span className="span-6">13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></a></div>
+          <div className="div-1"><br /></div>
+          <div className="div-1"><br /></div>
+          <div id="infocollect" className="div-1"><span className="span-8"><span className="span-9"><span className="span-9"><span className="span-9"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">1. WHAT INFORMATION DO WE COLLECT?</span></strong></span></span></span></span></span></div>
+          <div className="div-1"><br /></div>
+          <div id="personalinfo" className="div-1"><span data-custom-class="heading_2" className="span-8"><span className="span-3"><strong>Personal information you disclose to us</strong></span></span></div>
           <div>
             <div><br /></div>
-            <div style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span data-custom-class="body_text"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text"><strong><em>In Short:</em></strong></span></span></span></span><span data-custom-class="body_text"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text"><strong><em>&nbsp;</em></strong><em>We collect personal information that you provide to us.</em></span></span></span></span></span></span></div>
+            <div className="div-1"><span className="span-2"><span className="span-4"><span data-custom-class="body_text"><span className="span-4"><span className="span-4"><span data-custom-class="body_text"><strong><em>In Short:</em></strong></span></span></span></span><span data-custom-class="body_text"><span className="span-4"><span className="span-4"><span data-custom-class="body_text"><strong><em>&nbsp;</em></strong><em>We collect personal information that you provide to us.</em></span></span></span></span></span></span></div>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1"><br /></div>
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
                   We collect personal information that you voluntarily provide to us when you
-                  <span style="font-size: 15px;">
-                    <bdt class="block-component"></bdt>
+                  <span className="span-3">
+                    <bdt className="block-component"></bdt>
                   </span>
                   register on the Services,&nbsp;
                 </span>
-                <span style="font-size: 15px;">
+                <span className="span-3">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
-                      <bdt class="statement-end-if-in-editor"></bdt>
+                    <span className="span-3">
+                      <bdt className="statement-end-if-in-editor"></bdt>
                     </span>
                   </span>
                   <span data-custom-class="body_text">express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</span>
@@ -603,26 +605,26 @@ export default function Privacy() {
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1"><br /></div>
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
-                    <bdt class="block-component"></bdt>
+                  <span className="span-3">
+                    <bdt className="block-component"></bdt>
                   </span>
                 </span>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
                   <strong>Personal Information Provided by You.</strong> The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -630,13 +632,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">names</bdt>
+                        <bdt className="question">names</bdt>
                       </span>
                     </span>
                   </span>
@@ -644,13 +646,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -658,13 +660,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">email addresses</bdt>
+                        <bdt className="question">email addresses</bdt>
                       </span>
                     </span>
                   </span>
@@ -672,13 +674,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -686,13 +688,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">usernames</bdt>
+                        <bdt className="question">usernames</bdt>
                       </span>
                     </span>
                   </span>
@@ -700,13 +702,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -714,13 +716,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">passwords</bdt>
+                        <bdt className="question">passwords</bdt>
                       </span>
                     </span>
                   </span>
@@ -728,13 +730,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -742,13 +744,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">contact preferences</bdt>
+                        <bdt className="question">contact preferences</bdt>
                       </span>
                     </span>
                   </span>
@@ -756,13 +758,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -770,13 +772,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">billing addresses</bdt>
+                        <bdt className="question">billing addresses</bdt>
                       </span>
                     </span>
                   </span>
@@ -784,13 +786,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -798,13 +800,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">debit/credit card numbers</bdt>
+                        <bdt className="question">debit/credit card numbers</bdt>
                       </span>
                     </span>
                   </span>
@@ -812,13 +814,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -826,13 +828,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">mailing addresses</bdt>
+                        <bdt className="question">mailing addresses</bdt>
                       </span>
                     </span>
                   </span>
@@ -840,13 +842,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -854,13 +856,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">phone numbers</bdt>
+                        <bdt className="question">phone numbers</bdt>
                       </span>
                     </span>
                   </span>
@@ -868,13 +870,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -882,13 +884,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">age</bdt>
+                        <bdt className="question">age</bdt>
                       </span>
                     </span>
                   </span>
@@ -896,13 +898,13 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                   </span>
                 </span>
@@ -910,13 +912,13 @@ export default function Privacy() {
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <li className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="font-size: 15px;">
+                    <span className="span-3">
                       <span data-custom-class="body_text">
-                        <bdt class="question">gender</bdt>
+                        <bdt className="question">gender</bdt>
                       </span>
                     </span>
                   </span>
@@ -924,133 +926,133 @@ export default function Privacy() {
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="forloop-component"></bdt>
+                      <bdt className="forloop-component"></bdt>
                     </span>
                     <span data-custom-class="body_text">
-                      <bdt class="statement-end-if-in-editor"></bdt>
+                      <bdt className="statement-end-if-in-editor"></bdt>
                     </span>
                   </span>
                 </span>
               </span>
             </span>
           </div>
-          <div id="sensitiveinfo" style="line-height: 1.5;">
-            <span style="font-size: 15px;">
+          <div id="sensitiveinfo" className="div-1">
+            <span className="span-3">
               <span data-custom-class="body_text">
                 <strong>Sensitive Information.</strong>
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
                 When necessary, with your consent or as otherwise permitted by applicable law, we process the following categories of sensitive information:
-                <bdt class="forloop-component"></bdt>
+                <bdt className="forloop-component"></bdt>
               </span>
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px;">
+            <li className="div-1">
+              <span className="span-3">
                 <span data-custom-class="body_text">
-                  <bdt class="question">biometric data</bdt>
+                  <bdt className="question">biometric data</bdt>
                 </span>
               </span>
             </li>
           </ul>
           <div>
-            <span style="font-size: 15px;">
+            <span className="span-3">
               <span data-custom-class="body_text">
-                <bdt class="forloop-component"></bdt>
+                <bdt className="forloop-component"></bdt>
               </span>
               <span data-custom-class="body_text">
-                <bdt class="statement-end-if-in-editor"></bdt>
+                <bdt className="statement-end-if-in-editor"></bdt>
               </span>
             </span>
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="block-component"></bdt>
+                      <bdt className="block-component"></bdt>
                     </span>
                   </span>
                 </span>
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
                   <strong>Payment Data.</strong> We may collect data necessary to process your payment if you make purchases, such as your payment instrument number, and the security code associated with your payment instrument. All payment data is stored by
-                  <bdt class="forloop-component"></bdt>
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                  <bdt className="forloop-component"></bdt>
+                  <span className="span-4">
+                    <span className="span-4">
                       <span data-custom-class="body_text">
-                        <span style="font-size: 15px;">
+                        <span className="span-3">
                           <span data-custom-class="body_text">
-                            <bdt class="block-component"></bdt>
+                            <bdt className="block-component"></bdt>
                           </span>
                         </span>
                       </span>
                     </span>
                   </span>
-                  <bdt class="question">WePay</bdt>
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                  <bdt className="question">WePay</bdt>
+                  <span className="span-4">
+                    <span className="span-4">
                       <span data-custom-class="body_text">
-                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                        <span className="span-4">
+                          <span className="span-4">
                             <span data-custom-class="body_text">
-                              <span style="font-size: 15px;">
+                              <span className="span-3">
                                 <span data-custom-class="body_text">
-                                  <bdt class="block-component"></bdt>
+                                  <bdt className="block-component"></bdt>
                                 </span>
                               </span>
                             </span>
                             <span data-custom-class="body_text">
-                              <span style="font-size: 15px;">
-                                <span style="color: rgb(89, 89, 89);">
+                              <span className="span-3">
+                                <span className="span-5">
                                   <span data-custom-class="body_text">
-                                    <span style="font-size: 15px;">
-                                      <span style="color: rgb(89, 89, 89);">
+                                    <span className="span-3">
+                                      <span className="span-5">
                                         <span data-custom-class="body_text">
-                                          <span style="color: rgb(89, 89, 89);">
-                                            <span style="font-size: 15px;">
+                                          <span className="span-5">
+                                            <span className="span-3">
                                               <span data-custom-class="body_text">
-                                                <bdt class="forloop-component"></bdt>
-                                                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                <bdt className="forloop-component"></bdt>
+                                                <span className="span-4">
+                                                  <span className="span-4">
                                                     <span data-custom-class="body_text">
-                                                      <span style="font-size: 15px;">
+                                                      <span className="span-3">
                                                         <span data-custom-class="body_text">
-                                                          <bdt class="block-component"></bdt>
+                                                          <bdt className="block-component"></bdt>
                                                           and
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
-                                                                <bdt class="question">PayPal</bdt>
+                                                                <bdt className="question">PayPal</bdt>
                                                               </span>
                                                               <span data-custom-class="body_text">
-                                                                <span style="font-size: 15px;">
+                                                                <span className="span-3">
                                                                   <span data-custom-class="body_text">
-                                                                    <bdt class="statement-end-if-in-editor"></bdt>
+                                                                    <bdt className="statement-end-if-in-editor"></bdt>
                                                                   </span>
                                                                 </span>
                                                               </span>
                                                               <span data-custom-class="body_text">
-                                                                <span style="font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89);">
+                                                                <span className="span-3">
+                                                                  <span className="span-5">
                                                                     <span data-custom-class="body_text">
-                                                                      <span style="font-size: 15px;">
-                                                                        <span style="color: rgb(89, 89, 89);">
+                                                                      <span className="span-3">
+                                                                        <span className="span-5">
                                                                           <span data-custom-class="body_text">
-                                                                            <span style="color: rgb(89, 89, 89);">
-                                                                              <span style="font-size: 15px;">
+                                                                            <span className="span-5">
+                                                                              <span className="span-3">
                                                                                 <span data-custom-class="body_text">
-                                                                                  <bdt class="forloop-component"></bdt>
+                                                                                  <bdt className="forloop-component"></bdt>
                                                                                 </span>
                                                                               </span>
                                                                             </span>
@@ -1064,16 +1066,16 @@ export default function Privacy() {
                                                             </span>
                                                           </span>
                                                           . You may find their privacy notice link(s) here:
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
-                                                                <bdt class="forloop-component"></bdt>
-                                                                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                                <bdt className="forloop-component"></bdt>
+                                                                <span className="span-4">
+                                                                  <span className="span-4">
                                                                     <span data-custom-class="body_text">
-                                                                      <span style="font-size: 15px;">
+                                                                      <span className="span-3">
                                                                         <span data-custom-class="body_text">
-                                                                          <bdt class="block-component"></bdt>
+                                                                          <bdt className="block-component"></bdt>
                                                                         </span>
                                                                       </span>
                                                                     </span>
@@ -1082,21 +1084,21 @@ export default function Privacy() {
                                                               </span>
                                                             </span>
                                                           </span>
-                                                          <span style="color: rgb(0, 58, 250);">
-                                                            <bdt class="question"><a href="https://go.wepay.com/privacy-policy/" target="_blank" data-custom-class="link">https://go.wepay.com/privacy-policy/</a></bdt>
+                                                          <span className="span-6">
+                                                            <bdt className="question"><a href="https://go.wepay.com/privacy-policy/" target="_blank" data-custom-class="link">https://go.wepay.com/privacy-policy/</a></bdt>
                                                           </span>
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
-                                                                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                                <span className="span-4">
+                                                                  <span className="span-4">
                                                                     <span data-custom-class="body_text">
-                                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                                      <span className="span-4">
+                                                                        <span className="span-4">
                                                                           <span data-custom-class="body_text">
-                                                                            <span style="font-size: 15px;">
+                                                                            <span className="span-3">
                                                                               <span data-custom-class="body_text">
-                                                                                <bdt class="block-component"></bdt>
+                                                                                <bdt className="block-component"></bdt>
                                                                               </span>
                                                                             </span>
                                                                           </span>
@@ -1105,26 +1107,26 @@ export default function Privacy() {
                                                                     </span>
                                                                   </span>
                                                                 </span>
-                                                                <bdt class="forloop-component"></bdt>
-                                                                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                                <bdt className="forloop-component"></bdt>
+                                                                <span className="span-4">
+                                                                  <span className="span-4">
                                                                     <span data-custom-class="body_text">
-                                                                      <span style="font-size: 15px;">
+                                                                      <span className="span-3">
                                                                         <span data-custom-class="body_text">
-                                                                          <bdt class="block-component"></bdt>
+                                                                          <bdt className="block-component"></bdt>
                                                                           and
-                                                                          <span style="font-size: 15px; color: rgb(0, 58, 250);">
-                                                                            <span style="font-size: 15px; color: rgb(0, 58, 250);">
+                                                                          <span className="span-7">
+                                                                            <span className="span-7">
                                                                               <span data-custom-class="body_text">
-                                                                                <bdt class="question"><a href="https://www.paypal.com/us/legalhub/privacy-full#personalData" target="_blank" data-custom-class="link">https://www.paypal.com/us/legalhub/privacy-full#personalData</a></bdt>
+                                                                                <bdt className="question"><a href="https://www.paypal.com/us/legalhub/privacy-full#personalData" target="_blank" data-custom-class="link">https://www.paypal.com/us/legalhub/privacy-full#personalData</a></bdt>
                                                                               </span>
                                                                               <span data-custom-class="body_text">
-                                                                                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                                                <span className="span-4">
+                                                                                  <span className="span-4">
                                                                                     <span data-custom-class="body_text">
-                                                                                      <span style="font-size: 15px;">
+                                                                                      <span className="span-3">
                                                                                         <span data-custom-class="body_text">
-                                                                                          <bdt class="statement-end-if-in-editor"></bdt>
+                                                                                          <bdt className="statement-end-if-in-editor"></bdt>
                                                                                         </span>
                                                                                       </span>
                                                                                     </span>
@@ -1133,11 +1135,11 @@ export default function Privacy() {
                                                                               </span>
                                                                             </span>
                                                                           </span>
-                                                                          <bdt class="forloop-component"></bdt>
-                                                                          <span style="font-size: 15px;">
+                                                                          <bdt className="forloop-component"></bdt>
+                                                                          <span className="span-3">
                                                                             <span data-custom-class="body_text">
                                                                               .
-                                                                              <bdt class="block-component"></bdt>
+                                                                              <bdt className="block-component"></bdt>
                                                                             </span>
                                                                           </span>
                                                                         </span>
@@ -1172,169 +1174,169 @@ export default function Privacy() {
               </span>
             </span>
           </div>
-          <div style="line-height: 1.5;"><br /></div>
-          <div style="line-height: 1.5;">
-            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+          <div className="div-1"><br /></div>
+          <div className="div-1">
+            <span className="span-4">
+              <span className="span-4">
                 <span data-custom-class="body_text">
-                  <span style="font-size: 15px;">
+                  <span className="span-3">
                     <span data-custom-class="body_text">
-                      <bdt class="statement-end-if-in-editor">
-                        <bdt class="block-component"></bdt>
+                      <bdt className="statement-end-if-in-editor">
+                        <bdt className="block-component"></bdt>
                       </bdt>
                     </span>
                   </span>
                 </span>
               </span>
-              <bdt class="block-component">
-                <bdt class="block-component"></bdt>
+              <bdt className="block-component">
+                <bdt className="block-component"></bdt>
               </bdt>
             </span>
           </div>
-          <div style="line-height: 1.5;">
+          <div className="div-1">
             <span data-custom-class="body_text">
-              <span style="font-size: 15px;">
+              <span className="span-3">
                 <strong>Application Data.</strong> If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:
-                <bdt class="block-component"></bdt>
+                <bdt className="block-component"></bdt>
               </span>
             </span>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
+            <li className="div-1">
               <span data-custom-class="body_text">
-                <span style="font-size: 15px;">
+                <span className="span-3">
                   <em>Geolocation Information.</em> We may request access or permission to track location-based information from your mobile device, either continuously or while you are using our mobile application(s), to provide certain location-based services. If you wish to change our access or permissions, you may do so in your device's settings.
-                  <bdt class="statement-end-if-in-editor"></bdt>
+                  <bdt className="statement-end-if-in-editor"></bdt>
                 </span>
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+          <div className="div-1">
+            <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
           </div>
           <ul>
-            <li style="line-height: 1.5;">
-              <span style="font-size: 15px;">
+            <li className="div-1">
+              <span className="span-3">
                 <span data-custom-class="body_text">
                   <em>Mobile Device Access.</em> We may request access or permission to certain features from your mobile device, including your mobile device's
-                  <bdt class="forloop-component"></bdt>
-                  <bdt class="question">calendar</bdt>
+                  <bdt className="forloop-component"></bdt>
+                  <bdt className="question">calendar</bdt>
                   ,
-                  <bdt class="forloop-component"></bdt>
-                  <bdt class="question">reminders</bdt>
+                  <bdt className="forloop-component"></bdt>
+                  <bdt className="question">reminders</bdt>
                   ,
-                  <bdt class="forloop-component"></bdt>
+                  <bdt className="forloop-component"></bdt>
                   and other features. If you wish to change our access or permissions, you may do so in your device's settings.
-                  <bdt class="statement-end-if-in-editor"></bdt>
+                  <bdt className="statement-end-if-in-editor"></bdt>
                 </span>
               </span>
             </li>
           </ul>
-          <div style="line-height: 1.5;">
-            <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-            <div style="line-height: 1.5;">
-              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+          <div className="div-1">
+            <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+            <div className="div-1">
+              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
             </div>
             <ul>
-              <li style="line-height: 1.5;">
-                <span style="font-size: 15px;">
+              <li className="div-1">
+                <span className="span-3">
                   <span data-custom-class="body_text">
                     <em>Push Notifications.</em> We may request to send you push notifications regarding your account or certain features of the application(s). If you wish to opt out from receiving these types of communications, you may turn them off in your device's settings.
-                    <bdt class="statement-end-if-in-editor"></bdt>
+                    <bdt className="statement-end-if-in-editor"></bdt>
                   </span>
                 </span>
               </li>
             </ul>
-            <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text">This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.</span></span></div>
-            <div style="line-height: 1.5;"><br /></div>
-            <div style="line-height: 1.5;">
-              <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+            <div className="div-1"><span className="span-3"><span data-custom-class="body_text">This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.</span></span></div>
+            <div className="div-1"><br /></div>
+            <div className="div-1">
+              <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
             </div>
-            <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</span></span></span></div>
-            <div style="line-height: 1.5;"><br /></div>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1"><span className="span-4"><span className="span-4"><span data-custom-class="body_text">All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</span></span></span></div>
+            <div className="div-1"><br /></div>
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                   </span>
                 </span>
               </span>
             </div>
-            <div style="line-height: 1.5;"><span data-custom-class="heading_2" style="color: rgb(0, 0, 0);"><span style="font-size: 15px;"><strong>Information automatically collected</strong></span></span></div>
+            <div className="div-1"><span data-custom-class="heading_2" className="span-8"><span className="span-3"><strong>Information automatically collected</strong></span></span></div>
             <div>
               <div><br /></div>
-              <div style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span data-custom-class="body_text"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text"><strong><em>In Short:</em></strong></span></span></span></span><span data-custom-class="body_text"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text"><strong><em>&nbsp;</em></strong><em>Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.</em></span></span></span></span></span></span></div>
+              <div className="div-1"><span className="span-2"><span className="span-4"><span data-custom-class="body_text"><span className="span-4"><span className="span-4"><span data-custom-class="body_text"><strong><em>In Short:</em></strong></span></span></span></span><span data-custom-class="body_text"><span className="span-4"><span className="span-4"><span data-custom-class="body_text"><strong><em>&nbsp;</em></strong><em>Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.</em></span></span></span></span></span></span></div>
             </div>
-            <div style="line-height: 1.5;"><br /></div>
-            <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.</span></span></span></div>
-            <div style="line-height: 1.5;"><br /></div>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1"><br /></div>
+            <div className="div-1"><span className="span-4"><span className="span-4"><span data-custom-class="body_text">We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.</span></span></span></div>
+            <div className="div-1"><br /></div>
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                   </span>
                 </span>
               </span>
             </div>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
                     Like many businesses, we also collect information through cookies and similar technologies.
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                     You can find out more about this in our Cookie Notice:
-                    <bdt class="statement-end-if-in-editor"></bdt>
-                    <bdt class="block-component"></bdt>
-                    <span style="color: rgb(0, 58, 250);">
-                      <bdt class="question"><a href="https://mypg.gr/cookies" target="_blank" data-custom-class="link">https://mypg.gr/cookies</a></bdt>
+                    <bdt className="statement-end-if-in-editor"></bdt>
+                    <bdt className="block-component"></bdt>
+                    <span className="span-6">
+                      <bdt className="question"><a href="https://mypg.gr/cookies" target="_blank" data-custom-class="link">https://mypg.gr/cookies</a></bdt>
                     </span>
                     .
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                   </span>
                 </span>
               </span>
             </div>
-            <div style="line-height: 1.5;"><br /></div>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1"><br /></div>
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <bdt class="statement-end-if-in-editor"><span data-custom-class="body_text"></span></bdt>
+                    <bdt className="statement-end-if-in-editor"><span data-custom-class="body_text"></span></bdt>
                   </span>
                   <span data-custom-class="body_text">
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                   </span>
                 </span>
               </span>
             </div>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
                     The information we collect includes:
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                   </span>
                 </span>
               </span>
             </div>
             <ul>
-              <li style="line-height: 1.5;">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+              <li className="div-1">
+                <span className="span-4">
+                  <span className="span-4">
                     <span data-custom-class="body_text">
-                      <em>Log and Usage Data.</em> Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type, and settings and information about your activity in the Services<span style="font-size: 15px;">&nbsp;</span>(such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called
-                      <bdt class="block-component"></bdt>
+                      <em>Log and Usage Data.</em> Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type, and settings and information about your activity in the Services<span className="span-3">&nbsp;</span>(such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called
+                      <bdt className="block-component"></bdt>
                       "crash dumps"
-                      <bdt class="statement-end-if-in-editor"></bdt>
+                      <bdt className="statement-end-if-in-editor"></bdt>
                       ), and hardware settings).
-                      <span style="font-size: 15px;">
-                        <span style="color: rgb(89, 89, 89);">
+                      <span className="span-3">
+                        <span className="span-5">
                           <span data-custom-class="body_text">
-                            <span style="font-size: 15px;">
-                              <span style="color: rgb(89, 89, 89);">
-                                <bdt class="statement-end-if-in-editor"></bdt>
+                            <span className="span-3">
+                              <span className="span-5">
+                                <bdt className="statement-end-if-in-editor"></bdt>
                               </span>
                             </span>
                           </span>
@@ -1345,21 +1347,21 @@ export default function Privacy() {
                 </span>
               </li>
             </ul>
-            <div style="line-height: 1.5;">
-              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+            <div className="div-1">
+              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
             </div>
             <ul>
-              <li style="line-height: 1.5;">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+              <li className="div-1">
+                <span className="span-4">
+                  <span className="span-4">
                     <span data-custom-class="body_text">
                       <em>Device Data.</em> We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.
-                      <span style="font-size: 15px;">
-                        <span style="color: rgb(89, 89, 89);">
+                      <span className="span-3">
+                        <span className="span-5">
                           <span data-custom-class="body_text">
-                            <span style="font-size: 15px;">
-                              <span style="color: rgb(89, 89, 89);">
-                                <bdt class="statement-end-if-in-editor"></bdt>
+                            <span className="span-3">
+                              <span className="span-5">
+                                <bdt className="statement-end-if-in-editor"></bdt>
                               </span>
                             </span>
                           </span>
@@ -1370,21 +1372,21 @@ export default function Privacy() {
                 </span>
               </li>
             </ul>
-            <div style="line-height: 1.5;">
-              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+            <div className="div-1">
+              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
             </div>
             <ul>
-              <li style="line-height: 1.5;">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+              <li className="div-1">
+                <span className="span-4">
+                  <span className="span-4">
                     <span data-custom-class="body_text">
                       <em>Location Data.</em> We collect location data such as information about your device's location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if you choose to opt out, you may not be able to use certain aspects of the Services.
-                      <span style="font-size: 15px;">
-                        <span style="color: rgb(89, 89, 89);">
+                      <span className="span-3">
+                        <span className="span-5">
                           <span data-custom-class="body_text">
-                            <span style="font-size: 15px;">
-                              <span style="color: rgb(89, 89, 89);">
-                                <bdt class="statement-end-if-in-editor"></bdt>
+                            <span className="span-3">
+                              <span className="span-5">
+                                <bdt className="statement-end-if-in-editor"></bdt>
                               </span>
                             </span>
                           </span>
@@ -1396,15 +1398,15 @@ export default function Privacy() {
               </li>
             </ul>
             <div>
-              <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
-              <bdt class="statement-end-if-in-editor"></bdt>
+              <bdt className="block-component"><span className="span-3"></span></bdt>
+              <bdt className="statement-end-if-in-editor"></bdt>
               <span data-custom-class="body_text">
-                <span style="color: rgb(89, 89, 89); font-size: 15px;">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="color: rgb(89, 89, 89); font-size: 15px;">
+                    <span className="span-4">
                       <span data-custom-class="body_text">
-                        <bdt class="statement-end-if-in-editor">
-                          <bdt class="block-component"></bdt>
+                        <bdt className="statement-end-if-in-editor">
+                          <bdt className="block-component"></bdt>
                         </bdt>
                       </span>
                     </span>
@@ -1412,24 +1414,24 @@ export default function Privacy() {
                 </span>
               </span>
             </div>
-            <div id="othersources" style="line-height: 1.5;"><span data-custom-class="heading_2" style="color: rgb(0, 0, 0);"><span style="font-size: 15px;"><strong>Information collected from other sources</strong></span></span></div>
+            <div id="othersources" className="div-1"><span data-custom-class="heading_2" className="span-8"><span className="span-3"><strong>Information collected from other sources</strong></span></span></div>
             <div>
               <div><br /></div>
-              <div style="line-height: 1.5;">
-                <span style="color: rgb(127, 127, 127);">
-                  <span style="color: rgb(89, 89, 89); font-size: 15px;">
+              <div className="div-1">
+                <span className="span-2">
+                  <span className="span-4">
                     <span data-custom-class="body_text">
-                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                      <span className="span-4">
+                        <span className="span-4">
                           <span data-custom-class="body_text">
                             <strong><em>In Short:&nbsp;</em></strong>
                             <em>
                               We may collect limited data from public databases, marketing partners,
-                              <span style="color: rgb(89, 89, 89);">
-                                <span style="font-size: 15px;">
+                              <span className="span-5">
+                                <span className="span-3">
                                   <em>
                                     <span data-custom-class="body_text">
-                                      <bdt class="block-component"></bdt>
+                                      <bdt className="block-component"></bdt>
                                     </span>
                                   </em>
                                 </span>
@@ -1444,32 +1446,32 @@ export default function Privacy() {
                 </span>
               </div>
             </div>
-            <div style="line-height: 1.5;"><br /></div>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1"><br /></div>
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
                     In order to enhance our ability to provide relevant marketing, offers, and services to you and update our records, we may obtain information about you from other sources, such as public databases, joint marketing partners, affiliate programs, data providers,
-                    <span style="color: rgb(89, 89, 89);">
-                      <span style="font-size: 15px;">
+                    <span className="span-5">
+                      <span className="span-3">
                         <span data-custom-class="body_text">
-                          <bdt class="block-component"></bdt>
+                          <bdt className="block-component"></bdt>
                         </span>
                       </span>
                       &nbsp;
                     </span>
                     and from other third parties. This information includes mailing addresses, job titles, email addresses, phone numbers, intent data (or user
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                     behavior
-                    <bdt class="statement-end-if-in-editor"></bdt>
+                    <bdt className="statement-end-if-in-editor"></bdt>
                     data), Internet Protocol (IP) addresses, social media profiles, social media URLs, and custom profiles, for purposes of targeted advertising and event promotion.
-                    <span style="color: rgb(89, 89, 89);">
-                      <span style="font-size: 15px;">
+                    <span className="span-5">
+                      <span className="span-3">
                         <span data-custom-class="body_text">
-                          <span style="color: rgb(89, 89, 89);">
-                            <span style="font-size: 15px;">
+                          <span className="span-5">
+                            <span className="span-3">
                               <span data-custom-class="body_text">
-                                <bdt class="block-component"></bdt>
+                                <bdt className="block-component"></bdt>
                               </span>
                             </span>
                           </span>
@@ -1480,23 +1482,23 @@ export default function Privacy() {
                 </span>
               </span>
             </div>
-            <div style="line-height: 1.5;"><br /></div>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1"><br /></div>
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <span style="color: rgb(89, 89, 89);">
-                      <span style="font-size: 15px;">
+                    <span className="span-5">
+                      <span className="span-3">
                         <span data-custom-class="body_text">
-                          <span style="color: rgb(89, 89, 89);">
-                            <span style="color: rgb(89, 89, 89);">
-                              <bdt class="block-component">
-                                <span style="color: rgb(89, 89, 89); font-size: 15px;">
+                          <span className="span-5">
+                            <span className="span-5">
+                              <bdt className="block-component">
+                                <span className="span-4">
                                   <span data-custom-class="body_text">
-                                    <span style="color: rgb(89, 89, 89); font-size: 15px;">
+                                    <span className="span-4">
                                       <span data-custom-class="body_text">
-                                        <bdt class="statement-end-if-in-editor">
-                                          <bdt class="statement-end-if-in-editor"></bdt>
+                                        <bdt className="statement-end-if-in-editor">
+                                          <bdt className="statement-end-if-in-editor"></bdt>
                                         </bdt>
                                       </span>
                                     </span>
@@ -1511,44 +1513,44 @@ export default function Privacy() {
                   </span>
                 </span>
               </span>
-              <span style="font-size: 15px;">
+              <span className="span-3">
                 <span data-custom-class="body_text">
-                  <bdt class="block-component"></bdt>
+                  <bdt className="block-component"></bdt>
                 </span>
               </span>
             </div>
-            <div id="infouse" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">2. HOW DO WE PROCESS YOUR INFORMATION?</span></strong></span></span></span></span></span></div>
+            <div id="infouse" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">2. HOW DO WE PROCESS YOUR INFORMATION?</span></strong></span></span></span></span></span></div>
             <div>
-              <div style="line-height: 1.5;"><br /></div>
-              <div style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span data-custom-class="body_text"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text"><strong><em>In Short:&nbsp;</em></strong><em>We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.</em></span></span></span></span></span></span></div>
+              <div className="div-1"><br /></div>
+              <div className="div-1"><span className="span-2"><span className="span-4"><span data-custom-class="body_text"><span className="span-4"><span className="span-4"><span data-custom-class="body_text"><strong><em>In Short:&nbsp;</em></strong><em>We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.</em></span></span></span></span></span></span></div>
             </div>
-            <div style="line-height: 1.5;"><br /></div>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1"><br /></div>
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
                     <strong>We process your personal information for a variety of reasons, depending on how you interact with our Services, including:</strong>
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                   </span>
                 </span>
               </span>
             </div>
             <ul>
-              <li style="line-height: 1.5;">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+              <li className="div-1">
+                <span className="span-4">
+                  <span className="span-4">
                     <span data-custom-class="body_text">
                       <strong>To facilitate account creation and authentication and otherwise manage user accounts.&nbsp;</strong>We may process your information so you can create and log in to your account, as well as keep your account in working order.
-                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                      <span className="span-4">
+                        <span className="span-4">
                           <span data-custom-class="body_text">
-                            <span style="font-size: 15px;">
-                              <span style="color: rgb(89, 89, 89);">
+                            <span className="span-3">
+                              <span className="span-5">
                                 <span data-custom-class="body_text">
-                                  <span style="font-size: 15px;">
-                                    <span style="color: rgb(89, 89, 89);">
+                                  <span className="span-3">
+                                    <span className="span-5">
                                       <span data-custom-class="body_text">
-                                        <bdt class="statement-end-if-in-editor"></bdt>
+                                        <bdt className="statement-end-if-in-editor"></bdt>
                                       </span>
                                     </span>
                                   </span>
@@ -1563,48 +1565,48 @@ export default function Privacy() {
                 </span>
               </li>
             </ul>
-            <div style="line-height: 1.5;">
-              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+            <div className="div-1">
+              <span className="span-4">
+                <span className="span-4">
                   <span data-custom-class="body_text">
-                    <bdt class="block-component"></bdt>
+                    <bdt className="block-component"></bdt>
                   </span>
                 </span>
               </span>
-              <div style="line-height: 1.5;">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+              <div className="div-1">
+                <span className="span-4">
+                  <span className="span-4">
                     <span data-custom-class="body_text">
-                      <bdt class="block-component"></bdt>
+                      <bdt className="block-component"></bdt>
                     </span>
                   </span>
                 </span>
               </div>
               <ul>
-                <li style="line-height: 1.5;">
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                <li className="div-1">
+                  <span className="span-4">
+                    <span className="span-4">
                       <span data-custom-class="body_text">
                         <strong>To deliver and facilitate delivery of services to the user.&nbsp;</strong>We may process your information to provide you with the requested service.
-                        <span style="font-size: 15px;">
-                          <span style="color: rgb(89, 89, 89);">
+                        <span className="span-3">
+                          <span className="span-5">
                             <span data-custom-class="body_text">
-                              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                              <span className="span-4">
+                                <span className="span-4">
                                   <span data-custom-class="body_text">
-                                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                    <span className="span-4">
+                                      <span className="span-4">
                                         <span data-custom-class="body_text">
-                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                          <span className="span-4">
+                                            <span className="span-4">
                                               <span data-custom-class="body_text">
-                                                <span style="font-size: 15px;">
-                                                  <span style="color: rgb(89, 89, 89);">
+                                                <span className="span-3">
+                                                  <span className="span-5">
                                                     <span data-custom-class="body_text">
-                                                      <span style="font-size: 15px;">
-                                                        <span style="color: rgb(89, 89, 89);">
+                                                      <span className="span-3">
+                                                        <span className="span-5">
                                                           <span data-custom-class="body_text">
-                                                            <bdt class="statement-end-if-in-editor"></bdt>
+                                                            <bdt className="statement-end-if-in-editor"></bdt>
                                                           </span>
                                                         </span>
                                                       </span>
@@ -1628,53 +1630,53 @@ export default function Privacy() {
                   </span>
                 </li>
               </ul>
-              <div style="line-height: 1.5;">
-                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
+              <div className="div-1">
+                <span className="span-4">
+                  <span className="span-4">
                     <span data-custom-class="body_text">
-                      <bdt class="block-component"></bdt>
+                      <bdt className="block-component"></bdt>
                     </span>
                   </span>
                 </span>
-                <div style="line-height: 1.5;">
-                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                <div className="div-1">
+                  <span className="span-4">
+                    <span className="span-4">
                       <span data-custom-class="body_text">
-                        <bdt class="block-component"></bdt>
+                        <bdt className="block-component"></bdt>
                       </span>
                     </span>
                   </span>
                 </div>
                 <ul>
-                  <li style="line-height: 1.5;">
-                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                  <li className="div-1">
+                    <span className="span-4">
+                      <span className="span-4">
                         <span data-custom-class="body_text">
                           <strong>To respond to user inquiries/offer support to users.&nbsp;</strong>We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.
-                          <bdt class="statement-end-if-in-editor"></bdt>
+                          <bdt className="statement-end-if-in-editor"></bdt>
                         </span>
                       </span>
                     </span>
                   </li>
                 </ul>
-                <div style="line-height: 1.5;">
-                  <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
-                  <div style="line-height: 1.5;">
-                    <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
+                <div className="div-1">
+                  <bdt className="block-component"><span className="span-3"></span></bdt>
+                  <div className="div-1">
+                    <bdt className="block-component"><span className="span-3"></span></bdt>
                   </div>
                   <ul>
-                    <li style="line-height: 1.5;">
-                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                    <li className="div-1">
+                      <span className="span-4">
+                        <span className="span-4">
                           <span data-custom-class="body_text">
                             <strong>To send administrative information to you.&nbsp;</strong>We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.
-                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                              <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                            <span className="span-4">
+                              <span className="span-4">
                                 <span data-custom-class="body_text">
-                                  <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                  <span className="span-4">
+                                    <span className="span-4">
                                       <span data-custom-class="body_text">
-                                        <bdt class="statement-end-if-in-editor"></bdt>
+                                        <bdt className="statement-end-if-in-editor"></bdt>
                                       </span>
                                     </span>
                                   </span>
@@ -1686,53 +1688,53 @@ export default function Privacy() {
                       </span>
                     </li>
                   </ul>
-                  <div style="line-height: 1.5;">
-                    <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
-                    <div style="line-height: 1.5;">
-                      <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                  <div className="div-1">
+                    <bdt className="block-component"><span className="span-3"></span></bdt>
+                    <div className="div-1">
+                      <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                     </div>
                     <ul>
-                      <li style="line-height: 1.5;">
+                      <li className="div-1">
                         <span data-custom-class="body_text">
-                          <span style="font-size: 15px;">
+                          <span className="span-3">
                             <strong>
                               To
-                              <bdt class="block-component"></bdt>
+                              <bdt className="block-component"></bdt>
                               fulfill
-                              <bdt class="statement-end-if-in-editor"></bdt>
+                              <bdt className="statement-end-if-in-editor"></bdt>
                               and manage your orders.
                             </strong>
                             We may process your information to
-                            <bdt class="block-component"></bdt>
+                            <bdt className="block-component"></bdt>
                             fulfill
-                            <bdt class="statement-end-if-in-editor"></bdt>
+                            <bdt className="statement-end-if-in-editor"></bdt>
                             and manage your orders, payments, returns, and exchanges made through the Services.
                           </span>
                         </span>
-                        <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                        <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                       </li>
                     </ul>
-                    <p style="font-size: 15px; line-height: 1.5;">
-                      <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
+                    <p className="span-10">
+                      <bdt className="block-component"><span className="span-3"></span></bdt>
                     </p>
-                    <p style="font-size: 15px; line-height: 1.5;">
-                      <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
+                    <p className="span-10">
+                      <bdt className="block-component"><span className="span-3"></span></bdt>
                     </p>
                     <ul>
-                      <li style="line-height: 1.5;">
-                        <span style="font-size: 15px;">
-                          <span style="color: rgb(89, 89, 89);">
-                            <span style="color: rgb(89, 89, 89);">
+                      <li className="div-1">
+                        <span className="span-3">
+                          <span className="span-5">
+                            <span className="span-5">
                               <span data-custom-class="body_text">
                                 <strong>To enable user-to-user communications.&nbsp;</strong>We may process your information if you choose to use any of our offerings that allow for communication with another user.
-                                <span style="color: rgb(89, 89, 89);">
-                                  <span style="color: rgb(89, 89, 89);">
+                                <span className="span-5">
+                                  <span className="span-5">
                                     <span data-custom-class="body_text">
-                                      <span style="color: rgb(89, 89, 89);">
+                                      <span className="span-5">
                                         <span data-custom-class="body_text">
-                                          <span style="color: rgb(89, 89, 89);">
+                                          <span className="span-5">
                                             <span data-custom-class="body_text">
-                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                              <bdt className="statement-end-if-in-editor"></bdt>
                                             </span>
                                           </span>
                                         </span>
@@ -1746,27 +1748,27 @@ export default function Privacy() {
                         </span>
                       </li>
                     </ul>
-                    <p style="font-size: 15px; line-height: 1.5;">
-                      <bdt class="block-component"></bdt>
+                    <p className="span-10">
+                      <bdt className="block-component"></bdt>
                     </p>
-                    <p style="font-size: 15px; line-height: 1.5;">
-                      <bdt class="block-component"></bdt>
+                    <p className="span-10">
+                      <bdt className="block-component"></bdt>
                     </p>
                     <ul>
-                      <li style="line-height: 1.5;">
-                        <span style="font-size: 15px;">
-                          <span style="color: rgb(89, 89, 89);">
-                            <span style="color: rgb(89, 89, 89);">
+                      <li className="div-1">
+                        <span className="span-3">
+                          <span className="span-5">
+                            <span className="span-5">
                               <span data-custom-class="body_text">
                                 <strong>To request feedback.&nbsp;</strong>We may process your information when necessary to request feedback and to contact you about your use of our Services.
-                                <span style="color: rgb(89, 89, 89);">
-                                  <span style="color: rgb(89, 89, 89);">
+                                <span className="span-5">
+                                  <span className="span-5">
                                     <span data-custom-class="body_text">
-                                      <span style="color: rgb(89, 89, 89);">
+                                      <span className="span-5">
                                         <span data-custom-class="body_text">
-                                          <span style="color: rgb(89, 89, 89);">
+                                          <span className="span-5">
                                             <span data-custom-class="body_text">
-                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                              <bdt className="statement-end-if-in-editor"></bdt>
                                             </span>
                                           </span>
                                         </span>
@@ -1780,350 +1782,350 @@ export default function Privacy() {
                         </span>
                       </li>
                     </ul>
-                    <div style="line-height: 1.5;">
-                      <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                      <div style="line-height: 1.5;">
-                        <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
-                        <div style="line-height: 1.5;">
-                          <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
-                          <div style="line-height: 1.5;">
-                            <span style="font-size: 15px;">
-                              <bdt class="block-component"><span data-custom-class="body_text"></span></bdt>
+                    <div className="div-1">
+                      <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                      <div className="div-1">
+                        <bdt className="block-component"><span className="span-3"></span></bdt>
+                        <div className="div-1">
+                          <bdt className="block-component"><span className="span-3"></span></bdt>
+                          <div className="div-1">
+                            <span className="span-3">
+                              <bdt className="block-component"><span data-custom-class="body_text"></span></bdt>
                             </span>
                           </div>
                           <ul>
-                            <li style="line-height: 1.5;">
-                              <span style="font-size: 15px;">
+                            <li className="div-1">
+                              <span className="span-3">
                                 <span data-custom-class="body_text">
                                   <strong>To deliver targeted advertising to you.</strong> We may process your information to develop and display
-                                  <bdt class="block-component"></bdt>
+                                  <bdt className="block-component"></bdt>
                                   personalized
-                                  <bdt class="statement-end-if-in-editor"></bdt>
+                                  <bdt className="statement-end-if-in-editor"></bdt>
                                   content and advertising tailored to your interests, location, and more.
-                                  <bdt class="block-component"></bdt>
+                                  <bdt className="block-component"></bdt>
                                   For more information see our Cookie Notice:
-                                  <bdt class="block-component"></bdt>
-                                  <span style="color: rgb(0, 58, 250);">
-                                    <bdt class="question"><a href="https://mypg.gr/cookies" target="_blank" data-custom-class="link">https://mypg.gr/cookies</a></bdt>
+                                  <bdt className="block-component"></bdt>
+                                  <span className="span-6">
+                                    <bdt className="question"><a href="https://mypg.gr/cookies" target="_blank" data-custom-class="link">https://mypg.gr/cookies</a></bdt>
                                   </span>
-                                  <bdt class="block-component"></bdt>
+                                  <bdt className="block-component"></bdt>
                                   .
-                                  <bdt class="statement-end-if-in-editor"></bdt>
+                                  <bdt className="statement-end-if-in-editor"></bdt>
                                 </span>
                               </span>
                             </li>
                           </ul>
-                          <div style="line-height: 1.5;">
-                            <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                            <div style="line-height: 1.5;">
-                              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                              <div style="line-height: 1.5;">
-                                <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                          <div className="div-1">
+                            <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                            <div className="div-1">
+                              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                              <div className="div-1">
+                                <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                               </div>
                               <ul>
-                                <li style="line-height: 1.5;">
-                                  <span data-custom-class="body_text"><span style="font-size: 15px;"><strong>To protect our Services.</strong> We may process your information as part of our efforts to keep our Services safe and secure, including fraud monitoring and prevention.</span></span>
-                                  <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                <li className="div-1">
+                                  <span data-custom-class="body_text"><span className="span-3"><strong>To protect our Services.</strong> We may process your information as part of our efforts to keep our Services safe and secure, including fraud monitoring and prevention.</span></span>
+                                  <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                 </li>
                               </ul>
-                              <div style="line-height: 1.5;">
-                                <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                <div style="line-height: 1.5;">
-                                  <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                  <div style="line-height: 1.5;">
-                                    <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                    <div style="line-height: 1.5;">
-                                      <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                      <div style="line-height: 1.5;">
-                                        <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                        <div style="line-height: 1.5;">
-                                          <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                          <div style="line-height: 1.5;">
-                                            <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                            <div style="line-height: 1.5;">
-                                              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                              <div className="div-1">
+                                <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                <div className="div-1">
+                                  <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                  <div className="div-1">
+                                    <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                    <div className="div-1">
+                                      <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                      <div className="div-1">
+                                        <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                        <div className="div-1">
+                                          <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                          <div className="div-1">
+                                            <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                            <div className="div-1">
+                                              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                             </div>
                                             <ul>
-                                              <li style="line-height: 1.5;">
-                                                <span data-custom-class="body_text"><span style="font-size: 15px;"><strong>To save or protect an individual's vital interest.</strong> We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.</span></span>
-                                                <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                              <li className="div-1">
+                                                <span data-custom-class="body_text"><span className="span-3"><strong>To save or protect an individual's vital interest.</strong> We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.</span></span>
+                                                <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                               </li>
                                             </ul>
-                                            <div style="line-height: 1.5;">
-                                              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                            <div className="div-1">
+                                              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                             </div>
-                                            <div style="line-height: 1.5;"><br /></div>
-                                            <div id="legalbases" style="line-height: 1.5;"><strong><span style="font-size: 15px;"><span data-custom-class="heading_1">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?</span></span></strong></div>
-                                            <div style="line-height: 1.5;"><br /></div>
-                                            <div style="line-height: 1.5;">
+                                            <div className="div-1"><br /></div>
+                                            <div id="legalbases" className="div-1"><strong><span className="span-3"><span data-custom-class="heading_1">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?</span></span></strong></div>
+                                            <div className="div-1"><br /></div>
+                                            <div className="div-1">
                                               <em>
-                                                <span style="font-size: 15px;">
+                                                <span className="span-3">
                                                   <span data-custom-class="body_text">
                                                     <strong>In Short:&nbsp;</strong>We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e.
-                                                    <bdt class="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
                                                     ,
-                                                    <bdt class="statement-end-if-in-editor"></bdt>
+                                                    <bdt className="statement-end-if-in-editor"></bdt>
                                                     legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or
-                                                    <bdt class="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
                                                     fulfill
-                                                    <bdt class="statement-end-if-in-editor"></bdt>
+                                                    <bdt className="statement-end-if-in-editor"></bdt>
                                                     our contractual obligations, to protect your rights, or to
-                                                    <bdt class="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
                                                     fulfill
-                                                    <bdt class="statement-end-if-in-editor"></bdt>
+                                                    <bdt className="statement-end-if-in-editor"></bdt>
                                                     our legitimate business interests.
                                                   </span>
                                                 </span>
                                               </em>
-                                              <span style="font-size: 15px;">
+                                              <span className="span-3">
                                                 <span data-custom-class="body_text">
-                                                  <bdt class="block-component"></bdt>
+                                                  <bdt className="block-component"></bdt>
                                                 </span>
                                                 <span data-custom-class="body_text">
-                                                  <bdt class="block-component"></bdt>
+                                                  <bdt className="block-component"></bdt>
                                                 </span>
                                               </span>
                                             </div>
-                                            <div style="line-height: 1.5;"><br /></div>
-                                            <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text">The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information:</span></span></div>
+                                            <div className="div-1"><br /></div>
+                                            <div className="div-1"><span className="span-3"><span data-custom-class="body_text">The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information:</span></span></div>
                                             <ul>
-                                              <li style="line-height: 1.5;">
-                                                <span style="font-size: 15px;">
+                                              <li className="div-1">
+                                                <span className="span-3">
                                                   <span data-custom-class="body_text">
                                                     <strong>Consent.&nbsp;</strong>We may process your information if you have given us permission (i.e.
-                                                    <bdt class="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
                                                     ,
-                                                    <bdt class="statement-end-if-in-editor"></bdt>
+                                                    <bdt className="statement-end-if-in-editor"></bdt>
                                                     consent) to use your personal information for a specific purpose. You can withdraw your consent at any time. Learn more about&nbsp;
                                                   </span>
                                                 </span>
-                                                <a data-custom-class="link" href="#withdrawconsent"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text">withdrawing your consent</span></span></a><span data-custom-class="body_text">.</span>
+                                                <a data-custom-class="link" href="#withdrawconsent"><span className="span-7"><span data-custom-class="body_text">withdrawing your consent</span></span></a><span data-custom-class="body_text">.</span>
                                               </li>
                                             </ul>
-                                            <div style="line-height: 1.5;">
-                                              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                            <div className="div-1">
+                                              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                             </div>
                                             <ul>
-                                              <li style="line-height: 1.5;">
+                                              <li className="div-1">
                                                 <span data-custom-class="body_text">
-                                                  <span style="font-size: 15px;">
+                                                  <span className="span-3">
                                                     <strong>Performance of a Contract.</strong> We may process your personal information when we believe it is necessary to
-                                                    <bdt class="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
                                                     fulfill
-                                                    <bdt class="statement-end-if-in-editor"></bdt>
+                                                    <bdt className="statement-end-if-in-editor"></bdt>
                                                     our contractual obligations to you, including providing our Services or at your request prior to entering into a contract with you.
                                                   </span>
                                                 </span>
-                                                <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                               </li>
                                             </ul>
-                                            <div style="line-height: 1.5;">
-                                              <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                            <div className="div-1">
+                                              <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                             </div>
                                             <ul>
-                                              <li style="line-height: 1.5;"><span data-custom-class="body_text"><span style="font-size: 15px;"><strong>Legitimate Interests.</strong> We may process your information when we believe it is reasonably necessary to achieve our legitimate business interests and those interests do not outweigh your interests and fundamental rights and freedoms. For example, we may process your personal information for some of the purposes described in order to:</span></span></li>
+                                              <li className="div-1"><span data-custom-class="body_text"><span className="span-3"><strong>Legitimate Interests.</strong> We may process your information when we believe it is reasonably necessary to achieve our legitimate business interests and those interests do not outweigh your interests and fundamental rights and freedoms. For example, we may process your personal information for some of the purposes described in order to:</span></span></li>
                                             </ul>
-                                            <div style="line-height: 1.5;">
+                                            <div className="div-1">
                                               <span data-custom-class="body_text">
-                                                <span style="font-size: 15px;">
-                                                  <bdt class="block-component"></bdt>
+                                                <span className="span-3">
+                                                  <bdt className="block-component"></bdt>
                                                 </span>
                                               </span>
-                                              <div style="line-height: 1.5;">
+                                              <div className="div-1">
                                                 <span data-custom-class="body_text">
-                                                  <span style="font-size: 15px;">
-                                                    <bdt class="block-component"></bdt>
+                                                  <span className="span-3">
+                                                    <bdt className="block-component"></bdt>
                                                   </span>
                                                 </span>
                                               </div>
-                                              <ul style="margin-left: 40px;">
-                                                <li style="line-height: 1.5;">
+                                              <ul className="ul-1">
+                                                <li className="div-1">
                                                   <span data-custom-class="body_text">
-                                                    <span style="font-size: 15px;">
+                                                    <span className="span-3">
                                                       Develop and display
-                                                      <bdt class="block-component"></bdt>
+                                                      <bdt className="block-component"></bdt>
                                                       personalized
-                                                      <bdt class="statement-end-if-in-editor"></bdt>
+                                                      <bdt className="statement-end-if-in-editor"></bdt>
                                                       and relevant advertising content for our users
-                                                      <bdt class="statement-end-if-in-editor"></bdt>
+                                                      <bdt className="statement-end-if-in-editor"></bdt>
                                                     </span>
                                                   </span>
                                                 </li>
                                               </ul>
-                                              <div style="line-height: 1.5;">
+                                              <div className="div-1">
                                                 <span data-custom-class="body_text">
-                                                  <span style="font-size: 15px;">
-                                                    <bdt class="block-component"></bdt>
+                                                  <span className="span-3">
+                                                    <bdt className="block-component"></bdt>
                                                   </span>
                                                 </span>
-                                                <div style="line-height: 1.5;">
+                                                <div className="div-1">
                                                   <span data-custom-class="body_text">
-                                                    <span style="font-size: 15px;">
-                                                      <bdt class="block-component"></bdt>
+                                                    <span className="span-3">
+                                                      <bdt className="block-component"></bdt>
                                                     </span>
                                                   </span>
-                                                  <div style="line-height: 1.5;">
+                                                  <div className="div-1">
                                                     <span data-custom-class="body_text">
-                                                      <span style="font-size: 15px;">
-                                                        <bdt class="block-component"></bdt>
+                                                      <span className="span-3">
+                                                        <bdt className="block-component"></bdt>
                                                       </span>
                                                     </span>
                                                   </div>
-                                                  <ul style="margin-left: 40px;">
-                                                    <li style="line-height: 1.5;">
+                                                  <ul className="ul-1">
+                                                    <li className="div-1">
                                                       <span data-custom-class="body_text">
-                                                        <span style="font-size: 15px;">
+                                                        <span className="span-3">
                                                           Diagnose problems and/or prevent fraudulent activities
-                                                          <bdt class="statement-end-if-in-editor"></bdt>
+                                                          <bdt className="statement-end-if-in-editor"></bdt>
                                                         </span>
                                                       </span>
                                                     </li>
                                                   </ul>
-                                                  <div style="line-height: 1.5;">
+                                                  <div className="div-1">
                                                     <span data-custom-class="body_text">
-                                                      <span style="font-size: 15px;">
-                                                        <bdt class="block-component"></bdt>
+                                                      <span className="span-3">
+                                                        <bdt className="block-component"></bdt>
                                                       </span>
                                                     </span>
                                                   </div>
-                                                  <ul style="margin-left: 40px;">
-                                                    <li style="line-height: 1.5;">
+                                                  <ul className="ul-1">
+                                                    <li className="div-1">
                                                       <span data-custom-class="body_text">
-                                                        <span style="font-size: 15px;">
+                                                        <span className="span-3">
                                                           Understand how our users use our products and services so we can improve user experience
-                                                          <bdt class="statement-end-if-in-editor"></bdt>
+                                                          <bdt className="statement-end-if-in-editor"></bdt>
                                                         </span>
                                                       </span>
                                                     </li>
                                                   </ul>
-                                                  <div style="line-height: 1.5;">
+                                                  <div className="div-1">
                                                     <span data-custom-class="body_text">
-                                                      <span style="font-size: 15px;">
-                                                        <bdt class="block-component"></bdt>
+                                                      <span className="span-3">
+                                                        <bdt className="block-component"></bdt>
                                                       </span>
                                                     </span>
-                                                    <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                                    <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                    <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                                    <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                   </div>
                                                   <ul>
-                                                    <li style="line-height: 1.5;">
+                                                    <li className="div-1">
                                                       <span data-custom-class="body_text">
-                                                        <span style="font-size: 15px;">
+                                                        <span className="span-3">
                                                           <strong>Legal Obligations.</strong> We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.
-                                                          <bdt class="statement-end-if-in-editor"></bdt>
+                                                          <bdt className="statement-end-if-in-editor"></bdt>
                                                           <br />
                                                         </span>
                                                       </span>
                                                     </li>
                                                   </ul>
-                                                  <div style="line-height: 1.5;">
-                                                    <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                  <div className="div-1">
+                                                    <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                   </div>
                                                   <ul>
-                                                    <li style="line-height: 1.5;">
-                                                      <span data-custom-class="body_text"><span style="font-size: 15px;"><strong>Vital Interests.</strong> We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person.</span></span>
-                                                      <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                    <li className="div-1">
+                                                      <span data-custom-class="body_text"><span className="span-3"><strong>Vital Interests.</strong> We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person.</span></span>
+                                                      <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                     </li>
                                                   </ul>
-                                                  <div style="line-height: 1.5;">
-                                                    <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                  <div className="div-1">
+                                                    <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                     <span data-custom-class="body_text">
-                                                      <span style="font-size: 15px;">
-                                                        <bdt class="block-component">
-                                                          <bdt class="block-component"></bdt>
+                                                      <span className="span-3">
+                                                        <bdt className="block-component">
+                                                          <bdt className="block-component"></bdt>
                                                         </bdt>
                                                       </span>
                                                     </span>
-                                                    <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                    <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                   </div>
-                                                  <div style="line-height: 1.5;"><br /></div>
-                                                  <div id="whoshare" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</span></strong></span></span></span></span></span></div>
-                                                  <div style="line-height: 1.5;"><br /></div>
-                                                  <div style="line-height: 1.5;">
-                                                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                  <div className="div-1"><br /></div>
+                                                  <div id="whoshare" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</span></strong></span></span></span></span></span></div>
+                                                  <div className="div-1"><br /></div>
+                                                  <div className="div-1">
+                                                    <span className="span-4">
+                                                      <span className="span-4">
                                                         <span data-custom-class="body_text">
                                                           <strong><em>In Short:</em></strong>
                                                           <em>
                                                             &nbsp;We may share information in specific situations described in this section and/or with the following
-                                                            <bdt class="block-component"></bdt>
+                                                            <bdt className="block-component"></bdt>
                                                             categories of
-                                                            <bdt class="statement-end-if-in-editor"></bdt>
+                                                            <bdt className="statement-end-if-in-editor"></bdt>
                                                             third parties.
                                                           </em>
                                                         </span>
                                                       </span>
                                                     </span>
                                                   </div>
-                                                  <div style="line-height: 1.5;">
-                                                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                  <div className="div-1">
+                                                    <span className="span-4">
+                                                      <span className="span-4">
                                                         <span data-custom-class="body_text">
-                                                          <bdt class="block-component"></bdt>
+                                                          <bdt className="block-component"></bdt>
                                                         </span>
                                                       </span>
                                                     </span>
                                                   </div>
-                                                  <div style="line-height: 1.5;"><br /></div>
-                                                  <div style="line-height: 1.5;">
-                                                    <span style="font-size: 15px;">
+                                                  <div className="div-1"><br /></div>
+                                                  <div className="div-1">
+                                                    <span className="span-3">
                                                       <span data-custom-class="body_text">
                                                         <strong>Vendors, Consultants, and Other Third-Party Service Providers.</strong> We may share your data with third-party vendors, service providers, contractors, or agents (
-                                                        <bdt class="block-component"></bdt>
+                                                        <bdt className="block-component"></bdt>
                                                         "<strong>third parties</strong>"
-                                                        <bdt class="statement-end-if-in-editor"></bdt>
+                                                        <bdt className="statement-end-if-in-editor"></bdt>
                                                         ) who perform services for us or on our behalf and require access to such information to do that work.
-                                                        <bdt class="block-component"></bdt>
+                                                        <bdt className="block-component"></bdt>
                                                         We have contracts in place with our third parties, which are designed to help safeguard your personal information. This means that they cannot do anything with your personal information unless we have instructed them to do it. They will also not share your personal information with any
-                                                        <bdt class="block-component"></bdt>
+                                                        <bdt className="block-component"></bdt>
                                                         organization
-                                                        <bdt class="statement-end-if-in-editor"></bdt>
+                                                        <bdt className="statement-end-if-in-editor"></bdt>
                                                         apart from us. They also commit to protect the data they hold on our behalf and to retain it for the period we instruct.
-                                                        <bdt class="statement-end-if-in-editor"></bdt>
+                                                        <bdt className="statement-end-if-in-editor"></bdt>
                                                         The
-                                                        <bdt class="block-component"></bdt>
+                                                        <bdt className="block-component"></bdt>
                                                         categories of
-                                                        <bdt class="statement-end-if-in-editor"></bdt>
+                                                        <bdt className="statement-end-if-in-editor"></bdt>
                                                         third parties we may share personal information with are as follows:
                                                       </span>
                                                     </span>
-                                                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                    <span className="span-4">
+                                                      <span className="span-4">
                                                         <span data-custom-class="body_text">
-                                                          <bdt class="block-component"></bdt>
-                                                          <bdt class="forloop-component"></bdt>
+                                                          <bdt className="block-component"></bdt>
+                                                          <bdt className="forloop-component"></bdt>
                                                         </span>
                                                       </span>
                                                     </span>
                                                   </div>
                                                   <ul>
-                                                    <li style="line-height: 1.5;">
-                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                    <li className="div-1">
+                                                      <span className="span-4">
+                                                        <span className="span-4">
                                                           <span data-custom-class="body_text">
-                                                            <bdt class="question">Data Analytics Services</bdt>
+                                                            <bdt className="question">Data Analytics Services</bdt>
                                                           </span>
                                                         </span>
                                                       </span>
                                                     </li>
                                                   </ul>
                                                   <div>
-                                                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                    <span className="span-4">
+                                                      <span className="span-4">
                                                         <span data-custom-class="body_text">
-                                                          <span style="font-size: 15px;">
-                                                            <span style="color: rgb(89, 89, 89);">
+                                                          <span className="span-3">
+                                                            <span className="span-5">
                                                               <span data-custom-class="body_text">
-                                                                <span style="font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <bdt class="block-component">
-                                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                                <span className="span-3">
+                                                                  <span className="span-5">
+                                                                    <bdt className="block-component">
+                                                                      <span className="span-4">
+                                                                        <span className="span-4">
                                                                           <span data-custom-class="body_text">
-                                                                            <bdt class="forloop-component"></bdt>
+                                                                            <bdt className="forloop-component"></bdt>
                                                                           </span>
                                                                         </span>
                                                                       </span>
@@ -2138,43 +2140,43 @@ export default function Privacy() {
                                                     </span>
                                                   </div>
                                                   <ul>
-                                                    <li style="line-height: 1.5;">
-                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                    <li className="div-1">
+                                                      <span className="span-4">
+                                                        <span className="span-4">
                                                           <span data-custom-class="body_text">
-                                                            <bdt class="question">Ad Networks</bdt>
+                                                            <bdt className="question">Ad Networks</bdt>
                                                           </span>
                                                         </span>
                                                       </span>
                                                     </li>
                                                   </ul>
                                                   <div>
-                                                    <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                    <span className="span-4">
+                                                      <span className="span-4">
                                                         <span data-custom-class="body_text">
-                                                          <span style="font-size: 15px;">
-                                                            <span style="color: rgb(89, 89, 89);">
+                                                          <span className="span-3">
+                                                            <span className="span-5">
                                                               <span data-custom-class="body_text">
-                                                                <span style="font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <bdt class="block-component">
-                                                                      <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                        <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                                <span className="span-3">
+                                                                  <span className="span-5">
+                                                                    <bdt className="block-component">
+                                                                      <span className="span-4">
+                                                                        <span className="span-4">
                                                                           <span data-custom-class="body_text">
-                                                                            <bdt class="forloop-component">
-                                                                              <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                                <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                                            <bdt className="forloop-component">
+                                                                              <span className="span-4">
+                                                                                <span className="span-4">
                                                                                   <span data-custom-class="body_text">
-                                                                                    <span style="font-size: 15px;">
-                                                                                      <span style="color: rgb(89, 89, 89);">
+                                                                                    <span className="span-3">
+                                                                                      <span className="span-5">
                                                                                         <span data-custom-class="body_text">
-                                                                                          <span style="font-size: 15px;">
-                                                                                            <span style="color: rgb(89, 89, 89);">
-                                                                                              <span style="font-size: 15px;">
-                                                                                                <span style="color: rgb(89, 89, 89);">
-                                                                                                  <span style="font-size: 15px;">
-                                                                                                    <span style="color: rgb(89, 89, 89);">
-                                                                                                      <bdt class="statement-end-if-in-editor"></bdt>
+                                                                                          <span className="span-3">
+                                                                                            <span className="span-5">
+                                                                                              <span className="span-3">
+                                                                                                <span className="span-5">
+                                                                                                  <span className="span-3">
+                                                                                                    <span className="span-5">
+                                                                                                      <bdt className="statement-end-if-in-editor"></bdt>
                                                                                                     </span>
                                                                                                   </span>
                                                                                                 </span>
@@ -2199,171 +2201,171 @@ export default function Privacy() {
                                                           </span>
                                                         </span>
                                                         <span data-custom-class="body_text">
-                                                          <bdt class="block-component"></bdt>
+                                                          <bdt className="block-component"></bdt>
                                                         </span>
                                                       </span>
                                                     </span>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
-                                                    <bdt class="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
+                                                    <bdt className="block-component"></bdt>
                                                     <span data-custom-class="body_text"></span><span data-custom-class="body_text"></span><span data-custom-class="body_text"></span><span data-custom-class="body_text"></span>
                                                   </div>
-                                                  <div style="line-height: 1.5;"><br /></div>
-                                                  <div style="line-height: 1.5;">
-                                                    <span style="font-size: 15px;">
+                                                  <div className="div-1"><br /></div>
+                                                  <div className="div-1">
+                                                    <span className="span-3">
                                                       <span data-custom-class="body_text">
                                                         We
-                                                        <bdt class="block-component"></bdt>
+                                                        <bdt className="block-component"></bdt>
                                                         also
-                                                        <bdt class="statement-end-if-in-editor"></bdt>
+                                                        <bdt className="statement-end-if-in-editor"></bdt>
                                                         may need to share your personal information in the following situations:
                                                       </span>
                                                     </span>
                                                   </div>
                                                   <ul>
-                                                    <li style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</span></span></li>
+                                                    <li className="div-1"><span className="span-3"><span data-custom-class="body_text"><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</span></span></li>
                                                   </ul>
-                                                  <div style="line-height: 1.5;">
-                                                    <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
+                                                  <div className="div-1">
+                                                    <bdt className="block-component"><span className="span-3"></span></bdt>
                                                   </div>
                                                   <ul>
-                                                    <li style="line-height: 1.5;">
-                                                      <span style="font-size: 15px;">
+                                                    <li className="div-1">
+                                                      <span className="span-3">
                                                         <strong><span data-custom-class="body_text">When we use Google Analytics.</span></strong>
                                                         <span data-custom-class="body_text">
                                                           &nbsp;We may share your information with Google Analytics to track and analyze the use of the Services.
-                                                          <bdt class="block-component"></bdt>
+                                                          <bdt className="block-component"></bdt>
                                                           The Google Analytics Advertising Features that we may use include:
-                                                          <bdt class="forloop-component"></bdt>
-                                                          <bdt class="block-component"></bdt>
-                                                          <bdt class="question">Remarketing with Google Analytics</bdt>
-                                                          <bdt class="block-component"></bdt>
-                                                          <bdt class="forloop-component"></bdt>
-                                                          <bdt class="block-component"></bdt>
+                                                          <bdt className="forloop-component"></bdt>
+                                                          <bdt className="block-component"></bdt>
+                                                          <bdt className="question">Remarketing with Google Analytics</bdt>
+                                                          <bdt className="block-component"></bdt>
+                                                          <bdt className="forloop-component"></bdt>
+                                                          <bdt className="block-component"></bdt>
                                                           ,
-                                                          <bdt class="question">Google Display Network Impressions Reporting</bdt>
-                                                          <bdt class="else-block"></bdt>
-                                                          <bdt class="forloop-component"></bdt>
-                                                          <bdt class="block-component"></bdt>
+                                                          <bdt className="question">Google Display Network Impressions Reporting</bdt>
+                                                          <bdt className="else-block"></bdt>
+                                                          <bdt className="forloop-component"></bdt>
+                                                          <bdt className="block-component"></bdt>
                                                           and
-                                                          <bdt class="question">Google Analytics Demographics and Interests Reporting</bdt>
-                                                          <bdt class="statement-end-if-in-editor"></bdt>
-                                                          <bdt class="forloop-component"></bdt>
+                                                          <bdt className="question">Google Analytics Demographics and Interests Reporting</bdt>
+                                                          <bdt className="statement-end-if-in-editor"></bdt>
+                                                          <bdt className="forloop-component"></bdt>
                                                           .
-                                                          <bdt class="statement-end-if-in-editor"></bdt>
-                                                          To opt out of being tracked by Google Analytics across the Services, visit <span style="color: rgb(0, 58, 250);"><a data-custom-class="link" href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">https://tools.google.com/dlpage/gaoptout</a></span>.
-                                                          <bdt class="block-component"></bdt>
-                                                          You can opt out of Google Analytics Advertising Features through <span style="color: rgb(0, 58, 250);"><a data-custom-class="link" href="https://adssettings.google.com/" rel="noopener noreferrer" target="_blank">Ads Settings</a></span> and Ad Settings for mobile apps. Other opt out means include <span style="color: rgb(0, 58, 250);"><a data-custom-class="link" href="http://optout.networkadvertising.org/" rel="noopener noreferrer" target="_blank">http://optout.networkadvertising.org/</a></span> and <span style="color: rgb(0, 58, 250);"><a data-custom-class="link" href="http://www.networkadvertising.org/mobile-choice" rel="noopener noreferrer" target="_blank">http://www.networkadvertising.org/mobile-choice</a></span>.
-                                                          <bdt class="statement-end-if-in-editor"></bdt>
-                                                          For more information on the privacy practices of Google, please visit the <span style="color: rgb(0, 58, 250);"><a data-custom-class="link" href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy &amp; Terms page</a></span>.
+                                                          <bdt className="statement-end-if-in-editor"></bdt>
+                                                          To opt out of being tracked by Google Analytics across the Services, visit <span className="span-6"><a data-custom-class="link" href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">https://tools.google.com/dlpage/gaoptout</a></span>.
+                                                          <bdt className="block-component"></bdt>
+                                                          You can opt out of Google Analytics Advertising Features through <span className="span-6"><a data-custom-class="link" href="https://adssettings.google.com/" rel="noopener noreferrer" target="_blank">Ads Settings</a></span> and Ad Settings for mobile apps. Other opt out means include <span className="span-6"><a data-custom-class="link" href="http://optout.networkadvertising.org/" rel="noopener noreferrer" target="_blank">http://optout.networkadvertising.org/</a></span> and <span className="span-6"><a data-custom-class="link" href="http://www.networkadvertising.org/mobile-choice" rel="noopener noreferrer" target="_blank">http://www.networkadvertising.org/mobile-choice</a></span>.
+                                                          <bdt className="statement-end-if-in-editor"></bdt>
+                                                          For more information on the privacy practices of Google, please visit the <span className="span-6"><a data-custom-class="link" href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy &amp; Terms page</a></span>.
                                                         </span>
                                                       </span>
-                                                      <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"></span></bdt>
+                                                      <bdt className="statement-end-if-in-editor"><span className="span-3"></span></bdt>
                                                     </li>
                                                   </ul>
-                                                  <div style="line-height: 1.5;">
-                                                    <span style="font-size: 15px;">
+                                                  <div className="div-1">
+                                                    <span className="span-3">
                                                       <span data-custom-class="body_text">
-                                                        <bdt class="block-component"></bdt>
+                                                        <bdt className="block-component"></bdt>
                                                       </span>
                                                     </span>
-                                                    <div style="line-height: 1.5;">
-                                                      <span style="font-size: 15px;">
-                                                        <bdt class="block-component"><span data-custom-class="body_text"></span></bdt>
+                                                    <div className="div-1">
+                                                      <span className="span-3">
+                                                        <bdt className="block-component"><span data-custom-class="body_text"></span></bdt>
                                                       </span>
-                                                      <div style="line-height: 1.5;">
-                                                        <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                      <div className="div-1">
+                                                        <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                       </div>
                                                       <ul>
-                                                        <li style="line-height: 1.5;">
-                                                          <span data-custom-class="body_text"><span style="font-size: 15px;"><strong>Business Partners.</strong> We may share your information with our business partners to offer you certain products, services, or promotions.</span></span>
-                                                          <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                        <li className="div-1">
+                                                          <span data-custom-class="body_text"><span className="span-3"><strong>Business Partners.</strong> We may share your information with our business partners to offer you certain products, services, or promotions.</span></span>
+                                                          <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                         </li>
                                                       </ul>
-                                                      <div style="line-height: 1.5;">
-                                                        <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                                        <div style="line-height: 1.5;">
-                                                          <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                      <div className="div-1">
+                                                        <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                                        <div className="div-1">
+                                                          <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                           <span data-custom-class="body_text">
-                                                            <span style="font-size: 15px;">
-                                                              <bdt class="block-component"></bdt>
+                                                            <span className="span-3">
+                                                              <bdt className="block-component"></bdt>
                                                             </span>
                                                           </span>
                                                         </div>
                                                         <ul>
-                                                          <li style="line-height: 1.5;">
+                                                          <li className="div-1">
                                                             <span data-custom-class="body_text">
-                                                              <span style="font-size: 15px;">
+                                                              <span className="span-3">
                                                                 <strong>Offer Wall.&nbsp;</strong>Our application(s) may display a third-party hosted
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 "offer wall."
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 Such an offer wall allows third-party advertisers to offer virtual currency, gifts, or other items to users in return for the acceptance and completion of an advertisement offer. Such an offer wall may appear in our application(s) and be displayed to you based on certain data, such as your geographic area or demographic information. When you click on an offer wall, you will be brought to an external website belonging to other persons and will leave our application(s). A unique identifier, such as your user ID, will be shared with the offer wall provider in order to prevent fraud and properly credit your account with the relevant reward.
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                               </span>
                                                             </span>
-                                                            <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                            <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                           </li>
                                                         </ul>
-                                                        <div style="line-height: 1.5;">
-                                                          <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                                          <span style="color: rgb(89, 89, 89); font-size: 15px;">
-                                                            <span style="font-size: 15px;">
-                                                              <span style="color: rgb(89, 89, 89);">
-                                                                <span style="font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <bdt class="block-component"><span data-custom-class="heading_1"></span></bdt>
+                                                        <div className="div-1">
+                                                          <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                                          <span className="span-4">
+                                                            <span className="span-3">
+                                                              <span className="span-5">
+                                                                <span className="span-3">
+                                                                  <span className="span-5">
+                                                                    <bdt className="block-component"><span data-custom-class="heading_1"></span></bdt>
                                                                   </span>
                                                                 </span>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="cookies" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</span></strong></span></span></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text"><strong><em>In Short:</em></strong><em>&nbsp;We may use cookies and other tracking technologies to collect and store your information.</em></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="cookies" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</span></strong></span></span></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1"><span className="span-4"><span className="span-4"><span data-custom-class="body_text"><strong><em>In Short:</em></strong><em>&nbsp;We may use cookies and other tracking technologies to collect and store your information.</em></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice
-                                                                <span style="color: rgb(89, 89, 89); font-size: 15px;">
+                                                                <span className="span-4">
                                                                   <span data-custom-class="body_text">
-                                                                    <bdt class="block-component"></bdt>
+                                                                    <bdt className="block-component"></bdt>
                                                                   </span>
                                                                 </span>
                                                                 :
-                                                                <span style="color: rgb(0, 58, 250); font-size: 15px;">
+                                                                <span className="span-7">
                                                                   <span data-custom-class="body_text">
-                                                                    <bdt class="question"><a href="https://mypg.gr/cookies" target="_blank" data-custom-class="link">https://mypg.gr/cookies</a></bdt>
+                                                                    <bdt className="question"><a href="https://mypg.gr/cookies" target="_blank" data-custom-class="link">https://mypg.gr/cookies</a></bdt>
                                                                   </span>
                                                                 </span>
-                                                                <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                                  <bdt class="block-component"></bdt>
+                                                                <span className="span-4">
+                                                                  <bdt className="block-component"></bdt>
                                                                   .
                                                                 </span>
-                                                                <span style="color: rgb(89, 89, 89); font-size: 15px;">
-                                                                  <span style="font-size: 15px;">
-                                                                    <span style="color: rgb(89, 89, 89);">
-                                                                      <span style="font-size: 15px;">
-                                                                        <span style="color: rgb(89, 89, 89);">
+                                                                <span className="span-4">
+                                                                  <span className="span-3">
+                                                                    <span className="span-5">
+                                                                      <span className="span-3">
+                                                                        <span className="span-5">
                                                                           <span data-custom-class="body_text">
-                                                                            <bdt class="statement-end-if-in-editor"></bdt>
+                                                                            <bdt className="statement-end-if-in-editor"></bdt>
                                                                           </span>
                                                                         </span>
                                                                       </span>
@@ -2373,19 +2375,19 @@ export default function Privacy() {
                                                               </span>
                                                             </span>
                                                             <span data-custom-class="body_text">
-                                                              <span style="color: rgb(89, 89, 89); font-size: 15px;">
-                                                                <span style="color: rgb(89, 89, 89); font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89); font-size: 15px;">
-                                                                    <span style="font-size: 15px;">
-                                                                      <span style="color: rgb(89, 89, 89);">
-                                                                        <span style="font-size: 15px;">
-                                                                          <span style="color: rgb(89, 89, 89);">
+                                                              <span className="span-4">
+                                                                <span className="span-4">
+                                                                  <span className="span-4">
+                                                                    <span className="span-3">
+                                                                      <span className="span-5">
+                                                                        <span className="span-3">
+                                                                          <span className="span-5">
                                                                             <span data-custom-class="body_text">
-                                                                              <bdt class="block-component"></bdt>
+                                                                              <bdt className="block-component"></bdt>
                                                                             </span>
-                                                                            <bdt class="block-component">
+                                                                            <bdt className="block-component">
                                                                               <span data-custom-class="body_text">
-                                                                                <bdt class="block-component"></bdt>
+                                                                                <bdt className="block-component"></bdt>
                                                                               </span>
                                                                             </bdt>
                                                                           </span>
@@ -2398,47 +2400,47 @@ export default function Privacy() {
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="inforetain" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">6. HOW LONG DO WE KEEP YOUR INFORMATION?</span></strong></span></span></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="inforetain" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">6. HOW LONG DO WE KEEP YOUR INFORMATION?</span></strong></span></span></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 <strong><em>In Short:&nbsp;</em></strong>
                                                                 <em>
                                                                   We keep your information for as long as necessary to
-                                                                  <bdt class="block-component"></bdt>
+                                                                  <bdt className="block-component"></bdt>
                                                                   fulfill
-                                                                  <bdt class="statement-end-if-in-editor"></bdt>
+                                                                  <bdt className="statement-end-if-in-editor"></bdt>
                                                                   the purposes outlined in this privacy notice unless otherwise required by law.
                                                                 </em>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements).
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 No purpose in this notice will require us keeping your personal information for longer than
-                                                                <span style="font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89);">
+                                                                <span className="span-3">
+                                                                  <span className="span-5">
                                                                     <span data-custom-class="body_text">
-                                                                      <bdt class="block-component"></bdt>
+                                                                      <bdt className="block-component"></bdt>
                                                                     </span>
                                                                   </span>
                                                                 </span>
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 the period of time in which users have an account with us
-                                                                <bdt class="block-component"></bdt>
-                                                                <span style="font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89);">
+                                                                <bdt className="block-component"></bdt>
+                                                                <span className="span-3">
+                                                                  <span className="span-5">
                                                                     <span data-custom-class="body_text">
-                                                                      <bdt class="else-block"></bdt>
+                                                                      <bdt className="else-block"></bdt>
                                                                     </span>
                                                                   </span>
                                                                 </span>
@@ -2447,97 +2449,97 @@ export default function Privacy() {
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 When we have no ongoing legitimate business need to process your personal information, we will either delete or
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 anonymize
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
-                                                                <span style="color: rgb(89, 89, 89);">
-                                                                  <bdt class="block-component"></bdt>
+                                                                <span className="span-5">
+                                                                  <bdt className="block-component"></bdt>
                                                                 </span>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="infosafe" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</span></strong></span></span></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="infosafe" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</span></strong></span></span></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 <strong><em>In Short:&nbsp;</em></strong>
                                                                 <em>
                                                                   We aim to protect your personal information through a system of
-                                                                  <bdt class="block-component"></bdt>
+                                                                  <bdt className="block-component"></bdt>
                                                                   organizational
-                                                                  <bdt class="statement-end-if-in-editor"></bdt>
+                                                                  <bdt className="statement-end-if-in-editor"></bdt>
                                                                   and technical security measures.
                                                                 </em>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 We have implemented appropriate and reasonable technical and
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 organizational
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 unauthorized
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
-                                                                <span style="color: rgb(89, 89, 89);">
-                                                                  <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <span className="span-5">
+                                                                  <bdt className="statement-end-if-in-editor"></bdt>
                                                                 </span>
-                                                                <span style="color: rgb(89, 89, 89); font-size: 15px;">
+                                                                <span className="span-4">
                                                                   <span data-custom-class="body_text">
-                                                                    <bdt class="block-component"></bdt>
+                                                                    <bdt className="block-component"></bdt>
                                                                   </span>
                                                                 </span>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="privacyrights" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">8. WHAT ARE YOUR PRIVACY RIGHTS?</span></strong></span></span></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="privacyrights" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">8. WHAT ARE YOUR PRIVACY RIGHTS?</span></strong></span></span></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 <strong><em>In Short:</em></strong>
                                                                 <em>
                                                                   &nbsp;
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <span style="font-size: 15px;">
+                                                                  <span className="span-5">
+                                                                    <span className="span-3">
                                                                       <span data-custom-class="body_text">
                                                                         <em>
-                                                                          <bdt class="block-component"></bdt>
+                                                                          <bdt className="block-component"></bdt>
                                                                         </em>
                                                                       </span>
                                                                     </span>
                                                                   </span>
                                                                   In some regions, such as
-                                                                  <bdt class="block-component"></bdt>
+                                                                  <bdt className="block-component"></bdt>
                                                                   the European Economic Area (EEA), United Kingdom (UK), and Switzerland
-                                                                  <bdt class="block-component"></bdt>
+                                                                  <bdt className="block-component"></bdt>
                                                                   , you have rights that allow you greater access to and control over your personal information.
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <span style="font-size: 15px;">
+                                                                  <span className="span-5">
+                                                                    <span className="span-3">
                                                                       <span data-custom-class="body_text">
                                                                         <em>
-                                                                          <bdt class="statement-end-if-in-editor"></bdt>
+                                                                          <bdt className="statement-end-if-in-editor"></bdt>
                                                                         </em>
                                                                       </span>
                                                                     </span>
@@ -2545,159 +2547,159 @@ export default function Privacy() {
                                                                   </span>
                                                                   You may review, change, or terminate your account at any time.
                                                                 </em>
-                                                                <span style="color: rgb(89, 89, 89);">
-                                                                  <span style="font-size: 15px;">
-                                                                    <bdt class="block-component"></bdt>
+                                                                <span className="span-5">
+                                                                  <span className="span-3">
+                                                                    <bdt className="block-component"></bdt>
                                                                   </span>
                                                                 </span>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 In some regions (like
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 the EEA, UK, and Switzerland
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 ), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 "
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                               </span>
                                                             </span>
                                                           </span>
-                                                          <a data-custom-class="link" href="#contact"><span style="font-size: 15px; color: rgb(0, 58, 250);"><span style="font-size: 15px; color: rgb(0, 58, 250);"><span data-custom-class="body_text">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></span></span></a>
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                          <a data-custom-class="link" href="#contact"><span className="span-7"><span className="span-7"><span data-custom-class="body_text">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></span></span></a>
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 "
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 below.
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 We will consider and act upon any request in accordance with applicable data protection laws.
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);">&nbsp;</span></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your <span style="font-size: 15px;"><span style="color: rgb(0, 58, 250);"><span data-custom-class="body_text"><span style="color: rgb(0, 58, 250);"><span data-custom-class="body_text"><a data-custom-class="link" href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm" rel="noopener noreferrer" target="_blank"><span style="font-size: 15px;">Member State data protection authority</span></a></span></span></span></span></span> or&nbsp;</span></span></span><a data-custom-class="link" href="https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/" rel="noopener noreferrer" target="_blank"><span style="font-size: 15px; color: rgb(0, 58, 250);"><span style="font-size: 15px; color: rgb(0, 58, 250);"><span data-custom-class="body_text">UK data protection authority</span></span></span></a><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">.</span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">If you are located in Switzerland, you may contact the <span style="font-size: 15px;"><span style="color: rgb(0, 58, 250);"><span data-custom-class="body_text"><span style="color: rgb(0, 58, 250);"><span data-custom-class="body_text"><span style="color: rgb(0, 58, 250); font-size: 15px;"><a data-custom-class="link" href="https://www.edoeb.admin.ch/edoeb/en/home.html" rel="noopener noreferrer" target="_blank">Federal Data Protection and Information Commissioner</a></span></span></span></span></span></span>.</span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="withdrawconsent" style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><span className="span-4">&nbsp;</span></div>
+                                                        <div className="div-1"><span className="span-4"><span className="span-4"><span data-custom-class="body_text">If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your <span className="span-3"><span className="span-6"><span data-custom-class="body_text"><span className="span-6"><span data-custom-class="body_text"><a data-custom-class="link" href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm" rel="noopener noreferrer" target="_blank"><span className="span-3">Member State data protection authority</span></a></span></span></span></span></span> or&nbsp;</span></span></span><a data-custom-class="link" href="https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/" rel="noopener noreferrer" target="_blank"><span className="span-7"><span className="span-7"><span data-custom-class="body_text">UK data protection authority</span></span></span></a><span className="span-4"><span className="span-4"><span data-custom-class="body_text">.</span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1"><span className="span-4"><span className="span-4"><span data-custom-class="body_text">If you are located in Switzerland, you may contact the <span className="span-3"><span className="span-6"><span data-custom-class="body_text"><span className="span-6"><span data-custom-class="body_text"><span className="span-7"><a data-custom-class="link" href="https://www.edoeb.admin.ch/edoeb/en/home.html" rel="noopener noreferrer" target="_blank">Federal Data Protection and Information Commissioner</a></span></span></span></span></span></span>.</span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="withdrawconsent" className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 <strong><u>Withdrawing your consent:</u></strong> If we are relying on your consent to process your personal information,
-                                                                <bdt class="block-component"></bdt>
-                                                                <bdt class="else-block"></bdt>
+                                                                <bdt className="block-component"></bdt>
+                                                                <bdt className="else-block"></bdt>
                                                                 you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 "
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                               </span>
                                                             </span>
                                                           </span>
-                                                          <a data-custom-class="link" href="#contact"><span style="font-size: 15px; color: rgb(0, 58, 250);"><span style="font-size: 15px; color: rgb(0, 58, 250);"><span data-custom-class="body_text">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></span></span></a>
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                          <a data-custom-class="link" href="#contact"><span className="span-7"><span className="span-7"><span data-custom-class="body_text">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></span></span></a>
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 "
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 below
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 or updating your preferences
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 .
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
                                                               However, please note that this will not affect the lawfulness of the processing before its withdrawal nor,
-                                                              <bdt class="block-component"></bdt>
-                                                              <bdt class="else-block"></bdt>
+                                                              <bdt className="block-component"></bdt>
+                                                              <bdt className="else-block"></bdt>
                                                               will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                             </span>
                                                           </span>
-                                                          <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                          <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="heading_2"><strong>Account Information</strong></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1"><span className="span-3"><span data-custom-class="heading_2"><strong>Account Information</strong></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
                                                           <span data-custom-class="body_text">
-                                                            <span style="font-size: 15px;">
+                                                            <span className="span-3">
                                                               If you would at any time like to review or change the information in your account or terminate your account, you can:
-                                                              <bdt class="forloop-component"></bdt>
+                                                              <bdt className="forloop-component"></bdt>
                                                             </span>
                                                           </span>
                                                         </div>
                                                         <ul>
-                                                          <li style="line-height: 1.5;">
+                                                          <li className="div-1">
                                                             <span data-custom-class="body_text">
-                                                              <span style="font-size: 15px;">
-                                                                <bdt class="question">Contact us using the contact information provided.</bdt>
+                                                              <span className="span-3">
+                                                                <bdt className="question">Contact us using the contact information provided.</bdt>
                                                               </span>
                                                             </span>
                                                           </li>
                                                         </ul>
-                                                        <div style="line-height: 1.5;">
+                                                        <div className="div-1">
                                                           <span data-custom-class="body_text">
-                                                            <span style="font-size: 15px;">
-                                                              <bdt class="forloop-component"></bdt>
+                                                            <span className="span-3">
+                                                              <bdt className="forloop-component"></bdt>
                                                             </span>
                                                           </span>
                                                         </div>
                                                         <ul>
-                                                          <li style="line-height: 1.5;">
+                                                          <li className="div-1">
                                                             <span data-custom-class="body_text">
-                                                              <span style="font-size: 15px;">
-                                                                <bdt class="question">Log in to your account settings and update your user account.</bdt>
+                                                              <span className="span-3">
+                                                                <bdt className="question">Log in to your account settings and update your user account.</bdt>
                                                               </span>
                                                             </span>
                                                           </li>
                                                         </ul>
-                                                        <div style="line-height: 1.5;">
+                                                        <div className="div-1">
                                                           <span data-custom-class="body_text">
-                                                            <span style="font-size: 15px;">
-                                                              <bdt class="forloop-component"></bdt>
+                                                            <span className="span-3">
+                                                              <bdt className="forloop-component"></bdt>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;"><span data-custom-class="body_text">Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.</span></span>
-                                                          <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1">
+                                                          <span className="span-3"><span data-custom-class="body_text">Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.</span></span>
+                                                          <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
-                                                                <span style="font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <span style="font-size: 15px;">
-                                                                      <span style="color: rgb(89, 89, 89);">
+                                                                <span className="span-3">
+                                                                  <span className="span-5">
+                                                                    <span className="span-3">
+                                                                      <span className="span-5">
                                                                         <span data-custom-class="body_text">
-                                                                          <span style="font-size: 15px;">
-                                                                            <span style="color: rgb(89, 89, 89);">
-                                                                              <bdt class="block-component"></bdt>
+                                                                          <span className="span-3">
+                                                                            <span className="span-5">
+                                                                              <bdt className="block-component"></bdt>
                                                                             </span>
                                                                           </span>
                                                                         </span>
@@ -2709,36 +2711,36 @@ export default function Privacy() {
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 <strong><u>Cookies and similar technologies:</u></strong> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services.
-                                                                <bdt class="block-component">
-                                                                  <span style="font-size: 15px;">
-                                                                    <span style="color: rgb(89, 89, 89);">
+                                                                <bdt className="block-component">
+                                                                  <span className="span-3">
+                                                                    <span className="span-5">
                                                                       <span data-custom-class="body_text">
-                                                                        <bdt class="block-component"></bdt>
+                                                                        <bdt className="block-component"></bdt>
                                                                       </span>
                                                                     </span>
                                                                   </span>
                                                                   For further information, please see our Cookie Notice:
-                                                                  <span style="font-size: 15px;">
-                                                                    <span style="color: rgb(89, 89, 89);">
+                                                                  <span className="span-3">
+                                                                    <span className="span-5">
                                                                       <span data-custom-class="body_text">
-                                                                        <span style="color: rgb(0, 58, 250);">
-                                                                          <bdt class="question"><a href="https://mypg.gr/cookies" target="_blank" data-custom-class="link">https://mypg.gr/cookies</a></bdt>
+                                                                        <span className="span-6">
+                                                                          <bdt className="question"><a href="https://mypg.gr/cookies" target="_blank" data-custom-class="link">https://mypg.gr/cookies</a></bdt>
                                                                         </span>
                                                                         .
-                                                                        <bdt class="block-component"></bdt>
-                                                                        <span style="font-size: 15px;">
-                                                                          <span style="color: rgb(89, 89, 89);">
-                                                                            <span style="font-size: 15px;">
-                                                                              <span style="color: rgb(89, 89, 89);">
-                                                                                <span style="font-size: 15px;">
-                                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                                    <bdt class="statement-end-if-in-editor"></bdt>
+                                                                        <bdt className="block-component"></bdt>
+                                                                        <span className="span-3">
+                                                                          <span className="span-5">
+                                                                            <span className="span-3">
+                                                                              <span className="span-5">
+                                                                                <span className="span-3">
+                                                                                  <span className="span-5">
+                                                                                    <bdt className="statement-end-if-in-editor"></bdt>
                                                                                   </span>
                                                                                 </span>
                                                                               </span>
@@ -2752,358 +2754,358 @@ export default function Privacy() {
                                                               </span>
                                                             </span>
                                                           </span>
-                                                          <bdt class="block-component"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                          <bdt className="block-component"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
                                                           <span data-custom-class="body_text">
-                                                            <span style="font-size: 15px;">
+                                                            <span className="span-3">
                                                               If you have questions or comments about your privacy rights, you may email us at
-                                                              <bdt class="question">privacy@mypg.gr</bdt>
+                                                              <bdt className="question">privacy@mypg.gr</bdt>
                                                               .
                                                             </span>
                                                           </span>
-                                                          <bdt class="statement-end-if-in-editor"><span style="font-size: 15px;"><span data-custom-class="body_text"></span></span></bdt>
+                                                          <bdt className="statement-end-if-in-editor"><span className="span-3"><span data-custom-class="body_text"></span></span></bdt>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="DNT" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">9. CONTROLS FOR DO-NOT-TRACK FEATURES</span></strong></span></span></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="DNT" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">9. CONTROLS FOR DO-NOT-TRACK FEATURES</span></strong></span></span></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 "DNT"
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 ) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 recognizing
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 and implementing DNT signals has been
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 finalized
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 . As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                               </span>
                                                             </span>
                                                           </span>
-                                                          <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
+                                                          <bdt className="block-component"><span className="span-3"></span></bdt>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;"><span id="otherlaws" style="font-size: 15px;"><strong><span data-custom-class="heading_1">10. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?</span></strong></span></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1"><span id="otherlaws" className="span-3"><strong><span data-custom-class="heading_1">10. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?</span></strong></span></div>
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <em><strong><span data-custom-class="body_text">In Short:</span></strong><span data-custom-class="body_text">&nbsp;You may have additional rights based on the country you reside in.</span></em>
-                                                            <bdt class="block-component"></bdt>
+                                                            <bdt className="block-component"></bdt>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
-                                                            <bdt class="block-component"><span data-custom-class="heading_2"></span></bdt>
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
+                                                            <bdt className="block-component"><span data-custom-class="heading_2"></span></bdt>
                                                             <span data-custom-class="heading_2">
                                                               <strong>Australia</strong>
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               <strong>and</strong>
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               <strong>New Zealand</strong>
                                                             </span>
-                                                            <bdt class="statement-end-if-in-editor"><span data-custom-class="heading_2"></span></bdt>
+                                                            <bdt className="statement-end-if-in-editor"><span data-custom-class="heading_2"></span></bdt>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
                                                               We collect and process your personal information under the obligations and conditions set by
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               Australia's Privacy Act 1988
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               and
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               New Zealand's Privacy Act 2020
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
                                                               (Privacy Act).
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
                                                               This privacy notice satisfies the notice requirements defined in
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               both Privacy Acts
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               , in particular: what personal information we collect from you, from which sources, for which purposes, and other recipients of your personal information.
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text">If you do not wish to provide the personal information necessary to fulfill their applicable purpose, it may affect our ability to provide our services, in particular:</span></span></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
-                                                            <bdt class="block-component"></bdt>
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1"><span className="span-3"><span data-custom-class="body_text">If you do not wish to provide the personal information necessary to fulfill their applicable purpose, it may affect our ability to provide our services, in particular:</span></span></div>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
+                                                            <bdt className="block-component"></bdt>
                                                           </span>
                                                         </div>
                                                         <ul>
-                                                          <li style="line-height: 1.5;">
-                                                            <span style="font-size: 15px;">
+                                                          <li className="div-1">
+                                                            <span className="span-3">
                                                               <span data-custom-class="body_text">offer you the products or services that you want</span>
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
                                                             </span>
                                                           </li>
                                                         </ul>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
-                                                            <bdt class="block-component"></bdt>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
+                                                            <bdt className="block-component"></bdt>
                                                           </span>
                                                         </div>
                                                         <ul>
-                                                          <li style="line-height: 1.5;">
-                                                            <span style="font-size: 15px;">
+                                                          <li className="div-1">
+                                                            <span className="span-3">
                                                               <span data-custom-class="body_text">respond to or help with your requests</span>
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
                                                             </span>
                                                           </li>
                                                         </ul>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
-                                                            <bdt class="block-component"></bdt>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
+                                                            <bdt className="block-component"></bdt>
                                                           </span>
                                                         </div>
                                                         <ul>
-                                                          <li style="line-height: 1.5;">
-                                                            <span style="font-size: 15px;">
+                                                          <li className="div-1">
+                                                            <span className="span-3">
                                                               <span data-custom-class="body_text">manage your account with us</span>
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
                                                             </span>
                                                           </li>
                                                         </ul>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
-                                                            <bdt class="block-component"></bdt>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
+                                                            <bdt className="block-component"></bdt>
                                                           </span>
                                                         </div>
                                                         <ul>
-                                                          <li style="line-height: 1.5;">
-                                                            <span style="font-size: 15px;">
+                                                          <li className="div-1">
+                                                            <span className="span-3">
                                                               <span data-custom-class="body_text">confirm your identity and protect your account</span>
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
                                                             </span>
                                                           </li>
                                                         </ul>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
                                                               At any time, you have the right to request access to or correction of your personal information. You can make such a request by contacting us by using the contact details provided in the section
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               "
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
-                                                              <a data-custom-class="link" href="#request"><span style="color: rgb(0, 58, 250);"><span data-custom-class="link">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></span></a>
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
+                                                              <a data-custom-class="link" href="#request"><span className="span-6"><span data-custom-class="link">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></span></a>
+                                                              <bdt className="block-component"></bdt>
                                                               "
                                                             </span>
-                                                            <bdt class="statement-end-if-in-editor"><span data-custom-class="body_text"></span></bdt>
+                                                            <bdt className="statement-end-if-in-editor"><span data-custom-class="body_text"></span></bdt>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             I
                                                             <span data-custom-class="body_text">
                                                               f you believe we are unlawfully processing your personal information, you have the right to submit a complaint about
-                                                              <bdt class="block-component"></bdt>
-                                                              a breach of the Australian Privacy Principles to the <a data-custom-class="link" href="https://www.oaic.gov.au/privacy/privacy-complaints/lodge-a-privacy-complaint-with-us" rel="noopener noreferrer" target="_blank"><span style="color: rgb(0, 58, 250);"><span data-custom-class="link">Office of the Australian Information Commissioner</span></span></a>
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="block-component"></bdt>
+                                                              a breach of the Australian Privacy Principles to the <a data-custom-class="link" href="https://www.oaic.gov.au/privacy/privacy-complaints/lodge-a-privacy-complaint-with-us" rel="noopener noreferrer" target="_blank"><span className="span-6"><span data-custom-class="link">Office of the Australian Information Commissioner</span></span></a>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               and
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
-                                                              <bdt class="block-component"></bdt>
-                                                              a breach of New Zealand's Privacy Principles to the <a data-custom-class="link" href="https://www.privacy.org.nz/your-rights/making-a-complaint/" rel="noopener noreferrer" target="_blank"><span style="color: rgb(0, 58, 250);"><span data-custom-class="link">Office of New Zealand Privacy Commissioner</span></span></a>
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="block-component"></bdt>
+                                                              a breach of New Zealand's Privacy Principles to the <a data-custom-class="link" href="https://www.privacy.org.nz/your-rights/making-a-complaint/" rel="noopener noreferrer" target="_blank"><span className="span-6"><span data-custom-class="link">Office of New Zealand Privacy Commissioner</span></span></a>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
                                                               .
                                                             </span>
-                                                            <bdt class="statement-end-if-in-editor"></bdt>
+                                                            <bdt className="statement-end-if-in-editor"></bdt>
                                                           </span>
-                                                          <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
+                                                          <bdt className="block-component"><span className="span-3"></span></bdt>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><strong><span data-custom-class="heading_2">Republic of South Africa</span></strong></span></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1"><span className="span-3"><strong><span data-custom-class="heading_2">Republic of South Africa</span></strong></span></div>
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
                                                               At any time, you have the right to request access to or correction of your personal information. You can make such a request by contacting us by using the contact details provided in the section
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               "
-                                                              <bdt class="statement-end-if-in-editor"></bdt>
+                                                              <bdt className="statement-end-if-in-editor"></bdt>
                                                             </span>
                                                           </span>
-                                                          <span data-custom-class="link"><a href="#request"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="link">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></span></a></span>
-                                                          <span style="font-size: 15px;">
+                                                          <span data-custom-class="link"><a href="#request"><span className="span-7"><span data-custom-class="link">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></span></a></span>
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
-                                                              <bdt class="block-component"></bdt>
+                                                              <bdt className="block-component"></bdt>
                                                               "
                                                             </span>
-                                                            <bdt class="statement-end-if-in-editor"><span data-custom-class="body_text"></span></bdt>
+                                                            <bdt className="statement-end-if-in-editor"><span data-custom-class="body_text"></span></bdt>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text">If you are unsatisfied with the manner in which we address any complaint with regard to our processing of personal information, you can contact the office of the regulator, the details of which are:</span></span></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><br /></span></div>
-                                                        <div style="line-height: 1.5;"><a data-custom-class="link" href="https://inforegulator.org.za/" rel="noopener noreferrer" target="_blank"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text"><span data-custom-class="link">The Information Regulator (South Africa)</span></span></span></a></div>
-                                                        <div style="line-height: 1.5;"><span data-custom-class="body_text"><span style="font-size: 15px;">General enquiries:&nbsp;</span><a data-custom-class="link" href="mailto:enquiries@inforegulator.org.za" rel="noopener noreferrer" target="_blank"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="link">enquiries@inforegulator.org.za</span></span></a></span></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span data-custom-class="body_text"><span style="font-size: 15px;">Complaints (complete POPIA/PAIA form 5):&nbsp;</span><a data-custom-class="link" href="mailto:PAIAComplaints@inforegulator.org.za" rel="noopener noreferrer" target="_blank"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="link">PAIAComplaints@inforegulator.org.za</span></span></a><span style="font-size: 15px;">&nbsp;&amp;&nbsp;</span></span><a data-custom-class="link" href="mailto:POPIAComplaints@inforegulator.org.za" rel="noopener noreferrer" target="_blank"><span style="color: rgb(0, 58, 250); font-size: 15px;"><span data-custom-class="body_text"><span data-custom-class="link">POPIAComplaints@inforegulator.org.za</span></span></span></a>
-                                                          <span style="font-size: 15px;">
-                                                            <bdt class="statement-end-if-in-editor"></bdt>
-                                                            <bdt class="statement-end-if-in-editor"></bdt>
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1"><span className="span-3"><span data-custom-class="body_text">If you are unsatisfied with the manner in which we address any complaint with regard to our processing of personal information, you can contact the office of the regulator, the details of which are:</span></span></div>
+                                                        <div className="div-1"><span className="span-3"><br /></span></div>
+                                                        <div className="div-1"><a data-custom-class="link" href="https://inforegulator.org.za/" rel="noopener noreferrer" target="_blank"><span className="span-7"><span data-custom-class="body_text"><span data-custom-class="link">The Information Regulator (South Africa)</span></span></span></a></div>
+                                                        <div className="div-1"><span data-custom-class="body_text"><span className="span-3">General enquiries:&nbsp;</span><a data-custom-class="link" href="mailto:enquiries@inforegulator.org.za" rel="noopener noreferrer" target="_blank"><span className="span-7"><span data-custom-class="link">enquiries@inforegulator.org.za</span></span></a></span></div>
+                                                        <div className="div-1">
+                                                          <span data-custom-class="body_text"><span className="span-3">Complaints (complete POPIA/PAIA form 5):&nbsp;</span><a data-custom-class="link" href="mailto:PAIAComplaints@inforegulator.org.za" rel="noopener noreferrer" target="_blank"><span className="span-7"><span data-custom-class="link">PAIAComplaints@inforegulator.org.za</span></span></a><span className="span-3">&nbsp;&amp;&nbsp;</span></span><a data-custom-class="link" href="mailto:POPIAComplaints@inforegulator.org.za" rel="noopener noreferrer" target="_blank"><span className="span-7"><span data-custom-class="body_text"><span data-custom-class="link">POPIAComplaints@inforegulator.org.za</span></span></span></a>
+                                                          <span className="span-3">
+                                                            <bdt className="statement-end-if-in-editor"></bdt>
+                                                            <bdt className="statement-end-if-in-editor"></bdt>
                                                           </span>
-                                                          <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
+                                                          <bdt className="block-component"><span className="span-3"></span></bdt>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="policyupdates" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">11. DO WE MAKE UPDATES TO THIS NOTICE?</span></strong></span></span></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text"><em><strong>In Short:&nbsp;</strong>Yes, we will update this notice as necessary to stay compliant with relevant laws.</em></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="policyupdates" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">11. DO WE MAKE UPDATES TO THIS NOTICE?</span></strong></span></span></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1"><span className="span-4"><span className="span-4"><span data-custom-class="body_text"><em><strong>In Short:&nbsp;</strong>Yes, we will update this notice as necessary to stay compliant with relevant laws.</em></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 We may update this privacy notice from time to time. The updated version will be indicated by an updated
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 "Revised"
-                                                                <bdt class="statement-end-if-in-editor"></bdt>
+                                                                <bdt className="statement-end-if-in-editor"></bdt>
                                                                 date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="contact" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></strong></span></span></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="contact" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></strong></span></span></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
                                                                 If you have questions or comments about this notice, you may
-                                                                <span style="color: rgb(89, 89, 89); font-size: 15px;">
+                                                                <span className="span-4">
                                                                   <span data-custom-class="body_text">
-                                                                    <bdt class="block-component">
-                                                                      <bdt class="block-component"></bdt>
+                                                                    <bdt className="block-component">
+                                                                      <bdt className="block-component"></bdt>
                                                                     </bdt>
                                                                     email us at
-                                                                    <bdt class="question">privacy@mypg.gr or&nbsp;</bdt>
-                                                                    <bdt class="statement-end-if-in-editor">
-                                                                      <bdt class="block-component"></bdt>
+                                                                    <bdt className="question">privacy@mypg.gr or&nbsp;</bdt>
+                                                                    <bdt className="statement-end-if-in-editor">
+                                                                      <bdt className="block-component"></bdt>
                                                                     </bdt>
                                                                   </span>
                                                                 </span>
-                                                                <span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">contact us by post at:</span></span></span>
+                                                                <span className="span-4"><span className="span-4"><span data-custom-class="body_text">contact us by post at:</span></span></span>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
-                                                                <span style="font-size: 15px;">
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <span style="color: rgb(89, 89, 89);">
+                                                                <span className="span-3">
+                                                                  <span className="span-5">
+                                                                    <span className="span-5">
                                                                       <span data-custom-class="body_text">
-                                                                        <bdt class="question">MyPG Inc.</bdt>
+                                                                        <bdt className="question">MyPG Inc.</bdt>
                                                                       </span>
                                                                     </span>
                                                                   </span>
                                                                 </span>
                                                               </span>
                                                               <span data-custom-class="body_text">
-                                                                <span style="color: rgb(89, 89, 89);">
+                                                                <span className="span-5">
                                                                   <span data-custom-class="body_text">
-                                                                    <bdt class="block-component"></bdt>
+                                                                    <bdt className="block-component"></bdt>
                                                                   </span>
                                                                 </span>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
-                                                              <bdt class="question">Patmou 1</bdt>
-                                                              <span style="color: rgb(89, 89, 89);">
-                                                                <span style="font-size: 15px;">
-                                                                  <bdt class="block-component"></bdt>
+                                                              <bdt className="question">Patmou 1</bdt>
+                                                              <span className="span-5">
+                                                                <span className="span-3">
+                                                                  <bdt className="block-component"></bdt>
                                                                 </span>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
-                                                              <bdt class="question">ALimos</bdt>
-                                                              <span style="color: rgb(89, 89, 89);">
-                                                                <span style="font-size: 15px;">
-                                                                  <bdt class="block-component"></bdt>
+                                                              <bdt className="question">ALimos</bdt>
+                                                              <span className="span-5">
+                                                                <span className="span-3">
+                                                                  <bdt className="block-component"></bdt>
                                                                   ,
-                                                                  <bdt class="question">Athens</bdt>
-                                                                  <bdt class="statement-end-if-in-editor"></bdt>
-                                                                  <bdt class="block-component"></bdt>
-                                                                  <bdt class="question">17456</bdt>
-                                                                  <bdt class="statement-end-if-in-editor"></bdt>
-                                                                  <bdt class="block-component"></bdt>
-                                                                  <bdt class="block-component"></bdt>
+                                                                  <bdt className="question">Athens</bdt>
+                                                                  <bdt className="statement-end-if-in-editor"></bdt>
+                                                                  <bdt className="block-component"></bdt>
+                                                                  <bdt className="question">17456</bdt>
+                                                                  <bdt className="statement-end-if-in-editor"></bdt>
+                                                                  <bdt className="block-component"></bdt>
+                                                                  <bdt className="block-component"></bdt>
                                                                 </span>
                                                               </span>
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px;">
+                                                        <div className="div-1">
+                                                          <span className="span-3">
                                                             <span data-custom-class="body_text">
-                                                              <span style="font-size: 15px;">
+                                                              <span className="span-3">
                                                                 <span data-custom-class="body_text">
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <bdt class="block-component"></bdt>
+                                                                  <span className="span-5">
+                                                                    <bdt className="block-component"></bdt>
                                                                   </span>
                                                                 </span>
                                                               </span>
-                                                              <bdt class="question">Greece</bdt>
-                                                              <span style="font-size: 15px;">
+                                                              <bdt className="question">Greece</bdt>
+                                                              <span className="span-3">
                                                                 <span data-custom-class="body_text">
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <bdt class="statement-end-if-in-editor">
-                                                                      <span style="font-size: 15px;">
+                                                                  <span className="span-5">
+                                                                    <bdt className="statement-end-if-in-editor">
+                                                                      <span className="span-3">
                                                                         <span data-custom-class="body_text">
-                                                                          <span style="color: rgb(89, 89, 89);">
-                                                                            <bdt class="statement-end-if-in-editor">
-                                                                              <span style="font-size: 15px;">
+                                                                          <span className="span-5">
+                                                                            <bdt className="statement-end-if-in-editor">
+                                                                              <span className="span-3">
                                                                                 <span data-custom-class="body_text">
-                                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                                    <bdt class="statement-end-if-in-editor"></bdt>
+                                                                                  <span className="span-5">
+                                                                                    <bdt className="statement-end-if-in-editor"></bdt>
                                                                                   </span>
                                                                                 </span>
                                                                               </span>
                                                                             </bdt>
-                                                                            <bdt class="statement-end-if-in-editor"></bdt>
+                                                                            <bdt className="statement-end-if-in-editor"></bdt>
                                                                           </span>
                                                                         </span>
                                                                       </span>
                                                                       <span data-custom-class="body_text">
-                                                                        <span style="color: rgb(89, 89, 89);">
-                                                                          <span style="font-size: 15px;">
-                                                                            <bdt class="statement-end-if-in-editor"></bdt>
+                                                                        <span className="span-5">
+                                                                          <span className="span-3">
+                                                                            <bdt className="statement-end-if-in-editor"></bdt>
                                                                           </span>
                                                                         </span>
                                                                       </span>
@@ -3113,15 +3115,15 @@ export default function Privacy() {
                                                               </span>
                                                             </span>
                                                             <span data-custom-class="body_text">
-                                                              <span style="font-size: 15px;">
+                                                              <span className="span-3">
                                                                 <span data-custom-class="body_text">
-                                                                  <span style="color: rgb(89, 89, 89);">
-                                                                    <bdt class="statement-end-if-in-editor">
-                                                                      <span style="color: rgb(89, 89, 89);">
-                                                                        <span style="font-size: 15px;">
+                                                                  <span className="span-5">
+                                                                    <bdt className="statement-end-if-in-editor">
+                                                                      <span className="span-5">
+                                                                        <span className="span-3">
                                                                           <span data-custom-class="body_text">
-                                                                            <bdt class="block-component">
-                                                                              <bdt class="block-component"></bdt>
+                                                                            <bdt className="block-component">
+                                                                              <bdt className="block-component"></bdt>
                                                                             </bdt>
                                                                           </span>
                                                                         </span>
@@ -3130,14 +3132,14 @@ export default function Privacy() {
                                                                   </span>
                                                                 </span>
                                                               </span>
-                                                              <bdt class="block-component"><span style="font-size: 15px;"></span></bdt>
-                                                              <span style="font-size: 15px;">
+                                                              <bdt className="block-component"><span className="span-3"></span></bdt>
+                                                              <span className="span-3">
                                                                 <span data-custom-class="body_text">
-                                                                  <span style="color: rgb(89, 89, 89); font-size: 15px;">
-                                                                    <span style="font-size: 15px;">
+                                                                  <span className="span-4">
+                                                                    <span className="span-3">
                                                                       <span data-custom-class="body_text">
-                                                                        <bdt class="statement-end-if-in-editor">
-                                                                          <bdt class="block-component"></bdt>
+                                                                        <bdt className="statement-end-if-in-editor">
+                                                                          <bdt className="block-component"></bdt>
                                                                         </bdt>
                                                                       </span>
                                                                     </span>
@@ -3147,31 +3149,28 @@ export default function Privacy() {
                                                             </span>
                                                           </span>
                                                         </div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div id="request" style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89); font-size: 15px;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span id="control" style="color: rgb(0, 0, 0);"><strong><span data-custom-class="heading_1">13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></strong></span></span></span></span></span></div>
-                                                        <div style="line-height: 1.5;"><br /></div>
-                                                        <div style="line-height: 1.5;">
-                                                          <span style="font-size: 15px; color: rgb(89, 89, 89);">
-                                                            <span style="font-size: 15px; color: rgb(89, 89, 89);">
+                                                        <div className="div-1"><br /></div>
+                                                        <div id="request" className="div-1"><span className="span-2"><span className="span-4"><span className="span-4"><span className="span-4"><span id="control" className="span-8"><strong><span data-custom-class="heading_1">13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></strong></span></span></span></span></span></div>
+                                                        <div className="div-1"><br /></div>
+                                                        <div className="div-1">
+                                                          <span className="span-4">
+                                                            <span className="span-4">
                                                               <span data-custom-class="body_text">
-                                                                <bdt class="block-component"></bdt>
+                                                                <bdt className="block-component"></bdt>
                                                                 Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it.
-                                                                <bdt class="else-block">
-                                                                  <bdt class="block-component"></bdt>
+                                                                <bdt className="else-block">
+                                                                  <bdt className="block-component"></bdt>
                                                                   To request to review, update, or delete your personal information, please
-                                                                  <bdt class="block-component"></bdt>
+                                                                  <bdt className="block-component"></bdt>
                                                                   fill out and submit a&nbsp;
                                                                 </bdt>
                                                               </span>
-                                                              <span style="color: rgb(0, 58, 250);"><span data-custom-class="body_text"><span style="color: rgb(0, 58, 250); font-size: 15px;"><a data-custom-class="link" href="https://app.termly.io/notify/ff078788-d149-44a3-8051-8169eb7d7605" rel="noopener noreferrer" target="_blank">data subject access request</a></span></span></span>
-                                                              <bdt class="block-component"><span data-custom-class="body_text"></span></bdt>
+                                                              <span className="span-6"><span data-custom-class="body_text"><span className="span-7"><a data-custom-class="link" href="https://app.termly.io/notify/ff078788-d149-44a3-8051-8169eb7d7605" rel="noopener noreferrer" target="_blank">data subject access request</a></span></span></span>
+                                                              <bdt className="block-component"><span data-custom-class="body_text"></span></bdt>
                                                             </span>
                                                           </span>
                                                           <span data-custom-class="body_text">.</span>
                                                         </div>
-                                                      </div>
-                                                      <div style="color: #595959;font-size: 14px;font-family: Arial;padding-top:16px;">
-                                                        This privacy policy was created using Termly's <a style="color: rgb(48, 48, 241) !important;" href="https://termly.io/products/privacy-policy-generator/">Privacy Policy Generator</a>.
                                                       </div>
                                                     </div>
                                                   </div>
@@ -3196,6 +3195,7 @@ export default function Privacy() {
             </div>
           </div>
         </div>
+        </center>
 
         <div className="home-footer">
           <footer className="home-footer1">

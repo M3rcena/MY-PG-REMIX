@@ -200,6 +200,8 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
     background-repeat: no-repeat;
     font-weight: 400;
     font-family: Poppins;
+    margin: 100px;
+    padding: 0;
    }
   
   .container {

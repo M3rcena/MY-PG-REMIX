@@ -56,7 +56,7 @@ export default function Contact() {
                                     </button>
                                 </div>
                                 <div className="container-contact100-form-btn">
-                                    <button className="contact100-form-btn">
+                                    <button className="contact100-form-btn" onClick={() => navigate("/")}>
                                         <Link to="/">Go Back</Link>
                                     </button>
                                 </div>

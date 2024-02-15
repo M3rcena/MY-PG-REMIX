@@ -11,7 +11,7 @@ app.use(express.static("public"));
 // and your app is "just a request handler"
 app.all("*", createRequestHandler({ build }));
 
-app.listen(3001, '0.0.0.0', () => {
+app.listen(3002, '0.0.0.0', () => {
   if (process.env.NODE_ENV === "development") {
     broadcastDevReady(build);
   }

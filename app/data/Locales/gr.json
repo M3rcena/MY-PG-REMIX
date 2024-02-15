@@ -42,107 +42,107 @@
         "9": "9"
     },
     "words": {
-        "month": "month"
+        "month": "μήνα"
     },
     "info": {
         "name": "MyPG | My Playground",
         "logo": "MY PG",
         "nav": {
-            "home": "Home",
-            "about": "About",
-            "parties": "Parties",
-            "discount": "Discount",
-            "login": "Login",
-            "register": "Register",
-            "privacy": "Privacy",
-            "terms": "Terms",
+            "home": "Αρχική",
+            "about": "Σχετικά",
+            "parties": "Πάρτυ",
+            "discount": "Προσφορές",
+            "login": "Σύνδεση",
+            "register": "Εγγραφή",
+            "privacy": "Απόρρητο",
+            "terms": "Όροι",
             "cookies": "Cookies",
-            "contact": "Contact"
+            "contact": "Επικοινωνία"
         },
         "copyright": "© 2024 MYPG, All Rights Reserved."
     },
     "index": {
-        "title": "Discover the Best Parks and Stores",
-        "subtitle": "Explore your city with our interactive map",
-        "map": "Map",
-        "more": "Learn More →",
-        "details": "Details",
-        "description": "Our website provides detailed information about parks, shops and more. Register now to enjoy exclusive discounts and other benefits. With our party system, you can easily organize parties in parks and other locations. Join us today!",
+        "title": "Ανακαλύψτε τα καλύτερα πάρκα και καταστήματα",
+        "subtitle": "Εξερευνήστε την πόλη σας με τον διαδραστικό μας χάρτη",
+        "map": "Χάρτης",
+        "more": "Μάθετε Περισσότερα →",
+        "details": "Λεπτομέρειες",
+        "description": "Η ιστοσελίδα μας παρέχει λεπτομερείς πληροφορίες για πάρκα, καταστήματα και πολλά άλλα. Εγγραφείτε τώρα για να απολαύσετε αποκλειστικές εκπτώσεις και άλλα οφέλη. Με το σύστημα πάρτυ μας, μπορείτε εύκολα να οργανώσετε πάρτυ σε πάρκα και άλλες τοποθεσίες. Ελάτε μαζί μας σήμερα!",
         "features": {
-            "title": "features",
-            "subtitle": "Explore the exciting features",
-            "description": "Discover how our professional website can enhance your experiences and make party planning a breeze.",
+            "title": "χαρακτηριστικά",
+            "subtitle": "Εξερευνήστε τα συναρπαστικά χαρακτηριστικά",
+            "description": "Ανακαλύψτε πώς η επαγγελματική μας ιστοσελίδα μπορεί να ενισχύσει τις εμπειρίες σας και να κάνει τον σχεδιασμό πάρτυ πανεύκολο.",
             "1": {
-                "title": "Interactive Map",
-                "description": "Our interactive map allows you to easily find parks, shops and other locations. You can also use it to plan your route and find the best way to get to your destination."
+                "title": "Διαδραστικός Χάρτης",
+                "description": "Ο διαδραστικός μας χάρτης σας επιτρέπει να βρείτε εύκολα πάρκα, καταστήματα και άλλες τοποθεσίες. Μπορείτε επίσης να τον χρησιμοποιήσετε για να προγραμματίσετε τη διαδρομή σας και να βρείτε τον καλύτερο τρόπο για να φτάσετε στον προορισμό σας."
             },
             "2": {
-                "title": "Member Discounts",
-                "description": "Enjoy exclusive discounts and special offers from partner stores when you become a member."
+                "title": "Εκπτώσεις Μελών",
+                "description": "Απολαύστε αποκλειστικές εκπτώσεις και ειδικές προσφορές από συνεργαζόμενα καταστήματα σε μέλη."
             },
             "3": {
-                "title": "Party System",
-                "description": "Plan and organize elusive parties in parks and other venues with our convenient party system."
+                "title": "Σύστημα Πάρτυ",
+                "description": "Σχεδιάστε και να οργανώσετε φανταστικά πάρτυ σε πάρκα και άλλους χώρους με βολικό σύστημα πάρτυ μας."
             },
             "4": {
-                "title": "Example",
-                "description": "Example description"
+                "title": "Παράδειγμα",
+                "description": "Παράδειγμα περιγραφής"
             }
         },
         "pricing": {
-            "title": "Pricing",
-            "description": "Choose your plan",
-            "subdescription": "Choose the perfect plan for your needs",
+            "title": "Τιμολόγηση",
+            "description": "Επιλέξτε πλάνο",
+            "subdescription": "Επιλέξτε το τέλειο πλάνο για τις ανάγκες σας",
             "free": {
-                "title": "Free",
-                "description": "Get free access to the main features of the site",
-                "1": "View information about parks, shops and other locations",
-                "2": "Get discounts and special offers when you sign up",
-                "3": "Organize parties in parks and other places",
-                "4": "Limited access to the party system",
-                "button": "Continue Free"
+                "title": "Δωρεάν",
+                "description": "Αποκτήστε δωρεάν πρόσβαση στα κύρια χαρακτηριστικά της ιστοσελίδας",
+                "1": "Δείτε πληροφορίες για πάρκα, καταστήματα και άλλες τοποθεσίες",
+                "2": "Αποκτήστε εκπτώσεις και ειδικές προσφορές όταν εγγραφείτε",
+                "3": "Οργανώστε πάρτι σε πάρκα και άλλα μέρη",
+                "4": "Περιορισμένη πρόσβαση στο σύστημα πάρτυ",
+                "button": "Συνεχίστε Δωρεάν"
             },
             "basic": {
                 "title": "BASIC",
-                "description": "Unlock additional features and benefits with the basic plan",
-                "1": "All the features of the FREE plan",
-                "2": "Access premium information about parks, shops and locations",
-                "3": "Enhanced discounts and exclusive offers for members",
-                "4": "Full access to the party system with advanced party tools",
-                "button": "Try Basic plan"
+                "description": "Ξεκλειδώστε επιπλέον χαρακτηριστικά και οφέλη με το basic πλάνο",
+                "1": "Όλα τα χαρακτηριστικά του FREE πλάνου",
+                "2": "Πρόσβαση σε premium πληροφορίες σχετικά με πάρκα, καταστήματα και τοποθεσίες",
+                "3": "Καλύτερες εκπτώσεις και αποκλειστικές προσφορές για μέλη",
+                "4": "Πλήρης πρόσβαση στο σύστημα πάρτυ με προηγμένα εργαλεία",
+                "button": "Δοκιμάστε το βασικό πλάνο"
             },
             "pro": {
                 "title": "PRO",
-                "description": "Get the ultimate experience with the professional design",
-                "1": "All the features of the BASIC plan",
-                "2": "Priority access to new park and store information",
-                "3": "VIP discounts and exclusive benefits for registered members",
-                "button": "Try PRO plan"
+                "description": "Αποκτήστε την απόλυτη εμπειρία με τον επαγγελματικό σχεδιασμό",
+                "1": "Όλα τα χαρακτηριστικά του πλάνου BASIC",
+                "2": "Γρηγορότερη πρόσβαση σε νέες πληροφορίες πάρκων και καταστημάτων",
+                "3": "Εκπτώσεις VIP και αποκλειστικά οφέλη για εγγεγραμμένα μέλη",
+                "button": "Δοκιμάστε το PRO πλάνο"
             }
         },
         "faq": {
             "category": "FAQ",
-            "title": "Frequently Asked Questions",
-            "description": "Here are some of the most common questions we receive.",
+            "title": "Συχνές Ερωτήσεις",
+            "description": "Εδώ είναι μερικές από τις πιο συνηθισμένες ερωτήσεις που λαμβάνουμε.",
             "q1": {
-                "answer": "The purpose of this website is to provide information about parks, shops and other locations, and to offer discounts and benefits to registered members.",
-                "question": "What is the purpose of this website?"
+                "answer": "Σκοπός αυτής της ιστοσελίδας είναι να παρέχει πληροφορίες σχετικά με πάρκα, καταστήματα και άλλες τοποθεσίες, καθώς και να προσφέρει εκπτώσεις και οφέλη στα εγγεγραμμένα μέλη.",
+                "question": "Ποιός είναι ο σκοπός αυτής της ιστοσελίδας;"
             },
             "q2": {
-                "answer": "The map will show information about parks, shops and other points of interest. Users can easily find details such as location, hours of operation and user reviews.",
-                "question": "What kind of information will be available on the map?"
+                "answer": "Ο χάρτης θα δείχνει πληροφορίες για πάρκα, καταστήματα και άλλα σημεία ενδιαφέροντος. Οι χρήστες μπορούν εύκολα να βρουν λεπτομέρειες όπως τοποθεσία, ώρες λειτουργίας και σχόλια χρηστών.",
+                "question": "Τι είδους πληροφορίες θα είναι διαθέσιμες στο χάρτη;"
             },
             "q3": {
-                "answer": "To register as a member, simply click the 'Register' button on the website and fill in the required details. Once you sign up, you'll have access to discounts and other benefits.",
-                "question": "How do I register as a member?"
+                "answer": "Για να εγγραφείτε ως μέλος, απλά κάντε κλικ στο κουμπί «Εγγραφή» στην ιστοσελίδα και συμπληρώστε τα απαιτούμενα στοιχεία. Μόλις εγγραφείτε, θα έχετε πρόσβαση σε εκπτώσεις και άλλα οφέλη.",
+                "question": "Πώς μπορώ να εγγραφώ ως μέλος;"
             },
             "q4": {
-                "answer": "Members will have access to exclusive discounts at participating stores and venues. In addition, they can enjoy special offers for organizing parties in parks and other locations.",
-                "question": "What discounts and benefits are available to members?"
+                "answer": "Τα μέλη έχουν πρόσβαση σε αποκλειστικές εκπτώσεις σε συμμετέχοντα καταστήματα και χώρους. Επιπλέον, μπορούν να απολαύσουν ειδικές προσφορές για την οργάνωση πάρτυ σε πάρκα και άλλες τοποθεσίες.",
+                "question": "Τι εκπτώσεις και οφέλη είναι διαθέσιμα στα μέλη;"
             },
             "q5": {
-                "answer": "Our site provides a party system that allows you to easily organize parties in parks and other locations. Just select the desired location, choose a date and time and invite your friends. You can also customize party details such as themes and activities.",
-                "question": "How do I organize a party in a park or other location?"
+                "answer": "Η ιστοσελίδα μας παρέχει ένα σύστημα πάρτυ που σας επιτρέπει να οργανώσετε εύκολα πάρτι σε πάρκα και άλλες τοποθεσίες. Απλά επιλέξτε την επιθυμητή τοποθεσία, επιλέξτε μια ημερομηνία και ώρα και προσκαλέστε τους φίλους σας. Μπορείτε επίσης να προσαρμόσετε τα στοιχεία του κόμματος, όπως θέματα και δραστηριότητες.",
+                "question": "Πώς μπορώ να οργανώσω πάρτυ σε ένα πάρκο ή σε άλλη τοποθεσία;"
             }
         }
     }

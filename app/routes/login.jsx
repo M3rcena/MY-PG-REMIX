@@ -2,53 +2,81 @@ import React from "react";
 import { PrismaClient } from '@prisma/client'
 
 
-import authStylesHref from '../styles/auth.css'
+import auth1StylesHref from '../styles/auth1.css';
+import auth2StylesHref from '../styles/auth2.css';
 import { redirect } from 'react-router-dom'
 
-import image from '../assets/img/Auth/signin-image.jpg';
+import { Row, Col, Card, Form, Button, Image } from 'react-bootstrap';
+import { Link } from '@remix-run/react';
 
 export const links = () => {
   return [
-    { rel: 'stylesheet', href: authStylesHref }
+    /* { rel: 'stylesheet', href: authStylesHref } */
+    { rel: 'stylesheet', href: auth1StylesHref },
+    { rel: 'stylesheet', href: auth2StylesHref }
   ]
 }
 
 export default function Login() {
+
   return (
     <>
-      <div>
-        <section className="sign-in">
-          <div className="container">
-            <div className="signin-content">
-              <div className="signin-image">
-                <figure><img src={image} alt="login image" /></figure>
-                <a href="#" className="signup-image-link">Create an account</a>
+      <Row className="align-items-center justify-content-center g-0 min-vh-100">
+        <Col xxl={4} lg={6} md={8} xs={12} className="py-8 py-xl-0">
+          {/* Card */}
+          <Card className="smooth-shadow-md">
+            {/* Card body */}
+            <Card.Body className="p-6">
+              <div className="mb-4">
+                <h1 className="mb-2 logo">Playground4U</h1>
+                <p className="mb-6">Please enter your user information.</p>
               </div>
+              {/* Form */}
+              <Form>
+                {/* Username */}
+                <Form.Group className="mb-3" controlId="username">
+                  <Form.Label>Username or email</Form.Label>
+                  <Form.Control type="email" name="username" placeholder="Enter address here" required="" />
+                </Form.Group>
 
-              <div className="signin-form">
-                <h2 className="form-title">Login</h2>
-                <form method="POST" className="register-form" id="login-form">
-                  <div className="form-group">
-                    <label htmlFor="your_name"><i className="zmdi zmdi-account material-icons-name"></i></label>
-                    <input type="text" name="your_name" id="your_name" placeholder="Your Name" />
+                {/* Password */}
+                <Form.Group className="mb-3" controlId="password">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" name="password" placeholder="**************" required="" />
+                </Form.Group>
+
+                {/* Checkbox */}
+                <div className="d-lg-flex justify-content-between align-items-center mb-4">
+                  <Form.Check type="checkbox" id="rememberme">
+                    <Form.Check.Input type="checkbox" />
+                    <Form.Check.Label>Remember me</Form.Check.Label>
+                  </Form.Check>
+                </div>
+                <div>
+                  {/* Button */}
+                  <div className="d-grid">
+                    <Button variant="primary" type="submit">Sign In</Button>
                   </div>
-                  <div className="form-group">
-                    <label htmlFor="your_pass"><i className="zmdi zmdi-lock"></i></label>
-                    <input type="password" name="your_pass" id="your_pass" placeholder="Password" />
+                  <br />
+                  <div className="d-grid">
+                    <Button variant="primary" type="submit">Back</Button>
                   </div>
-                  <div className="form-group">
-                    <input type="checkbox" name="remember-me" id="remember-me" className="agree-term" />
-                    <label htmlFor="remember-me" className="label-agree-term"><span><span></span></span>Remember me</label>
+                  <div className="d-md-flex justify-content-between mt-4">
+                    <div className="mb-2 mb-md-0">
+                      <Link to="/register" className="fs-5">Create An Account </Link>
+                    </div>
+                    <div>
+                      <Link to="/forget-password" className="text-inherit fs-5">Forgot your password?</Link>
+                    </div>
                   </div>
-                  <div className="form-group form-button">
-                    <input type="submit" name="signin" id="signin" className="form-submit" value="Log in" />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+                </div>
+              </Form>
+
+
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </>
-  );
+  )
 }

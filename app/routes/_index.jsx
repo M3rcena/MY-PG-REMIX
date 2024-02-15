@@ -136,6 +136,7 @@ export default function Home() {
             </div>
           </header>
         </div>
+        <script id="CookieDeclaration" src="https://consent.cookiebot.com/1f21a70c-52af-41d6-b176-a87a9f32d685/cd.js" type="text/javascript" async></script>
         <div className="home-hero">
           <div className="home-hero1">
             <div className="home-container01">

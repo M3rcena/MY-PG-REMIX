@@ -1456,3 +1456,48 @@
   0% {transform: translateX(0);}
   100% {transform: translateX(-800%)} /* change this percentage, such that it resets at the right time */
 }
+
+.features-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: -32px;
+  margin-left: -32px
+}
+
+.features-wrap:first-of-type {
+  margin-top: -16px
+}
+
+.features-wrap:last-of-type {
+  margin-bottom: -16px
+}
+
+.feature {
+  padding: 16px 32px;
+  width: 380px;
+  max-width: 380px;
+  flex-grow: 1
+}
+
+.feature-inner {
+  height: 100%
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center
+}
+
+.section-inner {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px
+}
+
+@media (min-width: 641px) {
+  .section-inner {
+      padding-top: 88px;
+      padding-bottom: 88px
+  }
+}

@@ -7,6 +7,10 @@ import { Link, useNavigate } from '@remix-run/react'
 
 import { translate } from '~/structures/i18n.mjs'
 
+import teamIcon from '../assets/img/team.jpg'
+import aimIcon from '../assets/img/aim.jpg'
+import historyIcon from '../assets/img/history.jpg'
+
 export const links = () => {
   return [
     { rel: 'stylesheet', href: indexStylesHref },
@@ -134,7 +138,7 @@ export default function About() {
               </div>
               <img
                 alt="image"
-                src="https://media.istockphoto.com/id/1316134499/photo/a-concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-example-zoom-inside-the.jpg?s=612x612&w=0&k=20&c=sZM5HlZvHFYnzjrhaStRpex43URlxg6wwJXff3BE9VA="
+                src={aimIcon}
                 className="home-details-image"
               />
             </div>
@@ -145,7 +149,7 @@ export default function About() {
             <div className="home-details1">
               <img
                 alt="image"
-                src="https://media.istockphoto.com/id/1316134499/photo/a-concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-example-zoom-inside-the.jpg?s=612x612&w=0&k=20&c=sZM5HlZvHFYnzjrhaStRpex43URlxg6wwJXff3BE9VA="
+                src={historyIcon}
                 className="home-details-image2"
               />
               <div className="home-container02">
@@ -173,7 +177,7 @@ export default function About() {
               </div>
               <img
                 alt="image"
-                src="https://media.istockphoto.com/id/1316134499/photo/a-concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-example-zoom-inside-the.jpg?s=612x612&w=0&k=20&c=sZM5HlZvHFYnzjrhaStRpex43URlxg6wwJXff3BE9VA="
+                src={teamIcon}
                 className="home-details-image"
               />
             </div>

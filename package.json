@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "remix dev -c \"node server.mjs\"",
+    "start": "npx remix build && node server.mjs",
     "dev": "remix dev -c \"node server.mjs\""
   },
   "prisma": {

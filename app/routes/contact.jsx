@@ -5,7 +5,8 @@ import { Helmet } from "react-helmet";
 import contactStylesHref from "../styles/contact.css";
 
 import { Link, useNavigate } from "@remix-run/react";
-import { translate } from "../structures/i18n.mjs";
+
+import { useTranslation } from "react-i18next";
 
 import { useRef } from "react";
 
@@ -17,9 +18,14 @@ export const links = () => {
     ];
 };
 
+export const handle = {
+    i18n: "common"
+};
+
 export default function Contact() {
     let navigate = useNavigate();
 
+    let { t } = useTranslation("common");
     return (
         <>
                 <div className="bg-contact100">

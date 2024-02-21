@@ -12,7 +12,7 @@ import {
 } from "../components/question/question.jsx";
 import indexStylesHref from "../styles/index.css";
 import { Link, useNavigate } from "@remix-run/react";
-import { translate } from "../structures/i18n.mjs";
+import { useTranslation } from "react-i18next";
 
 // Load images
 import Alimos from "../assets/img/companies/Alimos.png";
@@ -27,48 +27,53 @@ export const links = () => {
   ];
 };
 
+export let handle = {
+  i18n: "common"
+};
+
 export default function Home() {
   let navigate = useNavigate();
+  let { t } = useTranslation("common");
 
   return (
     <>
       <div className="home-container">
         <Helmet>
-          <title>{translate("gr", "info.name")}</title>
+          <title>{t("info.name")}</title>
           <meta property="og:title" content="EPAL ALIMOU" />
         </Helmet>
         <div className="home-header">
           <header data-thq="thq-navbar" className="home-navbar-interactive">
-            <span className="home-logo">{translate("gr", "info.logo")}</span>
+            <span className="home-logo">{t("info.logo")}</span>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
                 <span>
-                  <Link to="/">{translate("gr", "info.nav.home")}</Link>
+                  <Link to="/">{t("info.nav.home")}</Link>
                 </span>
                 <span className="home-nav2">
-                  <Link to="/about">{translate("gr", "info.nav.about")}</Link>
+                  <Link to="/about">{t("info.nav.about")}</Link>
                 </span>
                 <span className="home-nav3">
                   <Link to="/features">Features</Link>
                 </span>
                 <span className="home-nav4">
                   <Link to="/parties">
-                    {translate("gr", "info.nav.parties")}
+                    {t("info.nav.parties")}
                   </Link>
                 </span>
                 <span className="home-nav5">
                   <Link to="/discounts">
-                    {translate("gr", "info.nav.discount")}
+                    {t("info.nav.discount")}
                   </Link>
                 </span>
               </nav>
               <div className="home-buttons">
                 <button className="home-login button">
-                  <Link to="/login">{translate("gr", "info.nav.login")}</Link>
+                  <Link to="/login">{t("info.nav.login")}</Link>
                 </button>
                 <button className="home-register button">
                   <Link to="/register">
-                    {translate("gr", "info.nav.register")}
+                    {t("info.nav.register")}
                   </Link>
                 </button>
               </div>
@@ -82,7 +87,7 @@ export default function Home() {
               <div className="home-nav">
                 <div className="home-top">
                   <span className="home-logo1">
-                    <Link to="/">{translate("gr", "info.logo")}</Link>
+                    <Link to="/">{t("info.logo")}</Link>
                   </span>
                   <div data-thq="thq-close-menu" className="home-close-menu">
                     <svg viewBox="0 0 1024 1024" className="home-icon02">
@@ -92,32 +97,32 @@ export default function Home() {
                 </div>
                 <nav className="home-links1">
                   <span className="home-nav11">
-                    <Link to="/">{translate("gr", "info.nav.home")}</Link>
+                    <Link to="/">{t("info.nav.home")}</Link>
                   </span>
                   <span className="home-nav21">
-                    <Link to="/about">{translate("gr", "info.nav.about")}</Link>
+                    <Link to="/about">{t("info.nav.about")}</Link>
                   </span>
                   <span className="home-nav31">
                     <Link to="/features">Features</Link>
                   </span>
                   <span className="home-nav41">
                     <Link to="/parties">
-                      {translate("gr", "info.nav.parties")}
+                      {t("info.nav.parties")}
                     </Link>
                   </span>
                   <span className="home-nav51">
                     <Link to="/discount">
-                      {translate("gr", "info.nav.discount")}
+                      {t("info.nav.discount")}
                     </Link>
                   </span>
                 </nav>
                 <div className="home-buttons1">
                   <button className="home-login1 button">
-                    <Link to="/login">{translate("gr", "info.nav.login")}</Link>
+                    <Link to="/login">{t("info.nav.login")}</Link>
                   </button>
                   <button className="home-register1 button">
                     <Link to="/register">
-                      {translate("gr", "info.nav.register")}
+                      {t("info.nav.register")}
                     </Link>
                   </button>
                 </div>
@@ -140,17 +145,17 @@ export default function Home() {
           <div className="home-hero1">
             <div className="home-container01">
               <h1 className="home-hero-heading heading1">
-                {translate("gr", "index.title")}
+                {t("index.title")}
               </h1>
               <span className="home-hero-sub-heading">
-                {translate("gr", "index.subtitle")}
+                {t("index.subtitle")}
               </span>
               <div className="home-btn-group">
                 <button className="home-hero-button1 button">
-                  <Link to="/map">{translate("gr", "index.map")}</Link>
+                  <Link to="/map">{t("index.map")}</Link>
                 </button>
                 <button className="home-hero-button2 button">
-                  <Link to="/about">{translate("gr", "index.more")}</Link>
+                  <Link to="/about">{t("index.more")}</Link>
                 </button>
               </div>
             </div>
@@ -160,14 +165,14 @@ export default function Home() {
           <div className="home-details1">
             <div className="home-container02">
               <span className="home-text sectionTitle">
-                <span>{translate("gr", "index.details")}</span>
+                <span>{t("index.details")}</span>
                 <br></br>
               </span>
               <h2 className="home-details-heading heading2">
-                {translate("gr", "info.name")}
+                {t("info.name")}
               </h2>
               <span className="home-details-sub-heading">
-                {translate("gr", "index.description")}
+                {t("index.description")}
               </span>
             </div>
             <Link to={"/map"}>
@@ -184,32 +189,32 @@ export default function Home() {
             <div className="home-features1">
               <div className="home-container03">
                 <span className="home-text03 sectionTitle">
-                  <span>{translate("gr", "index.features.title")}</span>
+                  <span>{t("index.features.title")}</span>
                   <br></br>
                 </span>
                 <h2 className="home-features-heading heading2">
-                  {translate("gr", "index.features.subtitle")}
+                  {t("index.features.subtitle")}
                 </h2>
                 <span className="home-features-sub-heading">
-                  {translate("gr", "index.features.description")}
+                  {t("index.features.description")}
                 </span>
               </div>
               <div className="home-container04">
                 <FeatureCard
-                  Heading={translate("gr", "index.features.1.title")}
-                  SubHeading={translate("gr", "index.features.1.description")}
+                  Heading={t("index.features.1.title")}
+                  SubHeading={t("index.features.1.description")}
                   Color="feature-card-feature-card"
                   Icon={<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="64px" height="64px" xmlnsXlink="http://www.w3.org/1999/xlink"><g><path fill="#34c4f2" d="M 17.5,3.5 C 17.6574,6.31757 18.9908,8.31757 21.5,9.5C 20.5546,14.4053 20.2213,19.4053 20.5,24.5C 18.4907,26.0652 16.1573,27.0652 13.5,27.5C 12.3933,25.0311 10.3933,24.0311 7.5,24.5C 7.5,22.8333 7.5,21.1667 7.5,19.5C 8.71957,17.7179 9.38623,15.7179 9.5,13.5C 11.604,13.7989 13.604,13.4656 15.5,12.5C 13.9292,9.90656 11.5959,8.90656 8.5,9.5C 9.10978,8.60895 9.44312,7.60895 9.5,6.5C 12.0067,5.10841 14.6733,4.10841 17.5,3.5 Z" /></g><g><path fill="#27ace9" d="M -0.5,4.5 C 2.93889,4.78777 6.27222,5.45444 9.5,6.5C 9.44312,7.60895 9.10978,8.60895 8.5,9.5C 7.87605,9.91695 7.54272,10.5836 7.5,11.5C 7.74716,12.7133 8.41383,13.38 9.5,13.5C 9.38623,15.7179 8.71957,17.7179 7.5,19.5C 4.09525,18.8087 1.42858,17.1421 -0.5,14.5C -0.5,11.1667 -0.5,7.83333 -0.5,4.5 Z" /></g><g><path fill="#a3d75d" d="M 31.5,4.5 C 31.5,9.5 31.5,14.5 31.5,19.5C 26.9957,18.6732 24.4957,16.0065 24,11.5C 23.2917,10.6195 22.4584,9.9528 21.5,9.5C 18.9908,8.31757 17.6574,6.31757 17.5,3.5C 22.2357,2.3167 26.9023,2.65004 31.5,4.5 Z" /></g><g><path fill="#a2de75" d="M 8.5,9.5 C 11.5959,8.90656 13.9292,9.90656 15.5,12.5C 13.604,13.4656 11.604,13.7989 9.5,13.5C 8.41383,13.38 7.74716,12.7133 7.5,11.5C 7.54272,10.5836 7.87605,9.91695 8.5,9.5 Z" /></g><g><path fill="#08adee" d="M 21.5,9.5 C 22.4584,9.9528 23.2917,10.6195 24,11.5C 24.4957,16.0065 26.9957,18.6732 31.5,19.5C 31.5,20.8333 31.5,22.1667 31.5,23.5C 28.1456,21.8868 25.1456,22.2202 22.5,24.5C 21.8333,24.5 21.1667,24.5 20.5,24.5C 20.2213,19.4053 20.5546,14.4053 21.5,9.5 Z" /></g><g><path fill="#97d564" d="M -0.5,14.5 C 1.42858,17.1421 4.09525,18.8087 7.5,19.5C 7.5,21.1667 7.5,22.8333 7.5,24.5C 10.3933,24.0311 12.3933,25.0311 13.5,27.5C 8.76432,28.6833 4.09765,28.35 -0.5,26.5C -0.5,22.5 -0.5,18.5 -0.5,14.5 Z" /></g><g><path fill="#9fe180" d="M 13.5,16.5 C 16.1247,17.4657 16.1247,18.4657 13.5,19.5C 12.4376,18.5754 12.4376,17.5754 13.5,16.5 Z" /></g><g><path fill="#8bd072" d="M 31.5,23.5 C 31.5,24.5 31.5,25.5 31.5,26.5C 28.2727,26.3239 25.2727,25.6572 22.5,24.5C 25.1456,22.2202 28.1456,21.8868 31.5,23.5 Z" /></g></svg>}
                 ></FeatureCard>
                 <FeatureCard
-                  Heading={translate("gr", "index.features.2.title")}
-                  SubHeading={translate("gr", "index.features.2.description")}
+                  Heading={t("index.features.2.title")}
+                  SubHeading={t("index.features.2.description")}
                   Color="feature-card-feature-card2"
                   Icon={<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="64px" height="64px" xmlnsXlink="http://www.w3.org/1999/xlink"><g><path fill="#656e67" d="M 20.5,-0.5 C 21.8333,-0.5 23.1667,-0.5 24.5,-0.5C 26.1675,1.47865 26.8342,3.81198 26.5,6.5C 24.5,6.5 23.5,5.5 23.5,3.5C 22.8333,2.16667 22.1667,2.16667 21.5,3.5C 19.5905,4.97457 18.4238,6.97457 18,9.5C 17.5045,7.5273 17.3379,5.5273 17.5,3.5C 18.147,1.85946 19.147,0.526127 20.5,-0.5 Z"/></g><g><path fill="#9bc86b" d="M 17.5,3.5 C 17.3379,5.5273 17.5045,7.5273 18,9.5C 18.4238,6.97457 19.5905,4.97457 21.5,3.5C 21.8333,3.5 22.1667,3.5 22.5,3.5C 23.9665,7.07363 24.7998,10.7403 25,14.5C 21.489,20.1946 17.989,25.8613 14.5,31.5C 13.8333,31.5 13.1667,31.5 12.5,31.5C 9.40223,29.1084 6.06889,26.9417 2.5,25C 1.91858,24.1074 1.58524,23.1074 1.5,22C 3.92147,16.3246 6.75481,10.8246 10,5.5C 12.3015,4.13279 14.8015,3.46612 17.5,3.5 Z"/></g><g><path fill="#70ace1" d="M 22.5,3.5 C 22.8333,3.5 23.1667,3.5 23.5,3.5C 23.5,5.5 24.5,6.5 26.5,6.5C 27.4584,6.9528 28.2917,7.61947 29,8.5C 29.7981,16.246 29.6314,23.9127 28.5,31.5C 23.8333,31.5 19.1667,31.5 14.5,31.5C 17.989,25.8613 21.489,20.1946 25,14.5C 24.7998,10.7403 23.9665,7.07363 22.5,3.5 Z"/></g><g><path fill="#bddcce" d="M 12.5,12.5 C 13.7759,13.3864 13.7759,14.3864 12.5,15.5C 11.4376,14.5754 11.4376,13.5754 12.5,12.5 Z"/></g><g><path fill="#c7e1ed" d="M 14.5,15.5 C 15.552,15.3505 16.552,15.5172 17.5,16C 15.1891,18.1637 12.5225,19.1637 9.5,19C 11.2331,17.8111 12.8998,16.6444 14.5,15.5 Z"/></g></svg>}
                 ></FeatureCard>
                 <FeatureCard
-                  Heading={translate("gr", "index.features.3.title")}
-                  SubHeading={translate("gr", "index.features.3.description")}
+                  Heading={t("index.features.3.title")}
+                  SubHeading={t("index.features.3.description")}
                   Color="feature-card-feature-card3"
                   Icon={<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="64px" height="64px" xmlnsXlink="http://www.w3.org/1999/xlink"><g><path fill="#3a96d6" d="M 15.5,-0.5 C 16.5,-0.5 17.5,-0.5 18.5,-0.5C 18.573,1.02694 17.9063,2.02694 16.5,2.5C 16.1667,2.5 15.8333,2.5 15.5,2.5C 15.5,1.5 15.5,0.5 15.5,-0.5 Z"/></g><g><path fill="#f0c419" d="M 22.5,2.5 C 22.5,3.16667 22.5,3.83333 22.5,4.5C 22.2914,5.92167 21.7914,7.25501 21,8.5C 20.0228,9.77359 19.1894,9.77359 18.5,8.5C 18.5,8.16667 18.5,7.83333 18.5,7.5C 19.3909,6.73867 20.0576,5.73867 20.5,4.5C 19.3554,3.10903 19.3554,1.7757 20.5,0.5C 21.1818,1.24269 21.8485,1.90935 22.5,2.5 Z"/></g><g><path fill="#9558a6" d="M 22.5,4.5 C 22.5,3.83333 22.5,3.16667 22.5,2.5C 24.5428,-0.19369 26.2095,0.139643 27.5,3.5C 26.218,5.70428 24.5514,6.03762 22.5,4.5 Z"/></g><g><path fill="#ff5764" d="M 26.5,11.5 C 23.8338,11.9342 22.6671,10.9342 23,8.5C 26.5966,6.93388 27.7632,7.93388 26.5,11.5 Z"/></g><g><path fill="#9a5b9e" d="M 15.5,2.5 C 15.8333,2.5 16.1667,2.5 16.5,2.5C 17.9418,3.81953 18.6085,5.4862 18.5,7.5C 18.5,7.83333 18.5,8.16667 18.5,8.5C 17.1667,9.16667 16.1667,10.1667 15.5,11.5C 14.399,12.7997 13.0657,13.2997 11.5,13C 12.8228,12.1841 13.4894,11.0174 13.5,9.5C 15.2132,8.36465 15.8799,6.69798 15.5,4.5C 13.6693,5.05216 12.0026,5.05216 10.5,4.5C 11.6685,2.78256 13.3352,2.11589 15.5,2.5 Z"/></g><g><path fill="#edba22" d="M 6.5,8.5 C 9.80184,15.1352 14.8018,20.1352 21.5,23.5C 20.4863,24.6737 19.153,25.3404 17.5,25.5C 16.0351,24.2632 14.3684,23.2632 12.5,22.5C 10.8333,20.5 9.16667,18.5 7.5,16.5C 6.97439,14.7697 5.97439,13.4363 4.5,12.5C 5.16667,11.1667 5.83333,9.83333 6.5,8.5 Z"/></g><g><path fill="#d35827" d="M 6.5,8.5 C 6.7352,7.90326 7.2352,7.56993 8,7.5C 9.80029,8.31952 11.6336,8.98619 13.5,9.5C 13.4894,11.0174 12.8228,12.1841 11.5,13C 13.0657,13.2997 14.399,12.7997 15.5,11.5C 16.5,12.8333 17.5,14.1667 18.5,15.5C 18.5,16.8333 19.1667,17.5 20.5,17.5C 22.4748,19.3619 22.8081,21.3619 21.5,23.5C 14.8018,20.1352 9.80184,15.1352 6.5,8.5 Z"/></g><g><path fill="#3b94d3" d="M 31.5,11.5 C 31.5,12.1667 31.5,12.8333 31.5,13.5C 30.7777,14.5511 29.7777,15.2178 28.5,15.5C 28.5,15.1667 28.5,14.8333 28.5,14.5C 28.5,13.8333 28.1667,13.5 27.5,13.5C 26.8333,13.5 26.5,13.1667 26.5,12.5C 26.5,12.1667 26.5,11.8333 26.5,11.5C 27.7348,11.2786 28.7348,10.6119 29.5,9.5C 30.1818,10.2427 30.8485,10.9094 31.5,11.5 Z"/></g><g><path fill="#fe5463" d="M 26.5,12.5 C 26.5,13.1667 26.8333,13.5 27.5,13.5C 28.1667,13.5 28.5,13.8333 28.5,14.5C 28.5,14.8333 28.5,15.1667 28.5,15.5C 28.5,16.5 28.5,17.5 28.5,18.5C 25.8688,19.8689 25.2022,19.2022 26.5,16.5C 24.1474,13.8274 22.1474,14.1608 20.5,17.5C 19.1667,17.5 18.5,16.8333 18.5,15.5C 20.5452,13.0156 23.2118,12.0156 26.5,12.5 Z"/></g><g><path fill="#fc6b57" d="M 4.5,12.5 C 5.97439,13.4363 6.97439,14.7697 7.5,16.5C 6.32627,17.5137 5.6596,18.847 5.5,20.5C 3.89578,19.713 3.22911,18.3797 3.5,16.5C 3.43255,15.0413 3.76589,13.7079 4.5,12.5 Z"/></g><g><path fill="#efc020" d="M 3.5,16.5 C 3.22911,18.3797 3.89578,19.713 5.5,20.5C 7.23931,23.2427 9.57265,25.2427 12.5,26.5C 12.5,26.8333 12.5,27.1667 12.5,27.5C 10.4907,29.0652 8.15734,30.0652 5.5,30.5C 3.83333,28.5 2.16667,26.5 0.5,24.5C 0.732915,21.4582 1.73292,18.7916 3.5,16.5 Z"/></g><g><path fill="#945aa5" d="M 28.5,18.5 C 29.5,18.5 30.5,18.5 31.5,18.5C 31.5,19.5 31.5,20.5 31.5,21.5C 30.5,21.5 29.5,21.5 28.5,21.5C 28.5,20.5 28.5,19.5 28.5,18.5 Z"/></g><g><path fill="#aa6fa9" d="M 7.5,16.5 C 9.16667,18.5 10.8333,20.5 12.5,22.5C 12.5,23.8333 12.5,25.1667 12.5,26.5C 9.57265,25.2427 7.23931,23.2427 5.5,20.5C 5.6596,18.847 6.32627,17.5137 7.5,16.5 Z"/></g><g><path fill="#fb645c" d="M 12.5,22.5 C 14.3684,23.2632 16.0351,24.2632 17.5,25.5C 16.2196,26.9313 14.5529,27.5979 12.5,27.5C 12.5,27.1667 12.5,26.8333 12.5,26.5C 12.5,25.1667 12.5,23.8333 12.5,22.5 Z"/></g><g><path fill="#ba8370" d="M 4.5,24.5 C 6.33702,24.6395 6.67036,25.3061 5.5,26.5C 4.70245,26.0431 4.36912,25.3764 4.5,24.5 Z"/></g><g><path fill="#fd6855" d="M -0.5,24.5 C -0.166667,24.5 0.166667,24.5 0.5,24.5C 2.16667,26.5 3.83333,28.5 5.5,30.5C 4.83333,30.5 4.5,30.8333 4.5,31.5C 2.83333,31.5 1.16667,31.5 -0.5,31.5C -0.5,29.1667 -0.5,26.8333 -0.5,24.5 Z"/></g></svg>}
                 ></FeatureCard>
@@ -244,24 +249,24 @@ export default function Home() {
           <div className="home-pricing1">
             <div className="home-container05">
               <span className="home-text06 sectionTitle">
-                <span>{translate("gr", "index.pricing.title")}</span>
+                <span>{t("index.pricing.title")}</span>
                 <br></br>
               </span>
               <h2 className="home-pricing-heading heading2">
-                {translate("gr", "index.pricing.description")}
+                {t("index.pricing.description")}
               </h2>
               <span className="home-pricing-sub-heading">
-                {translate("gr", "index.pricing.subdescription")}
+                {t("index.pricing.subdescription")}
               </span>
             </div>
             <div className="home-container06">
               <div className="home-pricing-card">
                 <div className="home-container07">
                   <span className="home-text09 heading3">
-                    {translate("gr", "index.pricing.free.title")}
+                    {t("index.pricing.free.title")}
                   </span>
                   <span className="home-free-plan-description">
-                    {translate("gr", "index.pricing.free.description")}
+                    {t("index.pricing.free.description")}
                   </span>
                 </div>
                 <div className="home-container08">
@@ -270,32 +275,32 @@ export default function Home() {
                     <span></span>
                   </span>
                   <span className="home-free-plan-price">
-                    {translate("gr", "numbers.0")}
+                    {t("numbers.0")}
                   </span>
                 </div>
                 <div className="home-container09">
                   <div className="home-container10">
                     <span className="home-text13">✔</span>
                     <span className="home-free-plan-features">
-                      {translate("gr", "index.pricing.free.1")}
+                      {t("index.pricing.free.1")}
                     </span>
                   </div>
                   <div className="home-container11">
                     <span className="home-text14">✔</span>
                     <span className="home-free-plan-features1">
-                      {translate("gr", "index.pricing.free.2")}
+                      {t("index.pricing.free.2")}
                     </span>
                   </div>
                   <div className="home-container12">
                     <span className="home-text15">✔</span>
                     <span className="home-free-plan-features2">
-                      {translate("gr", "index.pricing.free.3")}
+                      {t("index.pricing.free.3")}
                     </span>
                   </div>
                   <div className="home-container13">
                     <span className="home-text16">✔</span>
                     <span className="home-free-plan-features3">
-                      {translate("gr", "index.pricing.free.4")}
+                      {t("index.pricing.free.4")}
                     </span>
                   </div>
                 </div>
@@ -303,16 +308,16 @@ export default function Home() {
                   className="home-button button"
                   onClick={() => navigate("/login")}
                 >
-                  {translate("gr", "index.pricing.free.button")}
+                  {t("index.pricing.free.button")}
                 </button>
               </div>
               <div className="home-pricing-card1">
                 <div className="home-container14">
                   <span className="home-text17 heading3">
-                    {translate("gr", "index.pricing.basic.title")}
+                    {t("index.pricing.basic.title")}
                   </span>
                   <span className="home-basic-plan-description">
-                    {translate("gr", "index.pricing.basic.description")}
+                    {t("index.pricing.basic.description")}
                   </span>
                 </div>
                 <div className="home-container15">
@@ -324,32 +329,32 @@ export default function Home() {
                     6,99
                   </span>
                   <span className="home-text21">
-                    / {translate("gr", "words.month")}
+                    / {t("words.month")}
                   </span>
                 </div>
                 <div className="home-container16">
                   <div className="home-container17">
                     <span className="home-text22">✔</span>
                     <span className="home-text23">
-                      {translate("gr", "index.pricing.basic.1")}
+                      {t("index.pricing.basic.1")}
                     </span>
                   </div>
                   <div className="home-container19">
                     <span className="home-text25">✔</span>
                     <span className="home-basic-plan-features1">
-                      {translate("gr", "index.pricing.basic.2")}
+                      {t("index.pricing.basic.2")}
                     </span>
                   </div>
                   <div className="home-container20">
                     <span className="home-text26">✔</span>
                     <span className="home-basic-plan-features2">
-                      {translate("gr", "index.pricing.basic.3")}
+                      {t("index.pricing.basic.3")}
                     </span>
                   </div>
                   <div className="home-container21">
                     <span className="home-text27">✔</span>
                     <span className="home-basic-plan-features3">
-                      {translate("gr", "index.pricing.basic.4")}
+                      {t("index.pricing.basic.4")}
                     </span>
                   </div>
                 </div>
@@ -357,17 +362,17 @@ export default function Home() {
                   className="home-button1 button"
                   onClick={() => navigate("/account/basic")}
                 >
-                  {translate("gr", "index.pricing.basic.button")}
+                  {t("index.pricing.basic.button")}
                 </button>
               </div>
               <div className="home-pricing-card2">
                 <div className="home-container22">
                   <span className="home-text28 heading3">
-                    <span>{translate("gr", "index.pricing.pro.title")}</span>
+                    <span>{t("index.pricing.pro.title")}</span>
                     <br></br>
                   </span>
                   <span className="home-pro-plan-description">
-                    {translate("gr", "index.pricing.pro.description")}
+                    {t("index.pricing.pro.description")}
                   </span>
                 </div>
                 <div className="home-container23">
@@ -379,26 +384,26 @@ export default function Home() {
                     19,99
                   </span>
                   <span className="home-text34">
-                    / {translate("gr", "words.month")}
+                    / {t("words.month")}
                   </span>
                 </div>
                 <div className="home-container24">
                   <div className="home-container25">
                     <span className="home-text35">✔</span>
                     <span className="home-text36">
-                      {translate("gr", "index.pricing.pro.1")}
+                      {t("index.pricing.pro.1")}
                     </span>
                   </div>
                   <div className="home-container27">
                     <span className="home-text38">✔</span>
                     <span className="home-pro-plan-features1">
-                      {translate("gr", "index.pricing.pro.2")}
+                      {t("index.pricing.pro.2")}
                     </span>
                   </div>
                   <div className="home-container28">
                     <span className="home-text39">✔</span>
                     <span className="home-pro-plan-features2">
-                      {translate("gr", "index.pricing.pro.3")}
+                      {t("index.pricing.pro.3")}
                     </span>
                   </div>
                 </div>
@@ -406,7 +411,7 @@ export default function Home() {
                   className="home-button2 button"
                   onClick={() => navigate("/account/pro")}
                 >
-                  {translate("gr", "index.pricing.pro.button")}
+                  {t("index.pricing.pro.button")}
                 </button>
               </div>
             </div>
@@ -475,14 +480,14 @@ export default function Home() {
             <div className="home-faq1">
               <div className="home-container29">
                 <span className="home-text40 sectionTitle">
-                  <span>{translate("gr", "index.faq.category")}</span>
+                  <span>{t("index.faq.category")}</span>
                   <br></br>
                 </span>
                 <h2 className="home-text43 heading2">
-                  {translate("gr", "index.faq.title")}
+                  {t("index.faq.title")}
                 </h2>
                 <span className="home-text44">
-                  <span>{translate("gr", "index.faq.description")}</span>
+                  <span>{t("index.faq.description")}</span>
                   <br></br>
                   <span>
                     <span>
@@ -556,24 +561,24 @@ export default function Home() {
               </div>
               <div className="home-container30">
                 <Question
-                  Answer={translate("gr", "index.faq.q1.answer")}
-                  Question={translate("gr", "index.faq.q1.question")}
+                  Answer={t("index.faq.q1.answer")}
+                  Question={t("index.faq.q1.question")}
                 ></Question>
                 <Question
-                  Answer={translate("gr", "index.faq.q2.answer")}
-                  Question={translate("gr", "index.faq.q2.question")}
+                  Answer={t("index.faq.q2.answer")}
+                  Question={t("index.faq.q2.question")}
                 ></Question>
                 <Question
-                  Answer={translate("gr", "index.faq.q3.answer")}
-                  Question={translate("gr", "index.faq.q3.question")}
+                  Answer={t("index.faq.q3.answer")}
+                  Question={t("index.faq.q3.question")}
                 ></Question>
                 <Question
-                  Answer={translate("gr", "index.faq.q4.answer")}
-                  Question={translate("gr", "index.faq.q4.question")}
+                  Answer={t("index.faq.q4.answer")}
+                  Question={t("index.faq.q4.question")}
                 ></Question>
                 <Question
-                  Answer={translate("gr", "index.faq.q5.answer")}
-                  Question={translate("gr", "index.faq.q5.question")}
+                  Answer={t("index.faq.q5.answer")}
+                  Question={t("index.faq.q5.question")}
                 ></Question>
               </div>
             </div>
@@ -583,25 +588,25 @@ export default function Home() {
           <footer className="home-footer1">
             <div className="home-container31">
               <span className="home-logo2">
-                <Link to="/">{translate("gr", "info.logo")}</Link>
+                <Link to="/">{t("info.logo")}</Link>
               </span>
               <nav className="home-nav1 home-nav1">
                 <span className="home-nav12">
                   <Link to="/privacy">
-                    {translate("gr", "info.nav.privacy")}
+                    {t("info.nav.privacy")}
                   </Link>
                 </span>
                 <span className="home-nav22">
-                  <Link to="/terms">{translate("gr", "info.nav.terms")}</Link>
+                  <Link to="/terms">{t("info.nav.terms")}</Link>
                 </span>
                 <span className="home-nav32">
                   <Link to="/cookies">
-                    {translate("gr", "info.nav.cookies")}
+                    {t("info.nav.cookies")}
                   </Link>
                 </span>
                 <span className="home-nav42">
                   <Link to="/contact">
-                    {translate("gr", "info.nav.contact")}
+                    {t("info.nav.contact")}
                   </Link>
                 </span>
               </nav>
@@ -609,7 +614,7 @@ export default function Home() {
             <div className="home-separator"></div>
             <div className="home-container32">
               <span className="home-text61">
-                {translate("gr", "info.copyright")}
+                {t("info.copyright")}
               </span>
               <div className="home-icon-group1">
                 <a href="https://x.com/Playground4Youu?s=09">

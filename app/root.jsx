@@ -4,24 +4,42 @@ import {
   Meta,
   Outlet,
   Scripts,
+  useLoaderData,
 } from "@remix-run/react";
 
 import appStylesHref from "./app.css";
 import app2StylesHref from "./assets/css/style.css";
 import React from "react";
-import initi18n from "./structures/i18n.mjs";
-import { translate } from "./structures/i18n.mjs";
-initi18n();
+
+import { useChangeLanguage } from "remix-i18next";
+import { useTranslation } from "react-i18next";
+import i18next from "./structures/i18next.server.mjs";
+
+export async function loader({ request }) {
+  let locale = await i18next.getLocale(request);
+  return JSON.stringify({ locale });
+}
+
+export let handle = {
+  i18n: "common"
+}
 
 export let links = () => {
   return [{ rel: "stylesheet", href: appStylesHref }, { rel: "stylesheet", href: app2StylesHref }];
 }
 
 export default function App() {
+
+  let { locale } = useLoaderData();
+
+  let { t } = useTranslation("common");
+
+  useChangeLanguage(locale);
+
   return (
-    <html lang="en">
+    <html lang={locale} >
       <head>
-        <title>{translate('gr', 'info.name')}</title>
+        <title>{ t('info.name') }</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
         <meta property="twitter:card" content="summary_large_image" />

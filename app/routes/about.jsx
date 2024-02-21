@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import indexStylesHref from "../styles/index.css"
 import { Link, useNavigate } from '@remix-run/react'
 
-import { translate } from '~/structures/i18n.mjs'
+import { useTranslation } from 'react-i18next'
 
 import teamIcon from '../assets/img/team.jpg'
 import aimIcon from '../assets/img/aim.jpg'
@@ -17,47 +17,54 @@ export const links = () => {
   ]
 };
 
+export const handle = {
+  i18n: 'common'
+};
+
 export default function About() {
   let navigate = useNavigate()
+
+  let { t } = useTranslation('common');
+
   return (
     <>
       <div className="home-container">
       <Helmet>
-          <title>{translate("gr", "info.name")}</title>
+          <title>{t("info.name")}</title>
           <meta property="og:title" content="EPAL ALIMOU" />
         </Helmet>
         <div className="home-header">
           <header data-thq="thq-navbar" className="home-navbar-interactive">
-            <span className="home-logo">{translate("gr", "info.logo")}</span>
+            <span className="home-logo">{t("info.logo")}</span>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
                 <span>
-                  <Link to="/">{translate("gr", "info.nav.home")}</Link>
+                  <Link to="/">{t("info.nav.home")}</Link>
                 </span>
                 <span className="home-nav2">
-                  <Link to="/about">{translate("gr", "info.nav.about")}</Link>
+                  <Link to="/about">{t("info.nav.about")}</Link>
                 </span>
                 <span className="home-nav3">
                   <Link to="/features">Features</Link>
                 </span>
                 <span className="home-nav4">
                   <Link to="/parties">
-                    {translate("gr", "info.nav.parties")}
+                    {t("info.nav.parties")}
                   </Link>
                 </span>
                 <span className="home-nav5">
                   <Link to="/discounts">
-                    {translate("gr", "info.nav.discount")}
+                    {t("info.nav.discount")}
                   </Link>
                 </span>
               </nav>
               <div className="home-buttons">
                 <button className="home-login button">
-                  <Link to="/login">{translate("gr", "info.nav.login")}</Link>
+                  <Link to="/login">{t("info.nav.login")}</Link>
                 </button>
                 <button className="home-register button">
                   <Link to="/register">
-                    {translate("gr", "info.nav.register")}
+                    {t("info.nav.register")}
                   </Link>
                 </button>
               </div>
@@ -71,7 +78,7 @@ export default function About() {
               <div className="home-nav">
                 <div className="home-top">
                   <span className="home-logo1">
-                    <Link to="/">{translate("gr", "info.logo")}</Link>
+                    <Link to="/">{t("info.logo")}</Link>
                   </span>
                   <div data-thq="thq-close-menu" className="home-close-menu">
                     <svg viewBox="0 0 1024 1024" className="home-icon02">
@@ -81,32 +88,32 @@ export default function About() {
                 </div>
                 <nav className="home-links1">
                   <span className="home-nav11">
-                    <Link to="/">{translate("gr", "info.nav.home")}</Link>
+                    <Link to="/">{t("info.nav.home")}</Link>
                   </span>
                   <span className="home-nav21">
-                    <Link to="/about">{translate("gr", "info.nav.about")}</Link>
+                    <Link to="/about">{t("info.nav.about")}</Link>
                   </span>
                   <span className="home-nav31">
                     <Link to="/features">Features</Link>
                   </span>
                   <span className="home-nav41">
                     <Link to="/parties">
-                      {translate("gr", "info.nav.parties")}
+                      {t("info.nav.parties")}
                     </Link>
                   </span>
                   <span className="home-nav51">
                     <Link to="/discount">
-                      {translate("gr", "info.nav.discount")}
+                      {t("info.nav.discount")}
                     </Link>
                   </span>
                 </nav>
                 <div className="home-buttons1">
                   <button className="home-login1 button">
-                    <Link to="/login">{translate("gr", "info.nav.login")}</Link>
+                    <Link to="/login">{t("info.nav.login")}</Link>
                   </button>
                   <button className="home-register1 button">
                     <Link to="/register">
-                      {translate("gr", "info.nav.register")}
+                      {t("info.nav.register")}
                     </Link>
                   </button>
                 </div>
@@ -130,10 +137,10 @@ export default function About() {
             <div className="home-details1">
               <div className="home-container02">
                 <h2 className="home-details-heading heading2">
-                  {translate("gr", "about.aim.title")}
+                  {t("about.aim.title")}
                 </h2>
                 <span className="home-details-sub-heading">
-                {translate("gr", "about.aim.description")}
+                {t("about.aim.description")}
                 </span>
               </div>
               <img
@@ -154,10 +161,10 @@ export default function About() {
               />
               <div className="home-container02">
                 <h2 className="home-details-heading heading2">
-                  {translate("gr", "about.history.title")}
+                  {t("about.history.title")}
                 </h2>
                 <span className="home-details-sub-heading">
-                {translate("gr", "about.history.description")}
+                {t("about.history.description")}
                 </span>
               </div>
             </div>
@@ -171,8 +178,8 @@ export default function About() {
                   Η Όμαδα μας
                 </h2>
                 <span className="home-details-sub-heading">
-                {translate("gr", "about.team.title")},
-                {translate("gr", "about.team.description")}
+                {t("about.team.title")},
+                {t("about.team.description")}
                 </span>
               </div>
               <img
@@ -187,25 +194,25 @@ export default function About() {
         <footer className="home-footer1">
             <div className="home-container31">
               <span className="home-logo2">
-                <Link to="/">{translate("gr", "info.logo")}</Link>
+                <Link to="/">{t("info.logo")}</Link>
               </span>
               <nav className="home-nav1 home-nav1">
                 <span className="home-nav12">
                   <Link to="/privacy">
-                    {translate("gr", "info.nav.privacy")}
+                    {t("info.nav.privacy")}
                   </Link>
                 </span>
                 <span className="home-nav22">
-                  <Link to="/terms">{translate("gr", "info.nav.terms")}</Link>
+                  <Link to="/terms">{t("info.nav.terms")}</Link>
                 </span>
                 <span className="home-nav32">
                   <Link to="/cookies">
-                    {translate("gr", "info.nav.cookies")}
+                    {t("info.nav.cookies")}
                   </Link>
                 </span>
                 <span className="home-nav42">
                   <Link to="/contact">
-                    {translate("gr", "info.nav.contact")}
+                    {t("info.nav.contact")}
                   </Link>
                 </span>
               </nav>
@@ -213,7 +220,7 @@ export default function About() {
             <div className="home-separator"></div>
             <div className="home-container32">
               <span className="home-text61">
-                {translate("gr", "info.copyright")}
+                {t("info.copyright")}
               </span>
               <div className="home-icon-group1">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32px" height="32px" xmlnsXlink="http://www.w3.org/1999/xlink">

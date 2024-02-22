@@ -2,7 +2,7 @@
 export default {
   appDirectory: "app",
   ignoredRouteFiles: ["**/.*"],
-  browserNodeBuiltinsPolyfill: { modules: { path: true, url: true, fs: true } },
+  browserNodeBuiltinsPolyfill: { modules: { path: true, url: true, fs: true, crypto: true } },
   serverDependenciesToBundle: [
     "remix-i18next"
   ]

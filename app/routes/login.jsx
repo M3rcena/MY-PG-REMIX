@@ -1,6 +1,7 @@
-import React from "react";
-import { PrismaClient } from '@prisma/client'
+import React, { useState } from "react";
 
+import { PrismaClient } from '@prisma/client'
+import bcrypt from 'bcryptjs';
 
 import auth1StylesHref from '../styles/auth1.css';
 import auth2StylesHref from '../styles/auth2.css';
@@ -17,7 +18,57 @@ export const links = () => {
   ]
 }
 
+export async function action({ request }) {
+  const prisma = new PrismaClient();
+
+  if (request.method === 'POST') {
+    const formData = new URLSearchParams(await request.formData());
+    const email = formData.get('email');
+    const password = formData.get('pass');
+
+    if (email && password) {
+      try {
+        const user = await prisma.user.findUnique({
+          where: { email },
+        });
+
+        if (!user) {
+          return { error: 'Invalid email or password' };
+        }
+
+        const isValidPassword = await bcrypt.compare(password, user.password);
+
+        if (isValidPassword) {
+          return redirect('/account');
+        } else {
+          return { error: 'Invalid email or password' };
+        }
+      } catch (error) {
+        console.error('Error during login:', error);
+        return { error: 'Failed to log in' };
+      } finally {
+        await prisma.$disconnect();
+      }
+    }
+
+    return { error: 'Missing required fields' };
+  }
+
+  return redirect('/');
+};
+
 export default function Login() {
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  }
 
   return (
     <>
@@ -32,26 +83,30 @@ export default function Login() {
                 <p className="mb-6">Please enter your user information.</p>
               </div>
               {/* Form */}
-              <Form>
-                {/* Username */}
-                <Form.Group className="mb-3" controlId="username">
-                  <Form.Label>Username or email</Form.Label>
-                  <Form.Control type="email" name="username" placeholder="Enter address here" required="" />
+              <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                {/* Email */}
+                <Form.Group className="mb-3" controlId="email">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" name="email" placeholder="Enter email here" required />
+                  <Form.Control.Feedback type="invalid">Please input your email!</Form.Control.Feedback>
+                  <Form.Control.Feedback>Looks Good!</Form.Control.Feedback>
                 </Form.Group>
 
                 {/* Password */}
                 <Form.Group className="mb-3" controlId="password">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" name="password" placeholder="**************" required="" />
+                  <Form.Control type="password" name="password" placeholder="**************" required />
+                  <Form.Control.Feedback type="invalid">Please input your password!</Form.Control.Feedback>
+                  <Form.Control.Feedback>Looks Good!</Form.Control.Feedback>
                 </Form.Group>
 
                 {/* Checkbox */}
-                <div className="d-lg-flex justify-content-between align-items-center mb-4">
-                  <Form.Check type="checkbox" id="rememberme">
+                <Form.Group className="d-lg-flex justify-content-between align-items-center mb-4">
+                  <Form.Check type="checkbox" id="rememberme" feedbackType="invalid">
                     <Form.Check.Input type="checkbox" />
                     <Form.Check.Label>Remember me</Form.Check.Label>
                   </Form.Check>
-                </div>
+                </Form.Group>
                 <div>
                   {/* Button */}
                   <div className="d-grid">

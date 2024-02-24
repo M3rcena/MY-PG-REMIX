@@ -19,58 +19,56 @@ export const links = () => {
 
 export async function action({ request }) {
     const prisma = new PrismaClient();
-  
+
     if (request.method === 'POST') {
-      const formData = new URLSearchParams(await request.formData());
-      const username = formData.get('username');
-      const email = formData.get('email');
-      const password = formData.get('password');
-      const rePassword = formData.get('re-password');
-      const phone = formData.get('phone');
-  
-      if (username && email && password === rePassword && phone) {
-        try {
-          const existingUser = await prisma.user.findFirst({
-            where: {
-              OR: [
-                { email },
-                { username },
-                { phone },
-              ],
-            },
-          });
-  
-          if (existingUser) {
-            const conflictingField = existingUser.email === email ? 'email' :
-              existingUser.username === name ? 'username' : 'phone';
-  
-            throw new Error(`Account already exists with ${conflictingField}`);
-          }
-  
-          const salt = await bcrypt.genSalt(10);
-          const hashedPassword = await bcrypt.hash(password, salt);
-  
-          const auth = await prisma.user.create({
-            data: {
-              name: name.toString(),
-              email: email.toString(),
-              password: hashedPassword,
-              phone: phone.toString(),
-            },
-          });
-  
-          return redirect('/account');
-        } catch (error) {
-          console.error('Error creating user:', error);
-          return { error: `Failed to create user: ${error.message}` };
-        } finally {
-          await prisma.$disconnect();
+        const formData = new URLSearchParams(await request.formData());
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const password = formData.get('password');
+        const rePassword = formData.get('re-password');
+        const phone = formData.get('phone');
+
+        if (name && email && password === rePassword && phone) {
+            try {
+                const existingUser = await prisma.user.findFirst({
+                    where: {
+                        OR: [
+                            { email },
+                            { phone },
+                        ],
+                    },
+                });
+
+                if (existingUser) {
+                    const conflictingField = existingUser.email === email ? 'email' : 'phone';
+
+                    throw new Error(`Account already exists with ${conflictingField}`);
+                }
+
+                const salt = await bcrypt.genSalt(10);
+                const hashedPassword = await bcrypt.hash(password, salt);
+
+                const auth = await prisma.user.create({
+                    data: {
+                        name: name.toString(),
+                        email: email.toString(),
+                        password: hashedPassword,
+                        phone: phone.toString(),
+                    },
+                });
+
+                return redirect('/account');
+            } catch (error) {
+                console.error('Error creating user:', error);
+                return { error: `Failed to create user: ${error.message}` };
+            } finally {
+                await prisma.$disconnect();
+            }
         }
-      }
-  
-      return { error: 'Missing required fields' };
+
+        return { error: 'Missing required fields' };
     }
-  
+
     return redirect('/');
 }
 
@@ -101,12 +99,12 @@ export default function Register() {
                                 <p className="mb-6">Please enter your user information.</p>
                             </div>
                             {/* Form */}
-                            <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                                {/* Username */}
-                                <Form.Group className="mb-3" controlId="username">
-                                    <Form.Label>Username</Form.Label>
-                                    <Form.Control type="text" name="username" placeholder="User Name" required />
-                                    <Form.Control.Feedback type="invalid">Please input a username!</Form.Control.Feedback>
+                            <Form noValidate validated={validated} onSubmit={handleSubmit} method='POST'>
+                                {/* Full Name */}
+                                <Form.Group className="mb-3" controlId="name">
+                                    <Form.Label>Name</Form.Label>
+                                    <Form.Control type="text" name="name" placeholder="Your Name" required />
+                                    <Form.Control.Feedback type="invalid">Please input your name!</Form.Control.Feedback>
                                     <Form.Control.Feedback>Looks Good!</Form.Control.Feedback>
                                 </Form.Group>
 

@@ -24,7 +24,7 @@ export async function action({ request }) {
   if (request.method === 'POST') {
     const formData = new URLSearchParams(await request.formData());
     const email = formData.get('email');
-    const password = formData.get('pass');
+    const password = formData.get('password');
 
     if (email && password) {
       try {
@@ -83,7 +83,7 @@ export default function Login() {
                 <p className="mb-6">Please enter your user information.</p>
               </div>
               {/* Form */}
-              <Form noValidate validated={validated} onSubmit={handleSubmit}>
+              <Form noValidate validated={validated} onSubmit={handleSubmit} method="POST">
                 {/* Email */}
                 <Form.Group className="mb-3" controlId="email">
                   <Form.Label>Email</Form.Label>

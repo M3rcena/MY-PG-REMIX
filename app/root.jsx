@@ -39,7 +39,7 @@ export default function App() {
   return (
     <html lang={locale} >
       <head>
-        <title>{ t('info.name') }</title>
+        <title>{t('info.name')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -78,14 +78,15 @@ export default function App() {
           <Outlet />
         </div>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1MWV8T99P"></script>
-        {/* <script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KN5MF3TFKE"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
-          gtag('config', 'G-S1MWV8T99P');
-  </script>*/}
+        
+          gtag('config', 'G-KN5MF3TFKE');
+         `}} />
 
         <script
           data-section-id="navbar"

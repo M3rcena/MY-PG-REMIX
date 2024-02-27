@@ -1,17 +1,20 @@
+// Import React and Remix packages
 import React, { useEffect, useRef, useState } from "react";
-
 import { Links } from "@remix-run/react";
-
 import { Helmet } from 'react-helmet';
 import { json } from "@remix-run/node";
-
 import { useLoaderData } from "@remix-run/react";
 
+// Import Components
 import SimpleClickControl from "../components/map/click/SimpleClickControl.jsx";
 
+// Import Mapbox
 import mapboxgl from "mapbox-gl";
+
+// Import CSS
 import controlStyles from "../components/map/click/styles.css";
 
+// Load Mapbox Data
 export async function loader() {
     const locations = [
         {
@@ -30,6 +33,7 @@ export async function loader() {
     return json({ 'MAPBOX_TOKEN': process.env.MAPBOX_TOKEN, 'locations': locations });
 };
 
+// Load the CSS
 export const links = () => {
     return [
         { rel: "stylesheet", href: "https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" },
@@ -38,16 +42,19 @@ export const links = () => {
 };
 
 export default function loadMap() {
+    // Get the loader data
     const loaderData = useLoaderData();
     mapboxgl.accessToken = loaderData.MAPBOX_TOKEN;
     const mapContainer = useRef();
     const coords = loaderData.locations;
 
+    // Set the current location index
     var currentMarker;
     var currentPopup;
 
     const [currentLocationIndex, setCurrentLocationIndex] = useState(0);
 
+    // Show the location
     function showLocation (map, locationIndex) {
         const location = coords[locationIndex]
         map.flyTo({
@@ -60,6 +67,7 @@ export default function loadMap() {
         currentPopup.setHTML(`<p>${location.name}</p>`);
     };
     
+    // Show the next location
     function showNextLocation (map) {
         setCurrentLocationIndex(prevIndex => {
             if (prevIndex === coords.length - 1) {
@@ -71,6 +79,7 @@ export default function loadMap() {
         });
     };
     
+    // Show the previous location
     function showPreviousLocation (map) {
         setCurrentLocationIndex(prevIndex => {
             if (prevIndex === 0) {
@@ -83,6 +92,7 @@ export default function loadMap() {
     };
 
     useEffect(() => {
+        // Create the map
         const map = new mapboxgl.Map({
             container: mapContainer.current ,
             style: "mapbox://styles/mapbox/satellite-streets-v11",
@@ -90,6 +100,7 @@ export default function loadMap() {
             zoom: 15,
         });
 
+        // Add the navigation control
         currentMarker = new mapboxgl.Marker()
             .setLngLat(coords[0].coordinates)
             .addTo(map);
@@ -98,11 +109,8 @@ export default function loadMap() {
             .setLngLat(coords[0].coordinates)
             .setHTML(`<p>${coords[0].name}</p>`)
             .addTo(map);
-
-        // const testControl = new mapboxgl.NavigationControl();
-
-        // map.addControl(testControl, 'top-right');
           
+        // Modify navigation control
         const nextButtonOptions = {
             divClassName: 'mapboxgl-ctrl mapboxgl-ctrl-group',
             className: 'mapboxgl-ctrl-icon mapboxgl-ctrl-nextloc',
@@ -117,6 +125,7 @@ export default function loadMap() {
             scale: 1.5,
         };
         
+        // Load the navigation control
         const nextButton = new SimpleClickControl(nextButtonOptions);
         map.addControl(nextButton, 'top-right');
         const prevButton = new SimpleClickControl(precButtonOptions);
@@ -126,5 +135,6 @@ export default function loadMap() {
         return() => map.remove()
     }, []);
 
+    // Return the map container
     return <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />
 }

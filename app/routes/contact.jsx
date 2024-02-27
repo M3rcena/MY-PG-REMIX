@@ -1,30 +1,33 @@
+// Import React and Remix packages
 import React from "react";
-
 import { Helmet } from "react-helmet";
-
-import contactStylesHref from "../styles/contact.css";
-
 import { Link, useNavigate } from "@remix-run/react";
-
-import { useTranslation } from "react-i18next";
-
 import { useRef } from "react";
 
+// Import CSS
+import contactStylesHref from "../styles/contact.css";
+
+// Import translation packages and functions
+import { useTranslation } from "react-i18next";
+
+// Import images
 import imageHref from "../assets/img/contact/img-01.png";
 
+// Load the CSS
 export const links = () => {
     return [
         { rel: "stylesheet", href: contactStylesHref },
     ];
 };
 
+// Translation System Handler
 export const handle = {
     i18n: "common"
 };
 
 export default function Contact() {
     let navigate = useNavigate();
-
+    // Get the translation function
     let { t } = useTranslation("common");
     return (
         <>

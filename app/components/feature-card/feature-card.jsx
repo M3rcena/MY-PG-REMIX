@@ -1,11 +1,20 @@
-import React from 'react'
+// Import React
+import React from 'react';
 
-import featureCardStyles from './feature-card.css'
+// Import CSS
+import featureCardStyles from './feature-card.css';
 
+// Load the CSS
 export let links = () => {
   return [{ rel: 'stylesheet', href: featureCardStyles }]
-}
+};
 
+// Feature Card Component
+// Requires the following props:
+// - Heading: string
+// - SubHeading: string
+// - Color: string
+// - Icon: JSX
 export function FeatureCard({ Heading, SubHeading, Color, Icon }) {
   return (
     <div className={Color}>

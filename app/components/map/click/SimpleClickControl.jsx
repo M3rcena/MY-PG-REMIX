@@ -1,4 +1,6 @@
+// Map navigation controls
 class SimpleClickControl {
+  // Create the control
   constructor(options) {
     if (
       !options ||
@@ -9,8 +11,10 @@ class SimpleClickControl {
       );
     }
 
+    // Set the options
     const { divClassName = "mapboxgl-ctrl mapboxgl-ctrl-group", className, name, callback, scale = 1 } = options;
 
+    // Create the control
     this._container = document.createElement("div");
     this._container.className = divClassName;
     this._button = document.createElement("button");
@@ -28,6 +32,7 @@ class SimpleClickControl {
     this._callback = callback;
   }
 
+  // Add the control to the map
   onAdd(map) {
     this._map = map;
 
@@ -36,6 +41,7 @@ class SimpleClickControl {
     return this._container;
   }
 
+  // Remove the control from the map
   onRemove() {
     this._button.removeEventListener("click", this._callback);
 
@@ -45,4 +51,5 @@ class SimpleClickControl {
   }
 }
 
+// Export the control
 export default SimpleClickControl;

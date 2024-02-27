@@ -1,14 +1,14 @@
+// Import React and Remix Components
 import React from "react";
-
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
+import { Link, useNavigate } from "@remix-run/react";
 
+// Import CSS
 import indexStylesHref from "../styles/index.css";
 import termsStylesHref from "../styles/terms.css";
 
-import { Link, useNavigate } from "@remix-run/react";
-
-import { useTranslation } from "react-i18next";
-
+// Load the CSS
 export const links = () => {
   return [
     { rel: "stylesheet", href: indexStylesHref },
@@ -16,13 +16,14 @@ export const links = () => {
   ];
 };
 
+// Translation System Handler
 export const handle = {
   i18n: "common",
 }
 
 export default function Privacy() {
   let navigate = useNavigate();
-
+  // Get the translation function
   let { t } = useTranslation("common");
   return (
     <>

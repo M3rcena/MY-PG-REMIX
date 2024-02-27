@@ -1,15 +1,18 @@
+// Import React and Remix packages
 import React, { useState } from "react";
+import { redirect } from 'react-router-dom';
+import { Link } from '@remix-run/react';
+import { Row, Col, Card, Form, Button, Image } from 'react-bootstrap';
 
-import { PrismaClient } from '@prisma/client'
+// Import Prisma Client
+import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcryptjs';
 
+// Import CSS
 import auth1StylesHref from '../styles/auth1.css';
 import auth2StylesHref from '../styles/auth2.css';
-import { redirect } from 'react-router-dom'
 
-import { Row, Col, Card, Form, Button, Image } from 'react-bootstrap';
-import { Link } from '@remix-run/react';
-
+// Load the CSS
 export const links = () => {
   return [
     /* { rel: 'stylesheet', href: authStylesHref } */
@@ -18,26 +21,32 @@ export const links = () => {
   ]
 }
 
+// Form Handler
 export async function action({ request }) {
   const prisma = new PrismaClient();
 
   if (request.method === 'POST') {
+    // Get the form data
     const formData = new URLSearchParams(await request.formData());
     const email = formData.get('email');
     const password = formData.get('password');
 
+    // Check if the email and password are not empty
     if (email && password) {
       try {
+        // Find the user by email
         const user = await prisma.user.findUnique({
           where: { email },
         });
 
+        // If the user does not exist, return an error
         if (!user) {
           return { error: 'Invalid email or password' };
         }
 
         const isValidPassword = await bcrypt.compare(password, user.password);
-
+        
+        // If the password is valid, redirect to the account page
         if (isValidPassword) {
           return redirect('/account');
         } else {
@@ -50,7 +59,7 @@ export async function action({ request }) {
         await prisma.$disconnect();
       }
     }
-
+    // If the email or password are empty, return an error
     return { error: 'Missing required fields' };
   }
 
@@ -60,6 +69,7 @@ export async function action({ request }) {
 export default function Login() {
   const [validated, setValidated] = useState(false);
 
+  // Form Handler
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {

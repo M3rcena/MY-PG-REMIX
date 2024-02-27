@@ -1,25 +1,29 @@
-import React from 'react'
+// Import React and Remix packages
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Link, useNavigate } from '@remix-run/react';
 
-import { Helmet } from 'react-helmet'
+// Import CSS
+import indexStylesHref from "../styles/index.css";
 
-import indexStylesHref from "../styles/index.css"
-import { Link, useNavigate } from '@remix-run/react'
-
+// Import translation packages and functions
 import { useTranslation } from 'react-i18next';
 
+// Load the CSS
 export const links = () => {
   return [
     { rel: 'stylesheet', href: indexStylesHref },
   ]
 };
 
+// Translation System Handler
 export const handle = {
   i18n: 'common'
 };
 
 export default function Cookies() {
   let navigate = useNavigate();
-
+  // Get the translation function
   let { t } = useTranslation("common");
   
   return (

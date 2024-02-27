@@ -1,3 +1,4 @@
+// Import React and the Remix specific packages
 import {
   Links,
   LiveReload,
@@ -6,38 +7,48 @@ import {
   Scripts,
   useLoaderData,
 } from "@remix-run/react";
-
-import appStylesHref from "./app.css";
-import app2StylesHref from "./assets/css/style.css";
 import React from "react";
 
+// Import the CSS into variables
+import appStylesHref from "./app.css";
+import app2StylesHref from "./assets/css/style.css";
+
+
+// Import translation packages and functions
 import { useChangeLanguage } from "remix-i18next";
 import { useTranslation } from "react-i18next";
 import i18next from "./structures/i18next.server.mjs";
 
+// Translation System Loader
 export async function loader({ request }) {
   let locale = await i18next.getLocale(request);
   return JSON.stringify({ locale });
 }
 
+// Tranlation System Handler
 export let handle = {
   i18n: "common"
 }
 
+
+// Load CSS
 export let links = () => {
   return [{ rel: "stylesheet", href: appStylesHref }, { rel: "stylesheet", href: app2StylesHref }];
 }
 
 export default function App() {
-
+  // Get the locale from the loader data
   let { locale } = useLoaderData();
 
+  // Get the translation function
   let { t } = useTranslation("common");
 
+  // Change the language
   useChangeLanguage(locale);
 
   return (
     <html lang={locale} >
+      {/* Set the title of the page, import fonts, scripts */}
       <head>
         <title>{t('info.name')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -73,6 +84,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
+      {/* Import Scripts and Functions */}
       <body>
         <div id="app">
           <Outlet />

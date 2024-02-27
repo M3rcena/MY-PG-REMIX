@@ -1,10 +1,12 @@
+// Import React and Remix packages
 import React from "react";
-
 import { Helmet } from "react-helmet";
-
-import errorStylesHref from "../styles/404.css";
 import { Link } from "@remix-run/react";
 
+// Import CSS
+import errorStylesHref from "../styles/404.css";
+
+// Load the CSS
 export const links = () => {
     return [
         { rel: 'stylesheet', href: errorStylesHref },
@@ -12,12 +14,14 @@ export const links = () => {
     ]
 }
 
+// Page loader
 export function loader() {
     return new Response("Not Found", {
         status: 404,
     });
 };
 
+// 404 Page
 export default function NotFoundPage() {
     return (
         <>

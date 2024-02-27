@@ -1,8 +1,12 @@
+// This file is used to create a new instance of i18next for the server side.
+
+// Import the i18next library
 import Backend from 'i18next-fs-backend';
 import { resolve } from 'node:path';
 import { RemixI18Next } from 'remix-i18next';
 import i18n from './i18n.mjs';
 
+// Create a new instance of i18next
 let i18next = new RemixI18Next({
     detection: {
         supportedLanguages: i18n.supportedLngs,
@@ -17,4 +21,5 @@ let i18next = new RemixI18Next({
     plugins: [Backend],
 });
 
+// Export the instance
 export default i18next;

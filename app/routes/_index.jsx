@@ -1,7 +1,9 @@
+// Import React and Remix Packages
 import React from "react";
-
 import { Helmet } from "react-helmet";
+import { Link, useNavigate } from "@remix-run/react";
 
+// import Components
 import {
   FeatureCard,
   links as featureCardLinks,
@@ -10,8 +12,11 @@ import {
   Question,
   links as questionLinks,
 } from "../components/question/question.jsx";
+
+// Import CSS
 import indexStylesHref from "../styles/index.css";
-import { Link, useNavigate } from "@remix-run/react";
+
+// Import Translation Packages
 import { useTranslation } from "react-i18next";
 
 // Load images
@@ -19,6 +24,7 @@ import Alimos from "../assets/img/companies/Alimos.png";
 import Ilioupoli from "../assets/img/companies/Ilioupoli.png";
 import Elliniko from "../assets/img/companies/elliniko.png";
 
+// Load CSS and JS
 export const links = () => {
   return [
     ...featureCardLinks(),
@@ -27,12 +33,16 @@ export const links = () => {
   ];
 };
 
+// Translation System Handler
 export let handle = {
   i18n: "common"
 };
 
+// Home Page
 export default function Home() {
   let navigate = useNavigate();
+
+  // Get the translation function
   let { t } = useTranslation("common");
 
   return (

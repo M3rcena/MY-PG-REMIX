@@ -1,15 +1,18 @@
+// Import React and Remix packages
 import React, { useState } from 'react'
+import { redirect } from 'react-router-dom'
+import { Link } from '@remix-run/react';
+import { Row, Col, Card, Form, Button, Image } from 'react-bootstrap';
 
+// Import Prisma Client
 import { PrismaClient } from '@prisma/client'
 import bcrypt from 'bcryptjs';
 
+// Import CSS
 import auth1StylesHref from '../styles/auth1.css'
 import auth2StylesHref from '../styles/auth2.css'
-import { redirect } from 'react-router-dom'
 
-import { Row, Col, Card, Form, Button, Image } from 'react-bootstrap';
-import { Link } from '@remix-run/react';
-
+// Load the CSS
 export const links = () => {
     return [
         { rel: 'stylesheet', href: auth1StylesHref },
@@ -17,10 +20,13 @@ export const links = () => {
     ]
 }
 
+// Form Handler
 export async function action({ request }) {
+    // Create a new Prisma Client
     const prisma = new PrismaClient();
 
     if (request.method === 'POST') {
+        // Get the form data
         const formData = new URLSearchParams(await request.formData());
         const name = formData.get('name');
         const email = formData.get('email');
@@ -28,6 +34,7 @@ export async function action({ request }) {
         const rePassword = formData.get('re-password');
         const phone = formData.get('phone');
 
+        // Check if the name, email, password, and rePassword are not empty
         if (name && email && password === rePassword && phone) {
             try {
                 const existingUser = await prisma.user.findFirst({
@@ -39,15 +46,18 @@ export async function action({ request }) {
                     },
                 });
 
+                // If the user already exists, return an error
                 if (existingUser) {
                     const conflictingField = existingUser.email === email ? 'email' : 'phone';
 
                     throw new Error(`Account already exists with ${conflictingField}`);
                 }
 
+                // Hash the password
                 const salt = await bcrypt.genSalt(10);
                 const hashedPassword = await bcrypt.hash(password, salt);
 
+                // Create the user
                 const auth = await prisma.user.create({
                     data: {
                         name: name.toString(),
@@ -57,6 +67,7 @@ export async function action({ request }) {
                     },
                 });
 
+                // If the user is created, redirect to the account page
                 return redirect('/account');
             } catch (error) {
                 console.error('Error creating user:', error);
@@ -66,6 +77,7 @@ export async function action({ request }) {
             }
         }
 
+        // If the name, email, password, or rePassword are empty, return an error
         return { error: 'Missing required fields' };
     }
 
@@ -76,6 +88,7 @@ export default function Register() {
 
     const [validated, setValidated] = useState(false);
 
+    // Form Handler
     const handleSubmit = (event) => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {

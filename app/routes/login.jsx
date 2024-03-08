@@ -23,44 +23,23 @@ export const links = () => {
 
 // Form Handler
 export async function action({ request }) {
-  const prisma = new PrismaClient();
-
   if (request.method === 'POST') {
-    // Get the form data
     const formData = new URLSearchParams(await request.formData());
-    const email = formData.get('email');
-    const password = formData.get('password');
 
-    // Check if the email and password are not empty
-    if (email && password) {
-      try {
-        // Find the user by email
-        const user = await prisma.user.findUnique({
-          where: { email },
-        });
+    const response = await fetch('http://localhost:8081/api/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(Object.fromEntries(formData))
+    })
 
-        // If the user does not exist, return an error
-        if (!user) {
-          return { error: 'Invalid email or password' };
-        }
-
-        const isValidPassword = await bcrypt.compare(password, user.password);
-        
-        // If the password is valid, redirect to the account page
-        if (isValidPassword) {
-          return redirect('/account');
-        } else {
-          return { error: 'Invalid email or password' };
-        }
-      } catch (error) {
-        console.error('Error during login:', error);
-        return { error: 'Failed to log in' };
-      } finally {
-        await prisma.$disconnect();
-      }
-    }
-    // If the email or password are empty, return an error
-    return { error: 'Missing required fields' };
+    if (response.ok) {
+      return redirect('/account');
+    } else {
+      const error = await response.json();
+      return { error };
+    };
   }
 
   return redirect('/');

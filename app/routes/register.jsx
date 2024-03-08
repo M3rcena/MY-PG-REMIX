@@ -22,63 +22,24 @@ export const links = () => {
 
 // Form Handler
 export async function action({ request }) {
-    // Create a new Prisma Client
-    const prisma = new PrismaClient();
-
     if (request.method === 'POST') {
         // Get the form data
         const formData = new URLSearchParams(await request.formData());
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const password = formData.get('password');
-        const rePassword = formData.get('re-password');
-        const phone = formData.get('phone');
+        
+        const response = await fetch('http://localhost:8081/api/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(Object.fromEntries(formData))
+        });
 
-        // Check if the name, email, password, and rePassword are not empty
-        if (name && email && password === rePassword && phone) {
-            try {
-                const existingUser = await prisma.user.findFirst({
-                    where: {
-                        OR: [
-                            { email },
-                            { phone },
-                        ],
-                    },
-                });
-
-                // If the user already exists, return an error
-                if (existingUser) {
-                    const conflictingField = existingUser.email === email ? 'email' : 'phone';
-
-                    throw new Error(`Account already exists with ${conflictingField}`);
-                }
-
-                // Hash the password
-                const salt = await bcrypt.genSalt(10);
-                const hashedPassword = await bcrypt.hash(password, salt);
-
-                // Create the user
-                const auth = await prisma.user.create({
-                    data: {
-                        name: name.toString(),
-                        email: email.toString(),
-                        password: hashedPassword,
-                        phone: phone.toString(),
-                    },
-                });
-
-                // If the user is created, redirect to the account page
-                return redirect('/account');
-            } catch (error) {
-                console.error('Error creating user:', error);
-                return { error: `Failed to create user: ${error.message}` };
-            } finally {
-                await prisma.$disconnect();
-            }
+        if (response.ok) {
+            return redirect('/account');
+        } else {
+            const error = await response.json();
+            return { error };
         }
-
-        // If the name, email, password, or rePassword are empty, return an error
-        return { error: 'Missing required fields' };
     }
 
     return redirect('/');
@@ -146,9 +107,9 @@ export default function Register() {
                                 </Form.Group>
 
                                 {/* Confirm Password */}
-                                <Form.Group className="mb-3" controlId="re-password">
+                                <Form.Group className="mb-3" controlId="rePassword">
                                     <Form.Label>Confirm Password</Form.Label>
-                                    <Form.Control type="password" name="re-password" placeholder="**************" required />
+                                    <Form.Control type="password" name="rePassword" placeholder="**************" required />
                                     <Form.Control.Feedback type="invalid">Please input your password!</Form.Control.Feedback>
                                     <Form.Control.Feedback>Looks Good!</Form.Control.Feedback>
                                 </Form.Group>

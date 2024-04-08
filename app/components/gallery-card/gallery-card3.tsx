@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import CSS
-import GalleryCard3Style from './gallery-card3.css';
+import GalleryCard3Style from './gallery-card3.css?url';
 
 // Load the CSS
 export let links = () => {

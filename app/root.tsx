@@ -10,12 +10,12 @@ import {
 import React from "react";
 
 // Import the CSS into variables
-import appStylesHref from "./app.css";
-import app2StylesHref from "./assets/css/style.css";
+import appStylesHref from "./app.css?url";
+import app2StylesHref from "./assets/css/style.css?url";
 
 
 // Import translation packages and functions
-import { useChangeLanguage } from "remix-i18next";
+import { useChangeLanguage } from "remix-i18next/react";
 import { useTranslation } from "react-i18next";
 import i18next from "./structures/i18next.server.mjs";
 
@@ -47,7 +47,7 @@ export default function App() {
   useChangeLanguage(locale);
 
   return (
-    <html lang={locale} >
+    <html lang={locale} dir={i18n.dir()} >
       {/* Set the title of the page, import fonts, scripts */}
       <head>
         <title>{t('info.name')}</title>
@@ -108,7 +108,6 @@ export default function App() {
         <script src="https://kit.fontawesome.com/a1a8c654c5.js" crossOrigin="anonymous"></script>
         <Scripts />
         <Links />
-        <LiveReload />
       </body>
     </html>
   );

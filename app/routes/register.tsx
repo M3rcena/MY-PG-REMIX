@@ -9,8 +9,8 @@ import { PrismaClient } from '@prisma/client'
 import bcrypt from 'bcryptjs';
 
 // Import CSS
-import auth1StylesHref from '../styles/auth1.css'
-import auth2StylesHref from '../styles/auth2.css'
+import auth1StylesHref from '../styles/auth1.css?url'
+import auth2StylesHref from '../styles/auth2.css?url'
 
 // Load the CSS
 export const links = () => {

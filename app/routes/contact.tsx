@@ -5,7 +5,7 @@ import { Link, useNavigate } from "@remix-run/react";
 import { useRef } from "react";
 
 // Import CSS
-import contactStylesHref from "../styles/contact.css";
+import contactStylesHref from "../styles/contact.css?url";
 
 // Import translation packages and functions
 import { useTranslation } from "react-i18next";

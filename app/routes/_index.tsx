@@ -14,7 +14,7 @@ import {
 } from "../components/question/question.jsx";
 
 // Import CSS
-import indexStylesHref from "../styles/index.css";
+import indexStylesHref from "../styles/index.css?url";
 
 // Import Translation Packages
 import { useTranslation } from "react-i18next";

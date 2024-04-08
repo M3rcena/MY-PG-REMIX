@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import CSS
-import featureCardStyles from './feature-card.css';
+import featureCardStyles from './feature-card.css?url';
 
 // Load the CSS
 export let links = () => {

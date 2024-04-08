@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 
 import FeatureCard from ' components/feature-card'
 import Question from ' components/question'
-import './home.css'
+import './home.css?url'
 
 const Home = (props) => {
   return (

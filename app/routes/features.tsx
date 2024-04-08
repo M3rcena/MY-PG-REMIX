@@ -1,31 +1,38 @@
 // Import React and Remix packages
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Link, useNavigate } from '@remix-run/react';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { Link, useNavigate } from "@remix-run/react";
 
 // Import CSS
-import indexStylesHref from "../styles/index.css";
+import indexStylesHref from "../styles/index.css?url";
 
 // Import translation packages and functions
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+
+// Import images
+import img1 from "../assets/img/about/feature-icon-01.svg";
+import img2 from "../assets/img/about/feature-icon-02.svg";
+import img3 from "../assets/img/about/feature-icon-03.svg";
+import img4 from "../assets/img/about/feature-icon-04.svg";
+import img5 from "../assets/img/about/feature-icon-05.svg";
+import img6 from "../assets/img/about/feature-icon-06.svg";
 
 // Load the CSS
 export const links = () => {
   return [
-    { rel: 'stylesheet', href: indexStylesHref },
-  ]
+    { rel: "stylesheet", href: indexStylesHref },
+  ];
 };
 
 // Translation System Handler
 export const handle = {
-  i18n: 'common'
+  i18n: "common"
 };
 
-export default function Cookies() {
+export default function Features() {
   let navigate = useNavigate();
   // Get the translation function
   let { t } = useTranslation("common");
-  
   return (
     <>
       <div className="home-container">
@@ -132,61 +139,70 @@ export default function Cookies() {
             </div>
           </header>
         </div>
-        <center>
-        <h1>Cookie Policy for MyPG</h1>
-        <p>This is the Cookie Policy for MyPG, accessible from https://mypg.gr/</p>
-        <p><strong>What Are Cookies</strong></p>
-        <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
-        <p><strong>How We Use Cookies</strong></p>
-        <p>We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.</p>
-        <p><strong>Disabling Cookies</strong></p>
-        <p>You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies. This Cookies Policy was created with the help of the <a href="https://www.cookiepolicygenerator.com/cookie-policy-generator/">Cookies Policy Generator</a>.</p>
-        <p><strong>The Cookies We Set</strong></p>
-        <ul>
-          <li>
-            <p>Account related cookies</p>
-            <p>If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.</p>
-          </li>
-          <li>
-            <p>Login related cookies</p>
-            <p>We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in.</p>
-          </li>
-          <li>
-            <p>Email newsletters related cookies</p>
-            <p>This site offers newsletter or email subscription services and cookies may be used to remember if you are already registered and whether to show certain notifications which might only be valid to subscribed/unsubscribed users.</p>
-          </li>
-          <li>
-            <p>Orders processing related cookies</p>
-            <p>This site offers e-commerce or payment facilities and some cookies are essential to ensure that your order is remembered between pages so that we can process it properly.</p>
-          </li>
-          <li>
-            <p>Forms related cookies</p>
-            <p>When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence.</p>
-          </li>
-          <li>
-            <p>Site preferences cookies</p>
-            <p>In order to provide you with a great experience on this site we provide the functionality to set your preferences for how this site runs when you use it. In order to remember your preferences we need to set cookies so that this information can be called whenever you interact with a page is affected by your preferences.</p>
-          </li>
-        </ul>
-        <p><strong>Third Party Cookies</strong></p>
-        <p>In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
-        <ul>
-          <li>
-            <p>This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
-            <p>For more information on Google Analytics cookies, see the official Google Analytics page.</p>
-          </li>
-          <li>
-            <p>From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.</p>
-          </li>
-        </ul>
-        <p><strong>More Information</strong></p>
-        <p>Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site.</p>
-        <p>For more general information on cookies, please read <a href="https://www.cookiepolicygenerator.com/sample-cookies-policy/">the Cookies Policy article</a>.</p>
-        <p>However if you are still looking for more information then you can contact us through one of our preferred contact methods:</p>
-        <ul>
-          <li>Email: mypg@epalalimou.me</li>
-        </ul>
-        </center>
+
+        <section className="features section">
+          <div className="container">
+            <div className="features-inner section-inner has-bottom-divider">
+              <div className="features-wrap">
+                <div className="feature text-center is-revealing">
+                  <div className="feature-inner">
+                    <div className="feature-icon">
+                      <img src={img1} alt="Feature 01" />
+                    </div>
+                    <h4 className="feature-title mt-24">Σύστημα πάρτυ</h4>
+                    <p className="text-sm mb-0">Σχεδιάστε και να οργανώσετε φανταστικά πάρτυ σε πάρκα και άλλους χώρους με βολικό σύστημα πάρτυ μας.</p>
+                  </div>
+                </div>
+                <div className="feature text-center is-revealing">
+                  <div className="feature-inner">
+                    <div className="feature-icon">
+                      <img src={img2} alt="Feature 02" />
+                    </div>
+                    <h4 className="feature-title mt-24">Διαδραστικός χάρτης</h4>
+                    <p className="text-sm mb-0">Ο διαδραστικός μας χάρτης σας επιτρέπει να βρείτε εύκολα πάρκα, καταστήματα και άλλες τοποθεσίες. Μπορείτε επίσης να τον χρησιμοποιήσετε για να προγραμματίσετε τη διαδρομή σας και να βρείτε τον καλύτερο τρόπο για να φτάσετε στον προορισμό σας.</p>
+                  </div>
+                </div>
+                <div className="feature text-center is-revealing">
+                  <div className="feature-inner">
+                    <div className="feature-icon">
+                      <img src={img3} alt="Feature 03" />
+                    </div>
+                    <h4 className="feature-title mt-24">Εκπτώσεις μελών</h4>
+                    <p className="text-sm mb-0">Απολαύστε αποκλειστικές εκπτώσεις και ειδικές προσφορές από συνεργαζόμενα καταστήματα σε μέλη.</p>
+                  </div>
+                </div>
+                <div className="feature text-center is-revealing">
+                  <div className="feature-inner">
+                    <div className="feature-icon">
+                      <img src={img4} alt="Feature 04" />
+                    </div>
+                    <h4 className="feature-title mt-24">Τοπικά καταστήματα</h4>
+                    <p className="text-sm mb-0">Συνεργασία με τοπικά καταστήματα κοντά στα παρκά για τους καλύτερους καφέδες.</p>
+                  </div>
+                </div>
+                <div className="feature text-center is-revealing">
+                  <div className="feature-inner">
+                    <div className="feature-icon">
+                      <img src={img5} alt="Feature 05" />
+                    </div>
+                    <h4 className="feature-title mt-24">Ηλεκτρονική παραγγελία</h4>
+                    <p className="text-sm mb-0">Πάρε τον καφέ σου και το σνακ σου ηλεκτρονικά με την πλατφόρμα μας.</p>
+                  </div>
+                </div>
+                <div className="feature text-center is-revealing">
+                  <div className="feature-inner">
+                    <div className="feature-icon">
+                      <img src={img6} alt="Feature 06" />
+                    </div>
+                    <h4 className="feature-title mt-24">Γρήγορη ηλεκτρονική υποστήριξη</h4>
+                    <p className="text-sm mb-0">Γρήγορη εξυπηρέτηση πελατών μέσω του συστήματος επικοινωνίας μας.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div className="home-footer">
           <footer className="home-footer1">
             <div className="home-container31">
@@ -220,9 +236,11 @@ export default function Cookies() {
                 {t("info.copyright")}
               </span>
               <div className="home-icon-group1">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32px" height="32px" xmlnsXlink="http://www.w3.org/1999/xlink">
-                  <g><path fill="#15aaf2" d="M 10.5,-0.5 C 13.8333,-0.5 17.1667,-0.5 20.5,-0.5C 25.5,1.83333 29.1667,5.5 31.5,10.5C 31.5,11.1667 31.5,11.8333 31.5,12.5C 29.5,10.8333 27.5,9.16667 25.5,7.5C 22.9926,7.80464 20.3259,7.9713 17.5,8C 15.9632,9.10963 15.2965,10.6096 15.5,12.5C 12.1485,11.9916 9.14847,10.6582 6.5,8.5C 5.24604,10.2592 5.57938,11.7592 7.5,13C 6.83333,13.3333 6.16667,13.6667 5.5,14C 7.23352,16.2658 8.90019,18.4325 10.5,20.5C 8.92226,21.2978 7.2556,21.7978 5.5,22C 6.05596,22.3826 6.38929,22.8826 6.5,23.5C 8.16667,25.8333 10.1667,27.8333 12.5,29.5C 12.8333,30.1667 13.1667,30.8333 13.5,31.5C 12.5,31.5 11.5,31.5 10.5,31.5C 5.5,29.1667 1.83333,25.5 -0.5,20.5C -0.5,17.1667 -0.5,13.8333 -0.5,10.5C 1.83333,5.5 5.5,1.83333 10.5,-0.5 Z" /></g><g><path fill="#f6fafc" d="M 25.5,7.5 C 24.3964,10.0307 23.5631,13.0307 23,16.5C 19.2383,22.5964 13.7383,24.9297 6.5,23.5C 6.38929,22.8826 6.05596,22.3826 5.5,22C 7.2556,21.7978 8.92226,21.2978 10.5,20.5C 8.90019,18.4325 7.23352,16.2658 5.5,14C 6.16667,13.6667 6.83333,13.3333 7.5,13C 5.57938,11.7592 5.24604,10.2592 6.5,8.5C 9.14847,10.6582 12.1485,11.9916 15.5,12.5C 15.2965,10.6096 15.9632,9.10963 17.5,8C 20.3259,7.9713 22.9926,7.80464 25.5,7.5 Z" /></g><g><path fill="#0699db" d="M 31.5,13.5 C 31.5,15.8333 31.5,18.1667 31.5,20.5C 29.1667,25.5 25.5,29.1667 20.5,31.5C 18.1667,31.5 15.8333,31.5 13.5,31.5C 13.1667,30.8333 12.8333,30.1667 12.5,29.5C 13.552,29.6495 14.552,29.4828 15.5,29C 20.6754,23.6578 26.0087,18.4911 31.5,13.5 Z" /></g><g><path fill="#1489c1" d="M 25.5,7.5 C 27.5,9.16667 29.5,10.8333 31.5,12.5C 31.5,12.8333 31.5,13.1667 31.5,13.5C 26.0087,18.4911 20.6754,23.6578 15.5,29C 14.552,29.4828 13.552,29.6495 12.5,29.5C 10.1667,27.8333 8.16667,25.8333 6.5,23.5C 13.7383,24.9297 19.2383,22.5964 23,16.5C 23.5631,13.0307 24.3964,10.0307 25.5,7.5 Z" /></g>
-                </svg>
+                <a href="https://x.com/Playground4Youu?s=09">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32px" height="32px" xmlnsXlink="http://www.w3.org/1999/xlink">
+                    <g><path fill="#15aaf2" d="M 10.5,-0.5 C 13.8333,-0.5 17.1667,-0.5 20.5,-0.5C 25.5,1.83333 29.1667,5.5 31.5,10.5C 31.5,11.1667 31.5,11.8333 31.5,12.5C 29.5,10.8333 27.5,9.16667 25.5,7.5C 22.9926,7.80464 20.3259,7.9713 17.5,8C 15.9632,9.10963 15.2965,10.6096 15.5,12.5C 12.1485,11.9916 9.14847,10.6582 6.5,8.5C 5.24604,10.2592 5.57938,11.7592 7.5,13C 6.83333,13.3333 6.16667,13.6667 5.5,14C 7.23352,16.2658 8.90019,18.4325 10.5,20.5C 8.92226,21.2978 7.2556,21.7978 5.5,22C 6.05596,22.3826 6.38929,22.8826 6.5,23.5C 8.16667,25.8333 10.1667,27.8333 12.5,29.5C 12.8333,30.1667 13.1667,30.8333 13.5,31.5C 12.5,31.5 11.5,31.5 10.5,31.5C 5.5,29.1667 1.83333,25.5 -0.5,20.5C -0.5,17.1667 -0.5,13.8333 -0.5,10.5C 1.83333,5.5 5.5,1.83333 10.5,-0.5 Z" /></g><g><path fill="#f6fafc" d="M 25.5,7.5 C 24.3964,10.0307 23.5631,13.0307 23,16.5C 19.2383,22.5964 13.7383,24.9297 6.5,23.5C 6.38929,22.8826 6.05596,22.3826 5.5,22C 7.2556,21.7978 8.92226,21.2978 10.5,20.5C 8.90019,18.4325 7.23352,16.2658 5.5,14C 6.16667,13.6667 6.83333,13.3333 7.5,13C 5.57938,11.7592 5.24604,10.2592 6.5,8.5C 9.14847,10.6582 12.1485,11.9916 15.5,12.5C 15.2965,10.6096 15.9632,9.10963 17.5,8C 20.3259,7.9713 22.9926,7.80464 25.5,7.5 Z" /></g><g><path fill="#0699db" d="M 31.5,13.5 C 31.5,15.8333 31.5,18.1667 31.5,20.5C 29.1667,25.5 25.5,29.1667 20.5,31.5C 18.1667,31.5 15.8333,31.5 13.5,31.5C 13.1667,30.8333 12.8333,30.1667 12.5,29.5C 13.552,29.6495 14.552,29.4828 15.5,29C 20.6754,23.6578 26.0087,18.4911 31.5,13.5 Z" /></g><g><path fill="#1489c1" d="M 25.5,7.5 C 27.5,9.16667 29.5,10.8333 31.5,12.5C 31.5,12.8333 31.5,13.1667 31.5,13.5C 26.0087,18.4911 20.6754,23.6578 15.5,29C 14.552,29.4828 13.552,29.6495 12.5,29.5C 10.1667,27.8333 8.16667,25.8333 6.5,23.5C 13.7383,24.9297 19.2383,22.5964 23,16.5C 23.5631,13.0307 24.3964,10.0307 25.5,7.5 Z" /></g>
+                  </svg>
+                </a>
                 <a href="https://www.instagram.com/play.ground4you?igsh=MzRlODBiNWFlZA==" target="_blank" >
                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32px" height="32px" xmlnsXlink="http://www.w3.org/1999/xlink">
                     <g><path fill="#7637aa" d="M 13.5,-0.5 C 15.8333,-0.5 18.1667,-0.5 20.5,-0.5C 25.5,1.83333 29.1667,5.5 31.5,10.5C 31.5,11.8333 31.5,13.1667 31.5,14.5C 29.5,12.8333 27.5,11.1667 25.5,9.5C 24.7638,7.77055 23.4305,6.77055 21.5,6.5C 20.791,5.59603 19.791,5.26269 18.5,5.5C 16.8333,3.5 15.1667,1.5 13.5,-0.5 Z" /></g><g><path fill="#a53392" d="M 10.5,-0.5 C 11.5,-0.5 12.5,-0.5 13.5,-0.5C 15.1667,1.5 16.8333,3.5 18.5,5.5C 16.1667,5.5 13.8333,5.5 11.5,5.5C 10.5,4.16667 9.5,2.83333 8.5,1.5C 9.16667,0.833333 9.83333,0.166667 10.5,-0.5 Z" /></g><g><path fill="#d3496d" d="M 8.5,1.5 C 9.5,2.83333 10.5,4.16667 11.5,5.5C 6.6305,7.04935 4.6305,10.3827 5.5,15.5C 3.75405,13.7484 1.75405,12.4151 -0.5,11.5C -0.5,11.1667 -0.5,10.8333 -0.5,10.5C 1.39306,6.36956 4.39306,3.36956 8.5,1.5 Z" /></g><g><path fill="#eddbde" d="M 11.5,5.5 C 13.8333,5.5 16.1667,5.5 18.5,5.5C 19.791,5.26269 20.791,5.59603 21.5,6.5C 21.5,7.16667 21.1667,7.5 20.5,7.5C 16.6286,7.18503 12.9619,7.51836 9.5,8.5C 8.88258,8.61071 8.38258,8.94404 8,9.5C 4.49984,21.8336 8.99984,26.5002 21.5,23.5C 21.5,23.8333 21.5,24.1667 21.5,24.5C 20.0813,25.4511 18.4147,25.7845 16.5,25.5C 14.1667,25.5 11.8333,25.5 9.5,25.5C 7.46888,24.4613 6.13554,22.7946 5.5,20.5C 5.5,18.8333 5.5,17.1667 5.5,15.5C 4.6305,10.3827 6.6305,7.04935 11.5,5.5 Z" /></g><g><path fill="#efe3ec" d="M 21.5,6.5 C 23.4305,6.77055 24.7638,7.77055 25.5,9.5C 25.5,11.8333 25.5,14.1667 25.5,16.5C 25.5,18.1667 25.5,19.8333 25.5,21.5C 24.1667,22.5 22.8333,23.5 21.5,24.5C 21.5,24.1667 21.5,23.8333 21.5,23.5C 21.5,23.1667 21.5,22.8333 21.5,22.5C 22.1667,22.5 22.5,22.1667 22.5,21.5C 23.6453,17.6888 23.8119,13.6888 23,9.5C 22.0053,8.93406 21.172,8.26739 20.5,7.5C 21.1667,7.5 21.5,7.16667 21.5,6.5 Z" /></g><g><path fill="#f2e6ea" d="M 15.5,10.5 C 17.674,10.7497 19.3406,11.7497 20.5,13.5C 20.8333,18.5 18.5,20.8333 13.5,20.5C 10.6484,18.4275 9.98178,15.7608 11.5,12.5C 12.5769,11.2949 13.9102,10.6282 15.5,10.5 Z" /></g><g><path fill="#e7794b" d="M -0.5,11.5 C 1.75405,12.4151 3.75405,13.7484 5.5,15.5C 5.5,17.1667 5.5,18.8333 5.5,20.5C 3.5,18.8333 1.5,17.1667 -0.5,15.5C -0.5,14.1667 -0.5,12.8333 -0.5,11.5 Z" /></g><g><path fill="#d55c70" d="M 9.5,8.5 C 12.0821,8.02539 14.0821,8.69206 15.5,10.5C 13.9102,10.6282 12.5769,11.2949 11.5,12.5C 9.98178,15.7608 10.6484,18.4275 13.5,20.5C 13.6107,21.1174 13.944,21.6174 14.5,22C 16.8098,22.4966 19.1432,22.6633 21.5,22.5C 21.5,22.8333 21.5,23.1667 21.5,23.5C 8.99984,26.5002 4.49984,21.8336 8,9.5C 8.38258,8.94404 8.88258,8.61071 9.5,8.5 Z" /></g><g><path fill="#782f87" d="M 25.5,9.5 C 27.5,11.1667 29.5,12.8333 31.5,14.5C 31.5,16.5 31.5,18.5 31.5,20.5C 31.1667,20.5 30.8333,20.5 30.5,20.5C 28.8207,19.0837 27.1541,17.7503 25.5,16.5C 25.5,14.1667 25.5,11.8333 25.5,9.5 Z" /></g><g><path fill="#8d3851" d="M 13.5,12.5 C 18.1585,12.0146 19.4919,13.848 17.5,18C 12.7282,18.8104 11.3948,16.9771 13.5,12.5 Z" /></g><g><path fill="#a94e89" d="M 9.5,8.5 C 12.9619,7.51836 16.6286,7.18503 20.5,7.5C 21.172,8.26739 22.0053,8.93406 23,9.5C 23.8119,13.6888 23.6453,17.6888 22.5,21.5C 22.7062,18.5049 22.0395,15.8383 20.5,13.5C 19.3406,11.7497 17.674,10.7497 15.5,10.5C 14.0821,8.69206 12.0821,8.02539 9.5,8.5 Z" /></g><g><path fill="#daab3e" d="M -0.5,20.5 C -0.5,20.1667 -0.5,19.8333 -0.5,19.5C 4.5,22.5 8.5,26.5 11.5,31.5C 11.1667,31.5 10.8333,31.5 10.5,31.5C 5.5,29.1667 1.83333,25.5 -0.5,20.5 Z" /></g><g><path fill="#a43e5b" d="M 20.5,13.5 C 22.0395,15.8383 22.7062,18.5049 22.5,21.5C 22.5,22.1667 22.1667,22.5 21.5,22.5C 19.1432,22.6633 16.8098,22.4966 14.5,22C 13.944,21.6174 13.6107,21.1174 13.5,20.5C 18.5,20.8333 20.8333,18.5 20.5,13.5 Z" /></g><g><path fill="#e29643" d="M -0.5,15.5 C 1.5,17.1667 3.5,18.8333 5.5,20.5C 6.13554,22.7946 7.46888,24.4613 9.5,25.5C 11.1667,27.5 12.8333,29.5 14.5,31.5C 13.5,31.5 12.5,31.5 11.5,31.5C 8.5,26.5 4.5,22.5 -0.5,19.5C -0.5,18.1667 -0.5,16.8333 -0.5,15.5 Z" /></g><g><path fill="#b13077" d="M 25.5,16.5 C 27.1541,17.7503 28.8207,19.0837 30.5,20.5C 30.3404,22.153 29.6737,23.4863 28.5,24.5C 26.8102,24.1436 25.8102,23.1436 25.5,21.5C 25.5,19.8333 25.5,18.1667 25.5,16.5 Z" /></g><g><path fill="#c94664" d="M 25.5,21.5 C 25.8102,23.1436 26.8102,24.1436 28.5,24.5C 26.7122,27.6149 24.0455,29.6149 20.5,30.5C 19.1667,28.8333 17.8333,27.1667 16.5,25.5C 18.4147,25.7845 20.0813,25.4511 21.5,24.5C 22.8333,23.5 24.1667,22.5 25.5,21.5 Z" /></g><g><path fill="#c36843" d="M 9.5,25.5 C 11.8333,25.5 14.1667,25.5 16.5,25.5C 17.8333,27.1667 19.1667,28.8333 20.5,30.5C 20.5,30.8333 20.5,31.1667 20.5,31.5C 18.5,31.5 16.5,31.5 14.5,31.5C 12.8333,29.5 11.1667,27.5 9.5,25.5 Z" /></g>

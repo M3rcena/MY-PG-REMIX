@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "@remix-run/react";
 
 // Import CSS
-import indexStylesHref from "../styles/index.css";
-import termsStylesHref from "../styles/terms.css";
+import indexStylesHref from "../styles/index.css?url";
+import termsStylesHref from "../styles/terms.css?url";
 
 // Load the CSS
 export const links = () => {

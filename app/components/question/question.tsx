@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import CSS
-import questionStylesHref from './question.css';
+import questionStylesHref from './question.css?url';
 
 // Load the CSS
 export let links = () => {

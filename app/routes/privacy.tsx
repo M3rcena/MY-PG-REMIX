@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet";
 import { Link, useNavigate } from "@remix-run/react";
 
 // Import CSS
-import indexStylesHref from "../styles/index.css";
-import privacyStylesHref from "../styles/privacy.css";
+import indexStylesHref from "../styles/index.css?url";
+import privacyStylesHref from "../styles/privacy.css?url";
 
 // Import Translation
 import { useTranslation } from "react-i18next";

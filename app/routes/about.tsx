@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Link, useNavigate } from '@remix-run/react';
 
 // Import CSS
-import indexStylesHref from "../styles/index.css";
+import indexStylesHref from "../styles/index.css?url";
 
 // Import translation packages and functions
 import { useTranslation } from 'react-i18next';

@@ -3,8 +3,8 @@
 // Import the i18next library
 import Backend from 'i18next-fs-backend';
 import { resolve } from 'node:path';
-import { RemixI18Next } from 'remix-i18next';
-import i18n from './i18n.mjs';
+import { RemixI18Next } from 'remix-i18next/server';
+import i18n from './i18n';
 
 // Create a new instance of i18next
 let i18next = new RemixI18Next({

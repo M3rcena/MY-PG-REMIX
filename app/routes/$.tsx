@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "@remix-run/react";
 
 // Import CSS
-import errorStylesHref from "../styles/404.css";
+import errorStylesHref from "../styles/404.css?url";
 
 // Load the CSS
 export const links = () => {

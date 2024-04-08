@@ -12,7 +12,7 @@ import SimpleClickControl from "../components/map/click/SimpleClickControl.jsx";
 import mapboxgl from "mapbox-gl";
 
 // Import CSS
-import controlStyles from "../components/map/click/styles.css";
+import controlStyles from "../components/map/click/styles.css?url";
 
 // Load Mapbox Data
 export async function loader() {
@@ -36,7 +36,7 @@ export async function loader() {
 // Load the CSS
 export const links = () => {
     return [
-        { rel: "stylesheet", href: "https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" },
+        { rel: "stylesheet", href: "https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css?url" },
         { rel: "stylesheet", href: controlStyles },
     ];
 };

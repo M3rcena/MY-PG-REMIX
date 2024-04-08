@@ -1,7 +1,6 @@
 import { PassThrough } from "node:stream";
 
-import { AppLoadContext, EntryContext } from "@remix-run/node";
-import { createReadableStreamFromReadable } from "@remix-run/node";
+import { EntryContext, createReadableStreamFromReadable } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import isbot from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
@@ -16,14 +15,11 @@ import { resolve } from "node:path";
 const ABORT_DELAY = 5_000;
 
 export default async function handleRequest(
-  request,
-  responseStatusCode,
-  responseHeaders,
-  remixContext,
-  loadContext
+  request: Request,
+  responseStatusCode: number,
+  responseHeaders: Headers,
+  remixContext: EntryContext
 ) {
-
-
   let instance = createInstance();
   let lng = await i18next.getLocale(request);
   let ns = i18next.getRouteNamespaces(remixContext);
@@ -35,8 +31,8 @@ export default async function handleRequest(
       ...i18n,
       lng,
       ns,
-      backend: { loadPath: resolve("../public/locales/{{lng}}/{{ns}}.json") },
-    });
+      backend: { loadPath: resolve("../public/locales/{{lng}}/{{ns}}.json") }
+    })
 
   return isbot(request.headers.get("user-agent"))
     ? handleBotRequest(
@@ -53,11 +49,14 @@ export default async function handleRequest(
     );
 }
 
+// We have some Remix apps in the wild already running with isbot@3 so we need
+// to maintain backwards compatibility even though we want new apps to use
+// isbot@4.  That way, we can ship this as a minor Semver update to @remix-run/dev.
 function handleBotRequest(
-  request,
-  responseStatusCode,
-  responseHeaders,
-  remixContext
+  request: Request,
+  responseStatusCode: number,
+  responseHeaders: Headers,
+  remixContext: EntryContext
 ) {
   return new Promise((resolve, reject) => {
     let shellRendered = false;
@@ -102,10 +101,10 @@ function handleBotRequest(
 }
 
 function handleBrowserRequest(
-  request,
-  responseStatusCode,
-  responseHeaders,
-  remixContext
+  request: Request,
+  responseStatusCode: number,
+  responseHeaders: Headers,
+  remixContext: EntryContext
 ) {
   return new Promise((resolve, reject) => {
     let shellRendered = false;
